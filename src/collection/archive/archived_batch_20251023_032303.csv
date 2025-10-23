@@ -1,0 +1,6 @@
+hospital_id,hospital_name,region,city,capacity_beds,capacity_staff,date,patients_admitted,patients_released,patients_in_care,icu_patients,available_beds,available_staff,emergency_cases,mortality_rate,disease_name,new_cases,new_deaths,vaccination_rate,test_positivity_rate,risk_level,temperature_c,humidity_percent,population_density,public_alert,region_mobility_index,medical_supplies_index,staff_absence_rate,avg_wait_time_minutes,response_time_minutes
+3,Centre Hospitalier Régional de Diourbel,Diourbel,Diourbel,442,419,2024-12-14,21,7,354,8,88,398,16,0.75,Choléra,90,6,76.12,24.27,élevé,31.5,56.5,4756.8,True,0.95,0.64,0.16,15.4,25.6
+3,Centre Hospitalier Régional de Diourbel,Diourbel,Diourbel,442,419,2024-12-15,41,84,332,3,110,409,16,1.46,Covid-19,67,5,70.89,28.81,modéré,35.1,85.3,597.6,False,0.28,0.47,0.2,17.6,32.5
+3,Centre Hospitalier Régional de Diourbel,Diourbel,Diourbel,442,419,2024-12-16,73,52,418,17,24,389,0,1.08,Dengue,97,3,61.14,9.52,élevé,36.6,61.2,4074.0,True,0.33,0.55,0.08,118.5,53.4
+3,Centre Hospitalier Régional de Diourbel,Diourbel,Diourbel,442,419,2024-12-17,83,41,435,17,7,378,42,1.18,Grippe,93,6,77.73,20.73,élevé,34.4,57.6,3447.4,True,0.65,0.94,0.16,55.5,53.8
+3,Centre Hospitalier Régional de Diourbel,Diourbel,Diourbel,442,419,2024-12-18,85,5,398,16,44,376,9,0.12,Paludisme,48,2,73.37,18.37,modéré,25.8,47.6,3894.0,False,0.78,0.71,0.11,159.6,28.6

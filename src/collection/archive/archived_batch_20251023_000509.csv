@@ -1,0 +1,6 @@
+hospital_id,hospital_name,region,city,capacity_beds,capacity_staff,date,patients_admitted,patients_released,patients_in_care,icu_patients,available_beds,available_staff,emergency_cases,mortality_rate,disease_name,new_cases,new_deaths,vaccination_rate,test_positivity_rate,risk_level,temperature_c,humidity_percent,population_density,public_alert,region_mobility_index,medical_supplies_index,staff_absence_rate,avg_wait_time_minutes,response_time_minutes
+1,Centre Hospitalier Régional de Dakar,Dakar,Dakar,553,518,2024-12-31,48,16,188,15,365,481,52,3.85,Dengue,17,1,32.75,8.63,faible,27.9,62.2,2377.0,False,0.57,0.56,0.16,87.6,36.1
+2,Centre Hospitalier Régional de Thiès,Thiès,Thiès,526,331,2024-01-01,18,24,283,25,243,285,31,1.62,Covid-19,71,6,46.05,21.86,modéré,25.1,85.4,3137.3,False,0.99,0.59,0.0,96.6,54.2
+2,Centre Hospitalier Régional de Thiès,Thiès,Thiès,526,331,2024-01-02,26,89,160,1,366,313,51,2.94,Grippe,67,2,31.07,19.57,modéré,26.5,68.7,797.1,False,0.86,0.65,0.18,7.1,43.1
+2,Centre Hospitalier Régional de Thiès,Thiès,Thiès,526,331,2024-01-03,35,67,232,7,294,311,60,0.64,Dengue,82,7,39.78,22.15,élevé,30.9,82.3,1723.0,True,0.97,0.7,0.07,84.7,8.7
+2,Centre Hospitalier Régional de Thiès,Thiès,Thiès,526,331,2024-01-04,84,40,356,14,170,307,30,1.57,Choléra,48,5,58.92,19.04,modéré,33.2,44.4,4602.0,False,0.95,0.77,0.05,111.5,28.7

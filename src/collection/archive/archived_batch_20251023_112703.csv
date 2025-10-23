@@ -1,0 +1,6 @@
+hospital_id,hospital_name,region,city,capacity_beds,capacity_staff,date,patients_admitted,patients_released,patients_in_care,icu_patients,available_beds,available_staff,emergency_cases,mortality_rate,disease_name,new_cases,new_deaths,vaccination_rate,test_positivity_rate,risk_level,temperature_c,humidity_percent,population_density,public_alert,region_mobility_index,medical_supplies_index,staff_absence_rate,avg_wait_time_minutes,response_time_minutes
+7,Centre Hospitalier Régional de Louga,Louga,Louga,522,369,2024-05-19,90,23,453,17,69,344,11,3.38,Dengue,68,8,44.73,28.0,modéré,34.6,40.9,2789.9,False,0.45,0.7,0.1,79.8,27.1
+7,Centre Hospitalier Régional de Louga,Louga,Louga,522,369,2024-05-20,35,81,329,18,193,350,47,3.57,Choléra,87,9,30.42,15.96,élevé,25.2,43.9,1167.6,True,0.58,0.58,0.15,98.0,33.7
+7,Centre Hospitalier Régional de Louga,Louga,Louga,522,369,2024-05-21,41,90,291,3,231,342,29,2.82,Dengue,78,0,47.43,7.16,modéré,26.9,54.8,3662.7,False,0.72,0.5,0.07,56.8,55.1
+7,Centre Hospitalier Régional de Louga,Louga,Louga,522,369,2024-05-22,27,86,253,2,269,365,42,1.78,Grippe,110,0,77.29,25.98,élevé,28.3,74.2,1247.5,True,0.33,0.81,0.08,116.4,23.2
+7,Centre Hospitalier Régional de Louga,Louga,Louga,522,369,2024-05-23,49,21,125,16,397,347,5,3.03,Choléra,63,2,49.08,14.02,modéré,34.8,75.9,2604.7,False,0.46,0.97,0.15,91.4,48.3

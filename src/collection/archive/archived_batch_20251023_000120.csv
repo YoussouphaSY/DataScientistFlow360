@@ -1,0 +1,6 @@
+hospital_id,hospital_name,region,city,capacity_beds,capacity_staff,date,patients_admitted,patients_released,patients_in_care,icu_patients,available_beds,available_staff,emergency_cases,mortality_rate,disease_name,new_cases,new_deaths,vaccination_rate,test_positivity_rate,risk_level,temperature_c,humidity_percent,population_density,public_alert,region_mobility_index,medical_supplies_index,staff_absence_rate,avg_wait_time_minutes,response_time_minutes
+1,Centre Hospitalier Régional de Dakar,Dakar,Dakar,553,518,2024-05-20,44,6,467,20,86,508,3,0.81,Covid-19,114,2,84.6,23.61,élevé,31.4,88.6,1705.4,True,0.98,0.95,0.02,36.3,41.5
+1,Centre Hospitalier Régional de Dakar,Dakar,Dakar,553,518,2024-05-21,48,37,371,9,182,492,60,2.24,Paludisme,108,8,35.76,8.43,élevé,25.7,62.6,3779.2,True,0.83,0.71,0.17,73.6,58.9
+1,Centre Hospitalier Régional de Dakar,Dakar,Dakar,553,518,2024-05-22,94,42,533,0,20,493,21,1.49,Covid-19,97,1,76.83,6.87,élevé,32.6,69.5,3607.4,True,0.55,0.47,0.06,136.9,54.5
+1,Centre Hospitalier Régional de Dakar,Dakar,Dakar,553,518,2024-05-23,53,82,110,8,443,493,55,1.11,Grippe,9,0,38.42,28.79,faible,33.9,85.2,1994.9,False,0.87,0.99,0.04,124.6,57.0
+1,Centre Hospitalier Régional de Dakar,Dakar,Dakar,553,518,2024-05-24,12,65,175,0,378,496,19,3.83,Paludisme,87,1,32.58,5.13,élevé,25.9,65.4,1203.3,True,0.43,0.65,0.19,44.7,24.8

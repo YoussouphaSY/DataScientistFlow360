@@ -1,0 +1,77 @@
+
+services:
+
+# --------------------- Base de données Mysql ---------------------
+  mysql: 
+    image: mysql:latest 
+    container_name: dataflow360_mysql
+    environment:
+      MYSQL_DATABASE: sante_db
+      MYSQL_PASSWORD: mysql_admin 
+      MYSQL_ROOT_PASSWORD: mysql_admin123
+    ports:
+      - "3310:3306"
+    restart: unless-stopped
+    networks:
+      - dataflow360-net
+    volumes:
+      - mysql_data:/var/lib/mysql  
+
+  # --------------------- Base de données PostgreSQL ---------------------
+  postgres:
+    image: postgres:15
+    container_name: dataflow360_postgres
+    restart: always
+    environment:
+      POSTGRES_USER: postgres_admin
+      POSTGRES_PASSWORD: postgres_admin123
+      POSTGRES_DB: sante_db
+    ports:
+      - "5433:5432"
+    networks:
+      - dataflow360-net
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+  # --------------------- Base de données MongoDB ---------------------
+  mongo:
+    image: mongo:6
+    container_name: dataflow360_mongo
+    restart: always
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: mongo_admin
+      MONGO_INITDB_ROOT_PASSWORD: mongo_admin123
+    ports:
+      - "27017:27017"
+    networks:
+      - dataflow360-net
+    volumes:
+      - mongo_data:/data/db
+
+
+  # --------------------- Data Collector ---------------------
+  data-collector:
+    build:
+      context: ../collection
+      dockerfile: Dockerfile
+    container_name: dataflow360_collector
+    volumes:
+      - ./data:/app/data
+    depends_on:
+      - mysql
+      - postgres
+      - mongo
+    networks:
+      - dataflow360-net
+
+# --------------------- Volumes ---------------------
+volumes:
+  postgres_data:
+  mongo_data:
+  mysql_data:
+
+# --------------------- Réseau partagé ---------------------
+networks:
+  dataflow360-net:
+    external: true
+    driver: bridge

@@ -1,0 +1,6 @@
+hospital_id,hospital_name,region,city,capacity_beds,capacity_staff,date,patients_admitted,patients_released,patients_in_care,icu_patients,available_beds,available_staff,emergency_cases,mortality_rate,disease_name,new_cases,new_deaths,vaccination_rate,test_positivity_rate,risk_level,temperature_c,humidity_percent,population_density,public_alert,region_mobility_index,medical_supplies_index,staff_absence_rate,avg_wait_time_minutes,response_time_minutes
+2,Centre Hospitalier Régional de Thiès,Thiès,Thiès,526,331,2024-10-11,91,5,203,2,323,330,36,1.43,Grippe,68,7,36.13,15.18,modéré,34.3,44.4,905.6,False,1.0,0.35,0.16,110.1,5.6
+2,Centre Hospitalier Régional de Thiès,Thiès,Thiès,526,331,2024-10-12,97,84,511,12,15,309,13,0.58,Paludisme,93,5,68.67,23.95,élevé,25.1,58.7,4356.5,True,0.71,0.52,0.08,60.5,51.5
+2,Centre Hospitalier Régional de Thiès,Thiès,Thiès,526,331,2024-10-13,33,5,30,12,496,329,6,1.42,Covid-19,42,5,93.56,24.76,modéré,32.8,71.5,2930.0,False,0.33,0.4,0.04,5.2,35.9
+2,Centre Hospitalier Régional de Thiès,Thiès,Thiès,526,331,2024-10-14,38,29,336,24,190,294,37,2.46,Grippe,107,6,44.1,10.85,élevé,33.5,76.1,3290.1,True,0.67,0.93,0.03,55.6,39.7
+2,Centre Hospitalier Régional de Thiès,Thiès,Thiès,526,331,2024-10-15,85,32,26,14,500,308,27,3.84,Covid-19,86,3,52.64,1.43,élevé,34.5,75.0,3806.9,True,0.55,0.43,0.2,156.9,3.7

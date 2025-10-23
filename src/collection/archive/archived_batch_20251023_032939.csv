@@ -1,0 +1,6 @@
+hospital_id,hospital_name,region,city,capacity_beds,capacity_staff,date,patients_admitted,patients_released,patients_in_care,icu_patients,available_beds,available_staff,emergency_cases,mortality_rate,disease_name,new_cases,new_deaths,vaccination_rate,test_positivity_rate,risk_level,temperature_c,humidity_percent,population_density,public_alert,region_mobility_index,medical_supplies_index,staff_absence_rate,avg_wait_time_minutes,response_time_minutes
+5,Centre Hospitalier Régional de Fatick,Fatick,Fatick,264,560,2024-01-07,11,80,117,17,147,554,46,0.57,Choléra,112,8,43.02,14.07,élevé,37.7,58.3,4444.1,True,0.98,0.76,0.01,166.0,43.7
+5,Centre Hospitalier Régional de Fatick,Fatick,Fatick,264,560,2024-01-08,11,47,25,6,239,553,8,0.79,Grippe,20,6,80.98,17.49,faible,27.2,75.4,4048.2,False,0.67,0.78,0.11,64.1,44.4
+5,Centre Hospitalier Régional de Fatick,Fatick,Fatick,264,560,2024-01-09,49,7,23,10,241,520,35,2.6,Dengue,56,6,60.34,3.83,modéré,28.1,78.3,1102.3,False,0.73,0.73,0.19,68.8,59.4
+5,Centre Hospitalier Régional de Fatick,Fatick,Fatick,264,560,2024-01-10,75,6,142,7,122,518,54,2.74,Choléra,35,0,65.96,10.99,modéré,32.1,85.8,3067.1,False,0.47,0.94,0.06,152.9,48.9
+5,Centre Hospitalier Régional de Fatick,Fatick,Fatick,264,560,2024-01-11,100,87,84,23,180,510,56,3.78,Choléra,48,6,59.89,23.86,modéré,24.7,84.4,4522.9,False,0.63,0.52,0.09,86.9,58.3

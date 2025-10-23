@@ -1,0 +1,6 @@
+hospital_id,hospital_name,region,city,capacity_beds,capacity_staff,date,patients_admitted,patients_released,patients_in_care,icu_patients,available_beds,available_staff,emergency_cases,mortality_rate,disease_name,new_cases,new_deaths,vaccination_rate,test_positivity_rate,risk_level,temperature_c,humidity_percent,population_density,public_alert,region_mobility_index,medical_supplies_index,staff_absence_rate,avg_wait_time_minutes,response_time_minutes
+2,Centre Hospitalier Régional de Thiès,Thiès,Thiès,526,331,2024-03-30,36,12,451,13,75,324,13,0.54,Dengue,57,6,49.53,9.59,modéré,38.6,69.7,940.9,False,0.57,0.76,0.07,176.4,48.3
+2,Centre Hospitalier Régional de Thiès,Thiès,Thiès,526,331,2024-03-31,43,61,414,18,112,289,60,0.15,Paludisme,38,8,78.43,3.3,modéré,22.2,84.9,2369.2,False,0.39,0.36,0.12,9.2,58.2
+2,Centre Hospitalier Régional de Thiès,Thiès,Thiès,526,331,2024-04-01,63,18,376,7,150,292,45,0.24,Covid-19,113,6,83.6,20.18,élevé,31.2,46.4,4640.8,True,0.61,0.98,0.12,175.4,8.1
+2,Centre Hospitalier Régional de Thiès,Thiès,Thiès,526,331,2024-04-02,44,63,461,7,65,316,17,2.48,Paludisme,19,10,70.84,19.95,faible,31.8,86.2,4390.3,False,0.76,0.89,0.16,87.9,48.2
+2,Centre Hospitalier Régional de Thiès,Thiès,Thiès,526,331,2024-04-03,38,75,64,2,462,301,59,0.79,Choléra,34,10,78.62,20.24,modéré,25.0,56.5,1347.1,False,0.93,0.67,0.14,66.5,50.0

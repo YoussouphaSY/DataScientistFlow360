@@ -1,0 +1,184 @@
+
+services:
+
+  # --------------------- Zookeeper ---------------------
+  zookeeper:
+    image: confluentinc/cp-zookeeper:7.5.0
+    container_name: dataflow360_zookeeper
+    environment:
+      ZOOKEEPER_CLIENT_PORT: 2181
+    ports:
+      - "2181:2181"
+    networks:
+      - dataflow360-net
+
+  # --------------------- Kafka ---------------------
+  kafka:
+    image: confluentinc/cp-kafka:7.5.0
+    container_name: dataflow360_kafka
+    depends_on:
+      - zookeeper
+    ports:
+      - "9092:9092"
+    networks:
+      - dataflow360-net
+
+    healthcheck:
+        test: ["CMD", "kafka-broker-api-versions", "--bootstrap-server", "kafka:9092"]
+        interval: 5s
+        retries: 12
+    environment:
+      KAFKA_BROKER_ID: 1
+      KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
+      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://kafka:9092
+      KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
+
+  # --------------------- Prefect Agent ---------------------
+  # prefect-agent:
+  #   image: prefecthq/prefect:2.16-python3.11
+  #   container_name: dataflow360_agent
+  #   command: prefect agent start -q default
+  #   environment:
+  #     - PREFECT_API_URL=https://api.prefect.cloud/api/accounts/2e5f223f-98dc-4055-9a64-524abe0e5d01/workspaces/1017664b-38c0-421a-8906-0773a5583f1b
+  #     - PREFECT_API_KEY=pnu_FcIuSHNoWNVpf2qIm1AaBDQ1DLFN091HJ7Q0
+  #   volumes:
+  #     - ../kafka_streaming:/app
+  #   networks:
+  #     - dataflow360-net
+  #   restart: unless-stopped
+
+  # # --------------------- Prefect Flow ---------------------
+  # prefect-flow:
+  #   image: python:3.11
+  #   container_name: dataflow360_prefect_flow
+  #   working_dir: /app
+  #   volumes:
+  #     - ../kafka_streaming:/app
+  #   networks:
+  #     - dataflow360-net
+  #   command: sleep infinity
+
+# --------------------- HADOOP CLUSTER (HDFS + YARN) ---------------------
+  namenode:
+    image: bde2020/hadoop-namenode:2.0.0-hadoop3.2.1-java8
+    container_name: dataflow360_namenode
+    restart: unless-stopped
+    environment:
+      - CLUSTER_NAME=dataflow360
+      - CORE_CONF_fs_defaultFS=hdfs://namenode:8020
+      - HDFS_CONF_dfs_replication=1
+    ports:
+      - "9870:9870"   # UI NameNode
+      - "8020:8020"   # RPC NameNode
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:9870"]
+      interval: 10s
+      timeout: 5s
+      retries: 6
+    volumes:
+      - hadoop_namenode:/hadoop/dfs/name
+      # - ./stockage_data:/data   # tu centralises les données ici
+    networks:
+      - dataflow360-net
+  datanode:
+    image: bde2020/hadoop-datanode:2.0.0-hadoop3.2.1-java8
+    container_name: dataflow360_datanode
+    restart: unless-stopped
+    environment:
+      - CLUSTER_NAME=dataflow360
+      - CORE_CONF_fs_defaultFS=hdfs://namenode:8020
+      - HDFS_CONF_dfs_datanode_data_dir=file:///hadoop/dfs/data
+    ports:
+      - "9864:9864"   # UI DataNode
+    volumes:
+      - hadoop_datanode:/hadoop/dfs/data
+    networks:
+      - dataflow360-net
+    depends_on:
+      - namenode
+
+  resourcemanager:
+    image: bde2020/hadoop-resourcemanager:2.0.0-hadoop3.2.1-java8
+    container_name: dataflow360_resourcemanager
+    restart: unless-stopped
+    ports:
+      - "8088:8088"   # YARN Web UI
+    environment:
+      - YARN_RESOURCEMANAGER_WEBAPP_ADDRESS=resourcemanager:8088
+      - YARN_CONF_yarn_resourcemanager_hostname=resourcemanager
+    networks:
+      - dataflow360-net
+    depends_on:
+      - namenode
+      - datanode
+
+  nodemanager:
+    image: bde2020/hadoop-nodemanager:2.0.0-hadoop3.2.1-java8
+    container_name: dataflow360_nodemanager
+    restart: unless-stopped
+    networks:
+      - dataflow360-net
+    depends_on:
+      - resourcemanager
+      - datanode
+
+# --------------------- hdfs-loader ---------------------
+  hdfs-loader:
+    build:
+      context: ./hdfs_loader
+      dockerfile: Dockerfile
+    container_name: dataflow360_hdfs_loader
+    restart: on-failure
+    depends_on:
+      namenode:
+        condition: service_healthy
+      datanode:
+        condition: service_started
+    volumes:
+      - ./hdfs_loader:/app
+    networks:
+      - dataflow360-net
+    command: >
+      bash -c "
+      echo 'Lancement direct du chargement vers HDFS...' &&
+      python load_to_hdfs.py
+      "
+  streaming_app:
+    build:
+      context: ./api_kafka
+      dockerfile: Dockerfile
+    container_name: dataflow360_api_kafka
+    volumes:
+      - ./api_kafka:/app
+      - ./data:/data
+      - ../collection:/collection
+    environment:
+      - KAFKA_BROKER=kafka:9092
+      - HDFS_URL=http://namenode:9870
+    depends_on:
+      kafka:
+        condition: service_healthy
+      namenode:
+        condition: service_healthy
+
+    networks:
+      - dataflow360-net
+    command: >
+      bash -c "
+      echo 'Lancement du Producer et du Consumer...' &&
+      python kafka_producer.py &
+      sleep 5 &&
+      python kafka_consumer_to_hdfs.py
+      "
+
+
+# --------------------- Volumes ---------------------
+volumes:
+  hadoop_namenode:
+  hadoop_datanode:
+  
+# --------------------- Réseau partagé ---------------------
+networks:
+  dataflow360-net:
+    external: true
+    driver: bridge

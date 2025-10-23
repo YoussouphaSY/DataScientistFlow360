@@ -1,0 +1,6 @@
+hospital_id,hospital_name,region,city,capacity_beds,capacity_staff,date,patients_admitted,patients_released,patients_in_care,icu_patients,available_beds,available_staff,emergency_cases,mortality_rate,disease_name,new_cases,new_deaths,vaccination_rate,test_positivity_rate,risk_level,temperature_c,humidity_percent,population_density,public_alert,region_mobility_index,medical_supplies_index,staff_absence_rate,avg_wait_time_minutes,response_time_minutes
+4,Centre Hospitalier Régional de Kaolack,Kaolack,Kaolack,264,596,2024-09-14,34,40,264,11,0,574,14,2.33,Grippe,98,10,60.86,11.51,élevé,23.4,79.5,616.4,True,0.54,0.5,0.11,131.3,32.6
+4,Centre Hospitalier Régional de Kaolack,Kaolack,Kaolack,264,596,2024-09-15,60,57,206,2,58,561,29,0.23,Paludisme,103,10,46.89,11.27,élevé,25.1,52.2,421.9,True,0.81,0.68,0.03,89.6,26.9
+4,Centre Hospitalier Régional de Kaolack,Kaolack,Kaolack,264,596,2024-09-16,97,58,87,18,177,563,19,2.58,Dengue,112,7,33.24,6.0,élevé,25.0,48.3,335.4,True,0.55,0.98,0.2,131.9,17.4
+4,Centre Hospitalier Régional de Kaolack,Kaolack,Kaolack,264,596,2024-09-17,10,66,68,6,196,574,23,1.87,Covid-19,80,4,35.16,2.89,élevé,25.8,70.7,2843.1,False,0.65,0.93,0.08,41.1,39.7
+4,Centre Hospitalier Régional de Kaolack,Kaolack,Kaolack,264,596,2024-09-18,45,38,229,10,35,557,39,2.22,Covid-19,38,8,89.13,13.21,modéré,34.8,56.9,4818.5,False,0.31,0.7,0.15,148.1,19.9

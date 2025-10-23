@@ -1,0 +1,27 @@
+mysql:
+  host: dataflow360_mysql
+  port: 3306
+  user: root
+  password: mysql_admin123
+  database: sante_db
+
+postgres:
+  host: dataflow360_postgres
+  port: 5432
+  user: postgres_admin
+  password: postgres_admin123
+  database: sante_db
+
+mongo:
+  host: dataflow360_mongo
+  port: 27017
+  user: mongo_admin
+  password: mongo_admin123
+  database: sante_db
+
+
+hdfs:
+  url: "http://namenode:9870"  # utilisé pour InsecureClient
+  path: "/dataflow360/raw/"
+  host: "dataflow360_namenode"
+  port: 9870

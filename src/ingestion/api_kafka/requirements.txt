@@ -1,0 +1,7 @@
+prefect==2.16.8
+pydantic==2.6.4
+kafka-python==2.0.2
+hdfs==2.7.3
+pandas==2.2.2
+pyyaml
+griffe==0.47.0

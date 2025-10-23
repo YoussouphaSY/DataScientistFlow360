@@ -1,0 +1,6 @@
+hospital_id,hospital_name,region,city,capacity_beds,capacity_staff,date,patients_admitted,patients_released,patients_in_care,icu_patients,available_beds,available_staff,emergency_cases,mortality_rate,disease_name,new_cases,new_deaths,vaccination_rate,test_positivity_rate,risk_level,temperature_c,humidity_percent,population_density,public_alert,region_mobility_index,medical_supplies_index,staff_absence_rate,avg_wait_time_minutes,response_time_minutes
+9,Centre Hospitalier Régional de Matam,Matam,Matam,359,116,2024-03-03,77,49,113,6,246,67,36,3.09,Grippe,104,10,86.09,21.64,élevé,30.7,56.8,4344.0,True,0.77,0.91,0.06,133.6,39.6
+9,Centre Hospitalier Régional de Matam,Matam,Matam,359,116,2024-03-04,96,72,249,19,110,76,59,3.77,Covid-19,73,8,42.42,29.68,modéré,31.7,66.6,228.2,False,0.6,0.74,0.12,143.2,28.1
+9,Centre Hospitalier Régional de Matam,Matam,Matam,359,116,2024-03-05,96,31,327,15,32,73,57,1.72,Grippe,57,7,91.49,13.89,modéré,30.9,69.4,3640.9,False,0.55,0.4,0.07,27.5,21.0
+9,Centre Hospitalier Régional de Matam,Matam,Matam,359,116,2024-03-06,57,38,50,17,309,109,3,2.87,Paludisme,99,6,39.63,2.14,élevé,37.8,84.3,2884.8,True,0.44,0.93,0.05,30.9,29.1
+9,Centre Hospitalier Régional de Matam,Matam,Matam,359,116,2024-03-07,51,80,159,14,200,107,1,1.8,Dengue,76,9,70.52,5.59,modéré,28.0,56.7,510.8,False,0.33,0.7,0.18,8.5,20.6

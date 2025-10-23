@@ -1,0 +1,6 @@
+hospital_id,hospital_name,region,city,capacity_beds,capacity_staff,date,patients_admitted,patients_released,patients_in_care,icu_patients,available_beds,available_staff,emergency_cases,mortality_rate,disease_name,new_cases,new_deaths,vaccination_rate,test_positivity_rate,risk_level,temperature_c,humidity_percent,population_density,public_alert,region_mobility_index,medical_supplies_index,staff_absence_rate,avg_wait_time_minutes,response_time_minutes
+1,Centre Hospitalier Régional de Dakar,Dakar,Dakar,553,518,2024-12-01,51,50,96,3,457,506,19,2.17,Dengue,69,5,47.89,11.81,modéré,33.1,50.8,3669.2,False,0.64,0.68,0.06,113.1,27.9
+1,Centre Hospitalier Régional de Dakar,Dakar,Dakar,553,518,2024-12-02,63,48,221,9,332,513,26,2.93,Dengue,80,0,76.56,3.65,élevé,31.6,48.0,1706.9,False,0.8,0.67,0.08,122.5,50.1
+1,Centre Hospitalier Régional de Dakar,Dakar,Dakar,553,518,2024-12-03,17,50,120,7,433,468,26,0.52,Choléra,83,10,92.79,14.16,élevé,32.1,44.4,902.5,True,0.35,0.6,0.04,148.5,26.5
+1,Centre Hospitalier Régional de Dakar,Dakar,Dakar,553,518,2024-12-04,68,89,288,21,265,474,58,2.1,Covid-19,35,9,49.86,1.23,modéré,24.9,40.5,2817.9,False,0.34,0.48,0.15,47.2,23.6
+1,Centre Hospitalier Régional de Dakar,Dakar,Dakar,553,518,2024-12-05,28,72,340,3,213,492,35,1.65,Choléra,60,10,65.05,26.07,modéré,29.1,76.4,844.4,False,0.54,0.78,0.06,8.2,33.4

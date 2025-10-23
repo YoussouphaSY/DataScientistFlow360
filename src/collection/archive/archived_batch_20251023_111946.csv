@@ -1,0 +1,6 @@
+hospital_id,hospital_name,region,city,capacity_beds,capacity_staff,date,patients_admitted,patients_released,patients_in_care,icu_patients,available_beds,available_staff,emergency_cases,mortality_rate,disease_name,new_cases,new_deaths,vaccination_rate,test_positivity_rate,risk_level,temperature_c,humidity_percent,population_density,public_alert,region_mobility_index,medical_supplies_index,staff_absence_rate,avg_wait_time_minutes,response_time_minutes
+6,Centre Hospitalier Régional de Kaffrine,Kaffrine,Kaffrine,364,357,2024-03-16,41,15,152,24,212,331,40,3.58,Dengue,38,3,85.06,25.55,modéré,31.7,47.1,3550.2,False,0.28,0.65,0.19,5.6,44.0
+6,Centre Hospitalier Régional de Kaffrine,Kaffrine,Kaffrine,364,357,2024-03-17,52,21,237,23,127,310,20,0.51,Dengue,27,1,46.9,9.43,faible,27.7,46.9,3027.6,False,0.26,0.35,0.1,143.1,11.6
+6,Centre Hospitalier Régional de Kaffrine,Kaffrine,Kaffrine,364,357,2024-03-18,50,41,257,11,107,339,11,0.14,Grippe,109,9,51.86,28.19,élevé,29.4,57.1,3639.5,True,0.74,0.5,0.11,64.0,54.3
+6,Centre Hospitalier Régional de Kaffrine,Kaffrine,Kaffrine,364,357,2024-03-19,49,59,186,8,178,355,17,0.12,Covid-19,115,7,79.11,29.67,élevé,35.3,42.3,2579.7,True,0.23,0.92,0.14,32.3,30.8
+6,Centre Hospitalier Régional de Kaffrine,Kaffrine,Kaffrine,364,357,2024-03-20,65,52,351,4,13,310,3,0.2,Dengue,112,10,71.06,3.6,élevé,25.1,57.8,2344.6,True,0.36,0.92,0.01,59.9,39.0

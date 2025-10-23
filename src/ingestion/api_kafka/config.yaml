@@ -1,0 +1,6 @@
+
+hdfs:
+  url: "http://namenode:9870"  # utilisé pour InsecureClient
+  path: "/dataflow360/raw/"
+  host: "dataflow360_namenode"
+  port: 9870

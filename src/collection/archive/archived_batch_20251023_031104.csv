@@ -1,0 +1,6 @@
+hospital_id,hospital_name,region,city,capacity_beds,capacity_staff,date,patients_admitted,patients_released,patients_in_care,icu_patients,available_beds,available_staff,emergency_cases,mortality_rate,disease_name,new_cases,new_deaths,vaccination_rate,test_positivity_rate,risk_level,temperature_c,humidity_percent,population_density,public_alert,region_mobility_index,medical_supplies_index,staff_absence_rate,avg_wait_time_minutes,response_time_minutes
+2,Centre Hospitalier Régional de Thiès,Thiès,Thiès,526,331,2024-12-30,17,39,449,23,77,325,29,2.43,Choléra,101,2,71.53,9.81,élevé,29.4,84.6,1155.7,True,0.83,0.56,0.11,43.5,37.9
+2,Centre Hospitalier Régional de Thiès,Thiès,Thiès,526,331,2024-12-31,68,83,378,25,148,314,3,3.82,Grippe,13,6,34.54,29.95,faible,22.0,85.2,4606.2,False,0.84,0.62,0.06,7.5,45.6
+3,Centre Hospitalier Régional de Diourbel,Diourbel,Diourbel,442,419,2024-01-01,35,56,344,13,98,387,39,0.18,Grippe,50,2,52.86,11.4,modéré,25.9,55.8,4357.4,False,0.61,0.66,0.06,104.8,50.2
+3,Centre Hospitalier Régional de Diourbel,Diourbel,Diourbel,442,419,2024-01-02,73,74,95,11,347,378,29,2.2,Dengue,66,8,84.81,23.76,modéré,27.9,85.3,3604.8,False,0.55,0.44,0.09,136.3,10.6
+3,Centre Hospitalier Régional de Diourbel,Diourbel,Diourbel,442,419,2024-01-03,17,37,291,21,151,388,30,2.57,Paludisme,10,5,68.06,9.03,faible,34.7,79.4,404.2,False,0.45,0.99,0.18,168.2,5.6
