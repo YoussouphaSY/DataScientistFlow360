@@ -1,0 +1,6 @@
+hospital_id,hospital_name,region,city,capacity_beds,capacity_staff,date,patients_admitted,patients_released,patients_in_care,icu_patients,available_beds,available_staff,emergency_cases,mortality_rate,disease_name,new_cases,new_deaths,vaccination_rate,test_positivity_rate,risk_level,temperature_c,humidity_percent,population_density,public_alert,region_mobility_index,medical_supplies_index,staff_absence_rate,avg_wait_time_minutes,response_time_minutes
+12,Centre Hospitalier Régional de Kolda,Kolda,Kolda,312,564,2024-12-30,21,69,93,14,219,557,30,3.23,Covid-19,17,2,50.48,20.67,faible,28.0,42.1,1153.3,False,0.61,0.41,0.19,164.4,35.8
+12,Centre Hospitalier Régional de Kolda,Kolda,Kolda,312,564,2024-12-31,18,45,120,12,192,519,24,3.79,Grippe,20,6,78.91,26.46,faible,25.0,83.8,610.4,False,0.44,0.33,0.01,95.9,8.4
+13,Centre Hospitalier Régional de Sédhiou,Sédhiou,Sédhiou,355,168,2024-01-01,67,58,309,19,46,156,54,3.63,Dengue,52,1,81.38,28.95,modéré,23.9,70.4,2245.7,False,0.22,0.76,0.05,53.3,53.6
+13,Centre Hospitalier Régional de Sédhiou,Sédhiou,Sédhiou,355,168,2024-01-02,54,49,261,20,94,168,44,0.23,Paludisme,20,3,66.2,7.65,faible,36.5,83.3,2363.2,False,0.73,0.52,0.17,49.6,10.4
+13,Centre Hospitalier Régional de Sédhiou,Sédhiou,Sédhiou,355,168,2024-01-03,19,76,124,15,231,161,24,3.73,Dengue,74,6,55.48,6.61,modéré,38.9,46.5,4780.0,False,0.21,0.59,0.06,177.1,56.2

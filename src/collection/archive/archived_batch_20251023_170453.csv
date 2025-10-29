@@ -1,0 +1,6 @@
+hospital_id,hospital_name,region,city,capacity_beds,capacity_staff,date,patients_admitted,patients_released,patients_in_care,icu_patients,available_beds,available_staff,emergency_cases,mortality_rate,disease_name,new_cases,new_deaths,vaccination_rate,test_positivity_rate,risk_level,temperature_c,humidity_percent,population_density,public_alert,region_mobility_index,medical_supplies_index,staff_absence_rate,avg_wait_time_minutes,response_time_minutes
+12,Centre Hospitalier Régional de Kolda,Kolda,Kolda,312,564,2024-07-03,33,79,256,1,56,540,3,1.57,Dengue,101,10,82.52,3.61,élevé,23.2,75.7,1666.1,True,0.84,0.45,0.09,113.2,34.9
+12,Centre Hospitalier Régional de Kolda,Kolda,Kolda,312,564,2024-07-04,48,53,294,10,18,527,52,0.61,Choléra,6,2,34.49,8.58,faible,30.4,52.2,3285.9,False,0.28,0.41,0.19,63.6,37.0
+12,Centre Hospitalier Régional de Kolda,Kolda,Kolda,312,564,2024-07-05,41,38,309,5,3,561,55,0.18,Grippe,92,9,34.85,12.34,élevé,37.1,71.4,4210.4,True,0.95,0.65,0.14,139.0,13.2
+12,Centre Hospitalier Régional de Kolda,Kolda,Kolda,312,564,2024-07-06,33,59,130,13,182,558,2,0.63,Grippe,60,10,73.22,12.27,modéré,37.3,65.5,1731.9,False,0.82,0.74,0.11,170.5,37.9
+12,Centre Hospitalier Régional de Kolda,Kolda,Kolda,312,564,2024-07-07,26,16,155,23,157,563,32,3.05,Dengue,20,5,64.67,20.62,faible,29.0,72.5,3801.3,False,0.32,0.91,0.01,65.5,22.2

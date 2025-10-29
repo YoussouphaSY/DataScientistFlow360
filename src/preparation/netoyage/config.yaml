@@ -1,0 +1,6 @@
+hdfs:
+  url: "http://namenode:9870"
+  host: "dataflow360_namenode"
+  port: 9870
+  path: "/dataflow360/raw"       # chemin vers les fichiers bruts
+  cleaned_path: "/dataflow360/clean"  # chemin pour les fichiers nettoyés

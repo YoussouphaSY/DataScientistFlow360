@@ -8,7 +8,7 @@ from datetime import datetime
 # === CONFIGURATION ===
 CSV_PATH = "/collection/senegal_hospital_data_2024.csv"
 ARCHIVE_DIR = "/collection/archive"
-BATCH_SIZE = 5
+BATCH_SIZE = 50
 TOPIC = "data_stream"
 KAFKA_BOOTSTRAP = ['kafka:9092']
 

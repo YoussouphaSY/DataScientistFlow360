@@ -1,0 +1,24 @@
+services:
+
+  # --------------------- spark ---------------------
+  spark-cleaner:
+    build:
+      context: ./netoyage
+      dockerfile: Dockerfile
+    container_name: dataflow360_spark_cleaner
+    volumes:
+      - ./netoyage:/app
+    environment:
+      - PYSPARK_PYTHON=python3
+      - HDFS_URL=hdfs://namenode:8020
+    networks:
+      - dataflow360-net
+    command: >
+      bash -c "
+      echo 'Nettoyage des données...' &&
+      python cleaning.py
+      "
+
+networks:
+  dataflow360-net:
+    external: true

@@ -1,0 +1,25 @@
+hospital_id,hospital_name,region,city,capacity_beds,capacity_staff,date,patients_admitted,patients_released,patients_in_care,icu_patients,available_beds,available_staff,emergency_cases,mortality_rate,disease_name,new_cases,new_deaths,vaccination_rate,test_positivity_rate,risk_level,temperature_c,humidity_percent,population_density,public_alert,region_mobility_index,medical_supplies_index,staff_absence_rate,avg_wait_time_minutes,response_time_minutes
+14,Centre Hospitalier Régional de Ziguinchor,Ziguinchor,Ziguinchor,755,393,2024-12-08,74,40,552,24,203,387,13,3.84,Paludisme,12,7,89.35,18.73,faible,35.9,73.6,1447.0,False,0.78,0.36,0.05,178.2,42.1
+14,Centre Hospitalier Régional de Ziguinchor,Ziguinchor,Ziguinchor,755,393,2024-12-09,98,82,697,7,58,374,33,3.01,Dengue,31,5,75.83,5.98,modéré,26.4,42.9,2629.4,False,0.92,0.57,0.15,125.0,18.1
+14,Centre Hospitalier Régional de Ziguinchor,Ziguinchor,Ziguinchor,755,393,2024-12-10,47,60,503,24,252,371,40,0.66,Paludisme,118,4,90.62,24.68,élevé,29.5,41.0,1785.6,True,0.69,0.69,0.2,122.2,12.2
+14,Centre Hospitalier Régional de Ziguinchor,Ziguinchor,Ziguinchor,755,393,2024-12-11,32,46,302,7,453,350,48,0.81,Grippe,116,6,93.58,3.63,élevé,27.4,62.4,4381.1,True,0.23,0.84,0.19,40.6,6.4
+14,Centre Hospitalier Régional de Ziguinchor,Ziguinchor,Ziguinchor,755,393,2024-12-12,65,77,286,15,469,380,58,1.81,Dengue,70,3,85.08,27.94,modéré,37.5,53.1,3498.2,False,0.28,0.35,0.06,155.0,51.6
+14,Centre Hospitalier Régional de Ziguinchor,Ziguinchor,Ziguinchor,755,393,2024-12-13,80,45,228,22,527,393,9,2.45,Choléra,107,3,64.36,8.26,élevé,31.7,48.4,3089.6,True,0.74,0.41,0.14,14.1,50.5
+14,Centre Hospitalier Régional de Ziguinchor,Ziguinchor,Ziguinchor,755,393,2024-12-14,27,88,207,2,548,353,55,0.86,Paludisme,63,9,82.72,21.65,modéré,30.1,85.2,4739.5,False,0.26,0.33,0.12,161.5,50.9
+14,Centre Hospitalier Régional de Ziguinchor,Ziguinchor,Ziguinchor,755,393,2024-12-15,27,63,285,16,470,369,18,3.56,Covid-19,71,7,32.67,25.28,modéré,25.9,76.7,1653.8,False,0.43,0.8,0.01,95.9,57.5
+14,Centre Hospitalier Régional de Ziguinchor,Ziguinchor,Ziguinchor,755,393,2024-12-16,23,72,657,20,98,390,37,3.96,Covid-19,31,2,63.61,11.56,modéré,32.7,47.8,1947.9,False,0.77,0.75,0.09,129.0,21.4
+14,Centre Hospitalier Régional de Ziguinchor,Ziguinchor,Ziguinchor,755,393,2024-12-17,16,51,684,24,71,391,19,3.3,Grippe,15,8,58.32,6.74,faible,22.4,69.3,1189.4,False,0.39,0.67,0.07,69.6,39.8
+14,Centre Hospitalier Régional de Ziguinchor,Ziguinchor,Ziguinchor,755,393,2024-12-18,15,36,182,11,573,390,12,2.24,Choléra,0,1,51.07,9.45,faible,26.0,69.4,1495.3,False,0.41,0.76,0.09,13.3,29.2
+14,Centre Hospitalier Régional de Ziguinchor,Ziguinchor,Ziguinchor,755,393,2024-12-19,20,24,79,16,676,343,56,2.44,Paludisme,36,7,83.02,13.84,modéré,28.4,76.0,4862.1,False,0.92,0.64,0.06,129.6,6.3
+14,Centre Hospitalier Régional de Ziguinchor,Ziguinchor,Ziguinchor,755,393,2024-12-20,74,83,287,0,468,353,33,1.55,Dengue,111,3,39.7,18.33,élevé,38.1,54.1,854.6,True,0.42,0.39,0.16,36.1,19.4
+14,Centre Hospitalier Régional de Ziguinchor,Ziguinchor,Ziguinchor,755,393,2024-12-21,90,20,574,4,181,381,56,2.09,Covid-19,94,5,57.2,6.42,élevé,33.1,47.5,373.2,True,0.25,0.87,0.19,25.5,32.6
+14,Centre Hospitalier Régional de Ziguinchor,Ziguinchor,Ziguinchor,755,393,2024-12-22,64,46,607,12,148,354,12,0.23,Covid-19,47,5,89.32,11.17,modéré,25.4,59.3,2135.7,False,0.96,0.54,0.01,95.2,51.6
+14,Centre Hospitalier Régional de Ziguinchor,Ziguinchor,Ziguinchor,755,393,2024-12-23,33,90,549,13,206,365,43,1.18,Grippe,94,3,92.53,6.33,élevé,32.8,64.3,1747.5,True,0.81,0.78,0.06,163.7,59.6
+14,Centre Hospitalier Régional de Ziguinchor,Ziguinchor,Ziguinchor,755,393,2024-12-24,72,71,43,19,712,349,39,3.58,Grippe,19,5,47.36,19.02,faible,24.8,66.6,1495.9,False,0.47,0.64,0.07,66.6,35.1
+14,Centre Hospitalier Régional de Ziguinchor,Ziguinchor,Ziguinchor,755,393,2024-12-25,37,49,395,9,360,366,4,2.17,Dengue,5,3,83.54,7.15,faible,34.3,79.7,2545.2,False,0.77,0.82,0.1,71.7,13.9
+14,Centre Hospitalier Régional de Ziguinchor,Ziguinchor,Ziguinchor,755,393,2024-12-26,40,40,654,18,101,370,37,3.05,Dengue,44,6,48.4,22.63,modéré,26.3,64.9,2619.3,False,0.21,0.98,0.09,100.8,10.7
+14,Centre Hospitalier Régional de Ziguinchor,Ziguinchor,Ziguinchor,755,393,2024-12-27,12,25,195,20,560,386,54,0.1,Choléra,110,4,49.08,20.62,élevé,22.3,67.8,2485.8,True,0.74,0.9,0.01,65.9,41.7
+14,Centre Hospitalier Régional de Ziguinchor,Ziguinchor,Ziguinchor,755,393,2024-12-28,58,45,651,21,104,348,17,2.29,Grippe,70,3,48.97,1.44,modéré,33.3,72.1,2328.9,False,0.83,0.97,0.2,168.5,32.3
+14,Centre Hospitalier Régional de Ziguinchor,Ziguinchor,Ziguinchor,755,393,2024-12-29,60,24,70,4,685,381,37,1.85,Covid-19,76,2,70.16,9.82,modéré,29.8,60.1,520.1,False,0.29,0.37,0.01,63.8,39.4
+14,Centre Hospitalier Régional de Ziguinchor,Ziguinchor,Ziguinchor,755,393,2024-12-30,100,19,171,7,584,374,0,3.97,Choléra,19,3,61.77,24.74,faible,25.3,72.1,2408.1,False,0.44,0.43,0.08,64.0,48.0
+14,Centre Hospitalier Régional de Ziguinchor,Ziguinchor,Ziguinchor,755,393,2024-12-31,90,54,405,16,350,359,47,2.14,Choléra,88,1,35.37,28.76,élevé,26.3,74.3,4074.5,True,0.23,0.92,0.01,118.7,51.8

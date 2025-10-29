@@ -5,3 +5,4 @@ hdfs==2.7.3
 pandas==2.2.2
 pyyaml
 griffe==0.47.0
+elasticsearch

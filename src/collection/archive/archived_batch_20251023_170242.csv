@@ -1,0 +1,6 @@
+hospital_id,hospital_name,region,city,capacity_beds,capacity_staff,date,patients_admitted,patients_released,patients_in_care,icu_patients,available_beds,available_staff,emergency_cases,mortality_rate,disease_name,new_cases,new_deaths,vaccination_rate,test_positivity_rate,risk_level,temperature_c,humidity_percent,population_density,public_alert,region_mobility_index,medical_supplies_index,staff_absence_rate,avg_wait_time_minutes,response_time_minutes
+12,Centre Hospitalier Régional de Kolda,Kolda,Kolda,312,564,2024-02-24,60,61,218,11,94,526,8,0.5,Choléra,81,1,30.49,8.23,élevé,24.9,71.9,361.7,True,0.54,0.54,0.09,128.6,34.7
+12,Centre Hospitalier Régional de Kolda,Kolda,Kolda,312,564,2024-02-25,17,36,148,14,164,514,9,2.43,Paludisme,62,5,63.76,4.43,modéré,23.8,56.9,3005.5,False,0.75,0.57,0.11,93.7,48.1
+12,Centre Hospitalier Régional de Kolda,Kolda,Kolda,312,564,2024-02-26,18,71,130,5,182,536,27,1.03,Grippe,89,8,74.61,9.76,élevé,24.3,61.5,2361.5,True,0.99,0.42,0.16,44.7,48.4
+12,Centre Hospitalier Régional de Kolda,Kolda,Kolda,312,564,2024-02-27,21,20,75,17,237,542,9,1.32,Paludisme,98,8,46.07,20.81,élevé,31.5,82.0,2042.8,True,0.75,0.31,0.18,83.6,26.8
+12,Centre Hospitalier Régional de Kolda,Kolda,Kolda,312,564,2024-02-28,26,39,293,7,19,554,43,2.66,Paludisme,53,0,72.15,27.26,modéré,31.4,86.8,1861.0,False,0.4,0.68,0.17,103.2,7.8

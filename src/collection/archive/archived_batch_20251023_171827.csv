@@ -1,0 +1,6 @@
+hospital_id,hospital_name,region,city,capacity_beds,capacity_staff,date,patients_admitted,patients_released,patients_in_care,icu_patients,available_beds,available_staff,emergency_cases,mortality_rate,disease_name,new_cases,new_deaths,vaccination_rate,test_positivity_rate,risk_level,temperature_c,humidity_percent,population_density,public_alert,region_mobility_index,medical_supplies_index,staff_absence_rate,avg_wait_time_minutes,response_time_minutes
+13,Centre Hospitalier Régional de Sédhiou,Sédhiou,Sédhiou,355,168,2024-04-03,38,9,179,6,176,135,26,0.42,Paludisme,11,1,91.62,16.08,faible,37.3,81.9,220.1,False,0.9,0.57,0.06,56.1,23.6
+13,Centre Hospitalier Régional de Sédhiou,Sédhiou,Sédhiou,355,168,2024-04-04,29,81,53,7,302,149,44,2.25,Covid-19,27,4,68.63,22.82,faible,36.6,42.2,3426.6,False,0.41,0.47,0.09,117.6,42.5
+13,Centre Hospitalier Régional de Sédhiou,Sédhiou,Sédhiou,355,168,2024-04-05,97,74,335,15,20,121,12,2.54,Grippe,76,6,87.71,21.18,modéré,32.6,84.9,2592.3,False,0.56,0.53,0.19,73.3,57.3
+13,Centre Hospitalier Régional de Sédhiou,Sédhiou,Sédhiou,355,168,2024-04-06,76,36,195,20,160,166,30,0.81,Grippe,91,5,79.13,14.94,élevé,24.6,84.1,4051.0,True,0.64,0.55,0.08,145.6,48.9
+13,Centre Hospitalier Régional de Sédhiou,Sédhiou,Sédhiou,355,168,2024-04-07,23,86,213,16,142,166,41,0.76,Grippe,52,7,49.51,20.49,modéré,23.3,50.4,2256.3,False,0.74,0.99,0.04,44.6,53.3

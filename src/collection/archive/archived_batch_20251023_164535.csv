@@ -1,0 +1,6 @@
+hospital_id,hospital_name,region,city,capacity_beds,capacity_staff,date,patients_admitted,patients_released,patients_in_care,icu_patients,available_beds,available_staff,emergency_cases,mortality_rate,disease_name,new_cases,new_deaths,vaccination_rate,test_positivity_rate,risk_level,temperature_c,humidity_percent,population_density,public_alert,region_mobility_index,medical_supplies_index,staff_absence_rate,avg_wait_time_minutes,response_time_minutes
+9,Centre Hospitalier Régional de Matam,Matam,Matam,359,116,2024-12-28,13,76,258,7,101,83,43,2.58,Paludisme,36,4,53.94,23.9,modéré,28.1,77.2,3307.6,False,0.6,0.93,0.0,144.2,58.3
+9,Centre Hospitalier Régional de Matam,Matam,Matam,359,116,2024-12-29,37,5,335,14,24,108,26,0.42,Choléra,108,3,49.8,24.59,élevé,23.2,48.8,1492.2,True,0.62,0.61,0.09,137.4,47.9
+9,Centre Hospitalier Régional de Matam,Matam,Matam,359,116,2024-12-30,23,47,332,2,27,75,37,1.06,Choléra,38,5,35.25,24.87,modéré,36.4,47.8,351.3,False,0.58,0.65,0.03,117.5,30.1
+9,Centre Hospitalier Régional de Matam,Matam,Matam,359,116,2024-12-31,95,54,147,16,212,102,16,1.63,Dengue,59,2,30.84,21.4,modéré,35.9,58.0,3656.3,False,0.72,0.98,0.08,179.5,13.5
+10,Centre Hospitalier Régional de Tambacounda,Tambacounda,Tambacounda,284,397,2024-01-01,35,57,145,0,139,351,17,2.6,Paludisme,107,2,44.54,12.03,élevé,36.0,59.0,3905.2,True,0.61,0.34,0.02,127.9,39.4
