@@ -88314,3 +88314,539 @@ The reported blocks 615 has reached the threshold 0.9990 of total blocks 615. Th
 2025-10-28 09:54:14,230 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1761645254_8619dd05.csv
 2025-10-28 11:20:41,016 [WARNING] Heartbeat session expired, marking coordinator dead
 2025-10-28 11:20:46,403 [WARNING] Marking the coordinator dead (node coordinator-1) for group hdfs_loader: Heartbeat session expired.
+2025-10-31 09:52:51,980 [INFO] Démarrage de l'ingestion Kafka → HDFS...
+2025-10-31 09:52:51,992 [INFO] Instantiated <InsecureClient(url='http://namenode:9870')>.
+2025-10-31 09:52:51,998 [INFO] <BrokerConnection node_id=bootstrap-0 host=kafka:9092 <connecting> [IPv4 ('172.18.0.9', 9092)]>: connecting to kafka:9092 [('172.18.0.9', 9092) IPv4]
+2025-10-31 09:52:51,999 [INFO] Probing node bootstrap-0 broker version
+2025-10-31 09:52:52,010 [INFO] <BrokerConnection node_id=bootstrap-0 host=kafka:9092 <connecting> [IPv4 ('172.18.0.9', 9092)]>: Connection complete.
+2025-10-31 09:52:52,124 [INFO] Broker version identified as 2.5.0
+2025-10-31 09:52:52,125 [INFO] Set configuration api_version=(2, 5, 0) to skip auto check_version requests on startup
+2025-10-31 09:52:52,131 [INFO] Updating subscribed topics to: ('data_stream',)
+2025-10-31 09:52:52,131 [INFO] Connecté à Kafka !
+2025-10-31 09:52:53,841 [INFO] <BrokerConnection node_id=1 host=kafka:9092 <connecting> [IPv4 ('172.18.0.9', 9092)]>: connecting to kafka:9092 [('172.18.0.9', 9092) IPv4]
+2025-10-31 09:52:53,849 [INFO] <BrokerConnection node_id=1 host=kafka:9092 <connecting> [IPv4 ('172.18.0.9', 9092)]>: Connection complete.
+2025-10-31 09:52:53,853 [INFO] <BrokerConnection node_id=bootstrap-0 host=kafka:9092 <connected> [IPv4 ('172.18.0.9', 9092)]>: Closing connection. 
+2025-10-31 09:53:01,602 [INFO] Group coordinator for hdfs_loader is BrokerMetadata(nodeId='coordinator-1', host='kafka', port=9092, rack=None)
+2025-10-31 09:53:01,603 [INFO] Discovered coordinator coordinator-1 for group hdfs_loader
+2025-10-31 09:53:01,606 [INFO] Starting new heartbeat thread
+2025-10-31 09:53:01,608 [INFO] Revoking previously assigned partitions set() for group hdfs_loader
+2025-10-31 09:53:01,610 [INFO] <BrokerConnection node_id=coordinator-1 host=kafka:9092 <connecting> [IPv4 ('172.18.0.9', 9092)]>: connecting to kafka:9092 [('172.18.0.9', 9092) IPv4]
+2025-10-31 09:53:01,611 [INFO] <BrokerConnection node_id=coordinator-1 host=kafka:9092 <connecting> [IPv4 ('172.18.0.9', 9092)]>: Connection complete.
+2025-10-31 09:53:01,712 [INFO] (Re-)joining group hdfs_loader
+2025-10-31 09:53:04,963 [INFO] Elected group leader -- performing partition assignments using range
+2025-10-31 09:53:05,121 [INFO] Successfully joined group hdfs_loader with generation 1
+2025-10-31 09:53:05,122 [INFO] Updated partition assignment: [TopicPartition(topic='data_stream', partition=0)]
+2025-10-31 09:53:05,123 [INFO] Setting newly assigned partitions {TopicPartition(topic='data_stream', partition=0)} for group hdfs_loader
+2025-10-31 09:53:05,506 [INFO] Writing to '/data_streaming/raw/stream_batch_1761904385_da931080.csv'.
+2025-10-31 09:53:06,174 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1761904385_da931080.csv
+2025-10-31 09:53:06,178 [INFO] Writing to '/data_streaming/raw/stream_batch_1761904386_f40c74a0.csv'.
+2025-10-31 09:53:06,771 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1761904386_f40c74a0.csv
+2025-10-31 09:53:06,777 [INFO] Writing to '/data_streaming/raw/stream_batch_1761904386_8ae967a6.csv'.
+2025-10-31 09:53:07,122 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1761904386_8ae967a6.csv
+2025-10-31 09:53:11,134 [INFO] Writing to '/data_streaming/raw/stream_batch_1761904391_9dc56b00.csv'.
+2025-10-31 09:53:11,722 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1761904391_9dc56b00.csv
+2025-10-31 09:53:16,622 [INFO] Writing to '/data_streaming/raw/stream_batch_1761904396_d1e8c2b2.csv'.
+2025-10-31 09:53:16,796 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1761904396_d1e8c2b2.csv
+2025-10-31 09:53:22,124 [INFO] Writing to '/data_streaming/raw/stream_batch_1761904402_25fb1701.csv'.
+2025-10-31 09:53:22,738 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1761904402_25fb1701.csv
+2025-10-31 09:53:27,679 [INFO] Writing to '/data_streaming/raw/stream_batch_1761904407_fae8e7d3.csv'.
+2025-10-31 09:53:28,029 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1761904407_fae8e7d3.csv
+2025-10-31 09:53:33,976 [INFO] Writing to '/data_streaming/raw/stream_batch_1761904413_914d672f.csv'.
+2025-10-31 09:53:34,151 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1761904413_914d672f.csv
+2025-10-31 09:53:39,727 [INFO] Writing to '/data_streaming/raw/stream_batch_1761904419_25c80906.csv'.
+2025-10-31 09:53:40,417 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1761904419_25c80906.csv
+2025-10-31 09:53:45,907 [INFO] Writing to '/data_streaming/raw/stream_batch_1761904425_25720f31.csv'.
+2025-10-31 09:53:46,083 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1761904425_25720f31.csv
+2025-10-31 09:53:51,385 [INFO] Writing to '/data_streaming/raw/stream_batch_1761904431_3d47e70d.csv'.
+2025-10-31 09:53:51,590 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1761904431_3d47e70d.csv
+2025-10-31 09:53:56,878 [INFO] Writing to '/data_streaming/raw/stream_batch_1761904436_2cee3895.csv'.
+2025-10-31 09:53:57,742 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1761904436_2cee3895.csv
+2025-10-31 09:54:02,996 [INFO] Writing to '/data_streaming/raw/stream_batch_1761904442_081241dc.csv'.
+2025-10-31 09:54:03,268 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1761904442_081241dc.csv
+2025-10-31 09:54:05,252 [WARNING] Heartbeat failed for group hdfs_loader because it is rebalancing
+2025-10-31 09:54:05,325 [INFO] Revoking previously assigned partitions {TopicPartition(topic='data_stream', partition=0)} for group hdfs_loader
+2025-10-31 09:54:05,357 [INFO] (Re-)joining group hdfs_loader
+2025-10-31 09:54:05,429 [INFO] Elected group leader -- performing partition assignments using range
+2025-10-31 09:54:05,563 [INFO] Successfully joined group hdfs_loader with generation 2
+2025-10-31 09:54:05,570 [INFO] Updated partition assignment: [TopicPartition(topic='data_stream', partition=0)]
+2025-10-31 09:54:05,577 [INFO] Setting newly assigned partitions {TopicPartition(topic='data_stream', partition=0)} for group hdfs_loader
+2025-10-31 09:54:09,426 [INFO] Writing to '/data_streaming/raw/stream_batch_1761904449_2ead8e91.csv'.
+2025-10-31 09:54:09,596 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1761904449_2ead8e91.csv
+2025-10-31 09:54:14,584 [INFO] Writing to '/data_streaming/raw/stream_batch_1761904454_1bbc9aa8.csv'.
+2025-10-31 09:54:15,125 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1761904454_1bbc9aa8.csv
+2025-10-31 09:54:19,917 [INFO] Writing to '/data_streaming/raw/stream_batch_1761904459_33a6b611.csv'.
+2025-10-31 09:54:20,003 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1761904459_33a6b611.csv
+2025-10-31 09:54:25,148 [INFO] Writing to '/data_streaming/raw/stream_batch_1761904465_deebff0b.csv'.
+2025-10-31 09:54:25,230 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1761904465_deebff0b.csv
+2025-10-31 09:54:30,434 [INFO] Writing to '/data_streaming/raw/stream_batch_1761904470_05e6130a.csv'.
+2025-10-31 09:54:30,575 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1761904470_05e6130a.csv
+2025-10-31 09:54:36,202 [INFO] Writing to '/data_streaming/raw/stream_batch_1761904476_cb82a1b9.csv'.
+2025-10-31 09:54:36,674 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1761904476_cb82a1b9.csv
+2025-10-31 09:54:41,415 [INFO] Writing to '/data_streaming/raw/stream_batch_1761904481_a1c24df5.csv'.
+2025-10-31 09:54:41,922 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1761904481_a1c24df5.csv
+2025-10-31 09:54:46,604 [INFO] Writing to '/data_streaming/raw/stream_batch_1761904486_46389c08.csv'.
+2025-10-31 09:54:46,681 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1761904486_46389c08.csv
+2025-10-31 09:54:52,045 [INFO] Writing to '/data_streaming/raw/stream_batch_1761904492_79215aa5.csv'.
+2025-10-31 09:54:52,106 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1761904492_79215aa5.csv
+2025-10-31 09:54:57,272 [INFO] Writing to '/data_streaming/raw/stream_batch_1761904497_56243b2b.csv'.
+2025-10-31 09:54:57,870 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1761904497_56243b2b.csv
+2025-10-31 09:55:03,120 [INFO] Writing to '/data_streaming/raw/stream_batch_1761904503_de938564.csv'.
+2025-10-31 09:55:03,237 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1761904503_de938564.csv
+2025-10-31 09:55:08,349 [INFO] Writing to '/data_streaming/raw/stream_batch_1761904508_94c3f749.csv'.
+2025-10-31 09:55:08,424 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1761904508_94c3f749.csv
+2025-10-31 09:55:13,545 [INFO] Writing to '/data_streaming/raw/stream_batch_1761904513_9c570a05.csv'.
+2025-10-31 09:55:13,645 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1761904513_9c570a05.csv
+2025-10-31 09:55:18,771 [INFO] Writing to '/data_streaming/raw/stream_batch_1761904518_918913a7.csv'.
+2025-10-31 09:55:18,853 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1761904518_918913a7.csv
+2025-10-31 09:55:23,941 [INFO] Writing to '/data_streaming/raw/stream_batch_1761904523_b6d4b50a.csv'.
+2025-10-31 09:55:24,011 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1761904523_b6d4b50a.csv
+2025-10-31 09:55:29,236 [INFO] Writing to '/data_streaming/raw/stream_batch_1761904529_c4d185fe.csv'.
+2025-10-31 09:55:29,634 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1761904529_c4d185fe.csv
+2025-10-31 09:55:34,907 [INFO] Writing to '/data_streaming/raw/stream_batch_1761904534_de3cf94d.csv'.
+2025-10-31 09:55:35,119 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1761904534_de3cf94d.csv
+2025-10-31 09:55:40,361 [INFO] Writing to '/data_streaming/raw/stream_batch_1761904540_21a81da4.csv'.
+2025-10-31 09:55:40,466 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1761904540_21a81da4.csv
+2025-10-31 09:55:45,546 [INFO] Writing to '/data_streaming/raw/stream_batch_1761904545_9dfe911f.csv'.
+2025-10-31 09:55:45,633 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1761904545_9dfe911f.csv
+2025-10-31 09:55:50,718 [INFO] Writing to '/data_streaming/raw/stream_batch_1761904550_d81349ec.csv'.
+2025-10-31 09:55:50,776 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1761904550_d81349ec.csv
+2025-10-31 09:55:55,887 [INFO] Writing to '/data_streaming/raw/stream_batch_1761904555_adf7696e.csv'.
+2025-10-31 09:55:55,952 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1761904555_adf7696e.csv
+2025-10-31 09:56:01,059 [INFO] Writing to '/data_streaming/raw/stream_batch_1761904561_4c7b6204.csv'.
+2025-10-31 09:56:01,162 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1761904561_4c7b6204.csv
+2025-10-31 09:56:06,243 [INFO] Writing to '/data_streaming/raw/stream_batch_1761904566_035d8ddc.csv'.
+2025-10-31 09:56:06,716 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1761904566_035d8ddc.csv
+2025-10-31 09:56:11,430 [INFO] Writing to '/data_streaming/raw/stream_batch_1761904571_b4c6c435.csv'.
+2025-10-31 09:56:11,929 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1761904571_b4c6c435.csv
+2025-10-31 09:56:16,586 [INFO] Writing to '/data_streaming/raw/stream_batch_1761904576_cfdc2234.csv'.
+2025-10-31 09:56:17,167 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1761904576_cfdc2234.csv
+2025-10-31 09:56:21,971 [INFO] Writing to '/data_streaming/raw/stream_batch_1761904581_a8c7209a.csv'.
+2025-10-31 09:56:22,044 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1761904581_a8c7209a.csv
+2025-10-31 09:56:27,130 [INFO] Writing to '/data_streaming/raw/stream_batch_1761904587_6c25f80f.csv'.
+2025-10-31 09:56:27,777 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1761904587_6c25f80f.csv
+2025-10-31 09:56:32,547 [INFO] Writing to '/data_streaming/raw/stream_batch_1761904592_14bd078f.csv'.
+2025-10-31 09:56:32,612 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1761904592_14bd078f.csv
+2025-10-31 09:56:37,694 [INFO] Writing to '/data_streaming/raw/stream_batch_1761904597_6a865618.csv'.
+2025-10-31 09:56:37,782 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1761904597_6a865618.csv
+2025-10-31 09:56:42,915 [INFO] Writing to '/data_streaming/raw/stream_batch_1761904602_77292309.csv'.
+2025-10-31 09:56:43,009 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1761904602_77292309.csv
+2025-10-31 09:56:48,130 [INFO] Writing to '/data_streaming/raw/stream_batch_1761904608_ee6e6087.csv'.
+2025-10-31 09:56:48,204 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1761904608_ee6e6087.csv
+2025-10-31 09:56:53,309 [INFO] Writing to '/data_streaming/raw/stream_batch_1761904613_471459f4.csv'.
+2025-10-31 09:56:53,585 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1761904613_471459f4.csv
+2025-10-31 09:56:58,683 [INFO] Writing to '/data_streaming/raw/stream_batch_1761904618_7f741e29.csv'.
+2025-10-31 09:56:59,161 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1761904618_7f741e29.csv
+2025-10-31 09:57:03,855 [INFO] Writing to '/data_streaming/raw/stream_batch_1761904623_8ac72bb9.csv'.
+2025-10-31 09:57:03,916 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1761904623_8ac72bb9.csv
+2025-10-31 09:57:08,976 [INFO] Writing to '/data_streaming/raw/stream_batch_1761904628_0710e1a6.csv'.
+2025-10-31 09:57:09,085 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1761904628_0710e1a6.csv
+2025-10-31 09:57:14,125 [INFO] Writing to '/data_streaming/raw/stream_batch_1761904634_c232736f.csv'.
+2025-10-31 09:57:14,191 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1761904634_c232736f.csv
+2025-10-31 09:57:19,270 [INFO] Writing to '/data_streaming/raw/stream_batch_1761904639_fa1b032e.csv'.
+2025-10-31 09:57:19,329 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1761904639_fa1b032e.csv
+2025-10-31 09:57:24,417 [INFO] Writing to '/data_streaming/raw/stream_batch_1761904644_a16be456.csv'.
+2025-10-31 09:57:24,476 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1761904644_a16be456.csv
+2025-10-31 09:57:29,575 [INFO] Writing to '/data_streaming/raw/stream_batch_1761904649_cd9d7b88.csv'.
+2025-10-31 09:57:30,097 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1761904649_cd9d7b88.csv
+2025-10-31 09:57:30,102 [WARNING] Heartbeat failed for group hdfs_loader because it is rebalancing
+2025-10-31 09:57:30,114 [INFO] Revoking previously assigned partitions {TopicPartition(topic='data_stream', partition=0)} for group hdfs_loader
+2025-10-31 09:57:30,115 [INFO] (Re-)joining group hdfs_loader
+2025-10-31 09:57:30,122 [INFO] Elected group leader -- performing partition assignments using range
+2025-10-31 09:57:30,132 [INFO] Successfully joined group hdfs_loader with generation 3
+2025-10-31 09:57:30,134 [INFO] Updated partition assignment: [TopicPartition(topic='data_stream', partition=0)]
+2025-10-31 09:57:30,135 [INFO] Setting newly assigned partitions {TopicPartition(topic='data_stream', partition=0)} for group hdfs_loader
+2025-10-31 09:57:34,804 [INFO] Writing to '/data_streaming/raw/stream_batch_1761904654_3a428531.csv'.
+2025-10-31 09:57:34,929 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1761904654_3a428531.csv
+2025-10-31 10:55:51,080 [INFO] Démarrage de l'ingestion Kafka → HDFS...
+2025-10-31 10:55:51,089 [INFO] Instantiated <InsecureClient(url='http://namenode:9870')>.
+2025-10-31 10:55:51,095 [INFO] <BrokerConnection node_id=bootstrap-0 host=kafka:9092 <connecting> [IPv4 ('172.18.0.9', 9092)]>: connecting to kafka:9092 [('172.18.0.9', 9092) IPv4]
+2025-10-31 10:55:51,097 [INFO] Probing node bootstrap-0 broker version
+2025-10-31 10:55:51,101 [INFO] <BrokerConnection node_id=bootstrap-0 host=kafka:9092 <connecting> [IPv4 ('172.18.0.9', 9092)]>: Connection complete.
+2025-10-31 10:55:51,212 [INFO] Broker version identified as 2.5.0
+2025-10-31 10:55:51,213 [INFO] Set configuration api_version=(2, 5, 0) to skip auto check_version requests on startup
+2025-10-31 10:55:51,216 [INFO] Updating subscribed topics to: ('data_stream',)
+2025-10-31 10:55:51,217 [INFO] Connecté à Kafka !
+2025-10-31 10:55:51,488 [INFO] <BrokerConnection node_id=1 host=kafka:9092 <connecting> [IPv4 ('172.18.0.9', 9092)]>: connecting to kafka:9092 [('172.18.0.9', 9092) IPv4]
+2025-10-31 10:55:51,490 [INFO] <BrokerConnection node_id=1 host=kafka:9092 <connecting> [IPv4 ('172.18.0.9', 9092)]>: Connection complete.
+2025-10-31 10:55:51,491 [INFO] <BrokerConnection node_id=bootstrap-0 host=kafka:9092 <connected> [IPv4 ('172.18.0.9', 9092)]>: Closing connection. 
+2025-10-31 10:55:58,870 [INFO] Group coordinator for hdfs_loader is BrokerMetadata(nodeId='coordinator-1', host='kafka', port=9092, rack=None)
+2025-10-31 10:55:58,872 [INFO] Discovered coordinator coordinator-1 for group hdfs_loader
+2025-10-31 10:55:58,880 [INFO] Starting new heartbeat thread
+2025-10-31 10:55:58,887 [INFO] Revoking previously assigned partitions set() for group hdfs_loader
+2025-10-31 10:55:58,898 [INFO] <BrokerConnection node_id=coordinator-1 host=kafka:9092 <connecting> [IPv4 ('172.18.0.9', 9092)]>: connecting to kafka:9092 [('172.18.0.9', 9092) IPv4]
+2025-10-31 10:55:58,901 [INFO] <BrokerConnection node_id=coordinator-1 host=kafka:9092 <connecting> [IPv4 ('172.18.0.9', 9092)]>: Connection complete.
+2025-10-31 10:55:59,008 [INFO] (Re-)joining group hdfs_loader
+2025-10-31 10:56:02,374 [INFO] Elected group leader -- performing partition assignments using range
+2025-10-31 10:56:02,664 [INFO] Successfully joined group hdfs_loader with generation 1
+2025-10-31 10:56:02,665 [INFO] Updated partition assignment: [TopicPartition(topic='data_stream', partition=0)]
+2025-10-31 10:56:02,668 [INFO] Setting newly assigned partitions {TopicPartition(topic='data_stream', partition=0)} for group hdfs_loader
+2025-10-31 10:56:03,025 [INFO] Writing to '/data_streaming/raw/stream_batch_1761908163_3130f983.csv'.
+2025-10-31 10:56:03,532 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1761908163_3130f983.csv
+2025-10-31 10:56:03,547 [INFO] Writing to '/data_streaming/raw/stream_batch_1761908163_1b61cd10.csv'.
+2025-10-31 10:56:03,973 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1761908163_1b61cd10.csv
+2025-10-31 10:56:04,018 [INFO] Writing to '/data_streaming/raw/stream_batch_1761908164_5887364d.csv'.
+2025-10-31 10:56:04,509 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1761908164_5887364d.csv
+2025-10-31 10:56:08,871 [INFO] Writing to '/data_streaming/raw/stream_batch_1761908168_a39e162b.csv'.
+2025-10-31 10:56:09,353 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1761908168_a39e162b.csv
+2025-10-31 10:56:14,784 [INFO] Writing to '/data_streaming/raw/stream_batch_1761908174_d5f4b1d4.csv'.
+2025-10-31 10:56:15,036 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1761908174_d5f4b1d4.csv
+2025-10-31 10:56:20,153 [INFO] Writing to '/data_streaming/raw/stream_batch_1761908180_06ca7cae.csv'.
+2025-10-31 10:56:20,711 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1761908180_06ca7cae.csv
+2025-10-31 10:56:25,417 [INFO] Writing to '/data_streaming/raw/stream_batch_1761908185_fd3aedf6.csv'.
+2025-10-31 10:56:25,692 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1761908185_fd3aedf6.csv
+2025-10-31 10:56:31,016 [INFO] Writing to '/data_streaming/raw/stream_batch_1761908191_eab45d8b.csv'.
+2025-10-31 10:56:31,293 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1761908191_eab45d8b.csv
+2025-10-31 10:56:36,488 [INFO] Writing to '/data_streaming/raw/stream_batch_1761908196_fb9ec75c.csv'.
+2025-10-31 10:56:36,663 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1761908196_fb9ec75c.csv
+2025-10-31 10:56:41,858 [INFO] Writing to '/data_streaming/raw/stream_batch_1761908201_dcc90030.csv'.
+2025-10-31 10:56:42,078 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1761908201_dcc90030.csv
+2025-10-31 10:56:47,251 [INFO] Writing to '/data_streaming/raw/stream_batch_1761908207_b3c740e9.csv'.
+2025-10-31 10:56:47,401 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1761908207_b3c740e9.csv
+2025-10-31 10:56:52,590 [INFO] Writing to '/data_streaming/raw/stream_batch_1761908212_864922ba.csv'.
+2025-10-31 10:56:52,655 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1761908212_864922ba.csv
+2025-10-31 10:56:57,719 [INFO] Writing to '/data_streaming/raw/stream_batch_1761908217_ce5d1d00.csv'.
+2025-10-31 10:56:57,787 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1761908217_ce5d1d00.csv
+2025-10-31 10:57:02,898 [INFO] Writing to '/data_streaming/raw/stream_batch_1761908222_a7ad17a1.csv'.
+2025-10-31 10:57:03,641 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1761908222_a7ad17a1.csv
+2025-10-31 10:57:08,357 [INFO] Writing to '/data_streaming/raw/stream_batch_1761908228_4718690f.csv'.
+2025-10-31 10:57:08,420 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1761908228_4718690f.csv
+2025-10-31 10:57:13,471 [INFO] Writing to '/data_streaming/raw/stream_batch_1761908233_a6e56d3a.csv'.
+2025-10-31 10:57:13,972 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1761908233_a6e56d3a.csv
+2025-10-31 10:57:18,623 [INFO] Writing to '/data_streaming/raw/stream_batch_1761908238_3d38eb0f.csv'.
+2025-10-31 10:57:18,729 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1761908238_3d38eb0f.csv
+2025-10-31 10:57:23,814 [INFO] Writing to '/data_streaming/raw/stream_batch_1761908243_b6b913c1.csv'.
+2025-10-31 10:57:23,876 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1761908243_b6b913c1.csv
+2025-10-31 10:57:28,924 [INFO] Writing to '/data_streaming/raw/stream_batch_1761908248_b218efa2.csv'.
+2025-10-31 10:57:28,981 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1761908248_b218efa2.csv
+2025-10-31 10:57:34,038 [INFO] Writing to '/data_streaming/raw/stream_batch_1761908254_1d18b1ed.csv'.
+2025-10-31 10:57:34,152 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1761908254_1d18b1ed.csv
+2025-10-31 10:57:39,166 [INFO] Writing to '/data_streaming/raw/stream_batch_1761908259_bbbb50fd.csv'.
+2025-10-31 10:57:39,235 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1761908259_bbbb50fd.csv
+2025-10-31 10:57:44,298 [INFO] Writing to '/data_streaming/raw/stream_batch_1761908264_c8bbd429.csv'.
+2025-10-31 10:57:44,444 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1761908264_c8bbd429.csv
+2025-10-31 10:57:49,511 [INFO] Writing to '/data_streaming/raw/stream_batch_1761908269_d9f88fc1.csv'.
+2025-10-31 10:57:49,571 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1761908269_d9f88fc1.csv
+2025-10-31 10:57:54,659 [INFO] Writing to '/data_streaming/raw/stream_batch_1761908274_51f35bc8.csv'.
+2025-10-31 10:57:55,211 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1761908274_51f35bc8.csv
+2025-10-31 10:57:59,780 [INFO] Writing to '/data_streaming/raw/stream_batch_1761908279_3ddc0f4d.csv'.
+2025-10-31 10:57:59,868 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1761908279_3ddc0f4d.csv
+2025-10-31 10:58:04,888 [INFO] Writing to '/data_streaming/raw/stream_batch_1761908284_3bb233c3.csv'.
+2025-10-31 10:58:04,950 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1761908284_3bb233c3.csv
+2025-10-31 10:58:10,032 [INFO] Writing to '/data_streaming/raw/stream_batch_1761908290_96d52eac.csv'.
+2025-10-31 10:58:10,526 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1761908290_96d52eac.csv
+2025-10-31 10:58:15,190 [INFO] Writing to '/data_streaming/raw/stream_batch_1761908295_03ca2edc.csv'.
+2025-10-31 10:58:15,318 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1761908295_03ca2edc.csv
+2025-10-31 10:58:20,460 [INFO] Writing to '/data_streaming/raw/stream_batch_1761908300_0d9e1912.csv'.
+2025-10-31 10:58:20,799 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1761908300_0d9e1912.csv
+2025-10-31 10:58:25,870 [INFO] Writing to '/data_streaming/raw/stream_batch_1761908305_fb73865f.csv'.
+2025-10-31 10:58:26,582 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1761908305_fb73865f.csv
+2025-10-31 10:58:31,316 [INFO] Writing to '/data_streaming/raw/stream_batch_1761908311_1041ad36.csv'.
+2025-10-31 10:58:31,537 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1761908311_1041ad36.csv
+2025-10-31 10:58:36,491 [INFO] Writing to '/data_streaming/raw/stream_batch_1761908316_06a9b603.csv'.
+2025-10-31 10:58:37,047 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1761908316_06a9b603.csv
+2025-10-31 10:58:41,661 [INFO] Writing to '/data_streaming/raw/stream_batch_1761908321_b235f623.csv'.
+2025-10-31 10:58:41,755 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1761908321_b235f623.csv
+2025-10-31 10:58:46,825 [INFO] Writing to '/data_streaming/raw/stream_batch_1761908326_9727a09b.csv'.
+2025-10-31 10:58:47,027 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1761908326_9727a09b.csv
+2025-10-31 10:58:52,007 [INFO] Writing to '/data_streaming/raw/stream_batch_1761908332_20b6c840.csv'.
+2025-10-31 10:58:52,100 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1761908332_20b6c840.csv
+2025-10-31 10:58:57,138 [INFO] Writing to '/data_streaming/raw/stream_batch_1761908337_5a4fccbf.csv'.
+2025-10-31 10:58:57,260 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1761908337_5a4fccbf.csv
+2025-10-31 10:59:02,295 [INFO] Writing to '/data_streaming/raw/stream_batch_1761908342_8feb7018.csv'.
+2025-10-31 10:59:02,578 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1761908342_8feb7018.csv
+2025-10-31 10:59:07,407 [INFO] Writing to '/data_streaming/raw/stream_batch_1761908347_2ea52fa6.csv'.
+2025-10-31 10:59:07,567 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1761908347_2ea52fa6.csv
+2025-10-31 10:59:12,574 [INFO] Writing to '/data_streaming/raw/stream_batch_1761908352_baf612ed.csv'.
+2025-10-31 10:59:12,644 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1761908352_baf612ed.csv
+2025-10-31 10:59:17,645 [INFO] Writing to '/data_streaming/raw/stream_batch_1761908357_bbe7dad9.csv'.
+2025-10-31 10:59:20,082 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1761908357_bbe7dad9.csv
+2025-10-31 10:59:22,747 [INFO] Writing to '/data_streaming/raw/stream_batch_1761908362_148db070.csv'.
+2025-10-31 10:59:24,304 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1761908362_148db070.csv
+2025-10-31 10:59:27,861 [INFO] Writing to '/data_streaming/raw/stream_batch_1761908367_d07b4595.csv'.
+2025-10-31 10:59:28,593 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1761908367_d07b4595.csv
+2025-10-31 10:59:32,938 [INFO] Writing to '/data_streaming/raw/stream_batch_1761908372_3ed58101.csv'.
+2025-10-31 10:59:33,002 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1761908372_3ed58101.csv
+2025-10-31 10:59:38,016 [INFO] Writing to '/data_streaming/raw/stream_batch_1761908378_db9e5b2c.csv'.
+2025-10-31 10:59:38,107 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1761908378_db9e5b2c.csv
+2025-10-31 10:59:43,095 [INFO] Writing to '/data_streaming/raw/stream_batch_1761908383_00981a15.csv'.
+2025-10-31 10:59:43,169 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1761908383_00981a15.csv
+2025-10-31 10:59:48,145 [INFO] Writing to '/data_streaming/raw/stream_batch_1761908388_71872497.csv'.
+2025-10-31 10:59:50,260 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1761908388_71872497.csv
+2025-10-31 10:59:53,216 [INFO] Writing to '/data_streaming/raw/stream_batch_1761908393_b8b41094.csv'.
+2025-10-31 10:59:53,826 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1761908393_b8b41094.csv
+2025-10-31 10:59:58,273 [INFO] Writing to '/data_streaming/raw/stream_batch_1761908398_c340c06f.csv'.
+2025-10-31 10:59:58,750 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1761908398_c340c06f.csv
+2025-10-31 11:00:03,347 [INFO] Writing to '/data_streaming/raw/stream_batch_1761908403_09038621.csv'.
+2025-10-31 11:00:03,913 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1761908403_09038621.csv
+2025-10-31 11:00:08,401 [INFO] Writing to '/data_streaming/raw/stream_batch_1761908408_7ab3e5af.csv'.
+2025-10-31 11:00:08,513 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1761908408_7ab3e5af.csv
+2025-10-31 11:01:30,263 [WARNING] Heartbeat session expired, marking coordinator dead
+2025-10-31 11:01:30,263 [WARNING] Marking the coordinator dead (node coordinator-1) for group hdfs_loader: Heartbeat session expired.
+2025-10-31 11:01:48,411 [INFO] Group coordinator for hdfs_loader is BrokerMetadata(nodeId='coordinator-1', host='kafka', port=9092, rack=None)
+2025-10-31 11:01:48,428 [INFO] Discovered coordinator coordinator-1 for group hdfs_loader
+2025-11-01 10:31:02,607 [INFO] Démarrage de l'ingestion Kafka → HDFS...
+2025-11-01 10:31:02,630 [INFO] Instantiated <InsecureClient(url='http://namenode:9870')>.
+2025-11-01 10:31:02,634 [INFO] <BrokerConnection node_id=bootstrap-0 host=kafka:9092 <connecting> [IPv4 ('172.18.0.10', 9092)]>: connecting to kafka:9092 [('172.18.0.10', 9092) IPv4]
+2025-11-01 10:31:02,644 [INFO] Probing node bootstrap-0 broker version
+2025-11-01 10:31:02,646 [INFO] <BrokerConnection node_id=bootstrap-0 host=kafka:9092 <connecting> [IPv4 ('172.18.0.10', 9092)]>: Connection complete.
+2025-11-01 10:31:02,774 [INFO] Broker version identified as 2.5.0
+2025-11-01 10:31:02,784 [INFO] Set configuration api_version=(2, 5, 0) to skip auto check_version requests on startup
+2025-11-01 10:31:02,791 [INFO] Updating subscribed topics to: ('data_stream',)
+2025-11-01 10:31:02,793 [INFO] Connecté à Kafka !
+2025-11-01 10:31:02,836 [INFO] Group coordinator for hdfs_loader is BrokerMetadata(nodeId='coordinator-1', host='kafka', port=9092, rack=None)
+2025-11-01 10:31:02,837 [INFO] Discovered coordinator coordinator-1 for group hdfs_loader
+2025-11-01 10:31:02,838 [INFO] Starting new heartbeat thread
+2025-11-01 10:31:02,841 [INFO] Revoking previously assigned partitions set() for group hdfs_loader
+2025-11-01 10:31:02,845 [INFO] <BrokerConnection node_id=coordinator-1 host=kafka:9092 <connecting> [IPv4 ('172.18.0.10', 9092)]>: connecting to kafka:9092 [('172.18.0.10', 9092) IPv4]
+2025-11-01 10:31:02,846 [INFO] <BrokerConnection node_id=coordinator-1 host=kafka:9092 <connecting> [IPv4 ('172.18.0.10', 9092)]>: Connection complete.
+2025-11-01 10:31:02,847 [INFO] <BrokerConnection node_id=bootstrap-0 host=kafka:9092 <connected> [IPv4 ('172.18.0.10', 9092)]>: Closing connection. 
+2025-11-01 10:31:02,950 [INFO] (Re-)joining group hdfs_loader
+2025-11-01 10:31:02,961 [INFO] <BrokerConnection node_id=bootstrap-0 host=kafka:9092 <connecting> [IPv4 ('172.18.0.10', 9092)]>: connecting to kafka:9092 [('172.18.0.10', 9092) IPv4]
+2025-11-01 10:31:02,968 [INFO] <BrokerConnection node_id=bootstrap-0 host=kafka:9092 <connecting> [IPv4 ('172.18.0.10', 9092)]>: Connection complete.
+2025-11-01 10:31:06,087 [INFO] Elected group leader -- performing partition assignments using range
+2025-11-01 10:31:06,090 [INFO] <BrokerConnection node_id=1 host=kafka:9092 <connecting> [IPv4 ('172.18.0.10', 9092)]>: connecting to kafka:9092 [('172.18.0.10', 9092) IPv4]
+2025-11-01 10:31:06,095 [INFO] <BrokerConnection node_id=1 host=kafka:9092 <connecting> [IPv4 ('172.18.0.10', 9092)]>: Connection complete.
+2025-11-01 10:31:06,095 [INFO] <BrokerConnection node_id=bootstrap-0 host=kafka:9092 <connected> [IPv4 ('172.18.0.10', 9092)]>: Closing connection. 
+2025-11-01 10:31:06,171 [INFO] Successfully joined group hdfs_loader with generation 3
+2025-11-01 10:31:06,172 [INFO] Updated partition assignment: [TopicPartition(topic='data_stream', partition=0)]
+2025-11-01 10:31:06,173 [INFO] Setting newly assigned partitions {TopicPartition(topic='data_stream', partition=0)} for group hdfs_loader
+2025-11-01 10:32:03,234 [WARNING] Heartbeat failed for group hdfs_loader because it is rebalancing
+2025-11-01 10:32:03,238 [INFO] Revoking previously assigned partitions {TopicPartition(topic='data_stream', partition=0)} for group hdfs_loader
+2025-11-01 10:32:03,239 [INFO] (Re-)joining group hdfs_loader
+2025-11-01 10:32:03,246 [INFO] Elected group leader -- performing partition assignments using range
+2025-11-01 10:32:03,252 [INFO] Successfully joined group hdfs_loader with generation 4
+2025-11-01 10:32:03,253 [INFO] Updated partition assignment: [TopicPartition(topic='data_stream', partition=0)]
+2025-11-01 10:32:03,253 [INFO] Setting newly assigned partitions {TopicPartition(topic='data_stream', partition=0)} for group hdfs_loader
+2025-11-01 10:32:10,998 [INFO] <BrokerConnection node_id=coordinator-1 host=kafka:9092 <connected> [IPv4 ('172.18.0.10', 9092)]>: Closing connection. KafkaConnectionError: Socket EVENT_READ without in-flight-requests
+2025-11-01 10:32:10,999 [WARNING] Node coordinator-1 connection failed -- refreshing metadata
+2025-11-01 10:32:11,000 [WARNING] Marking the coordinator dead (node coordinator-1) for group hdfs_loader: Node Disconnected.
+2025-11-01 10:32:11,010 [ERROR] <BrokerConnection node_id=1 host=kafka:9092 <connected> [IPv4 ('172.18.0.10', 9092)]>: socket disconnected
+2025-11-01 10:32:11,011 [INFO] <BrokerConnection node_id=1 host=kafka:9092 <connected> [IPv4 ('172.18.0.10', 9092)]>: Closing connection. KafkaConnectionError: socket disconnected
+2025-11-01 10:32:11,013 [WARNING] Node 1 connection failed -- refreshing metadata
+2025-11-01 10:32:11,014 [ERROR] Fetch to node 1 failed: KafkaConnectionError: socket disconnected
+2025-11-01 10:32:11,014 [ERROR] Error sending GroupCoordinatorRequest_v0 to node 1 [KafkaConnectionError: socket disconnected]
+2025-11-01 10:32:11,166 [INFO] <BrokerConnection node_id=1 host=kafka:9092 <connecting> [IPv4 ('172.18.0.10', 9092)]>: connecting to kafka:9092 [('172.18.0.10', 9092) IPv4]
+2025-11-01 10:32:11,167 [ERROR] Connect attempt to <BrokerConnection node_id=1 host=kafka:9092 <connecting> [IPv4 ('172.18.0.10', 9092)]> returned error 111. Disconnecting.
+2025-11-01 10:32:11,167 [INFO] <BrokerConnection node_id=1 host=kafka:9092 <connecting> [IPv4 ('172.18.0.10', 9092)]>: Closing connection. KafkaConnectionError: 111 ECONNREFUSED
+2025-11-01 10:32:11,168 [WARNING] Node 1 connection failed -- refreshing metadata
+2025-11-01 10:32:11,371 [INFO] <BrokerConnection node_id=1 host=kafka:9092 <connecting> [IPv4 ('172.18.0.10', 9092)]>: connecting to kafka:9092 [('172.18.0.10', 9092) IPv4]
+2025-11-01 10:32:11,371 [ERROR] Connect attempt to <BrokerConnection node_id=1 host=kafka:9092 <connecting> [IPv4 ('172.18.0.10', 9092)]> returned error 111. Disconnecting.
+2025-11-01 10:32:11,372 [INFO] <BrokerConnection node_id=1 host=kafka:9092 <connecting> [IPv4 ('172.18.0.10', 9092)]>: Closing connection. KafkaConnectionError: 111 ECONNREFUSED
+2025-11-01 10:32:11,373 [WARNING] Node 1 connection failed -- refreshing metadata
+2025-11-01 10:32:11,679 [INFO] <BrokerConnection node_id=1 host=kafka:9092 <connecting> [IPv4 ('172.18.0.10', 9092)]>: connecting to kafka:9092 [('172.18.0.10', 9092) IPv4]
+2025-11-01 10:32:11,681 [ERROR] Connect attempt to <BrokerConnection node_id=1 host=kafka:9092 <connecting> [IPv4 ('172.18.0.10', 9092)]> returned error 111. Disconnecting.
+2025-11-01 10:32:11,683 [INFO] <BrokerConnection node_id=1 host=kafka:9092 <connecting> [IPv4 ('172.18.0.10', 9092)]>: Closing connection. KafkaConnectionError: 111 ECONNREFUSED
+2025-11-01 10:32:11,685 [WARNING] Node 1 connection failed -- refreshing metadata
+2025-11-01 10:32:12,097 [INFO] <BrokerConnection node_id=1 host=kafka:9092 <connecting> [IPv4 ('172.18.0.10', 9092)]>: connecting to kafka:9092 [('172.18.0.10', 9092) IPv4]
+2025-11-01 10:32:12,098 [ERROR] Connect attempt to <BrokerConnection node_id=1 host=kafka:9092 <connecting> [IPv4 ('172.18.0.10', 9092)]> returned error 111. Disconnecting.
+2025-11-01 10:32:12,098 [INFO] <BrokerConnection node_id=1 host=kafka:9092 <connecting> [IPv4 ('172.18.0.10', 9092)]>: Closing connection. KafkaConnectionError: 111 ECONNREFUSED
+2025-11-01 10:32:12,099 [WARNING] Node 1 connection failed -- refreshing metadata
+2025-11-01 10:32:17,028 [WARNING] DNS lookup failed for kafka:9092, exception was [Errno -5] No address associated with hostname. Is your advertised.listeners (called advertised.host.name before Kafka 9) correct and resolvable?
+2025-11-01 10:32:17,029 [ERROR] DNS lookup failed for kafka:9092 (0)
+2025-11-01 10:32:17,080 [INFO] <BrokerConnection node_id=1 host=kafka:9092 <connecting> [IPv4 ('172.18.0.5', 9092)]>: connecting to kafka:9092 [('172.18.0.5', 9092) IPv4]
+2025-11-01 10:32:17,081 [ERROR] Connect attempt to <BrokerConnection node_id=1 host=kafka:9092 <connecting> [IPv4 ('172.18.0.5', 9092)]> returned error 111. Disconnecting.
+2025-11-01 10:32:17,082 [INFO] <BrokerConnection node_id=1 host=kafka:9092 <connecting> [IPv4 ('172.18.0.5', 9092)]>: Closing connection. KafkaConnectionError: 111 ECONNREFUSED
+2025-11-01 10:32:17,084 [WARNING] Node 1 connection failed -- refreshing metadata
+2025-11-01 10:32:18,199 [INFO] <BrokerConnection node_id=1 host=kafka:9092 <connecting> [IPv4 ('172.18.0.5', 9092)]>: connecting to kafka:9092 [('172.18.0.5', 9092) IPv4]
+2025-11-01 10:32:18,201 [ERROR] Connect attempt to <BrokerConnection node_id=1 host=kafka:9092 <connecting> [IPv4 ('172.18.0.5', 9092)]> returned error 111. Disconnecting.
+2025-11-01 10:32:18,203 [INFO] <BrokerConnection node_id=1 host=kafka:9092 <connecting> [IPv4 ('172.18.0.5', 9092)]>: Closing connection. KafkaConnectionError: 111 ECONNREFUSED
+2025-11-01 10:32:18,218 [WARNING] Node 1 connection failed -- refreshing metadata
+2025-11-01 10:32:19,375 [INFO] <BrokerConnection node_id=1 host=kafka:9092 <connecting> [IPv4 ('172.18.0.5', 9092)]>: connecting to kafka:9092 [('172.18.0.5', 9092) IPv4]
+2025-11-01 10:32:19,378 [ERROR] Connect attempt to <BrokerConnection node_id=1 host=kafka:9092 <connecting> [IPv4 ('172.18.0.5', 9092)]> returned error 111. Disconnecting.
+2025-11-01 10:32:19,378 [INFO] <BrokerConnection node_id=1 host=kafka:9092 <connecting> [IPv4 ('172.18.0.5', 9092)]>: Closing connection. KafkaConnectionError: 111 ECONNREFUSED
+2025-11-01 10:32:19,379 [WARNING] Node 1 connection failed -- refreshing metadata
+2025-11-01 10:32:20,613 [INFO] <BrokerConnection node_id=1 host=kafka:9092 <connecting> [IPv4 ('172.18.0.5', 9092)]>: connecting to kafka:9092 [('172.18.0.5', 9092) IPv4]
+2025-11-01 10:32:20,618 [ERROR] Connect attempt to <BrokerConnection node_id=1 host=kafka:9092 <connecting> [IPv4 ('172.18.0.5', 9092)]> returned error 111. Disconnecting.
+2025-11-01 10:32:20,619 [INFO] <BrokerConnection node_id=1 host=kafka:9092 <connecting> [IPv4 ('172.18.0.5', 9092)]>: Closing connection. KafkaConnectionError: 111 ECONNREFUSED
+2025-11-01 10:32:20,619 [WARNING] Node 1 connection failed -- refreshing metadata
+2025-11-01 10:32:21,739 [INFO] <BrokerConnection node_id=1 host=kafka:9092 <connecting> [IPv4 ('172.18.0.5', 9092)]>: connecting to kafka:9092 [('172.18.0.5', 9092) IPv4]
+2025-11-01 10:32:21,740 [ERROR] Connect attempt to <BrokerConnection node_id=1 host=kafka:9092 <connecting> [IPv4 ('172.18.0.5', 9092)]> returned error 111. Disconnecting.
+2025-11-01 10:32:21,741 [INFO] <BrokerConnection node_id=1 host=kafka:9092 <connecting> [IPv4 ('172.18.0.5', 9092)]>: Closing connection. KafkaConnectionError: 111 ECONNREFUSED
+2025-11-01 10:32:21,741 [WARNING] Node 1 connection failed -- refreshing metadata
+2025-11-01 10:32:22,922 [INFO] <BrokerConnection node_id=1 host=kafka:9092 <connecting> [IPv4 ('172.18.0.5', 9092)]>: connecting to kafka:9092 [('172.18.0.5', 9092) IPv4]
+2025-11-01 10:32:22,923 [ERROR] Connect attempt to <BrokerConnection node_id=1 host=kafka:9092 <connecting> [IPv4 ('172.18.0.5', 9092)]> returned error 111. Disconnecting.
+2025-11-01 10:32:22,923 [INFO] <BrokerConnection node_id=1 host=kafka:9092 <connecting> [IPv4 ('172.18.0.5', 9092)]>: Closing connection. KafkaConnectionError: 111 ECONNREFUSED
+2025-11-01 10:32:22,924 [WARNING] Node 1 connection failed -- refreshing metadata
+2025-11-01 10:32:24,147 [INFO] <BrokerConnection node_id=1 host=kafka:9092 <connecting> [IPv4 ('172.18.0.5', 9092)]>: connecting to kafka:9092 [('172.18.0.5', 9092) IPv4]
+2025-11-01 10:32:24,159 [ERROR] Connect attempt to <BrokerConnection node_id=1 host=kafka:9092 <connecting> [IPv4 ('172.18.0.5', 9092)]> returned error 111. Disconnecting.
+2025-11-01 10:32:24,162 [INFO] <BrokerConnection node_id=1 host=kafka:9092 <connecting> [IPv4 ('172.18.0.5', 9092)]>: Closing connection. KafkaConnectionError: 111 ECONNREFUSED
+2025-11-01 10:32:24,163 [WARNING] Node 1 connection failed -- refreshing metadata
+2025-11-01 10:32:25,121 [INFO] <BrokerConnection node_id=1 host=kafka:9092 <connecting> [IPv4 ('172.18.0.5', 9092)]>: connecting to kafka:9092 [('172.18.0.5', 9092) IPv4]
+2025-11-01 10:32:25,124 [ERROR] Connect attempt to <BrokerConnection node_id=1 host=kafka:9092 <connecting> [IPv4 ('172.18.0.5', 9092)]> returned error 111. Disconnecting.
+2025-11-01 10:32:25,124 [INFO] <BrokerConnection node_id=1 host=kafka:9092 <connecting> [IPv4 ('172.18.0.5', 9092)]>: Closing connection. KafkaConnectionError: 111 ECONNREFUSED
+2025-11-01 10:32:25,125 [WARNING] Node 1 connection failed -- refreshing metadata
+2025-11-01 10:32:26,334 [INFO] <BrokerConnection node_id=1 host=kafka:9092 <connecting> [IPv4 ('172.18.0.5', 9092)]>: connecting to kafka:9092 [('172.18.0.5', 9092) IPv4]
+2025-11-01 10:32:26,335 [ERROR] Connect attempt to <BrokerConnection node_id=1 host=kafka:9092 <connecting> [IPv4 ('172.18.0.5', 9092)]> returned error 111. Disconnecting.
+2025-11-01 10:32:26,335 [INFO] <BrokerConnection node_id=1 host=kafka:9092 <connecting> [IPv4 ('172.18.0.5', 9092)]>: Closing connection. KafkaConnectionError: 111 ECONNREFUSED
+2025-11-01 10:32:26,337 [WARNING] Node 1 connection failed -- refreshing metadata
+2025-11-01 10:32:27,510 [INFO] <BrokerConnection node_id=1 host=kafka:9092 <connecting> [IPv4 ('172.18.0.5', 9092)]>: connecting to kafka:9092 [('172.18.0.5', 9092) IPv4]
+2025-11-01 10:32:27,511 [ERROR] Connect attempt to <BrokerConnection node_id=1 host=kafka:9092 <connecting> [IPv4 ('172.18.0.5', 9092)]> returned error 111. Disconnecting.
+2025-11-01 10:32:27,512 [INFO] <BrokerConnection node_id=1 host=kafka:9092 <connecting> [IPv4 ('172.18.0.5', 9092)]>: Closing connection. KafkaConnectionError: 111 ECONNREFUSED
+2025-11-01 10:32:27,513 [WARNING] Node 1 connection failed -- refreshing metadata
+2025-11-01 10:32:28,534 [INFO] <BrokerConnection node_id=1 host=kafka:9092 <connecting> [IPv4 ('172.18.0.5', 9092)]>: connecting to kafka:9092 [('172.18.0.5', 9092) IPv4]
+2025-11-01 10:32:28,579 [ERROR] Connect attempt to <BrokerConnection node_id=1 host=kafka:9092 <connecting> [IPv4 ('172.18.0.5', 9092)]> returned error 111. Disconnecting.
+2025-11-01 10:32:28,616 [INFO] <BrokerConnection node_id=1 host=kafka:9092 <connecting> [IPv4 ('172.18.0.5', 9092)]>: Closing connection. KafkaConnectionError: 111 ECONNREFUSED
+2025-11-01 10:32:28,674 [WARNING] Node 1 connection failed -- refreshing metadata
+2025-11-01 10:32:29,596 [INFO] <BrokerConnection node_id=1 host=kafka:9092 <connecting> [IPv4 ('172.18.0.5', 9092)]>: connecting to kafka:9092 [('172.18.0.5', 9092) IPv4]
+2025-11-01 10:32:29,597 [ERROR] Connect attempt to <BrokerConnection node_id=1 host=kafka:9092 <connecting> [IPv4 ('172.18.0.5', 9092)]> returned error 111. Disconnecting.
+2025-11-01 10:32:29,598 [INFO] <BrokerConnection node_id=1 host=kafka:9092 <connecting> [IPv4 ('172.18.0.5', 9092)]>: Closing connection. KafkaConnectionError: 111 ECONNREFUSED
+2025-11-01 10:32:29,603 [WARNING] Node 1 connection failed -- refreshing metadata
+2025-11-01 10:32:30,555 [INFO] <BrokerConnection node_id=1 host=kafka:9092 <connecting> [IPv4 ('172.18.0.5', 9092)]>: connecting to kafka:9092 [('172.18.0.5', 9092) IPv4]
+2025-11-01 10:32:30,557 [ERROR] Connect attempt to <BrokerConnection node_id=1 host=kafka:9092 <connecting> [IPv4 ('172.18.0.5', 9092)]> returned error 111. Disconnecting.
+2025-11-01 10:32:30,557 [INFO] <BrokerConnection node_id=1 host=kafka:9092 <connecting> [IPv4 ('172.18.0.5', 9092)]>: Closing connection. KafkaConnectionError: 111 ECONNREFUSED
+2025-11-01 10:32:30,558 [WARNING] Node 1 connection failed -- refreshing metadata
+2025-11-01 10:32:31,627 [INFO] <BrokerConnection node_id=1 host=kafka:9092 <connecting> [IPv4 ('172.18.0.5', 9092)]>: connecting to kafka:9092 [('172.18.0.5', 9092) IPv4]
+2025-11-01 10:32:31,630 [ERROR] Connect attempt to <BrokerConnection node_id=1 host=kafka:9092 <connecting> [IPv4 ('172.18.0.5', 9092)]> returned error 111. Disconnecting.
+2025-11-01 10:32:31,631 [INFO] <BrokerConnection node_id=1 host=kafka:9092 <connecting> [IPv4 ('172.18.0.5', 9092)]>: Closing connection. KafkaConnectionError: 111 ECONNREFUSED
+2025-11-01 10:32:31,631 [WARNING] Node 1 connection failed -- refreshing metadata
+2025-11-01 10:32:32,802 [INFO] <BrokerConnection node_id=1 host=kafka:9092 <connecting> [IPv4 ('172.18.0.5', 9092)]>: connecting to kafka:9092 [('172.18.0.5', 9092) IPv4]
+2025-11-01 10:32:32,804 [ERROR] Connect attempt to <BrokerConnection node_id=1 host=kafka:9092 <connecting> [IPv4 ('172.18.0.5', 9092)]> returned error 111. Disconnecting.
+2025-11-01 10:32:32,805 [INFO] <BrokerConnection node_id=1 host=kafka:9092 <connecting> [IPv4 ('172.18.0.5', 9092)]>: Closing connection. KafkaConnectionError: 111 ECONNREFUSED
+2025-11-01 10:32:32,806 [WARNING] Node 1 connection failed -- refreshing metadata
+2025-11-01 10:32:33,889 [INFO] <BrokerConnection node_id=1 host=kafka:9092 <connecting> [IPv4 ('172.18.0.5', 9092)]>: connecting to kafka:9092 [('172.18.0.5', 9092) IPv4]
+2025-11-01 10:32:33,890 [ERROR] Connect attempt to <BrokerConnection node_id=1 host=kafka:9092 <connecting> [IPv4 ('172.18.0.5', 9092)]> returned error 111. Disconnecting.
+2025-11-01 10:32:33,891 [INFO] <BrokerConnection node_id=1 host=kafka:9092 <connecting> [IPv4 ('172.18.0.5', 9092)]>: Closing connection. KafkaConnectionError: 111 ECONNREFUSED
+2025-11-01 10:32:33,891 [WARNING] Node 1 connection failed -- refreshing metadata
+2025-11-01 10:32:34,861 [INFO] <BrokerConnection node_id=1 host=kafka:9092 <connecting> [IPv4 ('172.18.0.5', 9092)]>: connecting to kafka:9092 [('172.18.0.5', 9092) IPv4]
+2025-11-01 10:32:34,861 [ERROR] Connect attempt to <BrokerConnection node_id=1 host=kafka:9092 <connecting> [IPv4 ('172.18.0.5', 9092)]> returned error 111. Disconnecting.
+2025-11-01 10:32:34,862 [INFO] <BrokerConnection node_id=1 host=kafka:9092 <connecting> [IPv4 ('172.18.0.5', 9092)]>: Closing connection. KafkaConnectionError: 111 ECONNREFUSED
+2025-11-01 10:32:34,863 [WARNING] Node 1 connection failed -- refreshing metadata
+2025-11-01 10:32:35,920 [INFO] <BrokerConnection node_id=1 host=kafka:9092 <connecting> [IPv4 ('172.18.0.5', 9092)]>: connecting to kafka:9092 [('172.18.0.5', 9092) IPv4]
+2025-11-01 10:32:35,921 [INFO] <BrokerConnection node_id=1 host=kafka:9092 <connecting> [IPv4 ('172.18.0.5', 9092)]>: Connection complete.
+2025-11-01 10:32:36,437 [INFO] Group coordinator for hdfs_loader is BrokerMetadata(nodeId='coordinator-1', host='kafka', port=9092, rack=None)
+2025-11-01 10:32:36,438 [INFO] Discovered coordinator coordinator-1 for group hdfs_loader
+2025-11-01 10:32:36,439 [WARNING] Marking the coordinator dead (node coordinator-1) for group hdfs_loader: Node Disconnected.
+2025-11-01 10:32:36,440 [INFO] <BrokerConnection node_id=coordinator-1 host=kafka:9092 <connecting> [IPv4 ('172.18.0.5', 9092)]>: connecting to kafka:9092 [('172.18.0.5', 9092) IPv4]
+2025-11-01 10:32:36,441 [INFO] <BrokerConnection node_id=coordinator-1 host=kafka:9092 <connecting> [IPv4 ('172.18.0.5', 9092)]>: Connection complete.
+2025-11-01 10:32:36,444 [INFO] Group coordinator for hdfs_loader is BrokerMetadata(nodeId='coordinator-1', host='kafka', port=9092, rack=None)
+2025-11-01 10:32:36,444 [INFO] Discovered coordinator coordinator-1 for group hdfs_loader
+2025-11-01 10:32:36,457 [WARNING] Auto offset commit failed for group hdfs_loader: [Error 14] GroupLoadInProgressError: hdfs_loader
+2025-11-01 10:32:48,487 [WARNING] Heartbeat failed for group hdfs_loader because it is rebalancing
+2025-11-01 10:32:48,576 [INFO] Revoking previously assigned partitions {TopicPartition(topic='data_stream', partition=0)} for group hdfs_loader
+2025-11-01 10:32:48,581 [INFO] (Re-)joining group hdfs_loader
+2025-11-01 10:32:48,624 [INFO] Elected group leader -- performing partition assignments using range
+2025-11-01 10:32:48,684 [INFO] Successfully joined group hdfs_loader with generation 5
+2025-11-01 10:32:48,685 [INFO] Updated partition assignment: [TopicPartition(topic='data_stream', partition=0)]
+2025-11-01 10:32:48,685 [INFO] Setting newly assigned partitions {TopicPartition(topic='data_stream', partition=0)} for group hdfs_loader
+2025-11-01 12:03:39,942 [INFO] Démarrage de l'ingestion Kafka → HDFS...
+2025-11-01 12:03:39,966 [INFO] Instantiated <InsecureClient(url='http://namenode:9870')>.
+2025-11-01 12:03:39,971 [INFO] <BrokerConnection node_id=bootstrap-0 host=kafka:9092 <connecting> [IPv4 ('172.18.0.9', 9092)]>: connecting to kafka:9092 [('172.18.0.9', 9092) IPv4]
+2025-11-01 12:03:39,977 [INFO] Probing node bootstrap-0 broker version
+2025-11-01 12:03:39,985 [INFO] <BrokerConnection node_id=bootstrap-0 host=kafka:9092 <connecting> [IPv4 ('172.18.0.9', 9092)]>: Connection complete.
+2025-11-01 12:03:40,120 [INFO] Broker version identified as 2.5.0
+2025-11-01 12:03:40,120 [INFO] Set configuration api_version=(2, 5, 0) to skip auto check_version requests on startup
+2025-11-01 12:03:40,129 [INFO] Updating subscribed topics to: ('data_stream',)
+2025-11-01 12:03:40,142 [INFO] Connecté à Kafka !
+2025-11-01 12:03:40,203 [INFO] Group coordinator for hdfs_loader is BrokerMetadata(nodeId='coordinator-1', host='kafka', port=9092, rack=None)
+2025-11-01 12:03:40,210 [INFO] Discovered coordinator coordinator-1 for group hdfs_loader
+2025-11-01 12:03:40,239 [INFO] Starting new heartbeat thread
+2025-11-01 12:03:40,270 [INFO] Revoking previously assigned partitions set() for group hdfs_loader
+2025-11-01 12:03:40,287 [INFO] <BrokerConnection node_id=coordinator-1 host=kafka:9092 <connecting> [IPv4 ('172.18.0.9', 9092)]>: connecting to kafka:9092 [('172.18.0.9', 9092) IPv4]
+2025-11-01 12:03:40,302 [INFO] <BrokerConnection node_id=coordinator-1 host=kafka:9092 <connecting> [IPv4 ('172.18.0.9', 9092)]>: Connection complete.
+2025-11-01 12:03:40,318 [INFO] <BrokerConnection node_id=bootstrap-0 host=kafka:9092 <connected> [IPv4 ('172.18.0.9', 9092)]>: Closing connection. 
+2025-11-01 12:03:40,442 [INFO] (Re-)joining group hdfs_loader
+2025-11-01 12:03:43,726 [INFO] Elected group leader -- performing partition assignments using range
+2025-11-01 12:03:43,733 [INFO] <BrokerConnection node_id=1 host=kafka:9092 <connecting> [IPv4 ('172.18.0.9', 9092)]>: connecting to kafka:9092 [('172.18.0.9', 9092) IPv4]
+2025-11-01 12:03:43,734 [INFO] <BrokerConnection node_id=1 host=kafka:9092 <connecting> [IPv4 ('172.18.0.9', 9092)]>: Connection complete.
+2025-11-01 12:03:43,936 [INFO] Successfully joined group hdfs_loader with generation 7
+2025-11-01 12:03:43,939 [INFO] Updated partition assignment: [TopicPartition(topic='data_stream', partition=0)]
+2025-11-01 12:03:43,946 [INFO] Setting newly assigned partitions {TopicPartition(topic='data_stream', partition=0)} for group hdfs_loader
+2025-11-01 12:04:53,000 [WARNING] Heartbeat failed for group hdfs_loader because it is rebalancing
+2025-11-01 12:04:53,006 [INFO] Revoking previously assigned partitions {TopicPartition(topic='data_stream', partition=0)} for group hdfs_loader
+2025-11-01 12:04:53,007 [INFO] (Re-)joining group hdfs_loader
+2025-11-01 12:04:53,017 [INFO] Elected group leader -- performing partition assignments using range
+2025-11-01 12:04:53,023 [INFO] Successfully joined group hdfs_loader with generation 8
+2025-11-01 12:04:53,025 [INFO] Updated partition assignment: [TopicPartition(topic='data_stream', partition=0)]
+2025-11-01 12:04:53,026 [INFO] Setting newly assigned partitions {TopicPartition(topic='data_stream', partition=0)} for group hdfs_loader
+2025-11-01 12:28:57,404 [WARNING] Heartbeat session expired, marking coordinator dead
+2025-11-01 12:28:57,405 [WARNING] Marking the coordinator dead (node coordinator-1) for group hdfs_loader: Heartbeat session expired.
+2025-11-01 12:28:57,407 [INFO] Group coordinator for hdfs_loader is BrokerMetadata(nodeId='coordinator-1', host='kafka', port=9092, rack=None)
+2025-11-01 12:28:57,407 [INFO] Discovered coordinator coordinator-1 for group hdfs_loader
+2025-11-01 12:28:58,914 [WARNING] Auto offset commit failed for group hdfs_loader: NodeNotReadyError: coordinator-1
+2025-11-01 12:28:59,415 [WARNING] Auto offset commit failed for group hdfs_loader: NodeNotReadyError: coordinator-1
+2025-11-01 12:29:00,071 [WARNING] Auto offset commit failed for group hdfs_loader: NodeNotReadyError: coordinator-1
+2025-11-01 12:29:00,408 [WARNING] Auto offset commit failed for group hdfs_loader: NodeNotReadyError: coordinator-1
+2025-11-01 12:29:00,610 [WARNING] Auto offset commit failed for group hdfs_loader: NodeNotReadyError: coordinator-1
+2025-11-01 12:29:00,813 [WARNING] Auto offset commit failed for group hdfs_loader: NodeNotReadyError: coordinator-1
+2025-11-01 12:29:01,016 [WARNING] Auto offset commit failed for group hdfs_loader: NodeNotReadyError: coordinator-1
+2025-11-01 12:29:01,218 [WARNING] Auto offset commit failed for group hdfs_loader: NodeNotReadyError: coordinator-1
+2025-11-01 12:29:01,420 [WARNING] Auto offset commit failed for group hdfs_loader: NodeNotReadyError: coordinator-1
+2025-11-01 12:29:01,622 [WARNING] Auto offset commit failed for group hdfs_loader: NodeNotReadyError: coordinator-1
+2025-11-01 12:29:01,824 [WARNING] Auto offset commit failed for group hdfs_loader: NodeNotReadyError: coordinator-1
+2025-11-01 12:29:02,026 [WARNING] Auto offset commit failed for group hdfs_loader: NodeNotReadyError: coordinator-1
+2025-11-01 12:29:02,228 [WARNING] Auto offset commit failed for group hdfs_loader: NodeNotReadyError: coordinator-1
+2025-11-01 12:29:02,430 [WARNING] Auto offset commit failed for group hdfs_loader: NodeNotReadyError: coordinator-1
+2025-11-01 12:29:02,632 [WARNING] Auto offset commit failed for group hdfs_loader: NodeNotReadyError: coordinator-1
+2025-11-01 12:29:02,742 [WARNING] Auto offset commit failed for group hdfs_loader: NodeNotReadyError: coordinator-1
+2025-11-01 12:29:02,948 [WARNING] Auto offset commit failed for group hdfs_loader: NodeNotReadyError: coordinator-1
+2025-11-01 12:29:03,050 [WARNING] Auto offset commit failed for group hdfs_loader: NodeNotReadyError: coordinator-1
+2025-11-01 12:29:03,152 [WARNING] Auto offset commit failed for group hdfs_loader: NodeNotReadyError: coordinator-1
+2025-11-01 12:29:03,360 [WARNING] Auto offset commit failed for group hdfs_loader: NodeNotReadyError: coordinator-1
+2025-11-01 12:29:03,562 [WARNING] Auto offset commit failed for group hdfs_loader: NodeNotReadyError: coordinator-1
+2025-11-01 12:29:03,764 [WARNING] Auto offset commit failed for group hdfs_loader: NodeNotReadyError: coordinator-1
+2025-11-01 12:29:03,966 [WARNING] Auto offset commit failed for group hdfs_loader: NodeNotReadyError: coordinator-1
+2025-11-01 12:29:04,069 [WARNING] Auto offset commit failed for group hdfs_loader: NodeNotReadyError: coordinator-1
+2025-11-01 12:29:04,270 [WARNING] Auto offset commit failed for group hdfs_loader: NodeNotReadyError: coordinator-1
+2025-11-01 12:29:04,473 [WARNING] Auto offset commit failed for group hdfs_loader: NodeNotReadyError: coordinator-1
+2025-11-01 12:29:04,675 [WARNING] Auto offset commit failed for group hdfs_loader: NodeNotReadyError: coordinator-1
+2025-11-01 12:29:04,878 [WARNING] Auto offset commit failed for group hdfs_loader: NodeNotReadyError: coordinator-1
+2025-11-01 12:29:04,987 [WARNING] Auto offset commit failed for group hdfs_loader: NodeNotReadyError: coordinator-1
+2025-11-01 12:29:05,189 [WARNING] Auto offset commit failed for group hdfs_loader: NodeNotReadyError: coordinator-1
+2025-11-01 12:29:05,395 [WARNING] Auto offset commit failed for group hdfs_loader: NodeNotReadyError: coordinator-1
+2025-11-01 12:29:05,596 [WARNING] Auto offset commit failed for group hdfs_loader: NodeNotReadyError: coordinator-1
+2025-11-01 12:29:05,798 [WARNING] Auto offset commit failed for group hdfs_loader: NodeNotReadyError: coordinator-1
+2025-11-01 12:29:06,000 [WARNING] Auto offset commit failed for group hdfs_loader: NodeNotReadyError: coordinator-1
+2025-11-01 12:29:06,202 [WARNING] Auto offset commit failed for group hdfs_loader: NodeNotReadyError: coordinator-1
+2025-11-01 12:29:06,405 [WARNING] Auto offset commit failed for group hdfs_loader: NodeNotReadyError: coordinator-1
+2025-11-01 12:29:06,606 [WARNING] Auto offset commit failed for group hdfs_loader: NodeNotReadyError: coordinator-1
+2025-11-01 12:29:06,809 [WARNING] Auto offset commit failed for group hdfs_loader: NodeNotReadyError: coordinator-1
+2025-11-01 12:29:07,014 [WARNING] Auto offset commit failed for group hdfs_loader: NodeNotReadyError: coordinator-1
+2025-11-01 12:29:07,216 [WARNING] Auto offset commit failed for group hdfs_loader: NodeNotReadyError: coordinator-1
+2025-11-01 12:29:07,419 [WARNING] Auto offset commit failed for group hdfs_loader: NodeNotReadyError: coordinator-1
+2025-11-01 12:29:07,419 [WARNING] Heartbeat session expired, marking coordinator dead
+2025-11-01 12:29:07,420 [WARNING] Marking the coordinator dead (node coordinator-1) for group hdfs_loader: Heartbeat session expired.
+2025-11-01 12:29:20,189 [INFO] Group coordinator for hdfs_loader is BrokerMetadata(nodeId='coordinator-1', host='kafka', port=9092, rack=None)
+2025-11-01 12:29:20,221 [INFO] Discovered coordinator coordinator-1 for group hdfs_loader
+2025-11-01 12:29:20,237 [WARNING] Heartbeat: local member_id was not recognized; this consumer needs to re-join
+2025-11-01 12:29:20,247 [WARNING] Heartbeat: local member_id was not recognized; this consumer needs to re-join
+2025-11-01 12:29:20,319 [WARNING] Heartbeat: local member_id was not recognized; this consumer needs to re-join
+2025-11-01 12:29:20,636 [WARNING] Auto offset commit failed for group hdfs_loader: CommitFailedError: Commit cannot be completed since the group has already
+            rebalanced and assigned the partitions to another member.
+            This means that the time between subsequent calls to poll()
+            was longer than the configured max_poll_interval_ms, which
+            typically implies that the poll loop is spending too much
+            time message processing. You can address this either by
+            increasing the rebalance timeout with max_poll_interval_ms,
+            or by reducing the maximum size of batches returned in poll()
+            with max_poll_records.
+            
+2025-11-01 12:29:20,667 [WARNING] Auto offset commit failed for group hdfs_loader: CommitFailedError: Commit cannot be completed since the group has already
+            rebalanced and assigned the partitions to another member.
+            This means that the time between subsequent calls to poll()
+            was longer than the configured max_poll_interval_ms, which
+            typically implies that the poll loop is spending too much
+            time message processing. You can address this either by
+            increasing the rebalance timeout with max_poll_interval_ms,
+            or by reducing the maximum size of batches returned in poll()
+            with max_poll_records.
+            
+2025-11-01 12:29:20,692 [ERROR] Offset commit failed: This is likely to cause duplicate message delivery
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/kafka/coordinator/consumer.py", line 528, in _maybe_auto_commit_offsets_sync
+  File "/usr/local/lib/python3.11/site-packages/kafka/coordinator/consumer.py", line 521, in commit_offsets_sync
+kafka.errors.CommitFailedError: CommitFailedError: Commit cannot be completed since the group has already
+            rebalanced and assigned the partitions to another member.
+            This means that the time between subsequent calls to poll()
+            was longer than the configured max_poll_interval_ms, which
+            typically implies that the poll loop is spending too much
+            time message processing. You can address this either by
+            increasing the rebalance timeout with max_poll_interval_ms,
+            or by reducing the maximum size of batches returned in poll()
+            with max_poll_records.
+            
+2025-11-01 12:29:20,693 [INFO] Revoking previously assigned partitions {TopicPartition(topic='data_stream', partition=0)} for group hdfs_loader
+2025-11-01 12:29:20,694 [INFO] (Re-)joining group hdfs_loader
+2025-11-01 12:29:23,723 [INFO] Elected group leader -- performing partition assignments using range
+2025-11-01 12:29:23,740 [INFO] Successfully joined group hdfs_loader with generation 10
+2025-11-01 12:29:23,744 [INFO] Updated partition assignment: [TopicPartition(topic='data_stream', partition=0)]
+2025-11-01 12:29:23,745 [INFO] Setting newly assigned partitions {TopicPartition(topic='data_stream', partition=0)} for group hdfs_loader

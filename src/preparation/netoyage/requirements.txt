@@ -1,3 +1,5 @@
 pyspark==3.5.1
 pyyaml
 hdfs
+pandas==2.2.2
+pyarrow==15.0.0
