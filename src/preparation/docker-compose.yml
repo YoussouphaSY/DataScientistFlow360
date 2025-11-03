@@ -1,6 +1,6 @@
 services:
 
-  # --------------------- spark ---------------------
+  # --------------------- Spark Cleaner ---------------------
   spark-cleaner:
     build:
       context: ./netoyage
@@ -8,6 +8,7 @@ services:
     container_name: dataflow360_spark_cleaner
     volumes:
       - ./netoyage:/app
+      - ./data/clean:/app/data_clean        # CSV nettoyés
     environment:
       - PYSPARK_PYTHON=python3
       - HDFS_URL=hdfs://namenode:8020
@@ -15,8 +16,29 @@ services:
       - dataflow360-net
     command: >
       bash -c "
-      echo 'Nettoyage des données...' &&
+      echo '🧹 Nettoyage des données...' &&
       python cleaning.py
+      "
+
+  # --------------------- EDA Controller ---------------------
+  eda-controller:
+    build:
+      context: ./netoyage
+      dockerfile: Dockerfile
+    container_name: dataflow360_eda_controller
+    depends_on:
+      - spark-cleaner
+    volumes:
+      - ./netoyage:/app
+      - ./data/clean:/app/data_clean        # CSV nettoyés
+      - ./notebooks:/app/notebooks          # notebook EDA
+      - ./eda_reports:/app/eda_reports      # rapports HTML
+    networks:
+      - dataflow360-net
+    command: >
+      bash -c "
+      echo '🧠 Lancement du contrôleur EDA...' &&
+      python controller.py
       "
 
 networks:

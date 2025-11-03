@@ -1,6 +1,25 @@
-hdfs:
-  url: "http://namenode:9870"
-  host: "dataflow360_namenode"
-  port: 9870
-  path: "/dataflow360/raw"       # chemin vers les fichiers bruts
-  cleaned_path: "/dataflow360/clean"  # chemin pour les fichiers nettoyés
+# HDFS
+hdfs_url: "hdfs://namenode:8020"
+hdfs_stream_raw_path: "/data_streaming/raw"
+hdfs_stream_clean_path: "/data_streaming/clean"
+checkpoint_dir: "/data_streaming/clean/_checkpoints"
+
+# Local
+local_clean_path: "/app/data/clean"
+
+# PostgreSQL
+postgres:
+  host: "dataflow360_postgres"
+  port: 5432
+  db: "sante_clean_db"
+  user: "postgres_admin"
+  password: "postgres_admin123"
+  table: "stream_clean"
+
+
+# EDA
+notebook_template: "/app/notebooks/eda_notebook.ipynb"
+eda_output_folder: "/app/reports/eda_html/"
+
+# Logs
+log_file: "/app/logs/data_cleaner_full.log"

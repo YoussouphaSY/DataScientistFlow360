@@ -1,4 +1,4 @@
-docker compose build
+docker compose build -no--cache
 docker compose up -d
 docker logs -f dataflow360_spark_cleaner
 

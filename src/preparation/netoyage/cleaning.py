@@ -1,168 +1,208 @@
 import os
-import time
 import logging
 import yaml
-from pyspark.sql import SparkSession
-from pyspark.sql.functions import col, trim, lower
 from hdfs import InsecureClient
+from pyspark.sql import SparkSession
+from pyspark.sql.functions import col, when
+from pyspark.sql.types import (
+    StructType, StringType, IntegerType, FloatType, DateType, BooleanType
+)
+import psycopg2
 
-# ---------------- Désactiver métriques JVM/JMX ----------------
-os.environ["SPARK_JAVA_OPTS"] = "-Dspark.executor.metrics.enabled=false -Dspark.driver.metrics.enabled=false"
+# ---------------- Chargement config ----------------
+with open("config.yaml", "r") as f:
+    config = yaml.safe_load(f)
 
-# ---------------- Configuration logging ----------------
-logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(message)s")
+HDFS_URL = config["hdfs_url"]
+HDFS_STREAM_RAW = f"{HDFS_URL}{config['hdfs_stream_raw_path']}"
+HDFS_STREAM_CLEAN = f"{HDFS_URL}{config['hdfs_stream_clean_path']}"
+CHECKPOINT_DIR = config["checkpoint_dir"]
+LOCAL_OUTPUT_PATH = config["local_clean_path"]
+LOG_FILE = config["log_file"]
 
-# ---------------- Charger la configuration ----------------
-cfg = yaml.safe_load(open("config.yaml"))
+POSTGRES = config["postgres"]
 
-# Utiliser le vrai port HDFS RPC (8020)
-HDFS_URL = os.getenv("HDFS_URL", "hdfs://namenode:8020")
+os.makedirs(LOCAL_OUTPUT_PATH, exist_ok=True)
+os.makedirs(os.path.dirname(LOG_FILE), exist_ok=True)
 
-RAW_PATH = f"{HDFS_URL}{cfg['hdfs']['path']}"
-CLEAN_PATH = f"{HDFS_URL}{cfg['hdfs']['cleaned_path']}"
-
-# Dossier local du projet pour sauvegarder les fichiers nettoyés
-LOCAL_CLEAN_DIR = "./data/clean"
-
-# ---------------- Initialiser Spark ----------------
-spark = (
-    SparkSession.builder
-    .appName("DataCleaningPipeline")
-    .config("spark.hadoop.fs.defaultFS", HDFS_URL)
-    .config("spark.ui.showConsoleProgress", "false")
-    .config("spark.sql.ui.explainMode", "simple")
-    .getOrCreate()
+# ---------------- Logging ----------------
+logging.basicConfig(
+    filename=LOG_FILE,
+    level=logging.INFO,
+    format="%(asctime)s [%(levelname)s] %(message)s"
 )
 
-spark.sparkContext.setLogLevel("WARN")
+# ---------------- Spark ----------------
+spark = SparkSession.builder \
+    .appName("DataFlow360_Streaming_Cleaner") \
+    .config("spark.hadoop.fs.defaultFS", HDFS_URL) \
+    .config("spark.jars.packages", "org.postgresql:postgresql:42.6.0") \
+    .getOrCreate()
 
-# ---------------- Client HDFS ----------------
-hdfs_client = InsecureClient(cfg["hdfs"]["url"], user="root")
+client = InsecureClient("http://namenode:9870", user="root")
 
+# ---------------- Schéma explicite ----------------
+schema = StructType() \
+    .add("hospital_id", IntegerType()) \
+    .add("hospital_name", StringType()) \
+    .add("region", StringType()) \
+    .add("city", StringType()) \
+    .add("capacity_beds", IntegerType()) \
+    .add("capacity_staff", IntegerType()) \
+    .add("date", DateType()) \
+    .add("patients_admitted", IntegerType()) \
+    .add("patients_released", IntegerType()) \
+    .add("patients_in_care", IntegerType()) \
+    .add("icu_patients", IntegerType()) \
+    .add("available_beds", IntegerType()) \
+    .add("available_staff", IntegerType()) \
+    .add("emergency_cases", IntegerType()) \
+    .add("mortality_rate", FloatType()) \
+    .add("disease_name", StringType()) \
+    .add("new_cases", IntegerType()) \
+    .add("new_deaths", IntegerType()) \
+    .add("vaccination_rate", FloatType()) \
+    .add("test_positivity_rate", FloatType()) \
+    .add("risk_level", StringType()) \
+    .add("temperature_c", FloatType()) \
+    .add("humidity_percent", FloatType()) \
+    .add("population_density", FloatType()) \
+    .add("public_alert", BooleanType()) \
+    .add("region_mobility_index", FloatType()) \
+    .add("medical_supplies_index", FloatType()) \
+    .add("staff_absence_rate", FloatType()) \
+    .add("avg_wait_time_minutes", FloatType()) \
+    .add("response_time_minutes", FloatType())
 
-# ---------------- Réinitialiser les dossiers clean ----------------
-def reset_clean_folders():
-    """Supprime et recrée les dossiers clean (HDFS + local)."""
-    # --- Supprimer le dossier HDFS clean ---
-    try:
-        if hdfs_client.status(cfg["hdfs"]["cleaned_path"], strict=False):
-            logging.info(f"Suppression de l'ancien dossier HDFS : {cfg['hdfs']['cleaned_path']}")
-            hdfs_client.delete(cfg["hdfs"]["cleaned_path"], recursive=True)
-        # Recréer le dossier
-        hdfs_client.makedirs(cfg["hdfs"]["cleaned_path"])
-        logging.info(f"Dossier HDFS recréé : {cfg['hdfs']['cleaned_path']}")
-    except Exception as e:
-        logging.error(f"Erreur lors de la réinitialisation du dossier HDFS : {e}")
-
-    # --- Supprimer le dossier local clean ---
-    try:
-        if os.path.exists(LOCAL_CLEAN_DIR):
-            logging.info(f"Suppression du dossier local existant : {LOCAL_CLEAN_DIR}")
-            for root, dirs, files in os.walk(LOCAL_CLEAN_DIR, topdown=False):
-                for name in files:
-                    os.remove(os.path.join(root, name))
-                for name in dirs:
-                    os.rmdir(os.path.join(root, name))
-            os.rmdir(LOCAL_CLEAN_DIR)
-        os.makedirs(LOCAL_CLEAN_DIR, exist_ok=True)
-        logging.info(f"Dossier local recréé : {LOCAL_CLEAN_DIR}")
-    except Exception as e:
-        logging.error(f"Erreur lors de la réinitialisation du dossier local : {e}")
-
-
-# ---------------- Fonction de nettoyage ----------------
+# ---------------- Nettoyage ----------------
 def clean_dataframe(df):
-    """Nettoyage générique : suppression doublons, trim, lower..."""
-    df = df.dropDuplicates()
-    df = df.dropna(how='all')
-
-    # Nettoyer les noms de colonnes
+    """Remplace les chaînes vides par None et supprime les lignes entièrement nulles"""
     for c in df.columns:
-        df = df.withColumnRenamed(c, c.strip().replace(" ", "_").lower())
+        df = df.withColumn(c, when(col(c) == "", None).otherwise(col(c)))
+    return df.dropna(how="all")
 
-    # Nettoyer le contenu
-    for c in df.columns:
-        df = df.withColumn(c, trim(lower(col(c))))
+# ---------------- PostgreSQL ----------------
+def create_db_and_table():
+    """Crée la base et la table si elles n'existent pas"""
+    try:
+        # Connexion à une DB existante (postgres) pour créer la nouvelle DB
+        conn = psycopg2.connect(
+            host=POSTGRES['host'],
+            port=POSTGRES['port'],
+            user=POSTGRES['user'],
+            password=POSTGRES['password'],
+            database="postgres"
+        )
+        conn.autocommit = True
+        cur = conn.cursor()
+        
+        # Créer la base si elle n'existe pas
+        cur.execute(f"SELECT 1 FROM pg_database WHERE datname='{POSTGRES['db']}'")
+        if not cur.fetchone():
+            cur.execute(f"CREATE DATABASE {POSTGRES['db']}")
+            logging.info(f"✅ Base de données {POSTGRES['db']} créée")
+        cur.close()
+        conn.close()
 
-    return df
+        # Connexion à la base nouvellement créée
+        conn = psycopg2.connect(
+            host=POSTGRES['host'],
+            port=POSTGRES['port'],
+            user=POSTGRES['user'],
+            password=POSTGRES['password'],
+            database=POSTGRES['db']
+        )
+        conn.autocommit = True
+        cur = conn.cursor()
+        
+        # Créer la table si elle n'existe pas
+        create_table_sql = f"""
+        CREATE TABLE IF NOT EXISTS {POSTGRES['table']} (
+            hospital_id INT,
+            hospital_name TEXT,
+            region TEXT,
+            city TEXT,
+            capacity_beds INT,
+            capacity_staff INT,
+            date DATE,
+            patients_admitted INT,
+            patients_released INT,
+            patients_in_care INT,
+            icu_patients INT,
+            available_beds INT,
+            available_staff INT,
+            emergency_cases INT,
+            mortality_rate FLOAT,
+            disease_name TEXT,
+            new_cases INT,
+            new_deaths INT,
+            vaccination_rate FLOAT,
+            test_positivity_rate FLOAT,
+            risk_level TEXT,
+            temperature_c FLOAT,
+            humidity_percent FLOAT,
+            population_density FLOAT,
+            public_alert BOOLEAN,
+            region_mobility_index FLOAT,
+            medical_supplies_index FLOAT,
+            staff_absence_rate FLOAT,
+            avg_wait_time_minutes FLOAT,
+            response_time_minutes FLOAT
+        );
+        """
+        cur.execute(create_table_sql)
+        logging.info(f"✅ Table {POSTGRES['table']} créée si inexistante")
+        cur.close()
+        conn.close()
+    except Exception as e:
+        logging.error(f"❌ Erreur création DB/table: {e}")
 
+def save_to_postgres(df, mode="append"):
+    """Sauvegarde un DataFrame Spark dans PostgreSQL"""
+    url = f"jdbc:postgresql://{POSTGRES['host']}:{POSTGRES['port']}/{POSTGRES['db']}"
+    properties = {"user": POSTGRES["user"], "password": POSTGRES["password"], "driver": "org.postgresql.Driver"}
+    df.write.jdbc(url=url, table=POSTGRES["table"], mode=mode, properties=properties)
+    logging.info(f"✅ Données sauvegardées dans PostgreSQL table: {POSTGRES['table']}")
 
-# ---------------- Traitement batch des fichiers CSV ----------------
-def process_files_individually():
-    logging.info("Début du nettoyage individuel des fichiers CSV...")
-
-    files = [f for f in hdfs_client.list(cfg["hdfs"]["path"]) if f.endswith(".csv")]
-    if not files:
-        logging.warning("Aucun fichier CSV trouvé dans le dossier brut.")
-        return
-
-    # Réinitialiser les dossiers avant nettoyage
-    reset_clean_folders()
-
-    for file_name in files:
-        raw_file_path = f"{RAW_PATH}/{file_name}"
-        clean_file_path = f"{CLEAN_PATH}/{file_name.replace('.csv', '_clean.csv')}"
-
-        try:
-            logging.info(f"Lecture du fichier {file_name} depuis HDFS...")
-            df = spark.read.option("header", "true").csv(raw_file_path)
-            logging.info(f"{file_name} : {df.count()} lignes, {len(df.columns)} colonnes détectées.")
-
-            # Nettoyage
-            df_clean = clean_dataframe(df)
-
-            # Sauvegarde HDFS
-            df_clean.write.mode("overwrite").option("header", "true").csv(clean_file_path)
-            logging.info(f"Fichier nettoyé sauvegardé dans HDFS : {clean_file_path}")
-
-            # Sauvegarde locale
-            local_file_path = os.path.join(LOCAL_CLEAN_DIR, f"clean_{file_name}")
-            df_clean.toPandas().to_csv(local_file_path, index=False)
-            logging.info(f"Fichier nettoyé enregistré localement : {local_file_path}")
-
-        except Exception as e:
-            logging.error(f"Erreur lors du traitement de {file_name} : {e}")
-
-
-# ---------------- Traitement streaming ----------------
+# ---------------- Streaming ----------------
 def process_streaming():
-    logging.info("Début du traitement en temps réel...")
-
-    STREAMING_PATH = f"{HDFS_URL}/data_streaming"
-    CLEAN_STREAM_PATH = f"{HDFS_URL}/data_streaming_clean"
+    logging.info("🚀 Démarrage du streaming...")
 
     try:
-        # Lire le flux CSV en temps réel
-        df_stream = (
-            spark.readStream
-            .option("header", "true")
-            .csv(STREAMING_PATH)
-        )
+        # Lecture streaming depuis HDFS avec schéma explicite
+        df_stream = spark.readStream \
+            .option("header", "true") \
+            .schema(schema) \
+            .csv(HDFS_STREAM_RAW)
 
-        # Appliquer la fonction de nettoyage
         df_clean_stream = clean_dataframe(df_stream)
 
-        # Écriture du flux nettoyé en mode append avec checkpoint
-        query = (
-            df_clean_stream.writeStream
-            .outputMode("append")
-            .option("checkpointLocation", f"{CLEAN_STREAM_PATH}/_checkpoints")
-            .format("csv")
-            .option("path", CLEAN_STREAM_PATH)
+        # Sauvegarde HDFS (format Parquet)
+        query_hdfs = df_clean_stream.writeStream \
+            .outputMode("append") \
+            .format("parquet") \
+            .option("path", HDFS_STREAM_CLEAN) \
+            .option("checkpointLocation", CHECKPOINT_DIR) \
             .start()
-        )
 
-        logging.info(f"Streaming actif vers : {CLEAN_STREAM_PATH}")
-        query.awaitTermination()
+        # Sauvegarde PostgreSQL
+        def foreach_batch_function(batch_df, batch_id):
+            batch_df_clean = clean_dataframe(batch_df)
+            save_to_postgres(batch_df_clean)
+
+        query_pg = df_clean_stream.writeStream \
+            .foreachBatch(foreach_batch_function) \
+            .option("checkpointLocation", CHECKPOINT_DIR + "_pg") \
+            .start()
+
+        query_hdfs.awaitTermination()
+        query_pg.awaitTermination()
 
     except Exception as e:
-        logging.error(f"Erreur lors du streaming : {e}")
+        logging.error(f"❌ Erreur streaming : {e}")
 
-
-# ---------------- Boucle principale ----------------
+# ---------------- Main ----------------
 if __name__ == "__main__":
-    # Nettoyage batch
-    process_files_individually()
-
-    # Nettoyage streaming (temps réel)
+    logging.info("=== Nettoyage streaming lancé ===")
+    create_db_and_table()
     process_streaming()

@@ -1,0 +1,454 @@
+2025-11-01 17:23:30,528 [INFO] Instantiated <InsecureClient(url='http://namenode:9870')>.
+2025-11-01 17:23:30,529 [INFO] === Nettoyage des données DataFlow360 lancé ===
+2025-11-01 17:23:30,529 [INFO] 🚀 Démarrage du nettoyage batch...
+2025-11-01 17:23:30,530 [INFO] Listing 'hdfs://namenode:8020/dataflow360/raw'.
+2025-11-01 17:23:30,548 [ERROR] ❌ Erreur pendant le traitement batch : File /user/root/hdfs:/namenode:8020/dataflow360/raw does not exist.
+2025-11-01 17:23:30,549 [INFO] 🚀 Démarrage du nettoyage en streaming...
+2025-11-01 17:23:35,086 [ERROR] ❌ Erreur dans le streaming : Schema must be specified when creating a streaming source DataFrame. If some files already exist in the directory, then depending on the file format you may be able to create a static DataFrame on that directory with 'spark.read.load(directory)' and infer schema from it.
+2025-11-01 17:23:35,090 [INFO] Closing down clientserver connection
+2025-11-01 17:25:37,559 [INFO] Instantiated <InsecureClient(url='http://namenode:9870')>.
+2025-11-01 17:25:37,560 [INFO] === Nettoyage des données DataFlow360 lancé ===
+2025-11-01 17:25:37,560 [INFO] 🚀 Démarrage du nettoyage batch...
+2025-11-01 17:25:37,561 [INFO] Listing 'hdfs://namenode:8020/dataflow360/raw'.
+2025-11-01 17:25:37,581 [ERROR] ❌ Erreur pendant le traitement batch : File /user/root/hdfs:/namenode:8020/dataflow360/raw does not exist.
+2025-11-01 17:25:37,582 [INFO] 🚀 Démarrage du nettoyage en streaming...
+2025-11-01 17:25:41,638 [ERROR] ❌ Erreur dans le streaming : Schema must be specified when creating a streaming source DataFrame. If some files already exist in the directory, then depending on the file format you may be able to create a static DataFrame on that directory with 'spark.read.load(directory)' and infer schema from it.
+2025-11-01 17:25:41,642 [INFO] Closing down clientserver connection
+2025-11-01 18:51:08,405 [INFO] Instantiated <InsecureClient(url='http://namenode:9870')>.
+2025-11-01 18:51:08,406 [INFO] === Nettoyage des données DataFlow360 lancé ===
+2025-11-01 18:51:08,406 [INFO] 🚀 Démarrage du nettoyage batch...
+2025-11-01 18:51:08,406 [INFO] Listing '/dataflow360/raw'.
+2025-11-01 18:51:08,433 [INFO] Fetching status for '/dataflow360/clean'.
+2025-11-01 18:51:08,440 [INFO] 📂 Lecture du fichier : hdfs://namenode:8020/dataflow360/raw/mongo_phof_datase.csv
+2025-11-01 18:51:26,111 [INFO] ✅ Sauvegardé dans HDFS : hdfs://namenode:8020/dataflow360/clean/mongo_phof_datase
+2025-11-01 18:51:28,862 [INFO] ✅ Sauvegardé localement : /app/data/clean/mongo_phof_datase_clean.csv
+2025-11-01 18:51:28,863 [INFO] 📂 Lecture du fichier : hdfs://namenode:8020/dataflow360/raw/mysql_healthcare_dataset.csv
+2025-11-01 18:51:34,760 [INFO] ✅ Sauvegardé dans HDFS : hdfs://namenode:8020/dataflow360/clean/mysql_healthcare_dataset
+2025-11-01 18:51:39,415 [INFO] ✅ Sauvegardé localement : /app/data/clean/mysql_healthcare_dataset_clean.csv
+2025-11-01 18:51:39,416 [INFO] 📂 Lecture du fichier : hdfs://namenode:8020/dataflow360/raw/postgres_public_health_surveillance_dataset.csv
+2025-11-01 18:51:48,452 [INFO] ✅ Sauvegardé dans HDFS : hdfs://namenode:8020/dataflow360/clean/postgres_public_health_surveillance_dataset
+2025-11-01 18:51:55,609 [INFO] ✅ Sauvegardé localement : /app/data/clean/postgres_public_health_surveillance_dataset_clean.csv
+2025-11-01 18:51:55,610 [INFO] 🎯 Nettoyage batch terminé avec succès.
+2025-11-01 18:51:55,610 [INFO] 🚀 Démarrage du nettoyage streaming...
+2025-11-01 18:51:55,610 [INFO] Fetching status for '/data_streaming/clean'.
+2025-11-01 18:51:55,620 [INFO] Creating directories to '/data_streaming/clean'.
+2025-11-01 18:51:55,630 [INFO] Fetching status for '/data_streaming/clean/_checkpoints'.
+2025-11-01 18:51:55,637 [INFO] Creating directories to '/data_streaming/clean/_checkpoints'.
+2025-11-01 18:51:55,692 [ERROR] ❌ Erreur dans le streaming : Schema must be specified when creating a streaming source DataFrame. If some files already exist in the directory, then depending on the file format you may be able to create a static DataFrame on that directory with 'spark.read.load(directory)' and infer schema from it.
+2025-11-01 18:51:55,695 [INFO] Closing down clientserver connection
+2025-11-01 19:03:20,720 [INFO] Instantiated <InsecureClient(url='http://namenode:9870')>.
+2025-11-01 19:03:20,722 [INFO] === Nettoyage des données DataFlow360 lancé ===
+2025-11-01 19:03:20,723 [INFO] 🚀 Démarrage du nettoyage batch...
+2025-11-01 19:03:20,723 [INFO] Listing '/dataflow360/raw'.
+2025-11-01 19:03:20,735 [INFO] Fetching status for '/dataflow360/clean'.
+2025-11-01 19:03:20,753 [INFO] 📂 Lecture du fichier : hdfs://namenode:8020/dataflow360/raw/mongo_phof_datase.csv
+2025-11-01 19:03:53,968 [INFO] ✅ Sauvegardé dans HDFS : hdfs://namenode:8020/dataflow360/clean/mongo_phof_datase
+2025-11-01 19:03:58,708 [INFO] ✅ Sauvegardé localement : /app/data/clean/mongo_phof_datase_clean.csv
+2025-11-01 19:03:58,709 [INFO] 📂 Lecture du fichier : hdfs://namenode:8020/dataflow360/raw/mysql_healthcare_dataset.csv
+2025-11-01 19:04:07,607 [INFO] ✅ Sauvegardé dans HDFS : hdfs://namenode:8020/dataflow360/clean/mysql_healthcare_dataset
+2025-11-01 19:04:15,191 [INFO] ✅ Sauvegardé localement : /app/data/clean/mysql_healthcare_dataset_clean.csv
+2025-11-01 19:04:15,191 [INFO] 📂 Lecture du fichier : hdfs://namenode:8020/dataflow360/raw/postgres_public_health_surveillance_dataset.csv
+2025-11-01 19:14:00,707 [INFO] Instantiated <InsecureClient(url='http://127.0.0.1:9870')>.
+2025-11-01 19:14:00,708 [INFO] === Nettoyage des données DataFlow360 lancé ===
+2025-11-01 19:14:00,709 [INFO] 🚀 Démarrage du nettoyage batch...
+2025-11-01 19:14:00,710 [INFO] Listing '/dataflow360/raw'.
+2025-11-01 19:14:00,717 [ERROR] ❌ Erreur pendant le batch : HTTPConnectionPool(host='127.0.0.1', port=9870): Max retries exceeded with url: /webhdfs/v1/dataflow360/raw?user.name=root&op=LISTSTATUS (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fcebce243a0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-11-01 19:14:00,717 [INFO] 🚀 Démarrage du nettoyage streaming...
+2025-11-01 19:14:00,718 [INFO] Fetching status for '/data_streaming/clean'.
+2025-11-01 19:14:00,719 [ERROR] ❌ Erreur dans le streaming : HTTPConnectionPool(host='127.0.0.1', port=9870): Max retries exceeded with url: /webhdfs/v1/data_streaming/clean?user.name=root&op=GETFILESTATUS (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fcebcdab280>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-11-01 19:14:00,721 [INFO] Closing down clientserver connection
+2025-11-01 19:14:36,333 [INFO] Instantiated <InsecureClient(url='http://127.0.0.1:9870')>.
+2025-11-01 19:14:36,334 [INFO] === Nettoyage des données DataFlow360 lancé ===
+2025-11-01 19:14:36,334 [INFO] 🚀 Démarrage du nettoyage batch...
+2025-11-01 19:14:36,334 [INFO] Listing '/dataflow360/raw'.
+2025-11-01 19:14:36,339 [ERROR] ❌ Erreur pendant le batch : HTTPConnectionPool(host='127.0.0.1', port=9870): Max retries exceeded with url: /webhdfs/v1/dataflow360/raw?user.name=root&op=LISTSTATUS (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f5bc0c513a0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-11-01 19:14:36,339 [INFO] 🚀 Démarrage du nettoyage streaming...
+2025-11-01 19:14:36,340 [INFO] Fetching status for '/data_streaming/clean'.
+2025-11-01 19:14:36,342 [ERROR] ❌ Erreur dans le streaming : HTTPConnectionPool(host='127.0.0.1', port=9870): Max retries exceeded with url: /webhdfs/v1/data_streaming/clean?user.name=root&op=GETFILESTATUS (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f5bc0bd7280>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-11-01 19:14:36,343 [INFO] Closing down clientserver connection
+2025-11-01 19:15:04,138 [INFO] Instantiated <InsecureClient(url='http://127.0.0.1:9870')>.
+2025-11-01 19:15:04,139 [INFO] === Nettoyage des données DataFlow360 lancé ===
+2025-11-01 19:15:04,140 [INFO] 🚀 Démarrage du nettoyage batch...
+2025-11-01 19:15:04,140 [INFO] Listing '/dataflow360/raw'.
+2025-11-01 19:15:04,145 [ERROR] ❌ Erreur pendant le batch : HTTPConnectionPool(host='127.0.0.1', port=9870): Max retries exceeded with url: /webhdfs/v1/dataflow360/raw?user.name=root&op=LISTSTATUS (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f4f956a83a0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-11-01 19:15:04,146 [INFO] 🚀 Démarrage du nettoyage streaming...
+2025-11-01 19:15:04,146 [INFO] Fetching status for '/data_streaming/clean'.
+2025-11-01 19:15:04,148 [ERROR] ❌ Erreur dans le streaming : HTTPConnectionPool(host='127.0.0.1', port=9870): Max retries exceeded with url: /webhdfs/v1/data_streaming/clean?user.name=root&op=GETFILESTATUS (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f4f9562f280>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-11-01 19:15:04,150 [INFO] Closing down clientserver connection
+2025-11-01 19:17:35,153 [INFO] Instantiated <InsecureClient(url='http://namenode:9870')>.
+2025-11-01 19:17:35,153 [INFO] === Nettoyage des données DataFlow360 lancé ===
+2025-11-01 19:17:35,154 [INFO] 🚀 Démarrage du nettoyage batch...
+2025-11-01 19:17:35,154 [INFO] Listing '/dataflow360/raw'.
+2025-11-01 19:17:39,165 [ERROR] ❌ Erreur pendant le batch : HTTPConnectionPool(host='namenode', port=9870): Max retries exceeded with url: /webhdfs/v1/dataflow360/raw?user.name=root&op=LISTSTATUS (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x7fa55200d250>: Failed to resolve 'namenode' ([Errno -5] No address associated with hostname)"))
+2025-11-01 19:17:39,167 [INFO] 🚀 Démarrage du nettoyage streaming...
+2025-11-01 19:17:39,169 [INFO] Fetching status for '/data_streaming/clean'.
+2025-11-01 19:17:43,177 [ERROR] ❌ Erreur dans le streaming : HTTPConnectionPool(host='namenode', port=9870): Max retries exceeded with url: /webhdfs/v1/data_streaming/clean?user.name=root&op=GETFILESTATUS (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x7fa551f8e370>: Failed to resolve 'namenode' ([Errno -5] No address associated with hostname)"))
+2025-11-01 19:17:43,186 [INFO] Closing down clientserver connection
+2025-11-01 19:18:13,786 [INFO] Instantiated <InsecureClient(url='http://namenode:9870')>.
+2025-11-01 19:18:13,787 [INFO] === Nettoyage des données DataFlow360 lancé ===
+2025-11-01 19:18:13,787 [INFO] 🚀 Démarrage du nettoyage batch...
+2025-11-01 19:18:13,787 [INFO] Listing '/dataflow360/raw'.
+2025-11-01 19:18:17,795 [ERROR] ❌ Erreur pendant le traitement batch : HTTPConnectionPool(host='namenode', port=9870): Max retries exceeded with url: /webhdfs/v1/dataflow360/raw?user.name=root&op=LISTSTATUS (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x7f000b5b6520>: Failed to resolve 'namenode' ([Errno -5] No address associated with hostname)"))
+2025-11-01 19:18:17,797 [INFO] 🚀 Démarrage du nettoyage streaming...
+2025-11-01 19:18:17,799 [INFO] Fetching status for '/data_streaming/clean'.
+2025-11-01 19:18:21,812 [ERROR] ❌ Erreur dans le streaming : HTTPConnectionPool(host='namenode', port=9870): Max retries exceeded with url: /webhdfs/v1/data_streaming/clean?user.name=root&op=GETFILESTATUS (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x7f000b5cbe20>: Failed to resolve 'namenode' ([Errno -5] No address associated with hostname)"))
+2025-11-01 19:18:21,821 [INFO] Closing down clientserver connection
+2025-11-01 19:19:55,249 [INFO] Instantiated <InsecureClient(url='http://namenode:9870')>.
+2025-11-01 19:19:55,250 [INFO] === Nettoyage des données DataFlow360 lancé ===
+2025-11-01 19:19:55,250 [INFO] 🚀 Démarrage du nettoyage batch...
+2025-11-01 19:19:55,250 [INFO] Listing '/dataflow360/raw'.
+2025-11-01 19:19:59,260 [ERROR] ❌ Erreur pendant le traitement batch : HTTPConnectionPool(host='namenode', port=9870): Max retries exceeded with url: /webhdfs/v1/dataflow360/raw?user.name=root&op=LISTSTATUS (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x7f23b24fc520>: Failed to resolve 'namenode' ([Errno -5] No address associated with hostname)"))
+2025-11-01 19:19:59,262 [INFO] 🚀 Démarrage du nettoyage streaming...
+2025-11-01 19:19:59,264 [INFO] Fetching status for '/data_streaming/clean'.
+2025-11-01 19:20:03,277 [ERROR] ❌ Erreur dans le streaming : HTTPConnectionPool(host='namenode', port=9870): Max retries exceeded with url: /webhdfs/v1/data_streaming/clean?user.name=root&op=GETFILESTATUS (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x7f23b2511e20>: Failed to resolve 'namenode' ([Errno -5] No address associated with hostname)"))
+2025-11-01 19:20:03,284 [INFO] Closing down clientserver connection
+2025-11-01 19:21:11,112 [INFO] Instantiated <InsecureClient(url='http://namenode:9870')>.
+2025-11-01 19:21:11,113 [INFO] === Nettoyage des données DataFlow360 lancé ===
+2025-11-01 19:21:11,113 [INFO] 🚀 Démarrage du nettoyage batch...
+2025-11-01 19:21:11,113 [INFO] Listing 'hdfs://namenode:8020/dataflow360/raw'.
+2025-11-01 19:21:15,119 [ERROR] ❌ Erreur pendant le traitement batch : HTTPConnectionPool(host='namenode', port=9870): Max retries exceeded with url: /webhdfs/v1/?user.name=root&op=GETHOMEDIRECTORY (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x7f4e3131fc10>: Failed to resolve 'namenode' ([Errno -5] No address associated with hostname)"))
+2025-11-01 19:21:15,121 [INFO] 🚀 Démarrage du nettoyage en streaming...
+2025-11-01 19:21:20,657 [ERROR] ❌ Erreur dans le streaming : java.net.UnknownHostException: namenode
+2025-11-01 19:21:20,659 [INFO] Closing down clientserver connection
+2025-11-01 19:24:20,526 [INFO] Instantiated <InsecureClient(url='http://namenode:9870')>.
+2025-11-01 19:24:20,527 [INFO] === Nettoyage des données DataFlow360 lancé ===
+2025-11-01 19:24:20,527 [INFO] 🚀 Démarrage du nettoyage batch...
+2025-11-01 19:24:20,528 [INFO] Listing 'hdfs://namenode:8020/dataflow360/raw'.
+2025-11-01 19:24:24,535 [ERROR] ❌ Erreur pendant le traitement batch : HTTPConnectionPool(host='namenode', port=9870): Max retries exceeded with url: /webhdfs/v1/?user.name=root&op=GETHOMEDIRECTORY (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x7f4a8b30ac10>: Failed to resolve 'namenode' ([Errno -5] No address associated with hostname)"))
+2025-11-01 19:24:24,537 [INFO] 🚀 Démarrage du nettoyage en streaming...
+2025-11-01 19:24:29,961 [ERROR] ❌ Erreur dans le streaming : java.net.UnknownHostException: namenode
+2025-11-01 19:24:29,963 [INFO] Closing down clientserver connection
+2025-11-01 19:25:57,022 [INFO] Instantiated <InsecureClient(url='http://namenode:9870')>.
+2025-11-01 19:25:57,022 [INFO] === Nettoyage des données DataFlow360 lancé ===
+2025-11-01 19:25:57,023 [INFO] 🚀 Démarrage du nettoyage batch...
+2025-11-01 19:25:57,023 [INFO] Listing 'hdfs://namenode:8020/dataflow360/raw'.
+2025-11-01 19:26:01,029 [ERROR] ❌ Erreur pendant le traitement batch : HTTPConnectionPool(host='namenode', port=9870): Max retries exceeded with url: /webhdfs/v1/?user.name=root&op=GETHOMEDIRECTORY (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x7fd65a296bb0>: Failed to resolve 'namenode' ([Errno -5] No address associated with hostname)"))
+2025-11-01 19:26:01,030 [INFO] 🚀 Démarrage du nettoyage en streaming...
+2025-11-01 19:26:06,372 [ERROR] ❌ Erreur dans le streaming : java.net.UnknownHostException: namenode
+2025-11-01 19:26:06,374 [INFO] Closing down clientserver connection
+2025-11-01 19:28:32,775 [INFO] Instantiated <InsecureClient(url='http://127.0.0.1:9870')>.
+2025-11-01 19:28:32,776 [INFO] === Nettoyage des données DataFlow360 lancé ===
+2025-11-01 19:28:32,777 [INFO] 🚀 Démarrage du nettoyage batch...
+2025-11-01 19:28:32,777 [INFO] Listing 'hdfs://namenode:8020/dataflow360/raw'.
+2025-11-01 19:28:32,786 [ERROR] ❌ Erreur pendant le traitement batch : HTTPConnectionPool(host='127.0.0.1', port=9870): Max retries exceeded with url: /webhdfs/v1/?user.name=root&op=GETHOMEDIRECTORY (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f5ada581bb0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-11-01 19:28:32,786 [INFO] 🚀 Démarrage du nettoyage en streaming...
+2025-11-01 19:28:38,442 [ERROR] ❌ Erreur dans le streaming : java.net.UnknownHostException: namenode
+2025-11-01 19:28:38,443 [INFO] Closing down clientserver connection
+2025-11-01 19:28:47,157 [INFO] Instantiated <InsecureClient(url='http://127.0.0.1:9870')>.
+2025-11-01 19:28:47,158 [INFO] === Nettoyage des données DataFlow360 lancé ===
+2025-11-01 19:28:47,158 [INFO] 🚀 Démarrage du nettoyage batch...
+2025-11-01 19:28:47,159 [INFO] Listing 'hdfs://namenode:8020/dataflow360/raw'.
+2025-11-01 19:28:47,164 [ERROR] ❌ Erreur pendant le traitement batch : HTTPConnectionPool(host='127.0.0.1', port=9870): Max retries exceeded with url: /webhdfs/v1/?user.name=root&op=GETHOMEDIRECTORY (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fafa4257bb0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-11-01 19:28:47,164 [INFO] 🚀 Démarrage du nettoyage en streaming...
+2025-11-01 19:28:52,591 [ERROR] ❌ Erreur dans le streaming : java.net.UnknownHostException: namenode
+2025-11-01 19:28:52,593 [INFO] Closing down clientserver connection
+2025-11-03 10:08:10,149 [INFO] Instantiated <InsecureClient(url='http://namenode:9870')>.
+2025-11-03 10:08:10,149 [INFO] Creating directories to 'hdfs://namenode:8020/data_streaming/raw'.
+2025-11-03 10:08:10,192 [WARNING] Impossible de créer le dossier HDFS hdfs://namenode:8020/data_streaming/raw: Invalid path name Invalid file name: /user/root/hdfs:/namenode:8020/data_streaming/raw
+2025-11-03 10:08:10,192 [INFO] Creating directories to 'hdfs://namenode:8020/data_streaming/clean'.
+2025-11-03 10:08:10,199 [WARNING] Impossible de créer le dossier HDFS hdfs://namenode:8020/data_streaming/clean: Invalid path name Invalid file name: /user/root/hdfs:/namenode:8020/data_streaming/clean
+2025-11-03 10:08:10,199 [INFO] === Nettoyage lancé ===
+2025-11-03 10:08:10,200 [INFO] 🚀 Démarrage du nettoyage batch...
+2025-11-03 10:08:10,201 [INFO] Listing '/dataflow360/raw'.
+2025-11-03 10:08:10,209 [INFO] 📂 Lecture : hdfs://namenode:8020/dataflow360/raw/mongo_phof_datase.csv
+2025-11-03 10:08:46,422 [INFO] ✅ Sauvegardé localement : /app/data/clean/mongo_phof_datase_clean.csv
+2025-11-03 10:08:46,422 [INFO] 📂 Lecture : hdfs://namenode:8020/dataflow360/raw/mysql_healthcare_dataset.csv
+2025-11-03 10:08:58,420 [INFO] ✅ Sauvegardé localement : /app/data/clean/mysql_healthcare_dataset_clean.csv
+2025-11-03 10:08:58,461 [INFO] 📂 Lecture : hdfs://namenode:8020/dataflow360/raw/postgres_public_health_surveillance_dataset.csv
+2025-11-03 10:09:13,340 [INFO] ✅ Sauvegardé localement : /app/data/clean/postgres_public_health_surveillance_dataset_clean.csv
+2025-11-03 10:09:13,343 [INFO] 🎯 Nettoyage batch terminé.
+2025-11-03 10:09:13,343 [INFO] 🚀 Démarrage du streaming...
+2025-11-03 10:09:13,413 [ERROR] ❌ Erreur streaming : Schema must be specified when creating a streaming source DataFrame. If some files already exist in the directory, then depending on the file format you may be able to create a static DataFrame on that directory with 'spark.read.load(directory)' and infer schema from it.
+2025-11-03 10:09:13,468 [INFO] Closing down clientserver connection
+2025-11-03 13:18:35,933 [INFO] Instantiated <InsecureClient(url='http://namenode:9870')>.
+2025-11-03 13:18:35,934 [INFO] === Nettoyage streaming lancé ===
+2025-11-03 13:18:35,934 [INFO] 🚀 Démarrage du streaming...
+2025-11-03 13:18:42,172 [ERROR] ❌ Erreur streaming : java.net.UnknownHostException: namenode
+2025-11-03 13:18:42,174 [INFO] Closing down clientserver connection
+2025-11-03 13:20:22,005 [INFO] Instantiated <InsecureClient(url='http://namenode:9870')>.
+2025-11-03 13:20:22,006 [INFO] === Nettoyage streaming lancé ===
+2025-11-03 13:20:22,006 [INFO] 🚀 Démarrage du streaming...
+2025-11-03 13:20:26,580 [ERROR] ❌ Erreur streaming : Schema must be specified when creating a streaming source DataFrame. If some files already exist in the directory, then depending on the file format you may be able to create a static DataFrame on that directory with 'spark.read.load(directory)' and infer schema from it.
+2025-11-03 13:20:26,583 [INFO] Closing down clientserver connection
+2025-11-03 16:08:28,694 [INFO] Closing down clientserver connection
+2025-11-03 16:33:57,475 [INFO] Instantiated <InsecureClient(url='http://namenode:9870')>.
+2025-11-03 16:33:57,476 [INFO] === Nettoyage streaming lancé ===
+2025-11-03 16:33:57,517 [ERROR] ❌ Erreur création DB/table: connection to server at "dataflow360_postgres" (172.18.0.8), port 5432 failed: FATAL:  database "postgres_admin" does not exist
+
+2025-11-03 16:33:57,517 [INFO] 🚀 Démarrage du streaming...
+2025-11-03 16:34:01,324 [ERROR] ❌ Erreur streaming : Schema must be specified when creating a streaming source DataFrame. If some files already exist in the directory, then depending on the file format you may be able to create a static DataFrame on that directory with 'spark.read.load(directory)' and infer schema from it.
+2025-11-03 16:34:01,327 [INFO] Closing down clientserver connection
+2025-11-03 16:48:27,506 [INFO] Instantiated <InsecureClient(url='http://namenode:9870')>.
+2025-11-03 16:48:27,507 [INFO] === Nettoyage streaming lancé ===
+2025-11-03 16:48:27,526 [ERROR] ❌ Erreur création DB/table: connection to server at "dataflow360_postgres" (172.18.0.8), port 5432 failed: FATAL:  database "postgres_admin" does not exist
+
+2025-11-03 16:48:27,527 [INFO] 🚀 Démarrage du streaming...
+2025-11-03 16:48:30,210 [ERROR] ❌ Erreur streaming : Schema must be specified when creating a streaming source DataFrame. If some files already exist in the directory, then depending on the file format you may be able to create a static DataFrame on that directory with 'spark.read.load(directory)' and infer schema from it.
+2025-11-03 16:48:30,213 [INFO] Closing down clientserver connection
+2025-11-03 16:50:01,412 [INFO] Instantiated <InsecureClient(url='http://namenode:9870')>.
+2025-11-03 16:50:01,413 [INFO] === Nettoyage streaming lancé ===
+2025-11-03 16:50:01,427 [ERROR] ❌ Erreur création DB/table: connection to server at "dataflow360_postgres" (172.18.0.8), port 5432 failed: FATAL:  database "postgres_admin" does not exist
+
+2025-11-03 16:50:01,427 [INFO] 🚀 Démarrage du streaming...
+2025-11-03 16:50:04,512 [ERROR] ❌ Erreur streaming : Schema must be specified when creating a streaming source DataFrame. If some files already exist in the directory, then depending on the file format you may be able to create a static DataFrame on that directory with 'spark.read.load(directory)' and infer schema from it.
+2025-11-03 16:50:04,514 [INFO] Closing down clientserver connection
+2025-11-03 16:58:12,532 [INFO] Instantiated <InsecureClient(url='http://namenode:9870')>.
+2025-11-03 16:58:12,533 [INFO] === Nettoyage streaming lancé ===
+2025-11-03 16:58:13,004 [INFO] ✅ Base de données sante_clean_db créée
+2025-11-03 16:58:13,080 [INFO] ✅ Table stream_clean créée si inexistante
+2025-11-03 16:58:13,081 [INFO] 🚀 Démarrage du streaming...
+2025-11-03 16:58:20,261 [INFO] Callback Server Starting
+2025-11-03 16:58:20,274 [INFO] Socket listening on ('127.0.0.1', 46883)
+2025-11-03 16:58:34,172 [INFO] Python Server ready to receive messages
+2025-11-03 16:58:34,173 [INFO] Received command c on object id p0
+2025-11-03 16:58:52,315 [INFO] ✅ Données sauvegardées dans PostgreSQL table: stream_clean
+2025-11-03 17:21:11,419 [INFO] Instantiated <InsecureClient(url='http://namenode:9870')>.
+2025-11-03 17:21:11,421 [INFO] === Nettoyage streaming lancé ===
+2025-11-03 17:21:11,458 [INFO] ✅ Table stream_clean créée si inexistante
+2025-11-03 17:21:11,458 [INFO] 🚀 Démarrage du streaming...
+2025-11-03 17:21:18,701 [INFO] Callback Server Starting
+2025-11-03 17:21:18,705 [INFO] Socket listening on ('127.0.0.1', 37441)
+2025-11-03 17:53:38,353 [INFO] Instantiated <InsecureClient(url='http://namenode:9870')>.
+2025-11-03 17:53:38,354 [INFO] === Nettoyage streaming lancé ===
+2025-11-03 17:53:38,386 [INFO] ✅ Table stream_clean créée si inexistante
+2025-11-03 17:53:38,387 [INFO] 🚀 Démarrage du streaming...
+2025-11-03 17:53:45,558 [INFO] Callback Server Starting
+2025-11-03 17:53:45,559 [INFO] Socket listening on ('127.0.0.1', 37695)
+2025-11-03 17:54:06,598 [INFO] Python Server ready to receive messages
+2025-11-03 17:54:06,641 [INFO] Received command c on object id p0
+2025-11-03 17:54:16,272 [INFO] ✅ Données sauvegardées dans PostgreSQL table: stream_clean
+2025-11-03 17:54:17,442 [INFO] Received command c on object id p0
+2025-11-03 17:54:21,378 [INFO] ✅ Données sauvegardées dans PostgreSQL table: stream_clean
+2025-11-03 17:54:22,398 [INFO] Received command c on object id p0
+2025-11-03 17:54:24,413 [INFO] ✅ Données sauvegardées dans PostgreSQL table: stream_clean
+2025-11-03 17:54:25,041 [INFO] Received command c on object id p0
+2025-11-03 17:54:26,499 [INFO] ✅ Données sauvegardées dans PostgreSQL table: stream_clean
+2025-11-03 17:54:30,167 [INFO] Received command c on object id p0
+2025-11-03 17:54:31,465 [INFO] ✅ Données sauvegardées dans PostgreSQL table: stream_clean
+2025-11-03 17:54:35,317 [INFO] Received command c on object id p0
+2025-11-03 17:54:39,962 [INFO] ✅ Données sauvegardées dans PostgreSQL table: stream_clean
+2025-11-03 17:54:41,054 [INFO] Received command c on object id p0
+2025-11-03 17:54:42,414 [INFO] ✅ Données sauvegardées dans PostgreSQL table: stream_clean
+2025-11-03 17:54:45,898 [INFO] Received command c on object id p0
+2025-11-03 17:54:47,131 [INFO] ✅ Données sauvegardées dans PostgreSQL table: stream_clean
+2025-11-03 17:54:51,266 [INFO] Received command c on object id p0
+2025-11-03 17:54:52,729 [INFO] ✅ Données sauvegardées dans PostgreSQL table: stream_clean
+2025-11-03 17:54:56,536 [INFO] Received command c on object id p0
+2025-11-03 17:54:58,509 [INFO] ✅ Données sauvegardées dans PostgreSQL table: stream_clean
+2025-11-03 17:55:02,448 [INFO] Received command c on object id p0
+2025-11-03 17:55:03,491 [INFO] ✅ Données sauvegardées dans PostgreSQL table: stream_clean
+2025-11-03 17:55:08,154 [INFO] Received command c on object id p0
+2025-11-03 17:55:09,361 [INFO] ✅ Données sauvegardées dans PostgreSQL table: stream_clean
+2025-11-03 17:55:12,612 [INFO] Received command c on object id p0
+2025-11-03 17:55:14,477 [INFO] ✅ Données sauvegardées dans PostgreSQL table: stream_clean
+2025-11-03 17:55:17,861 [INFO] Received command c on object id p0
+2025-11-03 17:55:18,875 [INFO] ✅ Données sauvegardées dans PostgreSQL table: stream_clean
+2025-11-03 17:55:23,416 [INFO] Received command c on object id p0
+2025-11-03 17:55:25,660 [INFO] ✅ Données sauvegardées dans PostgreSQL table: stream_clean
+2025-11-03 17:55:28,690 [INFO] Received command c on object id p0
+2025-11-03 17:55:30,370 [INFO] ✅ Données sauvegardées dans PostgreSQL table: stream_clean
+2025-11-03 17:55:35,414 [INFO] Received command c on object id p0
+2025-11-03 17:55:36,797 [INFO] ✅ Données sauvegardées dans PostgreSQL table: stream_clean
+2025-11-03 17:55:40,249 [INFO] Received command c on object id p0
+2025-11-03 17:55:41,394 [INFO] ✅ Données sauvegardées dans PostgreSQL table: stream_clean
+2025-11-03 17:55:45,737 [INFO] Received command c on object id p0
+2025-11-03 17:55:46,903 [INFO] ✅ Données sauvegardées dans PostgreSQL table: stream_clean
+2025-11-03 17:55:51,305 [INFO] Received command c on object id p0
+2025-11-03 17:55:53,901 [INFO] ✅ Données sauvegardées dans PostgreSQL table: stream_clean
+2025-11-03 17:55:56,335 [INFO] Received command c on object id p0
+2025-11-03 17:55:57,420 [INFO] ✅ Données sauvegardées dans PostgreSQL table: stream_clean
+2025-11-03 17:56:01,891 [INFO] Received command c on object id p0
+2025-11-03 17:56:04,678 [INFO] ✅ Données sauvegardées dans PostgreSQL table: stream_clean
+2025-11-03 17:56:07,942 [INFO] Received command c on object id p0
+2025-11-03 17:56:09,979 [INFO] ✅ Données sauvegardées dans PostgreSQL table: stream_clean
+2025-11-03 17:56:12,717 [INFO] Received command c on object id p0
+2025-11-03 17:56:15,873 [INFO] ✅ Données sauvegardées dans PostgreSQL table: stream_clean
+2025-11-03 17:56:18,832 [INFO] Received command c on object id p0
+2025-11-03 17:56:20,843 [INFO] ✅ Données sauvegardées dans PostgreSQL table: stream_clean
+2025-11-03 17:56:24,529 [INFO] Received command c on object id p0
+2025-11-03 17:56:26,891 [INFO] ✅ Données sauvegardées dans PostgreSQL table: stream_clean
+2025-11-03 17:56:30,940 [INFO] Received command c on object id p0
+2025-11-03 17:56:32,350 [INFO] ✅ Données sauvegardées dans PostgreSQL table: stream_clean
+2025-11-03 17:56:36,851 [INFO] Received command c on object id p0
+2025-11-03 17:56:38,674 [INFO] ✅ Données sauvegardées dans PostgreSQL table: stream_clean
+2025-11-03 17:56:42,656 [INFO] Received command c on object id p0
+2025-11-03 17:56:43,679 [INFO] ✅ Données sauvegardées dans PostgreSQL table: stream_clean
+2025-11-03 17:56:48,599 [INFO] Received command c on object id p0
+2025-11-03 17:56:49,747 [INFO] ✅ Données sauvegardées dans PostgreSQL table: stream_clean
+2025-11-03 17:56:53,709 [INFO] Received command c on object id p0
+2025-11-03 17:56:55,327 [INFO] ✅ Données sauvegardées dans PostgreSQL table: stream_clean
+2025-11-03 17:56:59,204 [INFO] Received command c on object id p0
+2025-11-03 17:57:00,729 [INFO] ✅ Données sauvegardées dans PostgreSQL table: stream_clean
+2025-11-03 17:57:05,045 [INFO] Received command c on object id p0
+2025-11-03 17:57:07,997 [INFO] ✅ Données sauvegardées dans PostgreSQL table: stream_clean
+2025-11-03 17:57:10,745 [INFO] Received command c on object id p0
+2025-11-03 17:57:13,450 [INFO] ✅ Données sauvegardées dans PostgreSQL table: stream_clean
+2025-11-03 17:57:16,192 [INFO] Received command c on object id p0
+2025-11-03 17:57:18,903 [INFO] ✅ Données sauvegardées dans PostgreSQL table: stream_clean
+2025-11-03 17:57:21,179 [INFO] Received command c on object id p0
+2025-11-03 17:57:22,607 [INFO] ✅ Données sauvegardées dans PostgreSQL table: stream_clean
+2025-11-03 17:57:26,570 [INFO] Received command c on object id p0
+2025-11-03 17:57:29,920 [INFO] ✅ Données sauvegardées dans PostgreSQL table: stream_clean
+2025-11-03 17:57:32,391 [INFO] Received command c on object id p0
+2025-11-03 17:57:34,318 [INFO] ✅ Données sauvegardées dans PostgreSQL table: stream_clean
+2025-11-03 17:57:37,218 [INFO] Received command c on object id p0
+2025-11-03 17:57:42,424 [INFO] ✅ Données sauvegardées dans PostgreSQL table: stream_clean
+2025-11-03 17:57:45,369 [INFO] Received command c on object id p0
+2025-11-03 17:57:48,667 [INFO] ✅ Données sauvegardées dans PostgreSQL table: stream_clean
+2025-11-03 17:57:54,505 [INFO] Received command c on object id p0
+2025-11-03 17:57:59,528 [INFO] ✅ Données sauvegardées dans PostgreSQL table: stream_clean
+2025-11-03 17:58:14,071 [INFO] Received command c on object id p0
+2025-11-03 17:58:17,778 [INFO] ✅ Données sauvegardées dans PostgreSQL table: stream_clean
+2025-11-03 17:58:25,668 [INFO] Received command c on object id p0
+2025-11-03 17:58:27,648 [INFO] ✅ Données sauvegardées dans PostgreSQL table: stream_clean
+2025-11-03 17:58:30,993 [INFO] Received command c on object id p0
+2025-11-03 17:58:32,287 [INFO] ✅ Données sauvegardées dans PostgreSQL table: stream_clean
+2025-11-03 17:58:36,379 [INFO] Received command c on object id p0
+2025-11-03 17:58:38,443 [INFO] ✅ Données sauvegardées dans PostgreSQL table: stream_clean
+2025-11-03 17:58:41,339 [INFO] Received command c on object id p0
+2025-11-03 17:58:42,476 [INFO] ✅ Données sauvegardées dans PostgreSQL table: stream_clean
+2025-11-03 17:58:47,130 [INFO] Received command c on object id p0
+2025-11-03 17:58:49,513 [INFO] ✅ Données sauvegardées dans PostgreSQL table: stream_clean
+2025-11-03 17:58:52,310 [INFO] Received command c on object id p0
+2025-11-03 17:58:53,573 [INFO] ✅ Données sauvegardées dans PostgreSQL table: stream_clean
+2025-11-03 17:59:00,163 [INFO] Received command c on object id p0
+2025-11-03 17:59:05,536 [INFO] ✅ Données sauvegardées dans PostgreSQL table: stream_clean
+2025-11-03 17:59:06,266 [INFO] Received command c on object id p0
+2025-11-03 17:59:08,684 [INFO] ✅ Données sauvegardées dans PostgreSQL table: stream_clean
+2025-11-03 17:59:11,735 [INFO] Received command c on object id p0
+2025-11-03 17:59:15,003 [INFO] ✅ Données sauvegardées dans PostgreSQL table: stream_clean
+2025-11-03 17:59:17,764 [INFO] Received command c on object id p0
+2025-11-03 17:59:19,196 [INFO] ✅ Données sauvegardées dans PostgreSQL table: stream_clean
+2025-11-03 17:59:22,242 [INFO] Received command c on object id p0
+2025-11-03 17:59:23,687 [INFO] ✅ Données sauvegardées dans PostgreSQL table: stream_clean
+2025-11-03 17:59:28,297 [INFO] Received command c on object id p0
+2025-11-03 17:59:30,494 [INFO] ✅ Données sauvegardées dans PostgreSQL table: stream_clean
+2025-11-03 17:59:32,945 [INFO] Received command c on object id p0
+2025-11-03 17:59:33,970 [INFO] ✅ Données sauvegardées dans PostgreSQL table: stream_clean
+2025-11-03 17:59:39,834 [INFO] Received command c on object id p0
+2025-11-03 17:59:42,167 [INFO] ✅ Données sauvegardées dans PostgreSQL table: stream_clean
+2025-11-03 17:59:44,925 [INFO] Received command c on object id p0
+2025-11-03 17:59:46,465 [INFO] ✅ Données sauvegardées dans PostgreSQL table: stream_clean
+2025-11-03 17:59:50,568 [INFO] Received command c on object id p0
+2025-11-03 17:59:52,704 [INFO] ✅ Données sauvegardées dans PostgreSQL table: stream_clean
+2025-11-03 17:59:55,954 [INFO] Received command c on object id p0
+2025-11-03 17:59:57,071 [INFO] ✅ Données sauvegardées dans PostgreSQL table: stream_clean
+2025-11-03 18:00:00,615 [INFO] Received command c on object id p0
+2025-11-03 18:00:03,225 [INFO] ✅ Données sauvegardées dans PostgreSQL table: stream_clean
+2025-11-03 18:00:05,634 [INFO] Received command c on object id p0
+2025-11-03 18:00:07,042 [INFO] ✅ Données sauvegardées dans PostgreSQL table: stream_clean
+2025-11-03 18:00:10,899 [INFO] Received command c on object id p0
+2025-11-03 18:00:12,306 [INFO] ✅ Données sauvegardées dans PostgreSQL table: stream_clean
+2025-11-03 18:00:15,985 [INFO] Received command c on object id p0
+2025-11-03 18:00:16,901 [INFO] ✅ Données sauvegardées dans PostgreSQL table: stream_clean
+2025-11-03 18:00:24,098 [INFO] Received command c on object id p0
+2025-11-03 18:00:25,766 [INFO] ✅ Données sauvegardées dans PostgreSQL table: stream_clean
+2025-11-03 18:00:28,199 [INFO] Received command c on object id p0
+2025-11-03 18:00:29,398 [INFO] ✅ Données sauvegardées dans PostgreSQL table: stream_clean
+2025-11-03 18:00:34,969 [INFO] Received command c on object id p0
+2025-11-03 18:00:36,826 [INFO] ✅ Données sauvegardées dans PostgreSQL table: stream_clean
+2025-11-03 18:00:38,903 [INFO] Received command c on object id p0
+2025-11-03 18:00:39,922 [INFO] ✅ Données sauvegardées dans PostgreSQL table: stream_clean
+2025-11-03 18:00:44,871 [INFO] Received command c on object id p0
+2025-11-03 18:00:46,850 [INFO] ✅ Données sauvegardées dans PostgreSQL table: stream_clean
+2025-11-03 18:00:49,976 [INFO] Received command c on object id p0
+2025-11-03 18:00:51,060 [INFO] ✅ Données sauvegardées dans PostgreSQL table: stream_clean
+2025-11-03 18:00:55,505 [INFO] Received command c on object id p0
+2025-11-03 18:00:57,715 [INFO] ✅ Données sauvegardées dans PostgreSQL table: stream_clean
+2025-11-03 18:01:00,225 [INFO] Received command c on object id p0
+2025-11-03 18:01:01,474 [INFO] ✅ Données sauvegardées dans PostgreSQL table: stream_clean
+2025-11-03 18:01:05,879 [INFO] Received command c on object id p0
+2025-11-03 18:01:08,036 [INFO] ✅ Données sauvegardées dans PostgreSQL table: stream_clean
+2025-11-03 18:01:10,825 [INFO] Received command c on object id p0
+2025-11-03 18:01:11,801 [INFO] ✅ Données sauvegardées dans PostgreSQL table: stream_clean
+2025-11-03 18:01:16,352 [INFO] Received command c on object id p0
+2025-11-03 18:01:18,668 [INFO] ✅ Données sauvegardées dans PostgreSQL table: stream_clean
+2025-11-03 18:01:21,636 [INFO] Received command c on object id p0
+2025-11-03 18:01:22,651 [INFO] ✅ Données sauvegardées dans PostgreSQL table: stream_clean
+2025-11-03 18:01:26,554 [INFO] Received command c on object id p0
+2025-11-03 18:01:28,102 [INFO] ✅ Données sauvegardées dans PostgreSQL table: stream_clean
+2025-11-03 18:01:32,181 [INFO] Received command c on object id p0
+2025-11-03 18:01:33,421 [INFO] ✅ Données sauvegardées dans PostgreSQL table: stream_clean
+2025-11-03 18:01:38,851 [INFO] Received command c on object id p0
+2025-11-03 18:01:40,727 [INFO] ✅ Données sauvegardées dans PostgreSQL table: stream_clean
+2025-11-03 18:01:43,028 [INFO] Received command c on object id p0
+2025-11-03 18:01:44,417 [INFO] ✅ Données sauvegardées dans PostgreSQL table: stream_clean
+2025-11-03 18:01:48,884 [INFO] Received command c on object id p0
+2025-11-03 18:01:50,016 [INFO] ✅ Données sauvegardées dans PostgreSQL table: stream_clean
+2025-11-03 18:01:53,152 [INFO] Received command c on object id p0
+2025-11-03 18:01:54,485 [INFO] ✅ Données sauvegardées dans PostgreSQL table: stream_clean
+2025-11-03 18:01:58,764 [INFO] Received command c on object id p0
+2025-11-03 18:02:02,068 [INFO] ✅ Données sauvegardées dans PostgreSQL table: stream_clean
+2025-11-03 18:02:03,686 [INFO] Received command c on object id p0
+2025-11-03 18:02:05,245 [INFO] ✅ Données sauvegardées dans PostgreSQL table: stream_clean
+2025-11-03 18:02:09,505 [INFO] Received command c on object id p0
+2025-11-03 18:02:11,177 [INFO] ✅ Données sauvegardées dans PostgreSQL table: stream_clean
+2025-11-03 18:02:15,622 [INFO] Received command c on object id p0
+2025-11-03 18:02:16,922 [INFO] ✅ Données sauvegardées dans PostgreSQL table: stream_clean
+2025-11-03 18:02:20,443 [INFO] Received command c on object id p0
+2025-11-03 18:02:22,379 [INFO] ✅ Données sauvegardées dans PostgreSQL table: stream_clean
+2025-11-03 18:13:18,014 [INFO] Instantiated <InsecureClient(url='http://namenode:9870')>.
+2025-11-03 18:13:18,016 [INFO] === Nettoyage streaming lancé ===
+2025-11-03 18:13:18,061 [INFO] ✅ Table stream_clean créée si inexistante
+2025-11-03 18:13:18,062 [INFO] 🚀 Démarrage du streaming...
+2025-11-03 18:13:29,986 [INFO] Callback Server Starting
+2025-11-03 18:13:29,987 [INFO] Socket listening on ('127.0.0.1', 38247)
+2025-11-03 18:13:39,713 [INFO] Python Server ready to receive messages
+2025-11-03 18:13:39,718 [INFO] Received command c on object id p0
+2025-11-03 18:14:01,502 [INFO] ✅ Données sauvegardées dans PostgreSQL table: stream_clean
+2025-11-03 18:14:04,542 [INFO] Received command c on object id p0
+2025-11-03 18:14:12,483 [INFO] ✅ Données sauvegardées dans PostgreSQL table: stream_clean
+2025-11-03 18:14:16,636 [INFO] Received command c on object id p0
+2025-11-03 18:14:21,815 [INFO] ✅ Données sauvegardées dans PostgreSQL table: stream_clean
+2025-11-03 18:14:24,145 [INFO] Received command c on object id p0
+2025-11-03 18:14:31,324 [INFO] ✅ Données sauvegardées dans PostgreSQL table: stream_clean
+2025-11-03 18:14:33,063 [INFO] Received command c on object id p0
+2025-11-03 18:14:38,416 [INFO] ✅ Données sauvegardées dans PostgreSQL table: stream_clean
+2025-11-03 18:14:42,709 [INFO] Received command c on object id p0
+2025-11-03 18:14:49,712 [INFO] ✅ Données sauvegardées dans PostgreSQL table: stream_clean
+2025-11-03 18:14:51,107 [INFO] Received command c on object id p0
+2025-11-03 18:14:54,761 [INFO] ✅ Données sauvegardées dans PostgreSQL table: stream_clean
+2025-11-03 18:14:56,351 [INFO] Received command c on object id p0
+2025-11-03 18:14:59,254 [INFO] ✅ Données sauvegardées dans PostgreSQL table: stream_clean
+2025-11-03 18:15:01,692 [INFO] Received command c on object id p0
+2025-11-03 18:15:03,580 [INFO] ✅ Données sauvegardées dans PostgreSQL table: stream_clean
+2025-11-03 18:15:06,863 [INFO] Received command c on object id p0
+2025-11-03 18:15:08,957 [INFO] ✅ Données sauvegardées dans PostgreSQL table: stream_clean
+2025-11-03 18:15:11,525 [INFO] Received command c on object id p0
+2025-11-03 18:15:13,208 [INFO] ✅ Données sauvegardées dans PostgreSQL table: stream_clean
+2025-11-03 18:15:18,145 [INFO] Received command c on object id p0
+2025-11-03 18:15:19,997 [INFO] ✅ Données sauvegardées dans PostgreSQL table: stream_clean
+2025-11-03 18:15:23,605 [INFO] Received command c on object id p0
+2025-11-03 18:15:27,816 [INFO] ✅ Données sauvegardées dans PostgreSQL table: stream_clean
+2025-11-03 18:15:29,274 [INFO] Received command c on object id p0
+2025-11-03 18:15:32,726 [INFO] ✅ Données sauvegardées dans PostgreSQL table: stream_clean
+2025-11-03 18:15:35,091 [INFO] Received command c on object id p0
+2025-11-03 18:15:36,695 [INFO] ✅ Données sauvegardées dans PostgreSQL table: stream_clean
+2025-11-03 18:15:41,140 [INFO] Received command c on object id p0
+2025-11-03 18:15:45,175 [INFO] ✅ Données sauvegardées dans PostgreSQL table: stream_clean
+2025-11-03 18:15:46,276 [INFO] Received command c on object id p0
+2025-11-03 18:15:48,643 [INFO] ✅ Données sauvegardées dans PostgreSQL table: stream_clean
+2025-11-03 18:15:52,467 [INFO] Received command c on object id p0
+2025-11-03 18:15:54,632 [INFO] ✅ Données sauvegardées dans PostgreSQL table: stream_clean
+2025-11-03 18:15:58,164 [INFO] Received command c on object id p0
+2025-11-03 18:15:59,974 [INFO] ✅ Données sauvegardées dans PostgreSQL table: stream_clean
+2025-11-03 18:16:04,484 [INFO] Received command c on object id p0
+2025-11-03 18:16:08,398 [INFO] ✅ Données sauvegardées dans PostgreSQL table: stream_clean
+2025-11-03 18:16:09,464 [INFO] Received command c on object id p0
+2025-11-03 18:16:11,439 [INFO] ✅ Données sauvegardées dans PostgreSQL table: stream_clean
+2025-11-03 18:16:14,993 [INFO] Received command c on object id p0
+2025-11-03 18:16:16,591 [INFO] ✅ Données sauvegardées dans PostgreSQL table: stream_clean
+2025-11-03 18:16:20,660 [INFO] Received command c on object id p0
+2025-11-03 18:16:23,105 [INFO] ✅ Données sauvegardées dans PostgreSQL table: stream_clean
+2025-11-03 18:16:26,035 [INFO] Received command c on object id p0
+2025-11-03 18:16:28,556 [INFO] ✅ Données sauvegardées dans PostgreSQL table: stream_clean
+2025-11-03 18:16:30,967 [INFO] Received command c on object id p0
+2025-11-03 18:16:33,758 [INFO] ✅ Données sauvegardées dans PostgreSQL table: stream_clean
+2025-11-03 18:16:38,488 [INFO] Received command c on object id p0
+2025-11-03 18:16:42,785 [INFO] ✅ Données sauvegardées dans PostgreSQL table: stream_clean
+2025-11-03 18:16:43,917 [INFO] Received command c on object id p0
+2025-11-03 18:16:46,304 [INFO] ✅ Données sauvegardées dans PostgreSQL table: stream_clean
+2025-11-03 18:16:49,880 [INFO] Received command c on object id p0
+2025-11-03 18:16:52,637 [INFO] ✅ Données sauvegardées dans PostgreSQL table: stream_clean
+2025-11-03 18:16:55,408 [INFO] Received command c on object id p0
+2025-11-03 18:16:57,386 [INFO] ✅ Données sauvegardées dans PostgreSQL table: stream_clean

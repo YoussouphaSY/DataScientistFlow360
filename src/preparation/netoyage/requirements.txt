@@ -3,3 +3,8 @@ pyyaml
 hdfs
 pandas==2.2.2
 pyarrow==15.0.0
+papermill
+matplotlib
+seaborn
+psycopg2-binary
+SQLAlchemy
