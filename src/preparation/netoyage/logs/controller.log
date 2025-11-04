@@ -1,3 +1,1591 @@
 2025-11-03 17:21:03,616 [INFO] === Controller EDA DataFlow360 démarré ===
 2025-11-03 17:53:25,491 [INFO] === Controller EDA DataFlow360 démarré ===
 2025-11-03 18:13:04,197 [INFO] === Controller EDA DataFlow360 démarré ===
+2025-11-03 18:24:23,660 [INFO] === Controller EDA DataFlow360 démarré ===
+2025-11-03 19:00:58,197 [INFO] === Controller EDA DataFlow360 démarré ===
+2025-11-03 19:12:08,164 [INFO] === Controller EDA DataFlow360 démarré ===
+2025-11-03 19:16:37,518 [INFO] === Controller EDA DataFlow360 démarré ===
+2025-11-03 19:16:37,526 [INFO] 📊 Lancement EDA pour /app/data/clean/batch_118_clean.csv
+2025-11-03 19:16:37,526 [INFO] Input Notebook:  /app/notebooks/eda_notebook.ipynb
+2025-11-03 19:16:37,527 [INFO] Output Notebook: /app/eda_reports/batch_118_clean_EDA.ipynb
+2025-11-03 19:16:37,610 [WARNING] Passed unknown parameter: input_path
+2025-11-03 19:16:37,610 [ERROR] ❌ Erreur EDA: No kernel name found in notebook and no override provided.
+2025-11-03 19:16:37,612 [INFO] 📊 Lancement EDA pour /app/data/clean/batch_119_clean.csv
+2025-11-03 19:16:37,612 [INFO] Input Notebook:  /app/notebooks/eda_notebook.ipynb
+2025-11-03 19:16:37,612 [INFO] Output Notebook: /app/eda_reports/batch_119_clean_EDA.ipynb
+2025-11-03 19:16:37,618 [WARNING] Passed unknown parameter: input_path
+2025-11-03 19:16:37,619 [ERROR] ❌ Erreur EDA: No kernel name found in notebook and no override provided.
+2025-11-03 19:16:37,620 [INFO] 📊 Lancement EDA pour /app/data/clean/batch_120_clean.csv
+2025-11-03 19:16:37,621 [INFO] Input Notebook:  /app/notebooks/eda_notebook.ipynb
+2025-11-03 19:16:37,621 [INFO] Output Notebook: /app/eda_reports/batch_120_clean_EDA.ipynb
+2025-11-03 19:16:37,627 [WARNING] Passed unknown parameter: input_path
+2025-11-03 19:16:37,627 [ERROR] ❌ Erreur EDA: No kernel name found in notebook and no override provided.
+2025-11-03 19:16:37,628 [INFO] 📊 Lancement EDA pour /app/data/clean/batch_121_clean.csv
+2025-11-03 19:16:37,629 [INFO] Input Notebook:  /app/notebooks/eda_notebook.ipynb
+2025-11-03 19:16:37,629 [INFO] Output Notebook: /app/eda_reports/batch_121_clean_EDA.ipynb
+2025-11-03 19:16:37,634 [WARNING] Passed unknown parameter: input_path
+2025-11-03 19:16:37,635 [ERROR] ❌ Erreur EDA: No kernel name found in notebook and no override provided.
+2025-11-03 19:16:37,636 [INFO] 📊 Lancement EDA pour /app/data/clean/batch_122_clean.csv
+2025-11-03 19:16:37,636 [INFO] Input Notebook:  /app/notebooks/eda_notebook.ipynb
+2025-11-03 19:16:37,637 [INFO] Output Notebook: /app/eda_reports/batch_122_clean_EDA.ipynb
+2025-11-03 19:16:37,643 [WARNING] Passed unknown parameter: input_path
+2025-11-03 19:16:37,643 [ERROR] ❌ Erreur EDA: No kernel name found in notebook and no override provided.
+2025-11-03 19:16:37,645 [INFO] 📊 Lancement EDA pour /app/data/clean/batch_123_clean.csv
+2025-11-03 19:16:37,645 [INFO] Input Notebook:  /app/notebooks/eda_notebook.ipynb
+2025-11-03 19:16:37,646 [INFO] Output Notebook: /app/eda_reports/batch_123_clean_EDA.ipynb
+2025-11-03 19:16:37,652 [WARNING] Passed unknown parameter: input_path
+2025-11-03 19:16:37,653 [ERROR] ❌ Erreur EDA: No kernel name found in notebook and no override provided.
+2025-11-03 19:16:37,655 [INFO] 📊 Lancement EDA pour /app/data/clean/batch_124_clean.csv
+2025-11-03 19:16:37,655 [INFO] Input Notebook:  /app/notebooks/eda_notebook.ipynb
+2025-11-03 19:16:37,656 [INFO] Output Notebook: /app/eda_reports/batch_124_clean_EDA.ipynb
+2025-11-03 19:16:37,660 [WARNING] Passed unknown parameter: input_path
+2025-11-03 19:16:37,661 [ERROR] ❌ Erreur EDA: No kernel name found in notebook and no override provided.
+2025-11-03 19:16:37,662 [INFO] 📊 Lancement EDA pour /app/data/clean/batch_125_clean.csv
+2025-11-03 19:16:37,663 [INFO] Input Notebook:  /app/notebooks/eda_notebook.ipynb
+2025-11-03 19:16:37,663 [INFO] Output Notebook: /app/eda_reports/batch_125_clean_EDA.ipynb
+2025-11-03 19:16:37,669 [WARNING] Passed unknown parameter: input_path
+2025-11-03 19:16:37,670 [ERROR] ❌ Erreur EDA: No kernel name found in notebook and no override provided.
+2025-11-03 19:16:37,671 [INFO] 📊 Lancement EDA pour /app/data/clean/batch_126_clean.csv
+2025-11-03 19:16:37,672 [INFO] Input Notebook:  /app/notebooks/eda_notebook.ipynb
+2025-11-03 19:16:37,672 [INFO] Output Notebook: /app/eda_reports/batch_126_clean_EDA.ipynb
+2025-11-03 19:16:37,677 [WARNING] Passed unknown parameter: input_path
+2025-11-03 19:16:37,678 [ERROR] ❌ Erreur EDA: No kernel name found in notebook and no override provided.
+2025-11-03 19:16:37,679 [INFO] 📊 Lancement EDA pour /app/data/clean/batch_127_clean.csv
+2025-11-03 19:16:37,680 [INFO] Input Notebook:  /app/notebooks/eda_notebook.ipynb
+2025-11-03 19:16:37,680 [INFO] Output Notebook: /app/eda_reports/batch_127_clean_EDA.ipynb
+2025-11-03 19:16:37,685 [WARNING] Passed unknown parameter: input_path
+2025-11-03 19:16:37,685 [ERROR] ❌ Erreur EDA: No kernel name found in notebook and no override provided.
+2025-11-03 19:16:37,692 [INFO] 📊 Lancement EDA pour /app/data/clean/batch_128_clean.csv
+2025-11-03 19:16:37,693 [INFO] Input Notebook:  /app/notebooks/eda_notebook.ipynb
+2025-11-03 19:16:37,693 [INFO] Output Notebook: /app/eda_reports/batch_128_clean_EDA.ipynb
+2025-11-03 19:16:37,701 [WARNING] Passed unknown parameter: input_path
+2025-11-03 19:16:37,701 [ERROR] ❌ Erreur EDA: No kernel name found in notebook and no override provided.
+2025-11-03 19:16:37,703 [INFO] 📊 Lancement EDA pour /app/data/clean/batch_129_clean.csv
+2025-11-03 19:16:37,703 [INFO] Input Notebook:  /app/notebooks/eda_notebook.ipynb
+2025-11-03 19:16:37,704 [INFO] Output Notebook: /app/eda_reports/batch_129_clean_EDA.ipynb
+2025-11-03 19:16:37,710 [WARNING] Passed unknown parameter: input_path
+2025-11-03 19:16:37,710 [ERROR] ❌ Erreur EDA: No kernel name found in notebook and no override provided.
+2025-11-03 19:16:37,713 [INFO] 📊 Lancement EDA pour /app/data/clean/batch_130_clean.csv
+2025-11-03 19:16:37,714 [INFO] Input Notebook:  /app/notebooks/eda_notebook.ipynb
+2025-11-03 19:16:37,714 [INFO] Output Notebook: /app/eda_reports/batch_130_clean_EDA.ipynb
+2025-11-03 19:16:37,720 [WARNING] Passed unknown parameter: input_path
+2025-11-03 19:16:37,721 [ERROR] ❌ Erreur EDA: No kernel name found in notebook and no override provided.
+2025-11-03 19:16:37,723 [INFO] 📊 Lancement EDA pour /app/data/clean/batch_131_clean.csv
+2025-11-03 19:16:37,724 [INFO] Input Notebook:  /app/notebooks/eda_notebook.ipynb
+2025-11-03 19:16:37,724 [INFO] Output Notebook: /app/eda_reports/batch_131_clean_EDA.ipynb
+2025-11-03 19:16:37,731 [WARNING] Passed unknown parameter: input_path
+2025-11-03 19:16:37,731 [ERROR] ❌ Erreur EDA: No kernel name found in notebook and no override provided.
+2025-11-03 19:16:37,733 [INFO] 📊 Lancement EDA pour /app/data/clean/batch_132_clean.csv
+2025-11-03 19:16:37,734 [INFO] Input Notebook:  /app/notebooks/eda_notebook.ipynb
+2025-11-03 19:16:37,735 [INFO] Output Notebook: /app/eda_reports/batch_132_clean_EDA.ipynb
+2025-11-03 19:16:37,745 [WARNING] Passed unknown parameter: input_path
+2025-11-03 19:16:37,746 [ERROR] ❌ Erreur EDA: No kernel name found in notebook and no override provided.
+2025-11-03 19:16:37,756 [INFO] 📊 Lancement EDA pour /app/data/clean/batch_133_clean.csv
+2025-11-03 19:16:37,756 [INFO] Input Notebook:  /app/notebooks/eda_notebook.ipynb
+2025-11-03 19:16:37,757 [INFO] Output Notebook: /app/eda_reports/batch_133_clean_EDA.ipynb
+2025-11-03 19:16:37,764 [WARNING] Passed unknown parameter: input_path
+2025-11-03 19:16:37,765 [ERROR] ❌ Erreur EDA: No kernel name found in notebook and no override provided.
+2025-11-03 19:16:37,767 [INFO] 📊 Lancement EDA pour /app/data/clean/batch_134_clean.csv
+2025-11-03 19:16:37,768 [INFO] Input Notebook:  /app/notebooks/eda_notebook.ipynb
+2025-11-03 19:16:37,769 [INFO] Output Notebook: /app/eda_reports/batch_134_clean_EDA.ipynb
+2025-11-03 19:16:37,789 [WARNING] Passed unknown parameter: input_path
+2025-11-03 19:16:37,790 [ERROR] ❌ Erreur EDA: No kernel name found in notebook and no override provided.
+2025-11-03 19:16:37,792 [INFO] 📊 Lancement EDA pour /app/data/clean/batch_135_clean.csv
+2025-11-03 19:16:37,792 [INFO] Input Notebook:  /app/notebooks/eda_notebook.ipynb
+2025-11-03 19:16:37,793 [INFO] Output Notebook: /app/eda_reports/batch_135_clean_EDA.ipynb
+2025-11-03 19:16:37,800 [WARNING] Passed unknown parameter: input_path
+2025-11-03 19:16:37,800 [ERROR] ❌ Erreur EDA: No kernel name found in notebook and no override provided.
+2025-11-03 19:16:37,802 [INFO] 📊 Lancement EDA pour /app/data/clean/batch_136_clean.csv
+2025-11-03 19:16:37,802 [INFO] Input Notebook:  /app/notebooks/eda_notebook.ipynb
+2025-11-03 19:16:37,802 [INFO] Output Notebook: /app/eda_reports/batch_136_clean_EDA.ipynb
+2025-11-03 19:16:37,808 [WARNING] Passed unknown parameter: input_path
+2025-11-03 19:16:37,810 [ERROR] ❌ Erreur EDA: No kernel name found in notebook and no override provided.
+2025-11-03 19:16:37,812 [INFO] 📊 Lancement EDA pour /app/data/clean/batch_137_clean.csv
+2025-11-03 19:16:37,812 [INFO] Input Notebook:  /app/notebooks/eda_notebook.ipynb
+2025-11-03 19:16:37,812 [INFO] Output Notebook: /app/eda_reports/batch_137_clean_EDA.ipynb
+2025-11-03 19:16:37,819 [WARNING] Passed unknown parameter: input_path
+2025-11-03 19:16:37,819 [ERROR] ❌ Erreur EDA: No kernel name found in notebook and no override provided.
+2025-11-03 19:16:37,820 [INFO] 📊 Lancement EDA pour /app/data/clean/batch_138_clean.csv
+2025-11-03 19:16:37,821 [INFO] Input Notebook:  /app/notebooks/eda_notebook.ipynb
+2025-11-03 19:16:37,821 [INFO] Output Notebook: /app/eda_reports/batch_138_clean_EDA.ipynb
+2025-11-03 19:16:37,826 [WARNING] Passed unknown parameter: input_path
+2025-11-03 19:16:37,827 [ERROR] ❌ Erreur EDA: No kernel name found in notebook and no override provided.
+2025-11-03 19:16:37,828 [INFO] 📊 Lancement EDA pour /app/data/clean/batch_139_clean.csv
+2025-11-03 19:16:37,828 [INFO] Input Notebook:  /app/notebooks/eda_notebook.ipynb
+2025-11-03 19:16:37,829 [INFO] Output Notebook: /app/eda_reports/batch_139_clean_EDA.ipynb
+2025-11-03 19:16:37,834 [WARNING] Passed unknown parameter: input_path
+2025-11-03 19:16:37,834 [ERROR] ❌ Erreur EDA: No kernel name found in notebook and no override provided.
+2025-11-03 19:16:37,835 [INFO] 📊 Lancement EDA pour /app/data/clean/batch_140_clean.csv
+2025-11-03 19:16:37,836 [INFO] Input Notebook:  /app/notebooks/eda_notebook.ipynb
+2025-11-03 19:16:37,836 [INFO] Output Notebook: /app/eda_reports/batch_140_clean_EDA.ipynb
+2025-11-03 19:16:37,840 [WARNING] Passed unknown parameter: input_path
+2025-11-03 19:16:37,841 [ERROR] ❌ Erreur EDA: No kernel name found in notebook and no override provided.
+2025-11-03 19:16:37,843 [INFO] 📊 Lancement EDA pour /app/data/clean/batch_141_clean.csv
+2025-11-03 19:16:37,843 [INFO] Input Notebook:  /app/notebooks/eda_notebook.ipynb
+2025-11-03 19:16:37,844 [INFO] Output Notebook: /app/eda_reports/batch_141_clean_EDA.ipynb
+2025-11-03 19:16:37,859 [WARNING] Passed unknown parameter: input_path
+2025-11-03 19:16:37,859 [ERROR] ❌ Erreur EDA: No kernel name found in notebook and no override provided.
+2025-11-03 19:16:37,861 [INFO] 📊 Lancement EDA pour /app/data/clean/mongo_phof_datase_clean.csv
+2025-11-03 19:16:37,861 [INFO] Input Notebook:  /app/notebooks/eda_notebook.ipynb
+2025-11-03 19:16:37,862 [INFO] Output Notebook: /app/eda_reports/mongo_phof_datase_clean_EDA.ipynb
+2025-11-03 19:16:37,866 [WARNING] Passed unknown parameter: input_path
+2025-11-03 19:16:37,866 [ERROR] ❌ Erreur EDA: No kernel name found in notebook and no override provided.
+2025-11-03 19:16:37,868 [INFO] 📊 Lancement EDA pour /app/data/clean/mysql_healthcare_dataset_clean.csv
+2025-11-03 19:16:37,868 [INFO] Input Notebook:  /app/notebooks/eda_notebook.ipynb
+2025-11-03 19:16:37,868 [INFO] Output Notebook: /app/eda_reports/mysql_healthcare_dataset_clean_EDA.ipynb
+2025-11-03 19:16:37,873 [WARNING] Passed unknown parameter: input_path
+2025-11-03 19:16:37,874 [ERROR] ❌ Erreur EDA: No kernel name found in notebook and no override provided.
+2025-11-03 19:16:37,875 [INFO] 📊 Lancement EDA pour /app/data/clean/postgres_public_health_surveillance_dataset_clean.csv
+2025-11-03 19:16:37,876 [INFO] Input Notebook:  /app/notebooks/eda_notebook.ipynb
+2025-11-03 19:16:37,876 [INFO] Output Notebook: /app/eda_reports/postgres_public_health_surveillance_dataset_clean_EDA.ipynb
+2025-11-03 19:16:37,881 [WARNING] Passed unknown parameter: input_path
+2025-11-03 19:16:37,882 [ERROR] ❌ Erreur EDA: No kernel name found in notebook and no override provided.
+2025-11-03 19:17:37,949 [INFO] 📊 Lancement EDA pour /app/data/clean/batch_142_clean.csv
+2025-11-03 19:17:37,950 [INFO] Input Notebook:  /app/notebooks/eda_notebook.ipynb
+2025-11-03 19:17:37,950 [INFO] Output Notebook: /app/eda_reports/batch_142_clean_EDA.ipynb
+2025-11-03 19:17:37,959 [WARNING] Passed unknown parameter: input_path
+2025-11-03 19:17:37,960 [ERROR] ❌ Erreur EDA: No kernel name found in notebook and no override provided.
+2025-11-03 19:17:37,964 [INFO] 📊 Lancement EDA pour /app/data/clean/batch_143_clean.csv
+2025-11-03 19:17:37,965 [INFO] Input Notebook:  /app/notebooks/eda_notebook.ipynb
+2025-11-03 19:17:37,965 [INFO] Output Notebook: /app/eda_reports/batch_143_clean_EDA.ipynb
+2025-11-03 19:17:37,972 [WARNING] Passed unknown parameter: input_path
+2025-11-03 19:17:37,973 [ERROR] ❌ Erreur EDA: No kernel name found in notebook and no override provided.
+2025-11-03 19:23:14,105 [INFO] === Controller EDA DataFlow360 démarré ===
+2025-11-03 19:23:14,168 [INFO] 📊 Lancement EDA pour /app/data/clean/batch_118_clean.csv
+2025-11-03 19:23:14,179 [INFO] Input Notebook:  /app/notebooks/eda_notebook.ipynb
+2025-11-03 19:23:14,180 [INFO] Output Notebook: /app/eda_reports/batch_118_clean_EDA.ipynb
+2025-11-03 19:23:14,333 [WARNING] Passed unknown parameter: input_path
+2025-11-03 19:23:14,336 [WARNING] Input notebook does not contain a cell with tag 'parameters'
+2025-11-03 19:23:21,164 [INFO] Executing notebook with kernel: python3
+2025-11-03 19:23:21,165 [INFO] Executing Cell 1---------------------------------------
+2025-11-03 19:23:21,237 [INFO] Ending Cell 1------------------------------------------
+2025-11-03 19:23:21,255 [INFO] Executing Cell 2---------------------------------------
+2025-11-03 19:23:21,318 [INFO] Ending Cell 2------------------------------------------
+2025-11-03 19:23:21,361 [INFO] Executing Cell 3---------------------------------------
+2025-11-03 19:23:21,479 [INFO] Ending Cell 3------------------------------------------
+2025-11-03 19:23:21,568 [INFO] Executing Cell 4---------------------------------------
+2025-11-03 19:23:21,692 [INFO] Ending Cell 4------------------------------------------
+2025-11-03 19:23:21,816 [INFO] Executing Cell 5---------------------------------------
+2025-11-03 19:23:27,394 [INFO] Ending Cell 5------------------------------------------
+2025-11-03 19:23:27,404 [INFO] Executing Cell 6---------------------------------------
+2025-11-03 19:23:27,428 [INFO] Ending Cell 6------------------------------------------
+2025-11-03 19:23:27,450 [INFO] Executing Cell 7---------------------------------------
+2025-11-03 19:23:29,806 [INFO] Ending Cell 7------------------------------------------
+2025-11-03 19:23:31,044 [ERROR] ❌ Erreur EDA: 
+---------------------------------------------------------------------------
+Exception encountered at "In [4]":
+---------------------------------------------------------------------------
+FileNotFoundError                         Traceback (most recent call last)
+Cell In[4], line 2
+      1 # Lecture du CSV
+----> 2 df = pd.read_csv(input_path)
+      3 df.head()
+
+File /usr/local/lib/python3.9/dist-packages/pandas/io/parsers/readers.py:1026, in read_csv(filepath_or_buffer, sep, delimiter, header, names, index_col, usecols, dtype, engine, converters, true_values, false_values, skipinitialspace, skiprows, skipfooter, nrows, na_values, keep_default_na, na_filter, verbose, skip_blank_lines, parse_dates, infer_datetime_format, keep_date_col, date_parser, date_format, dayfirst, cache_dates, iterator, chunksize, compression, thousands, decimal, lineterminator, quotechar, quoting, doublequote, escapechar, comment, encoding, encoding_errors, dialect, on_bad_lines, delim_whitespace, low_memory, memory_map, float_precision, storage_options, dtype_backend)
+   1013 kwds_defaults = _refine_defaults_read(
+   1014     dialect,
+   1015     delimiter,
+   (...)
+   1022     dtype_backend=dtype_backend,
+   1023 )
+   1024 kwds.update(kwds_defaults)
+-> 1026 return _read(filepath_or_buffer, kwds)
+
+File /usr/local/lib/python3.9/dist-packages/pandas/io/parsers/readers.py:620, in _read(filepath_or_buffer, kwds)
+    617 _validate_names(kwds.get("names", None))
+    619 # Create the parser.
+--> 620 parser = TextFileReader(filepath_or_buffer, **kwds)
+    622 if chunksize or iterator:
+    623     return parser
+
+File /usr/local/lib/python3.9/dist-packages/pandas/io/parsers/readers.py:1620, in TextFileReader.__init__(self, f, engine, **kwds)
+   1617     self.options["has_index_names"] = kwds["has_index_names"]
+   1619 self.handles: IOHandles | None = None
+-> 1620 self._engine = self._make_engine(f, self.engine)
+
+File /usr/local/lib/python3.9/dist-packages/pandas/io/parsers/readers.py:1880, in TextFileReader._make_engine(self, f, engine)
+   1878     if "b" not in mode:
+   1879         mode += "b"
+-> 1880 self.handles = get_handle(
+   1881     f,
+   1882     mode,
+   1883     encoding=self.options.get("encoding", None),
+   1884     compression=self.options.get("compression", None),
+   1885     memory_map=self.options.get("memory_map", False),
+   1886     is_text=is_text,
+   1887     errors=self.options.get("encoding_errors", "strict"),
+   1888     storage_options=self.options.get("storage_options", None),
+   1889 )
+   1890 assert self.handles is not None
+   1891 f = self.handles.handle
+
+File /usr/local/lib/python3.9/dist-packages/pandas/io/common.py:873, in get_handle(path_or_buf, mode, encoding, compression, memory_map, is_text, errors, storage_options)
+    868 elif isinstance(handle, str):
+    869     # Check whether the filename is to be opened in binary mode.
+    870     # Binary mode does not support 'encoding' and 'newline'.
+    871     if ioargs.encoding and "b" not in ioargs.mode:
+    872         # Encoding
+--> 873         handle = open(
+    874             handle,
+    875             ioargs.mode,
+    876             encoding=ioargs.encoding,
+    877             errors=errors,
+    878             newline="",
+    879         )
+    880     else:
+    881         # Binary mode
+    882         handle = open(handle, ioargs.mode)
+
+FileNotFoundError: [Errno 2] No such file or directory: '/app/data/clean/batch_xxx_clean.csv'
+
+2025-11-03 19:23:31,046 [INFO] 📊 Lancement EDA pour /app/data/clean/batch_119_clean.csv
+2025-11-03 19:23:31,047 [INFO] Input Notebook:  /app/notebooks/eda_notebook.ipynb
+2025-11-03 19:23:31,048 [INFO] Output Notebook: /app/eda_reports/batch_119_clean_EDA.ipynb
+2025-11-03 19:23:31,066 [WARNING] Passed unknown parameter: input_path
+2025-11-03 19:23:31,070 [WARNING] Input notebook does not contain a cell with tag 'parameters'
+2025-11-03 19:23:35,437 [INFO] Executing notebook with kernel: python3
+2025-11-03 19:23:35,438 [INFO] Executing Cell 1---------------------------------------
+2025-11-03 19:23:35,733 [INFO] Ending Cell 1------------------------------------------
+2025-11-03 19:23:35,890 [INFO] Executing Cell 2---------------------------------------
+2025-11-03 19:23:36,257 [INFO] Ending Cell 2------------------------------------------
+2025-11-03 19:23:36,660 [INFO] Executing Cell 3---------------------------------------
+2025-11-03 19:23:36,916 [INFO] Ending Cell 3------------------------------------------
+2025-11-03 19:23:37,716 [INFO] Executing Cell 4---------------------------------------
+2025-11-03 19:23:37,951 [INFO] Ending Cell 4------------------------------------------
+2025-11-03 19:23:38,800 [INFO] Executing Cell 5---------------------------------------
+2025-11-03 19:23:44,909 [INFO] Ending Cell 5------------------------------------------
+2025-11-03 19:23:44,984 [INFO] Executing Cell 6---------------------------------------
+2025-11-03 19:23:45,071 [INFO] Ending Cell 6------------------------------------------
+2025-11-03 19:23:45,170 [INFO] Executing Cell 7---------------------------------------
+2025-11-03 19:23:47,935 [INFO] Ending Cell 7------------------------------------------
+2025-11-03 19:23:48,623 [ERROR] ❌ Erreur EDA: 
+---------------------------------------------------------------------------
+Exception encountered at "In [4]":
+---------------------------------------------------------------------------
+FileNotFoundError                         Traceback (most recent call last)
+Cell In[4], line 2
+      1 # Lecture du CSV
+----> 2 df = pd.read_csv(input_path)
+      3 df.head()
+
+File /usr/local/lib/python3.9/dist-packages/pandas/io/parsers/readers.py:1026, in read_csv(filepath_or_buffer, sep, delimiter, header, names, index_col, usecols, dtype, engine, converters, true_values, false_values, skipinitialspace, skiprows, skipfooter, nrows, na_values, keep_default_na, na_filter, verbose, skip_blank_lines, parse_dates, infer_datetime_format, keep_date_col, date_parser, date_format, dayfirst, cache_dates, iterator, chunksize, compression, thousands, decimal, lineterminator, quotechar, quoting, doublequote, escapechar, comment, encoding, encoding_errors, dialect, on_bad_lines, delim_whitespace, low_memory, memory_map, float_precision, storage_options, dtype_backend)
+   1013 kwds_defaults = _refine_defaults_read(
+   1014     dialect,
+   1015     delimiter,
+   (...)
+   1022     dtype_backend=dtype_backend,
+   1023 )
+   1024 kwds.update(kwds_defaults)
+-> 1026 return _read(filepath_or_buffer, kwds)
+
+File /usr/local/lib/python3.9/dist-packages/pandas/io/parsers/readers.py:620, in _read(filepath_or_buffer, kwds)
+    617 _validate_names(kwds.get("names", None))
+    619 # Create the parser.
+--> 620 parser = TextFileReader(filepath_or_buffer, **kwds)
+    622 if chunksize or iterator:
+    623     return parser
+
+File /usr/local/lib/python3.9/dist-packages/pandas/io/parsers/readers.py:1620, in TextFileReader.__init__(self, f, engine, **kwds)
+   1617     self.options["has_index_names"] = kwds["has_index_names"]
+   1619 self.handles: IOHandles | None = None
+-> 1620 self._engine = self._make_engine(f, self.engine)
+
+File /usr/local/lib/python3.9/dist-packages/pandas/io/parsers/readers.py:1880, in TextFileReader._make_engine(self, f, engine)
+   1878     if "b" not in mode:
+   1879         mode += "b"
+-> 1880 self.handles = get_handle(
+   1881     f,
+   1882     mode,
+   1883     encoding=self.options.get("encoding", None),
+   1884     compression=self.options.get("compression", None),
+   1885     memory_map=self.options.get("memory_map", False),
+   1886     is_text=is_text,
+   1887     errors=self.options.get("encoding_errors", "strict"),
+   1888     storage_options=self.options.get("storage_options", None),
+   1889 )
+   1890 assert self.handles is not None
+   1891 f = self.handles.handle
+
+File /usr/local/lib/python3.9/dist-packages/pandas/io/common.py:873, in get_handle(path_or_buf, mode, encoding, compression, memory_map, is_text, errors, storage_options)
+    868 elif isinstance(handle, str):
+    869     # Check whether the filename is to be opened in binary mode.
+    870     # Binary mode does not support 'encoding' and 'newline'.
+    871     if ioargs.encoding and "b" not in ioargs.mode:
+    872         # Encoding
+--> 873         handle = open(
+    874             handle,
+    875             ioargs.mode,
+    876             encoding=ioargs.encoding,
+    877             errors=errors,
+    878             newline="",
+    879         )
+    880     else:
+    881         # Binary mode
+    882         handle = open(handle, ioargs.mode)
+
+FileNotFoundError: [Errno 2] No such file or directory: '/app/data/clean/batch_xxx_clean.csv'
+
+2025-11-03 19:23:48,624 [INFO] 📊 Lancement EDA pour /app/data/clean/batch_120_clean.csv
+2025-11-03 19:23:48,633 [INFO] Input Notebook:  /app/notebooks/eda_notebook.ipynb
+2025-11-03 19:23:48,634 [INFO] Output Notebook: /app/eda_reports/batch_120_clean_EDA.ipynb
+2025-11-03 19:23:48,644 [WARNING] Passed unknown parameter: input_path
+2025-11-03 19:23:48,646 [WARNING] Input notebook does not contain a cell with tag 'parameters'
+2025-11-03 19:23:52,217 [INFO] Executing notebook with kernel: python3
+2025-11-03 19:23:52,265 [INFO] Executing Cell 1---------------------------------------
+2025-11-03 19:23:52,895 [INFO] Ending Cell 1------------------------------------------
+2025-11-03 19:23:53,076 [INFO] Executing Cell 2---------------------------------------
+2025-11-03 19:23:53,149 [INFO] Ending Cell 2------------------------------------------
+2025-11-03 19:23:53,207 [INFO] Executing Cell 3---------------------------------------
+2025-11-03 19:23:53,276 [INFO] Ending Cell 3------------------------------------------
+2025-11-03 19:23:53,297 [INFO] Executing Cell 4---------------------------------------
+2025-11-03 19:23:53,321 [INFO] Ending Cell 4------------------------------------------
+2025-11-03 19:23:53,345 [INFO] Executing Cell 5---------------------------------------
+2025-11-03 19:23:55,986 [INFO] Ending Cell 5------------------------------------------
+2025-11-03 19:23:56,022 [INFO] Executing Cell 6---------------------------------------
+2025-11-03 19:23:56,063 [INFO] Ending Cell 6------------------------------------------
+2025-11-03 19:23:56,091 [INFO] Executing Cell 7---------------------------------------
+2025-11-03 19:24:01,024 [INFO] Ending Cell 7------------------------------------------
+2025-11-03 19:24:02,458 [ERROR] ❌ Erreur EDA: 
+---------------------------------------------------------------------------
+Exception encountered at "In [4]":
+---------------------------------------------------------------------------
+FileNotFoundError                         Traceback (most recent call last)
+Cell In[4], line 2
+      1 # Lecture du CSV
+----> 2 df = pd.read_csv(input_path)
+      3 df.head()
+
+File /usr/local/lib/python3.9/dist-packages/pandas/io/parsers/readers.py:1026, in read_csv(filepath_or_buffer, sep, delimiter, header, names, index_col, usecols, dtype, engine, converters, true_values, false_values, skipinitialspace, skiprows, skipfooter, nrows, na_values, keep_default_na, na_filter, verbose, skip_blank_lines, parse_dates, infer_datetime_format, keep_date_col, date_parser, date_format, dayfirst, cache_dates, iterator, chunksize, compression, thousands, decimal, lineterminator, quotechar, quoting, doublequote, escapechar, comment, encoding, encoding_errors, dialect, on_bad_lines, delim_whitespace, low_memory, memory_map, float_precision, storage_options, dtype_backend)
+   1013 kwds_defaults = _refine_defaults_read(
+   1014     dialect,
+   1015     delimiter,
+   (...)
+   1022     dtype_backend=dtype_backend,
+   1023 )
+   1024 kwds.update(kwds_defaults)
+-> 1026 return _read(filepath_or_buffer, kwds)
+
+File /usr/local/lib/python3.9/dist-packages/pandas/io/parsers/readers.py:620, in _read(filepath_or_buffer, kwds)
+    617 _validate_names(kwds.get("names", None))
+    619 # Create the parser.
+--> 620 parser = TextFileReader(filepath_or_buffer, **kwds)
+    622 if chunksize or iterator:
+    623     return parser
+
+File /usr/local/lib/python3.9/dist-packages/pandas/io/parsers/readers.py:1620, in TextFileReader.__init__(self, f, engine, **kwds)
+   1617     self.options["has_index_names"] = kwds["has_index_names"]
+   1619 self.handles: IOHandles | None = None
+-> 1620 self._engine = self._make_engine(f, self.engine)
+
+File /usr/local/lib/python3.9/dist-packages/pandas/io/parsers/readers.py:1880, in TextFileReader._make_engine(self, f, engine)
+   1878     if "b" not in mode:
+   1879         mode += "b"
+-> 1880 self.handles = get_handle(
+   1881     f,
+   1882     mode,
+   1883     encoding=self.options.get("encoding", None),
+   1884     compression=self.options.get("compression", None),
+   1885     memory_map=self.options.get("memory_map", False),
+   1886     is_text=is_text,
+   1887     errors=self.options.get("encoding_errors", "strict"),
+   1888     storage_options=self.options.get("storage_options", None),
+   1889 )
+   1890 assert self.handles is not None
+   1891 f = self.handles.handle
+
+File /usr/local/lib/python3.9/dist-packages/pandas/io/common.py:873, in get_handle(path_or_buf, mode, encoding, compression, memory_map, is_text, errors, storage_options)
+    868 elif isinstance(handle, str):
+    869     # Check whether the filename is to be opened in binary mode.
+    870     # Binary mode does not support 'encoding' and 'newline'.
+    871     if ioargs.encoding and "b" not in ioargs.mode:
+    872         # Encoding
+--> 873         handle = open(
+    874             handle,
+    875             ioargs.mode,
+    876             encoding=ioargs.encoding,
+    877             errors=errors,
+    878             newline="",
+    879         )
+    880     else:
+    881         # Binary mode
+    882         handle = open(handle, ioargs.mode)
+
+FileNotFoundError: [Errno 2] No such file or directory: '/app/data/clean/batch_xxx_clean.csv'
+
+2025-11-03 19:24:02,465 [INFO] 📊 Lancement EDA pour /app/data/clean/batch_121_clean.csv
+2025-11-03 19:24:02,466 [INFO] Input Notebook:  /app/notebooks/eda_notebook.ipynb
+2025-11-03 19:24:02,466 [INFO] Output Notebook: /app/eda_reports/batch_121_clean_EDA.ipynb
+2025-11-03 19:24:02,480 [WARNING] Passed unknown parameter: input_path
+2025-11-03 19:24:02,484 [WARNING] Input notebook does not contain a cell with tag 'parameters'
+2025-11-03 19:24:04,492 [INFO] Executing notebook with kernel: python3
+2025-11-03 19:24:04,677 [INFO] Executing Cell 1---------------------------------------
+2025-11-03 19:24:05,570 [INFO] Ending Cell 1------------------------------------------
+2025-11-03 19:24:06,146 [INFO] Executing Cell 2---------------------------------------
+2025-11-03 19:24:06,406 [INFO] Ending Cell 2------------------------------------------
+2025-11-03 19:24:06,858 [INFO] Executing Cell 3---------------------------------------
+2025-11-03 19:24:07,831 [INFO] Ending Cell 3------------------------------------------
+2025-11-03 19:24:08,040 [INFO] Executing Cell 4---------------------------------------
+2025-11-03 19:24:08,193 [INFO] Ending Cell 4------------------------------------------
+2025-11-03 19:24:08,448 [INFO] Executing Cell 5---------------------------------------
+2025-11-03 19:29:06,647 [INFO] === Controller EDA DataFlow360 démarré ===
+2025-11-03 19:29:06,653 [INFO] 📊 Lancement EDA pour /app/data/clean/batch_118_clean.csv
+2025-11-03 19:29:06,653 [INFO] Input Notebook:  /app/notebooks/eda_notebook.ipynb
+2025-11-03 19:29:06,654 [INFO] Output Notebook: /app/eda_reports/batch_118_clean_EDA.ipynb
+2025-11-03 19:29:06,790 [WARNING] Passed unknown parameter: input_path
+2025-11-03 19:29:06,793 [WARNING] Input notebook does not contain a cell with tag 'parameters'
+2025-11-03 19:29:10,117 [INFO] Executing notebook with kernel: python3
+2025-11-03 19:29:10,118 [INFO] Executing Cell 1---------------------------------------
+2025-11-03 19:29:10,155 [INFO] Ending Cell 1------------------------------------------
+2025-11-03 19:29:10,165 [INFO] Executing Cell 2---------------------------------------
+2025-11-03 19:29:10,186 [INFO] Ending Cell 2------------------------------------------
+2025-11-03 19:29:10,211 [INFO] Executing Cell 3---------------------------------------
+2025-11-03 19:29:10,258 [INFO] Ending Cell 3------------------------------------------
+2025-11-03 19:29:10,283 [INFO] Executing Cell 4---------------------------------------
+2025-11-03 19:29:10,346 [INFO] Ending Cell 4------------------------------------------
+2025-11-03 19:29:10,396 [INFO] Executing Cell 5---------------------------------------
+2025-11-03 19:29:15,503 [INFO] Ending Cell 5------------------------------------------
+2025-11-03 19:29:15,528 [INFO] Executing Cell 6---------------------------------------
+2025-11-03 19:29:15,550 [INFO] Ending Cell 6------------------------------------------
+2025-11-03 19:29:15,573 [INFO] Executing Cell 7---------------------------------------
+2025-11-03 19:29:15,732 [INFO]    hospital_id                         hospital_name region   city  \
+0            1  Centre Hospitalier Régional de Dakar  Dakar  Dakar   
+1            1  Centre Hospitalier Régional de Dakar  Dakar  Dakar   
+2            1  Centre Hospitalier Régional de Dakar  Dakar  Dakar   
+3            1  Centre Hospitalier Régional de Dakar  Dakar  Dakar   
+4            1  Centre Hospitalier Régional de Dakar  Dakar  Dakar   
+
+   capacity_beds  capacity_staff        date  patients_admitted  \
+0            553             518  2024-12-16                 29   
+1            553             518  2024-12-17                 43   
+2            553             518  2024-12-18                 98   
+3            553             518  2024-12-19                 63   
+4            553             518  2024-12-20                 93   
+
+   patients_released  patients_in_care  ...  risk_level  temperature_c  \
+0                 15               239  ...       élevé           28.4   
+1                 23                87  ...      faible           37.6   
+2                 18                31  ...      faible           29.0   
+3                 45               178  ...      modéré           29.1   
+4                 34               404  ...      modéré           23.3   
+
+   humidity_percent  population_density  public_alert region_mobility_index  \
+0              70.2              1589.9          True                  0.84   
+1              53.6              4903.7         False                  0.59   
+2              71.9              1179.2         False                  0.38   
+3              71.3              2209.3         False                  0.89   
+4              68.6              2103.3         False                  0.23   
+
+   medical_supplies_index  staff_absence_rate  avg_wait_time_minutes  \
+0                    0.40                0.14                   35.7   
+1                    0.62                0.07                  167.7   
+2                    0.34                0.08                  147.5   
+3                    0.54                0.06                  128.4   
+4                    0.83                0.06                  173.1   
+
+   response_time_minutes  
+0                   24.7  
+1                   46.2  
+2                   51.5  
+3                   17.2  
+4                   23.3  
+
+[5 rows x 30 columns]
+2025-11-03 19:29:15,734 [INFO] Ending Cell 7------------------------------------------
+2025-11-03 19:29:15,757 [INFO] Executing Cell 8---------------------------------------
+2025-11-03 19:29:15,779 [INFO] Ending Cell 8------------------------------------------
+2025-11-03 19:29:15,810 [INFO] Executing Cell 9---------------------------------------
+2025-11-03 19:29:16,171 [INFO]         hospital_id                         hospital_name region   city  \
+count    400.000000                                   400    400    400   
+unique          NaN                                     2      2      2   
+top             NaN  Centre Hospitalier Régional de Dakar  Dakar  Dakar   
+freq            NaN                                   366    366    366   
+mean       1.085000                                   NaN    NaN    NaN   
+std        0.279231                                   NaN    NaN    NaN   
+min        1.000000                                   NaN    NaN    NaN   
+25%        1.000000                                   NaN    NaN    NaN   
+50%        1.000000                                   NaN    NaN    NaN   
+75%        1.000000                                   NaN    NaN    NaN   
+max        2.000000                                   NaN    NaN    NaN   
+
+        capacity_beds  capacity_staff        date  patients_admitted  \
+count      400.000000      400.000000         400         400.000000   
+unique            NaN             NaN         366                NaN   
+top               NaN             NaN  2024-01-22                NaN   
+freq              NaN             NaN           2                NaN   
+mean       550.705000      502.105000         NaN          54.325000   
+std          7.539236       52.216188         NaN          25.733732   
+min        526.000000      331.000000         NaN          10.000000   
+25%        553.000000      518.000000         NaN          31.000000   
+50%        553.000000      518.000000         NaN          53.000000   
+75%        553.000000      518.000000         NaN          76.250000   
+max        553.000000      518.000000         NaN         100.000000   
+
+        patients_released  patients_in_care  ...  risk_level  temperature_c  \
+count          400.000000        400.000000  ...         400     400.000000   
+unique                NaN               NaN  ...           3            NaN   
+top                   NaN               NaN  ...      modéré            NaN   
+freq                  NaN               NaN  ...         175            NaN   
+mean            47.970000        286.922500  ...         NaN      30.932500   
+std             23.390744        155.364029  ...         NaN       4.866539   
+min              5.000000         20.000000  ...         NaN      22.000000   
+25%             28.750000        158.250000  ...         NaN      26.500000   
+50%             48.000000        283.000000  ...         NaN      31.400000   
+75%             66.000000        424.250000  ...         NaN      35.100000   
+max             90.000000        552.000000  ...         NaN      39.000000   
+
+        humidity_percent  population_density  public_alert  \
+count         400.000000          400.000000           400   
+unique               NaN                 NaN             2   
+top                  NaN                 NaN         False   
+freq                 NaN                 NaN           262   
+mean           65.742000         2527.236750           NaN   
+std            14.870341         1416.763511           NaN   
+min            40.200000          106.500000           NaN   
+25%            52.650000         1299.975000           NaN   
+50%            66.100000         2488.700000           NaN   
+75%            79.525000         3757.250000           NaN   
+max            89.900000         4983.800000           NaN   
+
+       region_mobility_index  medical_supplies_index  staff_absence_rate  \
+count             400.000000              400.000000          400.000000   
+unique                   NaN                     NaN                 NaN   
+top                      NaN                     NaN                 NaN   
+freq                     NaN                     NaN                 NaN   
+mean                0.583750                0.649425            0.099275   
+std                 0.231619                0.198803            0.057179   
+min                 0.200000                0.300000            0.000000   
+25%                 0.380000                0.490000            0.050000   
+50%                 0.570000                0.650000            0.100000   
+75%                 0.790000                0.822500            0.142500   
+max                 1.000000                1.000000            0.200000   
+
+        avg_wait_time_minutes  response_time_minutes  
+count              400.000000              400.00000  
+unique                    NaN                    NaN  
+top                       NaN                    NaN  
+freq                      NaN                    NaN  
+mean                92.195250               32.09550  
+std                 51.186084               16.48789  
+min                  5.000000                3.00000  
+25%                 51.725000               17.10000  
+50%                 91.250000               31.95000  
+75%                136.825000               46.25000  
+max                179.000000               59.90000  
+
+[11 rows x 30 columns]
+2025-11-03 19:29:16,178 [INFO] Ending Cell 9------------------------------------------
+2025-11-03 19:29:16,199 [INFO] Executing Cell 10--------------------------------------
+2025-11-03 19:29:16,237 [INFO] Ending Cell 10-----------------------------------------
+2025-11-03 19:29:16,318 [INFO] Executing Cell 11--------------------------------------
+2025-11-03 19:29:18,580 [INFO] Ending Cell 11-----------------------------------------
+2025-11-03 19:29:18,618 [INFO] Executing Cell 12--------------------------------------
+2025-11-03 19:29:18,652 [INFO] Ending Cell 12-----------------------------------------
+2025-11-03 19:29:18,682 [INFO] Executing Cell 13--------------------------------------
+2025-11-03 19:29:36,636 [INFO] Ending Cell 13-----------------------------------------
+2025-11-03 19:29:36,656 [INFO] Executing Cell 14--------------------------------------
+2025-11-03 19:29:36,700 [INFO] Ending Cell 14-----------------------------------------
+2025-11-03 19:29:36,725 [INFO] Executing Cell 15--------------------------------------
+2025-11-03 19:30:04,248 [INFO] Ending Cell 15-----------------------------------------
+2025-11-03 19:30:04,273 [INFO] Executing Cell 16--------------------------------------
+2025-11-03 19:30:04,301 [INFO] Ending Cell 16-----------------------------------------
+2025-11-03 19:30:04,332 [INFO] Executing Cell 17--------------------------------------
+2025-11-03 19:30:11,201 [INFO] Ending Cell 17-----------------------------------------
+2025-11-03 19:30:11,229 [INFO] Executing Cell 18--------------------------------------
+2025-11-03 19:30:11,262 [INFO] Ending Cell 18-----------------------------------------
+2025-11-03 19:30:11,294 [INFO] Executing Cell 19--------------------------------------
+2025-11-03 19:30:11,414 [INFO] Ending Cell 19-----------------------------------------
+2025-11-03 19:30:37,210 [INFO] ✅ Rapport généré : /app/eda_reports/batch_118_clean_report.html
+2025-11-03 19:30:37,311 [INFO] 📊 Lancement EDA pour /app/data/clean/batch_119_clean.csv
+2025-11-03 19:30:37,314 [INFO] Input Notebook:  /app/notebooks/eda_notebook.ipynb
+2025-11-03 19:30:37,314 [INFO] Output Notebook: /app/eda_reports/batch_119_clean_EDA.ipynb
+2025-11-03 19:30:37,348 [WARNING] Passed unknown parameter: input_path
+2025-11-03 19:30:37,355 [WARNING] Input notebook does not contain a cell with tag 'parameters'
+2025-11-03 19:30:42,846 [INFO] Executing notebook with kernel: python3
+2025-11-03 19:30:42,851 [INFO] Executing Cell 1---------------------------------------
+2025-11-03 19:30:43,108 [INFO] Ending Cell 1------------------------------------------
+2025-11-03 19:30:43,330 [INFO] Executing Cell 2---------------------------------------
+2025-11-03 19:30:43,480 [INFO] Ending Cell 2------------------------------------------
+2025-11-03 19:30:43,658 [INFO] Executing Cell 3---------------------------------------
+2025-11-03 19:30:43,876 [INFO] Ending Cell 3------------------------------------------
+2025-11-03 19:30:43,967 [INFO] Executing Cell 4---------------------------------------
+2025-11-03 19:30:44,158 [INFO] Ending Cell 4------------------------------------------
+2025-11-03 19:30:44,375 [INFO] Executing Cell 5---------------------------------------
+2025-11-03 19:30:52,536 [INFO] Ending Cell 5------------------------------------------
+2025-11-03 19:30:52,564 [INFO] Executing Cell 6---------------------------------------
+2025-11-03 19:30:52,605 [INFO] Ending Cell 6------------------------------------------
+2025-11-03 19:30:52,640 [INFO] Executing Cell 7---------------------------------------
+2025-11-03 19:30:53,665 [INFO]    hospital_id                         hospital_name region   city  \
+0            1  Centre Hospitalier Régional de Dakar  Dakar  Dakar   
+1            1  Centre Hospitalier Régional de Dakar  Dakar  Dakar   
+2            1  Centre Hospitalier Régional de Dakar  Dakar  Dakar   
+3            1  Centre Hospitalier Régional de Dakar  Dakar  Dakar   
+4            1  Centre Hospitalier Régional de Dakar  Dakar  Dakar   
+
+   capacity_beds  capacity_staff        date  patients_admitted  \
+0            553             518  2024-12-16                 29   
+1            553             518  2024-12-17                 43   
+2            553             518  2024-12-18                 98   
+3            553             518  2024-12-19                 63   
+4            553             518  2024-12-20                 93   
+
+   patients_released  patients_in_care  ...  risk_level  temperature_c  \
+0                 15               239  ...       élevé           28.4   
+1                 23                87  ...      faible           37.6   
+2                 18                31  ...      faible           29.0   
+3                 45               178  ...      modéré           29.1   
+4                 34               404  ...      modéré           23.3   
+
+   humidity_percent  population_density  public_alert region_mobility_index  \
+0              70.2              1589.9          True                  0.84   
+1              53.6              4903.7         False                  0.59   
+2              71.9              1179.2         False                  0.38   
+3              71.3              2209.3         False                  0.89   
+4              68.6              2103.3         False                  0.23   
+
+   medical_supplies_index  staff_absence_rate  avg_wait_time_minutes  \
+0                    0.40                0.14                   35.7   
+1                    0.62                0.07                  167.7   
+2                    0.34                0.08                  147.5   
+3                    0.54                0.06                  128.4   
+4                    0.83                0.06                  173.1   
+
+   response_time_minutes  
+0                   24.7  
+1                   46.2  
+2                   51.5  
+3                   17.2  
+4                   23.3  
+
+[5 rows x 30 columns]
+2025-11-03 19:30:53,700 [INFO] Ending Cell 7------------------------------------------
+2025-11-03 19:30:53,777 [INFO] Executing Cell 8---------------------------------------
+2025-11-03 19:30:53,943 [INFO] Ending Cell 8------------------------------------------
+2025-11-03 19:30:54,038 [INFO] Executing Cell 9---------------------------------------
+2025-11-03 19:30:54,840 [INFO]         hospital_id                         hospital_name region   city  \
+count    400.000000                                   400    400    400   
+unique          NaN                                     2      2      2   
+top             NaN  Centre Hospitalier Régional de Dakar  Dakar  Dakar   
+freq            NaN                                   366    366    366   
+mean       1.085000                                   NaN    NaN    NaN   
+std        0.279231                                   NaN    NaN    NaN   
+min        1.000000                                   NaN    NaN    NaN   
+25%        1.000000                                   NaN    NaN    NaN   
+50%        1.000000                                   NaN    NaN    NaN   
+75%        1.000000                                   NaN    NaN    NaN   
+max        2.000000                                   NaN    NaN    NaN   
+
+        capacity_beds  capacity_staff        date  patients_admitted  \
+count      400.000000      400.000000         400         400.000000   
+unique            NaN             NaN         366                NaN   
+top               NaN             NaN  2024-01-22                NaN   
+freq              NaN             NaN           2                NaN   
+mean       550.705000      502.105000         NaN          54.325000   
+std          7.539236       52.216188         NaN          25.733732   
+min        526.000000      331.000000         NaN          10.000000   
+25%        553.000000      518.000000         NaN          31.000000   
+50%        553.000000      518.000000         NaN          53.000000   
+75%        553.000000      518.000000         NaN          76.250000   
+max        553.000000      518.000000         NaN         100.000000   
+
+        patients_released  patients_in_care  ...  risk_level  temperature_c  \
+count          400.000000        400.000000  ...         400     400.000000   
+unique                NaN               NaN  ...           3            NaN   
+top                   NaN               NaN  ...      modéré            NaN   
+freq                  NaN               NaN  ...         175            NaN   
+mean            47.970000        286.922500  ...         NaN      30.932500   
+std             23.390744        155.364029  ...         NaN       4.866539   
+min              5.000000         20.000000  ...         NaN      22.000000   
+25%             28.750000        158.250000  ...         NaN      26.500000   
+50%             48.000000        283.000000  ...         NaN      31.400000   
+75%             66.000000        424.250000  ...         NaN      35.100000   
+max             90.000000        552.000000  ...         NaN      39.000000   
+
+        humidity_percent  population_density  public_alert  \
+count         400.000000          400.000000           400   
+unique               NaN                 NaN             2   
+top                  NaN                 NaN         False   
+freq                 NaN                 NaN           262   
+mean           65.742000         2527.236750           NaN   
+std            14.870341         1416.763511           NaN   
+min            40.200000          106.500000           NaN   
+25%            52.650000         1299.975000           NaN   
+50%            66.100000         2488.700000           NaN   
+75%            79.525000         3757.250000           NaN   
+max            89.900000         4983.800000           NaN   
+
+       region_mobility_index  medical_supplies_index  staff_absence_rate  \
+count             400.000000              400.000000          400.000000   
+unique                   NaN                     NaN                 NaN   
+top                      NaN                     NaN                 NaN   
+freq                     NaN                     NaN                 NaN   
+mean                0.583750                0.649425            0.099275   
+std                 0.231619                0.198803            0.057179   
+min                 0.200000                0.300000            0.000000   
+25%                 0.380000                0.490000            0.050000   
+50%                 0.570000                0.650000            0.100000   
+75%                 0.790000                0.822500            0.142500   
+max                 1.000000                1.000000            0.200000   
+
+        avg_wait_time_minutes  response_time_minutes  
+count              400.000000              400.00000  
+unique                    NaN                    NaN  
+top                       NaN                    NaN  
+freq                      NaN                    NaN  
+mean                92.195250               32.09550  
+std                 51.186084               16.48789  
+min                  5.000000                3.00000  
+25%                 51.725000               17.10000  
+50%                 91.250000               31.95000  
+75%                136.825000               46.25000  
+max                179.000000               59.90000  
+
+[11 rows x 30 columns]
+2025-11-03 19:30:54,854 [INFO] Ending Cell 9------------------------------------------
+2025-11-03 19:30:54,920 [INFO] Executing Cell 10--------------------------------------
+2025-11-03 19:30:54,987 [INFO] Ending Cell 10-----------------------------------------
+2025-11-03 19:30:55,033 [INFO] Executing Cell 11--------------------------------------
+2025-11-03 19:30:57,905 [INFO] Ending Cell 11-----------------------------------------
+2025-11-03 19:30:57,970 [INFO] Executing Cell 12--------------------------------------
+2025-11-03 19:30:58,034 [INFO] Ending Cell 12-----------------------------------------
+2025-11-03 19:30:58,063 [INFO] Executing Cell 13--------------------------------------
+2025-11-03 19:31:38,400 [INFO] Ending Cell 13-----------------------------------------
+2025-11-03 19:31:38,430 [INFO] Executing Cell 14--------------------------------------
+2025-11-03 19:31:38,481 [INFO] Ending Cell 14-----------------------------------------
+2025-11-03 19:31:38,529 [INFO] Executing Cell 15--------------------------------------
+2025-11-03 19:32:10,608 [INFO] Ending Cell 15-----------------------------------------
+2025-11-03 19:32:10,639 [INFO] Executing Cell 16--------------------------------------
+2025-11-03 19:32:10,675 [INFO] Ending Cell 16-----------------------------------------
+2025-11-03 19:32:10,706 [INFO] Executing Cell 17--------------------------------------
+2025-11-03 19:32:21,734 [INFO] Ending Cell 17-----------------------------------------
+2025-11-03 19:32:21,774 [INFO] Executing Cell 18--------------------------------------
+2025-11-03 19:32:21,849 [INFO] Ending Cell 18-----------------------------------------
+2025-11-03 19:32:21,949 [INFO] Executing Cell 19--------------------------------------
+2025-11-03 19:32:22,235 [INFO] Ending Cell 19-----------------------------------------
+2025-11-03 19:32:59,759 [INFO] ✅ Rapport généré : /app/eda_reports/batch_119_clean_report.html
+2025-11-03 19:32:59,925 [INFO] 📊 Lancement EDA pour /app/data/clean/batch_120_clean.csv
+2025-11-03 19:32:59,991 [INFO] Input Notebook:  /app/notebooks/eda_notebook.ipynb
+2025-11-03 19:33:00,025 [INFO] Output Notebook: /app/eda_reports/batch_120_clean_EDA.ipynb
+2025-11-03 19:33:00,954 [WARNING] Passed unknown parameter: input_path
+2025-11-03 19:33:01,001 [WARNING] Input notebook does not contain a cell with tag 'parameters'
+2025-11-04 10:22:36,791 [INFO] === Controller EDA DataFlow360 démarré ===
+2025-11-04 10:22:36,818 [INFO] 📊 Lancement EDA pour /app/data/clean/batch_118_clean.csv
+2025-11-04 10:22:36,818 [INFO] Input Notebook:  /app/notebooks/eda_notebook.ipynb
+2025-11-04 10:22:36,819 [INFO] Output Notebook: /app/eda_reports/batch_118_clean_EDA.ipynb
+2025-11-04 10:22:37,008 [WARNING] Passed unknown parameter: input_path
+2025-11-04 10:22:37,018 [WARNING] Input notebook does not contain a cell with tag 'parameters'
+2025-11-04 10:22:42,397 [INFO] Executing notebook with kernel: python3
+2025-11-04 10:22:42,409 [INFO] Executing Cell 1---------------------------------------
+2025-11-04 10:22:42,600 [INFO] Ending Cell 1------------------------------------------
+2025-11-04 10:22:42,732 [INFO] Executing Cell 2---------------------------------------
+2025-11-04 10:22:42,972 [INFO] Ending Cell 2------------------------------------------
+2025-11-04 10:22:43,089 [INFO] Executing Cell 3---------------------------------------
+2025-11-04 10:22:43,271 [INFO] Ending Cell 3------------------------------------------
+2025-11-04 10:22:43,356 [INFO] Executing Cell 4---------------------------------------
+2025-11-04 10:22:43,476 [INFO] Ending Cell 4------------------------------------------
+2025-11-04 10:22:43,616 [INFO] Executing Cell 5---------------------------------------
+2025-11-04 10:22:55,703 [INFO] Ending Cell 5------------------------------------------
+2025-11-04 10:22:55,716 [INFO] Executing Cell 6---------------------------------------
+2025-11-04 10:22:55,750 [INFO] Ending Cell 6------------------------------------------
+2025-11-04 10:22:55,775 [INFO] Executing Cell 7---------------------------------------
+2025-11-04 10:22:55,980 [INFO]    hospital_id                         hospital_name region   city  \
+0            1  Centre Hospitalier Régional de Dakar  Dakar  Dakar   
+1            1  Centre Hospitalier Régional de Dakar  Dakar  Dakar   
+2            1  Centre Hospitalier Régional de Dakar  Dakar  Dakar   
+3            1  Centre Hospitalier Régional de Dakar  Dakar  Dakar   
+4            1  Centre Hospitalier Régional de Dakar  Dakar  Dakar   
+
+   capacity_beds  capacity_staff        date  patients_admitted  \
+0            553             518  2024-12-16                 29   
+1            553             518  2024-12-17                 43   
+2            553             518  2024-12-18                 98   
+3            553             518  2024-12-19                 63   
+4            553             518  2024-12-20                 93   
+
+   patients_released  patients_in_care  ...  risk_level  temperature_c  \
+0                 15               239  ...       élevé           28.4   
+1                 23                87  ...      faible           37.6   
+2                 18                31  ...      faible           29.0   
+3                 45               178  ...      modéré           29.1   
+4                 34               404  ...      modéré           23.3   
+
+   humidity_percent  population_density  public_alert region_mobility_index  \
+0              70.2              1589.9          True                  0.84   
+1              53.6              4903.7         False                  0.59   
+2              71.9              1179.2         False                  0.38   
+3              71.3              2209.3         False                  0.89   
+4              68.6              2103.3         False                  0.23   
+
+   medical_supplies_index  staff_absence_rate  avg_wait_time_minutes  \
+0                    0.40                0.14                   35.7   
+1                    0.62                0.07                  167.7   
+2                    0.34                0.08                  147.5   
+3                    0.54                0.06                  128.4   
+4                    0.83                0.06                  173.1   
+
+   response_time_minutes  
+0                   24.7  
+1                   46.2  
+2                   51.5  
+3                   17.2  
+4                   23.3  
+
+[5 rows x 30 columns]
+2025-11-04 10:22:55,985 [INFO] Ending Cell 7------------------------------------------
+2025-11-04 10:22:56,000 [INFO] Executing Cell 8---------------------------------------
+2025-11-04 10:22:56,032 [INFO] Ending Cell 8------------------------------------------
+2025-11-04 10:22:56,085 [INFO] Executing Cell 9---------------------------------------
+2025-11-04 10:22:56,412 [INFO]         hospital_id                         hospital_name region   city  \
+count    400.000000                                   400    400    400   
+unique          NaN                                     2      2      2   
+top             NaN  Centre Hospitalier Régional de Dakar  Dakar  Dakar   
+freq            NaN                                   366    366    366   
+mean       1.085000                                   NaN    NaN    NaN   
+std        0.279231                                   NaN    NaN    NaN   
+min        1.000000                                   NaN    NaN    NaN   
+25%        1.000000                                   NaN    NaN    NaN   
+50%        1.000000                                   NaN    NaN    NaN   
+75%        1.000000                                   NaN    NaN    NaN   
+max        2.000000                                   NaN    NaN    NaN   
+
+        capacity_beds  capacity_staff        date  patients_admitted  \
+count      400.000000      400.000000         400         400.000000   
+unique            NaN             NaN         366                NaN   
+top               NaN             NaN  2024-01-22                NaN   
+freq              NaN             NaN           2                NaN   
+mean       550.705000      502.105000         NaN          54.325000   
+std          7.539236       52.216188         NaN          25.733732   
+min        526.000000      331.000000         NaN          10.000000   
+25%        553.000000      518.000000         NaN          31.000000   
+50%        553.000000      518.000000         NaN          53.000000   
+75%        553.000000      518.000000         NaN          76.250000   
+max        553.000000      518.000000         NaN         100.000000   
+
+        patients_released  patients_in_care  ...  risk_level  temperature_c  \
+count          400.000000        400.000000  ...         400     400.000000   
+unique                NaN               NaN  ...           3            NaN   
+top                   NaN               NaN  ...      modéré            NaN   
+freq                  NaN               NaN  ...         175            NaN   
+mean            47.970000        286.922500  ...         NaN      30.932500   
+std             23.390744        155.364029  ...         NaN       4.866539   
+min              5.000000         20.000000  ...         NaN      22.000000   
+25%             28.750000        158.250000  ...         NaN      26.500000   
+50%             48.000000        283.000000  ...         NaN      31.400000   
+75%             66.000000        424.250000  ...         NaN      35.100000   
+max             90.000000        552.000000  ...         NaN      39.000000   
+
+        humidity_percent  population_density  public_alert  \
+count         400.000000          400.000000           400   
+unique               NaN                 NaN             2   
+top                  NaN                 NaN         False   
+freq                 NaN                 NaN           262   
+mean           65.742000         2527.236750           NaN   
+std            14.870341         1416.763511           NaN   
+min            40.200000          106.500000           NaN   
+25%            52.650000         1299.975000           NaN   
+50%            66.100000         2488.700000           NaN   
+75%            79.525000         3757.250000           NaN   
+max            89.900000         4983.800000           NaN   
+
+       region_mobility_index  medical_supplies_index  staff_absence_rate  \
+count             400.000000              400.000000          400.000000   
+unique                   NaN                     NaN                 NaN   
+top                      NaN                     NaN                 NaN   
+freq                     NaN                     NaN                 NaN   
+mean                0.583750                0.649425            0.099275   
+std                 0.231619                0.198803            0.057179   
+min                 0.200000                0.300000            0.000000   
+25%                 0.380000                0.490000            0.050000   
+50%                 0.570000                0.650000            0.100000   
+75%                 0.790000                0.822500            0.142500   
+max                 1.000000                1.000000            0.200000   
+
+        avg_wait_time_minutes  response_time_minutes  
+count              400.000000              400.00000  
+unique                    NaN                    NaN  
+top                       NaN                    NaN  
+freq                      NaN                    NaN  
+mean                92.195250               32.09550  
+std                 51.186084               16.48789  
+min                  5.000000                3.00000  
+25%                 51.725000               17.10000  
+50%                 91.250000               31.95000  
+75%                136.825000               46.25000  
+max                179.000000               59.90000  
+
+[11 rows x 30 columns]
+2025-11-04 10:22:56,418 [INFO] Ending Cell 9------------------------------------------
+2025-11-04 10:22:56,473 [INFO] Executing Cell 10--------------------------------------
+2025-11-04 10:22:56,508 [INFO] Ending Cell 10-----------------------------------------
+2025-11-04 10:22:56,555 [INFO] Executing Cell 11--------------------------------------
+2025-11-04 10:22:58,727 [INFO] Ending Cell 11-----------------------------------------
+2025-11-04 10:22:58,760 [INFO] Executing Cell 12--------------------------------------
+2025-11-04 10:22:58,792 [INFO] Ending Cell 12-----------------------------------------
+2025-11-04 10:22:58,827 [INFO] Executing Cell 13--------------------------------------
+2025-11-04 10:23:24,064 [INFO] Ending Cell 13-----------------------------------------
+2025-11-04 10:23:24,248 [INFO] Executing Cell 14--------------------------------------
+2025-11-04 10:23:24,395 [INFO] Ending Cell 14-----------------------------------------
+2025-11-04 10:23:24,565 [INFO] Executing Cell 15--------------------------------------
+2025-11-04 10:24:06,800 [INFO] Ending Cell 15-----------------------------------------
+2025-11-04 10:24:07,151 [INFO] Executing Cell 16--------------------------------------
+2025-11-04 10:24:07,392 [INFO] Ending Cell 16-----------------------------------------
+2025-11-04 10:24:07,649 [INFO] Executing Cell 17--------------------------------------
+2025-11-04 10:24:19,891 [INFO] Ending Cell 17-----------------------------------------
+2025-11-04 10:24:19,935 [INFO] Executing Cell 18--------------------------------------
+2025-11-04 10:24:19,971 [INFO] Ending Cell 18-----------------------------------------
+2025-11-04 10:24:20,012 [INFO] Executing Cell 19--------------------------------------
+2025-11-04 10:24:20,150 [INFO] Ending Cell 19-----------------------------------------
+2025-11-04 10:24:41,956 [INFO] ✅ Rapport généré : /app/eda_reports/batch_118_clean_report.html
+2025-11-04 10:24:42,756 [INFO] 📊 Lancement EDA pour /app/data/clean/batch_119_clean.csv
+2025-11-04 10:24:42,847 [INFO] Input Notebook:  /app/notebooks/eda_notebook.ipynb
+2025-11-04 10:24:42,921 [INFO] Output Notebook: /app/eda_reports/batch_119_clean_EDA.ipynb
+2025-11-04 10:24:43,348 [WARNING] Passed unknown parameter: input_path
+2025-11-04 10:24:43,542 [WARNING] Input notebook does not contain a cell with tag 'parameters'
+2025-11-04 10:24:44,939 [INFO] Executing notebook with kernel: python3
+2025-11-04 10:24:44,942 [INFO] Executing Cell 1---------------------------------------
+2025-11-04 10:24:45,068 [INFO] Ending Cell 1------------------------------------------
+2025-11-04 10:24:45,089 [INFO] Executing Cell 2---------------------------------------
+2025-11-04 10:24:45,130 [INFO] Ending Cell 2------------------------------------------
+2025-11-04 10:24:45,159 [INFO] Executing Cell 3---------------------------------------
+2025-11-04 10:24:45,209 [INFO] Ending Cell 3------------------------------------------
+2025-11-04 10:24:45,239 [INFO] Executing Cell 4---------------------------------------
+2025-11-04 10:24:45,273 [INFO] Ending Cell 4------------------------------------------
+2025-11-04 10:24:45,299 [INFO] Executing Cell 5---------------------------------------
+2025-11-04 10:24:46,800 [INFO] Ending Cell 5------------------------------------------
+2025-11-04 10:24:46,809 [INFO] Executing Cell 6---------------------------------------
+2025-11-04 10:24:46,826 [INFO] Ending Cell 6------------------------------------------
+2025-11-04 10:24:46,846 [INFO] Executing Cell 7---------------------------------------
+2025-11-04 10:24:46,919 [INFO]    hospital_id                         hospital_name region   city  \
+0            1  Centre Hospitalier Régional de Dakar  Dakar  Dakar   
+1            1  Centre Hospitalier Régional de Dakar  Dakar  Dakar   
+2            1  Centre Hospitalier Régional de Dakar  Dakar  Dakar   
+3            1  Centre Hospitalier Régional de Dakar  Dakar  Dakar   
+4            1  Centre Hospitalier Régional de Dakar  Dakar  Dakar   
+
+   capacity_beds  capacity_staff        date  patients_admitted  \
+0            553             518  2024-12-16                 29   
+1            553             518  2024-12-17                 43   
+2            553             518  2024-12-18                 98   
+3            553             518  2024-12-19                 63   
+4            553             518  2024-12-20                 93   
+
+   patients_released  patients_in_care  ...  risk_level  temperature_c  \
+0                 15               239  ...       élevé           28.4   
+1                 23                87  ...      faible           37.6   
+2                 18                31  ...      faible           29.0   
+3                 45               178  ...      modéré           29.1   
+4                 34               404  ...      modéré           23.3   
+
+   humidity_percent  population_density  public_alert region_mobility_index  \
+0              70.2              1589.9          True                  0.84   
+1              53.6              4903.7         False                  0.59   
+2              71.9              1179.2         False                  0.38   
+3              71.3              2209.3         False                  0.89   
+4              68.6              2103.3         False                  0.23   
+
+   medical_supplies_index  staff_absence_rate  avg_wait_time_minutes  \
+0                    0.40                0.14                   35.7   
+1                    0.62                0.07                  167.7   
+2                    0.34                0.08                  147.5   
+3                    0.54                0.06                  128.4   
+4                    0.83                0.06                  173.1   
+
+   response_time_minutes  
+0                   24.7  
+1                   46.2  
+2                   51.5  
+3                   17.2  
+4                   23.3  
+
+[5 rows x 30 columns]
+2025-11-04 10:24:46,923 [INFO] Ending Cell 7------------------------------------------
+2025-11-04 10:24:46,934 [INFO] Executing Cell 8---------------------------------------
+2025-11-04 10:24:46,950 [INFO] Ending Cell 8------------------------------------------
+2025-11-04 10:24:46,971 [INFO] Executing Cell 9---------------------------------------
+2025-11-04 10:24:47,137 [INFO]         hospital_id                         hospital_name region   city  \
+count    400.000000                                   400    400    400   
+unique          NaN                                     2      2      2   
+top             NaN  Centre Hospitalier Régional de Dakar  Dakar  Dakar   
+freq            NaN                                   366    366    366   
+mean       1.085000                                   NaN    NaN    NaN   
+std        0.279231                                   NaN    NaN    NaN   
+min        1.000000                                   NaN    NaN    NaN   
+25%        1.000000                                   NaN    NaN    NaN   
+50%        1.000000                                   NaN    NaN    NaN   
+75%        1.000000                                   NaN    NaN    NaN   
+max        2.000000                                   NaN    NaN    NaN   
+
+        capacity_beds  capacity_staff        date  patients_admitted  \
+count      400.000000      400.000000         400         400.000000   
+unique            NaN             NaN         366                NaN   
+top               NaN             NaN  2024-01-22                NaN   
+freq              NaN             NaN           2                NaN   
+mean       550.705000      502.105000         NaN          54.325000   
+std          7.539236       52.216188         NaN          25.733732   
+min        526.000000      331.000000         NaN          10.000000   
+25%        553.000000      518.000000         NaN          31.000000   
+50%        553.000000      518.000000         NaN          53.000000   
+75%        553.000000      518.000000         NaN          76.250000   
+max        553.000000      518.000000         NaN         100.000000   
+
+        patients_released  patients_in_care  ...  risk_level  temperature_c  \
+count          400.000000        400.000000  ...         400     400.000000   
+unique                NaN               NaN  ...           3            NaN   
+top                   NaN               NaN  ...      modéré            NaN   
+freq                  NaN               NaN  ...         175            NaN   
+mean            47.970000        286.922500  ...         NaN      30.932500   
+std             23.390744        155.364029  ...         NaN       4.866539   
+min              5.000000         20.000000  ...         NaN      22.000000   
+25%             28.750000        158.250000  ...         NaN      26.500000   
+50%             48.000000        283.000000  ...         NaN      31.400000   
+75%             66.000000        424.250000  ...         NaN      35.100000   
+max             90.000000        552.000000  ...         NaN      39.000000   
+
+        humidity_percent  population_density  public_alert  \
+count         400.000000          400.000000           400   
+unique               NaN                 NaN             2   
+top                  NaN                 NaN         False   
+freq                 NaN                 NaN           262   
+mean           65.742000         2527.236750           NaN   
+std            14.870341         1416.763511           NaN   
+min            40.200000          106.500000           NaN   
+25%            52.650000         1299.975000           NaN   
+50%            66.100000         2488.700000           NaN   
+75%            79.525000         3757.250000           NaN   
+max            89.900000         4983.800000           NaN   
+
+       region_mobility_index  medical_supplies_index  staff_absence_rate  \
+count             400.000000              400.000000          400.000000   
+unique                   NaN                     NaN                 NaN   
+top                      NaN                     NaN                 NaN   
+freq                     NaN                     NaN                 NaN   
+mean                0.583750                0.649425            0.099275   
+std                 0.231619                0.198803            0.057179   
+min                 0.200000                0.300000            0.000000   
+25%                 0.380000                0.490000            0.050000   
+50%                 0.570000                0.650000            0.100000   
+75%                 0.790000                0.822500            0.142500   
+max                 1.000000                1.000000            0.200000   
+
+        avg_wait_time_minutes  response_time_minutes  
+count              400.000000              400.00000  
+unique                    NaN                    NaN  
+top                       NaN                    NaN  
+freq                      NaN                    NaN  
+mean                92.195250               32.09550  
+std                 51.186084               16.48789  
+min                  5.000000                3.00000  
+25%                 51.725000               17.10000  
+50%                 91.250000               31.95000  
+75%                136.825000               46.25000  
+max                179.000000               59.90000  
+
+[11 rows x 30 columns]
+2025-11-04 10:24:47,141 [INFO] Ending Cell 9------------------------------------------
+2025-11-04 10:24:47,152 [INFO] Executing Cell 10--------------------------------------
+2025-11-04 10:24:47,170 [INFO] Ending Cell 10-----------------------------------------
+2025-11-04 10:24:47,190 [INFO] Executing Cell 11--------------------------------------
+2025-11-04 10:24:48,368 [INFO] Ending Cell 11-----------------------------------------
+2025-11-04 10:24:48,382 [INFO] Executing Cell 12--------------------------------------
+2025-11-04 10:24:48,456 [INFO] Ending Cell 12-----------------------------------------
+2025-11-04 10:24:48,487 [INFO] Executing Cell 13--------------------------------------
+2025-11-04 10:25:03,167 [INFO] Ending Cell 13-----------------------------------------
+2025-11-04 10:25:03,177 [INFO] Executing Cell 14--------------------------------------
+2025-11-04 10:25:03,418 [INFO] Ending Cell 14-----------------------------------------
+2025-11-04 10:25:03,625 [INFO] Executing Cell 15--------------------------------------
+2025-11-04 10:25:47,218 [INFO] Ending Cell 15-----------------------------------------
+2025-11-04 10:25:47,243 [INFO] Executing Cell 16--------------------------------------
+2025-11-04 10:25:47,273 [INFO] Ending Cell 16-----------------------------------------
+2025-11-04 10:25:47,316 [INFO] Executing Cell 17--------------------------------------
+2025-11-04 10:25:53,750 [INFO] Ending Cell 17-----------------------------------------
+2025-11-04 10:25:53,769 [INFO] Executing Cell 18--------------------------------------
+2025-11-04 10:25:53,797 [INFO] Ending Cell 18-----------------------------------------
+2025-11-04 10:25:53,826 [INFO] Executing Cell 19--------------------------------------
+2025-11-04 10:25:53,941 [INFO] Ending Cell 19-----------------------------------------
+2025-11-04 10:26:12,123 [INFO] ✅ Rapport généré : /app/eda_reports/batch_119_clean_report.html
+2025-11-04 10:26:12,128 [INFO] 📊 Lancement EDA pour /app/data/clean/batch_120_clean.csv
+2025-11-04 10:26:12,129 [INFO] Input Notebook:  /app/notebooks/eda_notebook.ipynb
+2025-11-04 10:26:12,130 [INFO] Output Notebook: /app/eda_reports/batch_120_clean_EDA.ipynb
+2025-11-04 10:26:12,137 [WARNING] Passed unknown parameter: input_path
+2025-11-04 10:26:12,140 [WARNING] Input notebook does not contain a cell with tag 'parameters'
+2025-11-04 10:26:13,365 [INFO] Executing notebook with kernel: python3
+2025-11-04 10:26:13,377 [INFO] Executing Cell 1---------------------------------------
+2025-11-04 10:26:13,427 [INFO] Ending Cell 1------------------------------------------
+2025-11-04 10:26:13,478 [INFO] Executing Cell 2---------------------------------------
+2025-11-04 10:26:13,552 [INFO] Ending Cell 2------------------------------------------
+2025-11-04 10:26:13,607 [INFO] Executing Cell 3---------------------------------------
+2025-11-04 10:26:13,657 [INFO] Ending Cell 3------------------------------------------
+2025-11-04 10:26:13,700 [INFO] Executing Cell 4---------------------------------------
+2025-11-04 10:26:13,723 [INFO] Ending Cell 4------------------------------------------
+2025-11-04 10:26:13,742 [INFO] Executing Cell 5---------------------------------------
+2025-11-04 10:26:15,644 [INFO] Ending Cell 5------------------------------------------
+2025-11-04 10:26:15,657 [INFO] Executing Cell 6---------------------------------------
+2025-11-04 10:26:15,681 [INFO] Ending Cell 6------------------------------------------
+2025-11-04 10:26:15,707 [INFO] Executing Cell 7---------------------------------------
+2025-11-04 10:26:15,821 [INFO]    hospital_id                         hospital_name region   city  \
+0            1  Centre Hospitalier Régional de Dakar  Dakar  Dakar   
+1            1  Centre Hospitalier Régional de Dakar  Dakar  Dakar   
+2            1  Centre Hospitalier Régional de Dakar  Dakar  Dakar   
+3            1  Centre Hospitalier Régional de Dakar  Dakar  Dakar   
+4            1  Centre Hospitalier Régional de Dakar  Dakar  Dakar   
+
+   capacity_beds  capacity_staff        date  patients_admitted  \
+0            553             518  2024-12-16                 29   
+1            553             518  2024-12-17                 43   
+2            553             518  2024-12-18                 98   
+3            553             518  2024-12-19                 63   
+4            553             518  2024-12-20                 93   
+
+   patients_released  patients_in_care  ...  risk_level  temperature_c  \
+0                 15               239  ...       élevé           28.4   
+1                 23                87  ...      faible           37.6   
+2                 18                31  ...      faible           29.0   
+3                 45               178  ...      modéré           29.1   
+4                 34               404  ...      modéré           23.3   
+
+   humidity_percent  population_density  public_alert region_mobility_index  \
+0              70.2              1589.9          True                  0.84   
+1              53.6              4903.7         False                  0.59   
+2              71.9              1179.2         False                  0.38   
+3              71.3              2209.3         False                  0.89   
+4              68.6              2103.3         False                  0.23   
+
+   medical_supplies_index  staff_absence_rate  avg_wait_time_minutes  \
+0                    0.40                0.14                   35.7   
+1                    0.62                0.07                  167.7   
+2                    0.34                0.08                  147.5   
+3                    0.54                0.06                  128.4   
+4                    0.83                0.06                  173.1   
+
+   response_time_minutes  
+0                   24.7  
+1                   46.2  
+2                   51.5  
+3                   17.2  
+4                   23.3  
+
+[5 rows x 30 columns]
+2025-11-04 10:26:15,827 [INFO] Ending Cell 7------------------------------------------
+2025-11-04 10:26:15,844 [INFO] Executing Cell 8---------------------------------------
+2025-11-04 10:26:15,868 [INFO] Ending Cell 8------------------------------------------
+2025-11-04 10:26:15,902 [INFO] Executing Cell 9---------------------------------------
+2025-11-04 10:26:16,284 [INFO]         hospital_id                         hospital_name region   city  \
+count    400.000000                                   400    400    400   
+unique          NaN                                     2      2      2   
+top             NaN  Centre Hospitalier Régional de Dakar  Dakar  Dakar   
+freq            NaN                                   366    366    366   
+mean       1.085000                                   NaN    NaN    NaN   
+std        0.279231                                   NaN    NaN    NaN   
+min        1.000000                                   NaN    NaN    NaN   
+25%        1.000000                                   NaN    NaN    NaN   
+50%        1.000000                                   NaN    NaN    NaN   
+75%        1.000000                                   NaN    NaN    NaN   
+max        2.000000                                   NaN    NaN    NaN   
+
+        capacity_beds  capacity_staff        date  patients_admitted  \
+count      400.000000      400.000000         400         400.000000   
+unique            NaN             NaN         366                NaN   
+top               NaN             NaN  2024-01-22                NaN   
+freq              NaN             NaN           2                NaN   
+mean       550.705000      502.105000         NaN          54.325000   
+std          7.539236       52.216188         NaN          25.733732   
+min        526.000000      331.000000         NaN          10.000000   
+25%        553.000000      518.000000         NaN          31.000000   
+50%        553.000000      518.000000         NaN          53.000000   
+75%        553.000000      518.000000         NaN          76.250000   
+max        553.000000      518.000000         NaN         100.000000   
+
+        patients_released  patients_in_care  ...  risk_level  temperature_c  \
+count          400.000000        400.000000  ...         400     400.000000   
+unique                NaN               NaN  ...           3            NaN   
+top                   NaN               NaN  ...      modéré            NaN   
+freq                  NaN               NaN  ...         175            NaN   
+mean            47.970000        286.922500  ...         NaN      30.932500   
+std             23.390744        155.364029  ...         NaN       4.866539   
+min              5.000000         20.000000  ...         NaN      22.000000   
+25%             28.750000        158.250000  ...         NaN      26.500000   
+50%             48.000000        283.000000  ...         NaN      31.400000   
+75%             66.000000        424.250000  ...         NaN      35.100000   
+max             90.000000        552.000000  ...         NaN      39.000000   
+
+        humidity_percent  population_density  public_alert  \
+count         400.000000          400.000000           400   
+unique               NaN                 NaN             2   
+top                  NaN                 NaN         False   
+freq                 NaN                 NaN           262   
+mean           65.742000         2527.236750           NaN   
+std            14.870341         1416.763511           NaN   
+min            40.200000          106.500000           NaN   
+25%            52.650000         1299.975000           NaN   
+50%            66.100000         2488.700000           NaN   
+75%            79.525000         3757.250000           NaN   
+max            89.900000         4983.800000           NaN   
+
+       region_mobility_index  medical_supplies_index  staff_absence_rate  \
+count             400.000000              400.000000          400.000000   
+unique                   NaN                     NaN                 NaN   
+top                      NaN                     NaN                 NaN   
+freq                     NaN                     NaN                 NaN   
+mean                0.583750                0.649425            0.099275   
+std                 0.231619                0.198803            0.057179   
+min                 0.200000                0.300000            0.000000   
+25%                 0.380000                0.490000            0.050000   
+50%                 0.570000                0.650000            0.100000   
+75%                 0.790000                0.822500            0.142500   
+max                 1.000000                1.000000            0.200000   
+
+        avg_wait_time_minutes  response_time_minutes  
+count              400.000000              400.00000  
+unique                    NaN                    NaN  
+top                       NaN                    NaN  
+freq                      NaN                    NaN  
+mean                92.195250               32.09550  
+std                 51.186084               16.48789  
+min                  5.000000                3.00000  
+25%                 51.725000               17.10000  
+50%                 91.250000               31.95000  
+75%                136.825000               46.25000  
+max                179.000000               59.90000  
+
+[11 rows x 30 columns]
+2025-11-04 10:26:16,292 [INFO] Ending Cell 9------------------------------------------
+2025-11-04 10:26:16,310 [INFO] Executing Cell 10--------------------------------------
+2025-11-04 10:26:16,341 [INFO] Ending Cell 10-----------------------------------------
+2025-11-04 10:26:16,378 [INFO] Executing Cell 11--------------------------------------
+2025-11-04 10:26:18,191 [INFO] Ending Cell 11-----------------------------------------
+2025-11-04 10:26:18,211 [INFO] Executing Cell 12--------------------------------------
+2025-11-04 10:26:18,238 [INFO] Ending Cell 12-----------------------------------------
+2025-11-04 10:26:18,261 [INFO] Executing Cell 13--------------------------------------
+2025-11-04 10:26:47,209 [INFO] Ending Cell 13-----------------------------------------
+2025-11-04 10:26:47,226 [INFO] Executing Cell 14--------------------------------------
+2025-11-04 10:26:47,250 [INFO] Ending Cell 14-----------------------------------------
+2025-11-04 10:26:47,285 [INFO] Executing Cell 15--------------------------------------
+2025-11-04 10:27:15,520 [INFO] Ending Cell 15-----------------------------------------
+2025-11-04 10:27:15,553 [INFO] Executing Cell 16--------------------------------------
+2025-11-04 10:27:15,581 [INFO] Ending Cell 16-----------------------------------------
+2025-11-04 10:27:15,618 [INFO] Executing Cell 17--------------------------------------
+2025-11-04 10:27:24,929 [INFO] Ending Cell 17-----------------------------------------
+2025-11-04 10:27:25,874 [INFO] Executing Cell 18--------------------------------------
+2025-11-04 10:27:26,491 [INFO] Ending Cell 18-----------------------------------------
+2025-11-04 10:27:26,922 [INFO] Executing Cell 19--------------------------------------
+2025-11-04 10:27:30,527 [INFO] Ending Cell 19-----------------------------------------
+2025-11-04 13:28:07,259 [INFO] === Controller EDA DataFlow360 démarré ===
+2025-11-04 13:28:07,406 [INFO] 📊 Lancement EDA pour /app/data/clean/batch_118_clean.csv
+2025-11-04 13:28:07,406 [INFO] Input Notebook:  /app/notebooks/eda_notebook.ipynb
+2025-11-04 13:28:07,409 [INFO] Output Notebook: /app/eda_reports/batch_118_clean_EDA.ipynb
+2025-11-04 13:28:07,736 [WARNING] Passed unknown parameter: input_path
+2025-11-04 13:28:08,163 [WARNING] Input notebook does not contain a cell with tag 'parameters'
+2025-11-04 13:28:19,100 [INFO] Executing notebook with kernel: python3
+2025-11-04 13:28:19,126 [INFO] Executing Cell 1---------------------------------------
+2025-11-04 13:28:19,543 [INFO] Ending Cell 1------------------------------------------
+2025-11-04 13:28:20,391 [INFO] Executing Cell 2---------------------------------------
+2025-11-04 13:28:20,637 [INFO] Ending Cell 2------------------------------------------
+2025-11-04 13:28:20,748 [INFO] Executing Cell 3---------------------------------------
+2025-11-04 13:28:20,884 [INFO] Ending Cell 3------------------------------------------
+2025-11-04 13:28:20,986 [INFO] Executing Cell 4---------------------------------------
+2025-11-04 13:28:21,085 [INFO] Ending Cell 4------------------------------------------
+2025-11-04 13:28:21,247 [INFO] Executing Cell 5---------------------------------------
+2025-11-04 13:28:31,234 [INFO] Ending Cell 5------------------------------------------
+2025-11-04 13:28:31,332 [INFO] Executing Cell 6---------------------------------------
+2025-11-04 13:28:31,440 [INFO] Ending Cell 6------------------------------------------
+2025-11-04 13:28:31,545 [INFO] Executing Cell 7---------------------------------------
+2025-11-04 13:28:31,837 [INFO]    hospital_id                         hospital_name region   city  \
+0            1  Centre Hospitalier Régional de Dakar  Dakar  Dakar   
+1            1  Centre Hospitalier Régional de Dakar  Dakar  Dakar   
+2            1  Centre Hospitalier Régional de Dakar  Dakar  Dakar   
+3            1  Centre Hospitalier Régional de Dakar  Dakar  Dakar   
+4            1  Centre Hospitalier Régional de Dakar  Dakar  Dakar   
+
+   capacity_beds  capacity_staff        date  patients_admitted  \
+0            553             518  2024-12-16                 29   
+1            553             518  2024-12-17                 43   
+2            553             518  2024-12-18                 98   
+3            553             518  2024-12-19                 63   
+4            553             518  2024-12-20                 93   
+
+   patients_released  patients_in_care  ...  risk_level  temperature_c  \
+0                 15               239  ...       élevé           28.4   
+1                 23                87  ...      faible           37.6   
+2                 18                31  ...      faible           29.0   
+3                 45               178  ...      modéré           29.1   
+4                 34               404  ...      modéré           23.3   
+
+   humidity_percent  population_density  public_alert region_mobility_index  \
+0              70.2              1589.9          True                  0.84   
+1              53.6              4903.7         False                  0.59   
+2              71.9              1179.2         False                  0.38   
+3              71.3              2209.3         False                  0.89   
+4              68.6              2103.3         False                  0.23   
+
+   medical_supplies_index  staff_absence_rate  avg_wait_time_minutes  \
+0                    0.40                0.14                   35.7   
+1                    0.62                0.07                  167.7   
+2                    0.34                0.08                  147.5   
+3                    0.54                0.06                  128.4   
+4                    0.83                0.06                  173.1   
+
+   response_time_minutes  
+0                   24.7  
+1                   46.2  
+2                   51.5  
+3                   17.2  
+4                   23.3  
+
+[5 rows x 30 columns]
+2025-11-04 13:28:31,846 [INFO] Ending Cell 7------------------------------------------
+2025-11-04 13:28:31,882 [INFO] Executing Cell 8---------------------------------------
+2025-11-04 13:28:32,019 [INFO] Ending Cell 8------------------------------------------
+2025-11-04 13:28:32,138 [INFO] Executing Cell 9---------------------------------------
+2025-11-04 13:28:32,547 [INFO]         hospital_id                         hospital_name region   city  \
+count    400.000000                                   400    400    400   
+unique          NaN                                     2      2      2   
+top             NaN  Centre Hospitalier Régional de Dakar  Dakar  Dakar   
+freq            NaN                                   366    366    366   
+mean       1.085000                                   NaN    NaN    NaN   
+std        0.279231                                   NaN    NaN    NaN   
+min        1.000000                                   NaN    NaN    NaN   
+25%        1.000000                                   NaN    NaN    NaN   
+50%        1.000000                                   NaN    NaN    NaN   
+75%        1.000000                                   NaN    NaN    NaN   
+max        2.000000                                   NaN    NaN    NaN   
+
+        capacity_beds  capacity_staff        date  patients_admitted  \
+count      400.000000      400.000000         400         400.000000   
+unique            NaN             NaN         366                NaN   
+top               NaN             NaN  2024-01-22                NaN   
+freq              NaN             NaN           2                NaN   
+mean       550.705000      502.105000         NaN          54.325000   
+std          7.539236       52.216188         NaN          25.733732   
+min        526.000000      331.000000         NaN          10.000000   
+25%        553.000000      518.000000         NaN          31.000000   
+50%        553.000000      518.000000         NaN          53.000000   
+75%        553.000000      518.000000         NaN          76.250000   
+max        553.000000      518.000000         NaN         100.000000   
+
+        patients_released  patients_in_care  ...  risk_level  temperature_c  \
+count          400.000000        400.000000  ...         400     400.000000   
+unique                NaN               NaN  ...           3            NaN   
+top                   NaN               NaN  ...      modéré            NaN   
+freq                  NaN               NaN  ...         175            NaN   
+mean            47.970000        286.922500  ...         NaN      30.932500   
+std             23.390744        155.364029  ...         NaN       4.866539   
+min              5.000000         20.000000  ...         NaN      22.000000   
+25%             28.750000        158.250000  ...         NaN      26.500000   
+50%             48.000000        283.000000  ...         NaN      31.400000   
+75%             66.000000        424.250000  ...         NaN      35.100000   
+max             90.000000        552.000000  ...         NaN      39.000000   
+
+        humidity_percent  population_density  public_alert  \
+count         400.000000          400.000000           400   
+unique               NaN                 NaN             2   
+top                  NaN                 NaN         False   
+freq                 NaN                 NaN           262   
+mean           65.742000         2527.236750           NaN   
+std            14.870341         1416.763511           NaN   
+min            40.200000          106.500000           NaN   
+25%            52.650000         1299.975000           NaN   
+50%            66.100000         2488.700000           NaN   
+75%            79.525000         3757.250000           NaN   
+max            89.900000         4983.800000           NaN   
+
+       region_mobility_index  medical_supplies_index  staff_absence_rate  \
+count             400.000000              400.000000          400.000000   
+unique                   NaN                     NaN                 NaN   
+top                      NaN                     NaN                 NaN   
+freq                     NaN                     NaN                 NaN   
+mean                0.583750                0.649425            0.099275   
+std                 0.231619                0.198803            0.057179   
+min                 0.200000                0.300000            0.000000   
+25%                 0.380000                0.490000            0.050000   
+50%                 0.570000                0.650000            0.100000   
+75%                 0.790000                0.822500            0.142500   
+max                 1.000000                1.000000            0.200000   
+
+        avg_wait_time_minutes  response_time_minutes  
+count              400.000000              400.00000  
+unique                    NaN                    NaN  
+top                       NaN                    NaN  
+freq                      NaN                    NaN  
+mean                92.195250               32.09550  
+std                 51.186084               16.48789  
+min                  5.000000                3.00000  
+25%                 51.725000               17.10000  
+50%                 91.250000               31.95000  
+75%                136.825000               46.25000  
+max                179.000000               59.90000  
+
+[11 rows x 30 columns]
+2025-11-04 13:28:32,553 [INFO] Ending Cell 9------------------------------------------
+2025-11-04 13:28:32,570 [INFO] Executing Cell 10--------------------------------------
+2025-11-04 13:28:32,618 [INFO] Ending Cell 10-----------------------------------------
+2025-11-04 13:28:32,658 [INFO] Executing Cell 11--------------------------------------
+2025-11-04 13:28:35,278 [INFO] Ending Cell 11-----------------------------------------
+2025-11-04 13:28:35,627 [INFO] Executing Cell 12--------------------------------------
+2025-11-04 13:28:35,658 [INFO] Ending Cell 12-----------------------------------------
+2025-11-04 13:28:35,739 [INFO] Executing Cell 13--------------------------------------
+2025-11-04 13:29:27,536 [INFO] Ending Cell 13-----------------------------------------
+2025-11-04 13:29:27,589 [INFO] Executing Cell 14--------------------------------------
+2025-11-04 13:29:27,644 [INFO] Ending Cell 14-----------------------------------------
+2025-11-04 13:29:27,696 [INFO] Executing Cell 15--------------------------------------
+2025-11-04 13:30:12,696 [INFO] Ending Cell 15-----------------------------------------
+2025-11-04 13:30:12,762 [INFO] Executing Cell 16--------------------------------------
+2025-11-04 13:30:12,907 [INFO] Ending Cell 16-----------------------------------------
+2025-11-04 13:30:12,974 [INFO] Executing Cell 17--------------------------------------
+2025-11-04 13:30:26,129 [INFO] Ending Cell 17-----------------------------------------
+2025-11-04 13:30:26,430 [INFO] Executing Cell 18--------------------------------------
+2025-11-04 13:30:26,561 [INFO] Ending Cell 18-----------------------------------------
+2025-11-04 13:30:26,682 [INFO] Executing Cell 19--------------------------------------
+2025-11-04 13:30:27,376 [INFO] Ending Cell 19-----------------------------------------
+2025-11-04 13:30:55,744 [INFO] ✅ Rapport généré : /app/eda_reports/batch_118_clean_report.html
+2025-11-04 13:30:55,759 [INFO] 📊 Lancement EDA pour /app/data/clean/batch_119_clean.csv
+2025-11-04 13:30:55,760 [INFO] Input Notebook:  /app/notebooks/eda_notebook.ipynb
+2025-11-04 13:30:55,760 [INFO] Output Notebook: /app/eda_reports/batch_119_clean_EDA.ipynb
+2025-11-04 13:30:55,807 [WARNING] Passed unknown parameter: input_path
+2025-11-04 13:30:55,810 [WARNING] Input notebook does not contain a cell with tag 'parameters'
+2025-11-04 13:30:58,769 [INFO] Executing notebook with kernel: python3
+2025-11-04 13:30:58,770 [INFO] Executing Cell 1---------------------------------------
+2025-11-04 13:30:58,847 [INFO] Ending Cell 1------------------------------------------
+2025-11-04 13:30:58,888 [INFO] Executing Cell 2---------------------------------------
+2025-11-04 13:30:58,923 [INFO] Ending Cell 2------------------------------------------
+2025-11-04 13:30:58,989 [INFO] Executing Cell 3---------------------------------------
+2025-11-04 13:30:59,078 [INFO] Ending Cell 3------------------------------------------
+2025-11-04 13:30:59,149 [INFO] Executing Cell 4---------------------------------------
+2025-11-04 13:30:59,191 [INFO] Ending Cell 4------------------------------------------
+2025-11-04 13:30:59,290 [INFO] Executing Cell 5---------------------------------------
+2025-11-04 13:31:09,388 [INFO] Ending Cell 5------------------------------------------
+2025-11-04 13:31:09,728 [INFO] Executing Cell 6---------------------------------------
+2025-11-04 13:31:10,411 [INFO] Ending Cell 6------------------------------------------
+2025-11-04 13:31:10,882 [INFO] Executing Cell 7---------------------------------------
+2025-11-04 13:31:11,468 [INFO]    hospital_id                         hospital_name region   city  \
+0            1  Centre Hospitalier Régional de Dakar  Dakar  Dakar   
+1            1  Centre Hospitalier Régional de Dakar  Dakar  Dakar   
+2            1  Centre Hospitalier Régional de Dakar  Dakar  Dakar   
+3            1  Centre Hospitalier Régional de Dakar  Dakar  Dakar   
+4            1  Centre Hospitalier Régional de Dakar  Dakar  Dakar   
+
+   capacity_beds  capacity_staff        date  patients_admitted  \
+0            553             518  2024-12-16                 29   
+1            553             518  2024-12-17                 43   
+2            553             518  2024-12-18                 98   
+3            553             518  2024-12-19                 63   
+4            553             518  2024-12-20                 93   
+
+   patients_released  patients_in_care  ...  risk_level  temperature_c  \
+0                 15               239  ...       élevé           28.4   
+1                 23                87  ...      faible           37.6   
+2                 18                31  ...      faible           29.0   
+3                 45               178  ...      modéré           29.1   
+4                 34               404  ...      modéré           23.3   
+
+   humidity_percent  population_density  public_alert region_mobility_index  \
+0              70.2              1589.9          True                  0.84   
+1              53.6              4903.7         False                  0.59   
+2              71.9              1179.2         False                  0.38   
+3              71.3              2209.3         False                  0.89   
+4              68.6              2103.3         False                  0.23   
+
+   medical_supplies_index  staff_absence_rate  avg_wait_time_minutes  \
+0                    0.40                0.14                   35.7   
+1                    0.62                0.07                  167.7   
+2                    0.34                0.08                  147.5   
+3                    0.54                0.06                  128.4   
+4                    0.83                0.06                  173.1   
+
+   response_time_minutes  
+0                   24.7  
+1                   46.2  
+2                   51.5  
+3                   17.2  
+4                   23.3  
+
+[5 rows x 30 columns]
+2025-11-04 13:31:11,488 [INFO] Ending Cell 7------------------------------------------
+2025-11-04 13:31:11,570 [INFO] Executing Cell 8---------------------------------------
+2025-11-04 13:31:11,652 [INFO] Ending Cell 8------------------------------------------
+2025-11-04 13:31:11,709 [INFO] Executing Cell 9---------------------------------------
+2025-11-04 13:31:12,723 [INFO]         hospital_id                         hospital_name region   city  \
+count    400.000000                                   400    400    400   
+unique          NaN                                     2      2      2   
+top             NaN  Centre Hospitalier Régional de Dakar  Dakar  Dakar   
+freq            NaN                                   366    366    366   
+mean       1.085000                                   NaN    NaN    NaN   
+std        0.279231                                   NaN    NaN    NaN   
+min        1.000000                                   NaN    NaN    NaN   
+25%        1.000000                                   NaN    NaN    NaN   
+50%        1.000000                                   NaN    NaN    NaN   
+75%        1.000000                                   NaN    NaN    NaN   
+max        2.000000                                   NaN    NaN    NaN   
+
+        capacity_beds  capacity_staff        date  patients_admitted  \
+count      400.000000      400.000000         400         400.000000   
+unique            NaN             NaN         366                NaN   
+top               NaN             NaN  2024-01-22                NaN   
+freq              NaN             NaN           2                NaN   
+mean       550.705000      502.105000         NaN          54.325000   
+std          7.539236       52.216188         NaN          25.733732   
+min        526.000000      331.000000         NaN          10.000000   
+25%        553.000000      518.000000         NaN          31.000000   
+50%        553.000000      518.000000         NaN          53.000000   
+75%        553.000000      518.000000         NaN          76.250000   
+max        553.000000      518.000000         NaN         100.000000   
+
+        patients_released  patients_in_care  ...  risk_level  temperature_c  \
+count          400.000000        400.000000  ...         400     400.000000   
+unique                NaN               NaN  ...           3            NaN   
+top                   NaN               NaN  ...      modéré            NaN   
+freq                  NaN               NaN  ...         175            NaN   
+mean            47.970000        286.922500  ...         NaN      30.932500   
+std             23.390744        155.364029  ...         NaN       4.866539   
+min              5.000000         20.000000  ...         NaN      22.000000   
+25%             28.750000        158.250000  ...         NaN      26.500000   
+50%             48.000000        283.000000  ...         NaN      31.400000   
+75%             66.000000        424.250000  ...         NaN      35.100000   
+max             90.000000        552.000000  ...         NaN      39.000000   
+
+        humidity_percent  population_density  public_alert  \
+count         400.000000          400.000000           400   
+unique               NaN                 NaN             2   
+top                  NaN                 NaN         False   
+freq                 NaN                 NaN           262   
+mean           65.742000         2527.236750           NaN   
+std            14.870341         1416.763511           NaN   
+min            40.200000          106.500000           NaN   
+25%            52.650000         1299.975000           NaN   
+50%            66.100000         2488.700000           NaN   
+75%            79.525000         3757.250000           NaN   
+max            89.900000         4983.800000           NaN   
+
+       region_mobility_index  medical_supplies_index  staff_absence_rate  \
+count             400.000000              400.000000          400.000000   
+unique                   NaN                     NaN                 NaN   
+top                      NaN                     NaN                 NaN   
+freq                     NaN                     NaN                 NaN   
+mean                0.583750                0.649425            0.099275   
+std                 0.231619                0.198803            0.057179   
+min                 0.200000                0.300000            0.000000   
+25%                 0.380000                0.490000            0.050000   
+50%                 0.570000                0.650000            0.100000   
+75%                 0.790000                0.822500            0.142500   
+max                 1.000000                1.000000            0.200000   
+
+        avg_wait_time_minutes  response_time_minutes  
+count              400.000000              400.00000  
+unique                    NaN                    NaN  
+top                       NaN                    NaN  
+freq                      NaN                    NaN  
+mean                92.195250               32.09550  
+std                 51.186084               16.48789  
+min                  5.000000                3.00000  
+25%                 51.725000               17.10000  
+50%                 91.250000               31.95000  
+75%                136.825000               46.25000  
+max                179.000000               59.90000  
+
+[11 rows x 30 columns]
+2025-11-04 13:31:12,752 [INFO] Ending Cell 9------------------------------------------
+2025-11-04 13:31:12,916 [INFO] Executing Cell 10--------------------------------------
+2025-11-04 13:31:13,043 [INFO] Ending Cell 10-----------------------------------------
+2025-11-04 13:31:13,147 [INFO] Executing Cell 11--------------------------------------
+2025-11-04 13:31:19,729 [INFO] Ending Cell 11-----------------------------------------
+2025-11-04 13:31:20,192 [INFO] Executing Cell 12--------------------------------------
+2025-11-04 13:31:20,531 [INFO] Ending Cell 12-----------------------------------------
+2025-11-04 13:31:20,681 [INFO] Executing Cell 13--------------------------------------

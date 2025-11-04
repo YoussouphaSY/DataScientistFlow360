@@ -89590,3 +89590,882 @@ The reported blocks 240 has reached the threshold 0.9990 of total blocks 240. Th
 2025-11-03 18:17:29,074 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762193849_1768bc67.csv
 2025-11-03 18:17:34,198 [INFO] Writing to '/data_streaming/raw/stream_batch_1762193854_727ecfe9.csv'.
 2025-11-03 18:17:34,845 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762193854_727ecfe9.csv
+2025-11-03 18:23:57,502 [INFO] Démarrage de l'ingestion Kafka → HDFS...
+2025-11-03 18:23:57,536 [INFO] Instantiated <InsecureClient(url='http://namenode:9870')>.
+2025-11-03 18:23:57,540 [INFO] <BrokerConnection node_id=bootstrap-0 host=kafka:9092 <connecting> [IPv4 ('172.18.0.9', 9092)]>: connecting to kafka:9092 [('172.18.0.9', 9092) IPv4]
+2025-11-03 18:23:57,542 [INFO] Probing node bootstrap-0 broker version
+2025-11-03 18:23:57,547 [INFO] <BrokerConnection node_id=bootstrap-0 host=kafka:9092 <connecting> [IPv4 ('172.18.0.9', 9092)]>: Connection complete.
+2025-11-03 18:23:57,659 [INFO] Broker version identified as 2.5.0
+2025-11-03 18:23:57,659 [INFO] Set configuration api_version=(2, 5, 0) to skip auto check_version requests on startup
+2025-11-03 18:23:57,660 [INFO] Updating subscribed topics to: ('data_stream',)
+2025-11-03 18:23:57,661 [INFO] Connecté à Kafka !
+2025-11-03 18:23:57,672 [INFO] Group coordinator for hdfs_loader is BrokerMetadata(nodeId='coordinator-1', host='kafka', port=9092, rack=None)
+2025-11-03 18:23:57,673 [INFO] Discovered coordinator coordinator-1 for group hdfs_loader
+2025-11-03 18:23:57,673 [INFO] Starting new heartbeat thread
+2025-11-03 18:23:57,674 [INFO] Revoking previously assigned partitions set() for group hdfs_loader
+2025-11-03 18:23:57,677 [INFO] <BrokerConnection node_id=coordinator-1 host=kafka:9092 <connecting> [IPv4 ('172.18.0.9', 9092)]>: connecting to kafka:9092 [('172.18.0.9', 9092) IPv4]
+2025-11-03 18:23:57,681 [INFO] <BrokerConnection node_id=coordinator-1 host=kafka:9092 <connecting> [IPv4 ('172.18.0.9', 9092)]>: Connection complete.
+2025-11-03 18:23:57,684 [INFO] <BrokerConnection node_id=bootstrap-0 host=kafka:9092 <connected> [IPv4 ('172.18.0.9', 9092)]>: Closing connection. 
+2025-11-03 18:23:57,788 [INFO] (Re-)joining group hdfs_loader
+2025-11-03 18:24:00,122 [INFO] Elected group leader -- performing partition assignments using range
+2025-11-03 18:24:00,125 [INFO] <BrokerConnection node_id=1 host=kafka:9092 <connecting> [IPv4 ('172.18.0.9', 9092)]>: connecting to kafka:9092 [('172.18.0.9', 9092) IPv4]
+2025-11-03 18:24:00,128 [INFO] <BrokerConnection node_id=1 host=kafka:9092 <connecting> [IPv4 ('172.18.0.9', 9092)]>: Connection complete.
+2025-11-03 18:24:00,157 [INFO] Successfully joined group hdfs_loader with generation 20
+2025-11-03 18:24:00,158 [INFO] Updated partition assignment: [TopicPartition(topic='data_stream', partition=0)]
+2025-11-03 18:24:00,159 [INFO] Setting newly assigned partitions {TopicPartition(topic='data_stream', partition=0)} for group hdfs_loader
+2025-11-03 18:24:00,211 [INFO] Writing to '/data_streaming/raw/stream_batch_1762194240_38001d99.csv'.
+2025-11-03 18:24:00,803 [ERROR] Exception in child.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/hdfs/util.py", line 76, in consumer
+    self._consumer(data)
+  File "/usr/local/lib/python3.11/site-packages/hdfs/client.py", line 515, in consumer
+    raise _to_error(res)
+hdfs.util.HdfsError: Cannot create file/data_streaming/raw/stream_batch_1762194240_38001d99.csv. Name node is in safe mode.
+The reported blocks 1240 has reached the threshold 0.9990 of total blocks 1240. The minimum number of live datanodes is not required. In safe mode extension. Safe mode will be turned off automatically in 11 seconds. NamenodeHostName:namenode
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.newSafemodeException(FSNamesystem.java:1476)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.checkNameNodeSafeMode(FSNamesystem.java:1463)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.startFileInt(FSNamesystem.java:2487)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.startFile(FSNamesystem.java:2433)
+	at org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.create(NameNodeRpcServer.java:791)
+	at org.apache.hadoop.hdfs.protocolPB.ClientNamenodeProtocolServerSideTranslatorPB.create(ClientNamenodeProtocolServerSideTranslatorPB.java:475)
+	at org.apache.hadoop.hdfs.protocol.proto.ClientNamenodeProtocolProtos$ClientNamenodeProtocol$2.callBlockingMethod(ClientNamenodeProtocolProtos.java)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Server$ProtoBufRpcInvoker.call(ProtobufRpcEngine.java:528)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:1070)
+	at org.apache.hadoop.ipc.Server$RpcCall.run(Server.java:999)
+	at org.apache.hadoop.ipc.Server$RpcCall.run(Server.java:927)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:422)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1730)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:2915)
+
+2025-11-03 18:24:00,806 [WARNING] HDFS en Safe Mode, attente de 5 secondes...
+2025-11-03 18:24:05,807 [INFO] Writing to '/data_streaming/raw/stream_batch_1762194240_38001d99.csv'.
+2025-11-03 18:24:05,906 [ERROR] Exception in child.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/hdfs/util.py", line 76, in consumer
+    self._consumer(data)
+  File "/usr/local/lib/python3.11/site-packages/hdfs/client.py", line 515, in consumer
+    raise _to_error(res)
+hdfs.util.HdfsError: Cannot create file/data_streaming/raw/stream_batch_1762194240_38001d99.csv. Name node is in safe mode.
+The reported blocks 1240 has reached the threshold 0.9990 of total blocks 1240. The minimum number of live datanodes is not required. In safe mode extension. Safe mode will be turned off automatically in 6 seconds. NamenodeHostName:namenode
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.newSafemodeException(FSNamesystem.java:1476)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.checkNameNodeSafeMode(FSNamesystem.java:1463)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.startFileInt(FSNamesystem.java:2487)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.startFile(FSNamesystem.java:2433)
+	at org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.create(NameNodeRpcServer.java:791)
+	at org.apache.hadoop.hdfs.protocolPB.ClientNamenodeProtocolServerSideTranslatorPB.create(ClientNamenodeProtocolServerSideTranslatorPB.java:475)
+	at org.apache.hadoop.hdfs.protocol.proto.ClientNamenodeProtocolProtos$ClientNamenodeProtocol$2.callBlockingMethod(ClientNamenodeProtocolProtos.java)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Server$ProtoBufRpcInvoker.call(ProtobufRpcEngine.java:528)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:1070)
+	at org.apache.hadoop.ipc.Server$RpcCall.run(Server.java:999)
+	at org.apache.hadoop.ipc.Server$RpcCall.run(Server.java:927)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:422)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1730)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:2915)
+
+2025-11-03 18:24:05,917 [WARNING] HDFS en Safe Mode, attente de 5 secondes...
+2025-11-03 18:24:10,921 [INFO] Writing to '/data_streaming/raw/stream_batch_1762194240_38001d99.csv'.
+2025-11-03 18:24:10,950 [ERROR] Exception in child.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/hdfs/util.py", line 76, in consumer
+    self._consumer(data)
+  File "/usr/local/lib/python3.11/site-packages/hdfs/client.py", line 515, in consumer
+    raise _to_error(res)
+hdfs.util.HdfsError: Cannot create file/data_streaming/raw/stream_batch_1762194240_38001d99.csv. Name node is in safe mode.
+The reported blocks 1240 has reached the threshold 0.9990 of total blocks 1240. The minimum number of live datanodes is not required. In safe mode extension. Safe mode will be turned off automatically in 1 seconds. NamenodeHostName:namenode
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.newSafemodeException(FSNamesystem.java:1476)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.checkNameNodeSafeMode(FSNamesystem.java:1463)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.startFileInt(FSNamesystem.java:2487)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.startFile(FSNamesystem.java:2433)
+	at org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.create(NameNodeRpcServer.java:791)
+	at org.apache.hadoop.hdfs.protocolPB.ClientNamenodeProtocolServerSideTranslatorPB.create(ClientNamenodeProtocolServerSideTranslatorPB.java:475)
+	at org.apache.hadoop.hdfs.protocol.proto.ClientNamenodeProtocolProtos$ClientNamenodeProtocol$2.callBlockingMethod(ClientNamenodeProtocolProtos.java)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Server$ProtoBufRpcInvoker.call(ProtobufRpcEngine.java:528)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:1070)
+	at org.apache.hadoop.ipc.Server$RpcCall.run(Server.java:999)
+	at org.apache.hadoop.ipc.Server$RpcCall.run(Server.java:927)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:422)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1730)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:2915)
+
+2025-11-03 18:24:10,952 [WARNING] HDFS en Safe Mode, attente de 5 secondes...
+2025-11-03 18:24:15,952 [INFO] Writing to '/data_streaming/raw/stream_batch_1762194240_38001d99.csv'.
+2025-11-03 18:24:18,378 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762194240_38001d99.csv
+2025-11-03 18:24:18,382 [INFO] Writing to '/data_streaming/raw/stream_batch_1762194258_fa6ecd38.csv'.
+2025-11-03 18:24:18,630 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762194258_fa6ecd38.csv
+2025-11-03 18:24:18,644 [INFO] Writing to '/data_streaming/raw/stream_batch_1762194258_9b12a93b.csv'.
+2025-11-03 18:24:19,085 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762194258_9b12a93b.csv
+2025-11-03 18:24:19,106 [INFO] Writing to '/data_streaming/raw/stream_batch_1762194259_d09d4693.csv'.
+2025-11-03 18:24:19,917 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762194259_d09d4693.csv
+2025-11-03 18:24:19,922 [INFO] Writing to '/data_streaming/raw/stream_batch_1762194259_c985579b.csv'.
+2025-11-03 18:24:20,975 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762194259_c985579b.csv
+2025-11-03 18:24:20,979 [INFO] Writing to '/data_streaming/raw/stream_batch_1762194260_7aae705d.csv'.
+2025-11-03 18:24:21,941 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762194260_7aae705d.csv
+2025-11-03 18:24:21,944 [INFO] Writing to '/data_streaming/raw/stream_batch_1762194261_bf99a72c.csv'.
+2025-11-03 18:24:22,132 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762194261_bf99a72c.csv
+2025-11-03 18:24:23,230 [INFO] Writing to '/data_streaming/raw/stream_batch_1762194263_4af7f8aa.csv'.
+2025-11-03 18:24:23,459 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762194263_4af7f8aa.csv
+2025-11-03 18:24:28,381 [INFO] Writing to '/data_streaming/raw/stream_batch_1762194268_b1279392.csv'.
+2025-11-03 18:24:29,131 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762194268_b1279392.csv
+2025-11-03 19:00:41,131 [INFO] Démarrage de l'ingestion Kafka → HDFS...
+2025-11-03 19:00:41,140 [INFO] Instantiated <InsecureClient(url='http://namenode:9870')>.
+2025-11-03 19:00:41,143 [INFO] <BrokerConnection node_id=bootstrap-0 host=kafka:9092 <connecting> [IPv4 ('172.18.0.10', 9092)]>: connecting to kafka:9092 [('172.18.0.10', 9092) IPv4]
+2025-11-03 19:00:41,144 [INFO] Probing node bootstrap-0 broker version
+2025-11-03 19:00:41,146 [INFO] <BrokerConnection node_id=bootstrap-0 host=kafka:9092 <connecting> [IPv4 ('172.18.0.10', 9092)]>: Connection complete.
+2025-11-03 19:00:41,262 [INFO] Broker version identified as 2.5.0
+2025-11-03 19:00:41,262 [INFO] Set configuration api_version=(2, 5, 0) to skip auto check_version requests on startup
+2025-11-03 19:00:41,264 [INFO] Updating subscribed topics to: ('data_stream',)
+2025-11-03 19:00:41,265 [INFO] Connecté à Kafka !
+2025-11-03 19:00:41,272 [INFO] Group coordinator for hdfs_loader is BrokerMetadata(nodeId='coordinator-1', host='kafka', port=9092, rack=None)
+2025-11-03 19:00:41,273 [INFO] Discovered coordinator coordinator-1 for group hdfs_loader
+2025-11-03 19:00:41,274 [INFO] Starting new heartbeat thread
+2025-11-03 19:00:41,275 [INFO] Revoking previously assigned partitions set() for group hdfs_loader
+2025-11-03 19:00:41,276 [INFO] <BrokerConnection node_id=coordinator-1 host=kafka:9092 <connecting> [IPv4 ('172.18.0.10', 9092)]>: connecting to kafka:9092 [('172.18.0.10', 9092) IPv4]
+2025-11-03 19:00:41,277 [INFO] <BrokerConnection node_id=coordinator-1 host=kafka:9092 <connecting> [IPv4 ('172.18.0.10', 9092)]>: Connection complete.
+2025-11-03 19:00:41,278 [INFO] <BrokerConnection node_id=bootstrap-0 host=kafka:9092 <connected> [IPv4 ('172.18.0.10', 9092)]>: Closing connection. 
+2025-11-03 19:00:41,380 [INFO] (Re-)joining group hdfs_loader
+2025-11-03 19:00:44,432 [INFO] Elected group leader -- performing partition assignments using range
+2025-11-03 19:00:44,437 [INFO] <BrokerConnection node_id=1 host=kafka:9092 <connecting> [IPv4 ('172.18.0.10', 9092)]>: connecting to kafka:9092 [('172.18.0.10', 9092) IPv4]
+2025-11-03 19:00:44,438 [INFO] <BrokerConnection node_id=1 host=kafka:9092 <connecting> [IPv4 ('172.18.0.10', 9092)]>: Connection complete.
+2025-11-03 19:00:44,465 [INFO] Successfully joined group hdfs_loader with generation 22
+2025-11-03 19:00:44,466 [INFO] Updated partition assignment: [TopicPartition(topic='data_stream', partition=0)]
+2025-11-03 19:00:44,466 [INFO] Setting newly assigned partitions {TopicPartition(topic='data_stream', partition=0)} for group hdfs_loader
+2025-11-03 19:00:44,518 [INFO] Writing to '/data_streaming/raw/stream_batch_1762196444_13c8b176.csv'.
+2025-11-03 19:00:45,830 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762196444_13c8b176.csv
+2025-11-03 19:00:45,833 [INFO] Writing to '/data_streaming/raw/stream_batch_1762196445_2042f841.csv'.
+2025-11-03 19:00:46,342 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762196445_2042f841.csv
+2025-11-03 19:00:48,518 [INFO] Writing to '/data_streaming/raw/stream_batch_1762196448_582c1e49.csv'.
+2025-11-03 19:00:48,802 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762196448_582c1e49.csv
+2025-11-03 19:00:54,622 [INFO] Writing to '/data_streaming/raw/stream_batch_1762196454_7d305bce.csv'.
+2025-11-03 19:00:55,351 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762196454_7d305bce.csv
+2025-11-03 19:01:01,304 [INFO] Writing to '/data_streaming/raw/stream_batch_1762196461_6a4da4fb.csv'.
+2025-11-03 19:01:02,011 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762196461_6a4da4fb.csv
+2025-11-03 19:01:06,981 [INFO] Writing to '/data_streaming/raw/stream_batch_1762196466_1592a079.csv'.
+2025-11-03 19:01:07,142 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762196466_1592a079.csv
+2025-11-03 19:01:12,670 [INFO] Writing to '/data_streaming/raw/stream_batch_1762196472_ec1d9de9.csv'.
+2025-11-03 19:01:12,819 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762196472_ec1d9de9.csv
+2025-11-03 19:01:18,312 [INFO] Writing to '/data_streaming/raw/stream_batch_1762196478_0528af26.csv'.
+2025-11-03 19:01:18,890 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762196478_0528af26.csv
+2025-11-03 19:01:24,605 [INFO] Writing to '/data_streaming/raw/stream_batch_1762196484_d7f67e39.csv'.
+2025-11-03 19:01:25,015 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762196484_d7f67e39.csv
+2025-11-03 19:01:30,755 [INFO] Writing to '/data_streaming/raw/stream_batch_1762196490_43099daf.csv'.
+2025-11-03 19:01:31,123 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762196490_43099daf.csv
+2025-11-03 19:01:36,383 [INFO] Writing to '/data_streaming/raw/stream_batch_1762196496_63f2b975.csv'.
+2025-11-03 19:01:36,552 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762196496_63f2b975.csv
+2025-11-03 19:01:42,168 [INFO] Writing to '/data_streaming/raw/stream_batch_1762196502_14a206e1.csv'.
+2025-11-03 19:01:42,914 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762196502_14a206e1.csv
+2025-11-03 19:01:47,996 [INFO] Writing to '/data_streaming/raw/stream_batch_1762196507_4622d9fe.csv'.
+2025-11-03 19:01:48,209 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762196507_4622d9fe.csv
+2025-11-03 19:01:53,651 [INFO] Writing to '/data_streaming/raw/stream_batch_1762196513_e8a56851.csv'.
+2025-11-03 19:01:54,168 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762196513_e8a56851.csv
+2025-11-03 19:01:59,129 [INFO] Writing to '/data_streaming/raw/stream_batch_1762196519_262f960a.csv'.
+2025-11-03 19:01:59,340 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762196519_262f960a.csv
+2025-11-03 19:02:04,666 [INFO] Writing to '/data_streaming/raw/stream_batch_1762196524_66127420.csv'.
+2025-11-03 19:02:05,190 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762196524_66127420.csv
+2025-11-03 19:02:10,062 [INFO] Writing to '/data_streaming/raw/stream_batch_1762196530_78777710.csv'.
+2025-11-03 19:02:10,726 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762196530_78777710.csv
+2025-11-03 19:02:15,664 [INFO] Writing to '/data_streaming/raw/stream_batch_1762196535_0860fc9b.csv'.
+2025-11-03 19:02:15,809 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762196535_0860fc9b.csv
+2025-11-03 19:02:21,048 [INFO] Writing to '/data_streaming/raw/stream_batch_1762196541_93a30630.csv'.
+2025-11-03 19:02:21,325 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762196541_93a30630.csv
+2025-11-03 19:02:26,572 [INFO] Writing to '/data_streaming/raw/stream_batch_1762196546_50d6bc30.csv'.
+2025-11-03 19:02:27,102 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762196546_50d6bc30.csv
+2025-11-03 19:02:32,036 [INFO] Writing to '/data_streaming/raw/stream_batch_1762196552_20d3abe6.csv'.
+2025-11-03 19:02:32,351 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762196552_20d3abe6.csv
+2025-11-03 19:02:38,007 [INFO] Writing to '/data_streaming/raw/stream_batch_1762196558_1343633b.csv'.
+2025-11-03 19:02:38,157 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762196558_1343633b.csv
+2025-11-03 19:02:43,415 [INFO] Writing to '/data_streaming/raw/stream_batch_1762196563_5e6acf2f.csv'.
+2025-11-03 19:02:43,732 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762196563_5e6acf2f.csv
+2025-11-03 19:02:49,130 [INFO] Writing to '/data_streaming/raw/stream_batch_1762196569_2e36036d.csv'.
+2025-11-03 19:02:49,305 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762196569_2e36036d.csv
+2025-11-03 19:02:54,653 [INFO] Writing to '/data_streaming/raw/stream_batch_1762196574_f2d61746.csv'.
+2025-11-03 19:02:54,885 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762196574_f2d61746.csv
+2025-11-03 19:03:00,067 [INFO] Writing to '/data_streaming/raw/stream_batch_1762196580_a36e01d6.csv'.
+2025-11-03 19:03:00,658 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762196580_a36e01d6.csv
+2025-11-03 19:03:05,409 [INFO] Writing to '/data_streaming/raw/stream_batch_1762196585_d6184a5f.csv'.
+2025-11-03 19:03:05,467 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762196585_d6184a5f.csv
+2025-11-03 19:03:10,736 [INFO] Writing to '/data_streaming/raw/stream_batch_1762196590_1519171a.csv'.
+2025-11-03 19:03:11,235 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762196590_1519171a.csv
+2025-11-03 19:03:16,026 [INFO] Writing to '/data_streaming/raw/stream_batch_1762196596_5a16b4d1.csv'.
+2025-11-03 19:03:16,122 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762196596_5a16b4d1.csv
+2025-11-03 19:03:21,219 [INFO] Writing to '/data_streaming/raw/stream_batch_1762196601_e91a1816.csv'.
+2025-11-03 19:03:21,353 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762196601_e91a1816.csv
+2025-11-03 19:03:26,561 [INFO] Writing to '/data_streaming/raw/stream_batch_1762196606_fc2e85a5.csv'.
+2025-11-03 19:03:26,737 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762196606_fc2e85a5.csv
+2025-11-03 19:03:32,031 [INFO] Writing to '/data_streaming/raw/stream_batch_1762196612_582f1a86.csv'.
+2025-11-03 19:03:32,206 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762196612_582f1a86.csv
+2025-11-03 19:03:37,505 [INFO] Writing to '/data_streaming/raw/stream_batch_1762196617_5a7d6117.csv'.
+2025-11-03 19:03:37,590 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762196617_5a7d6117.csv
+2025-11-03 19:03:42,821 [INFO] Writing to '/data_streaming/raw/stream_batch_1762196622_00959219.csv'.
+2025-11-03 19:03:43,011 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762196622_00959219.csv
+2025-11-03 19:03:48,553 [INFO] Writing to '/data_streaming/raw/stream_batch_1762196628_3f2b21ed.csv'.
+2025-11-03 19:03:49,176 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762196628_3f2b21ed.csv
+2025-11-03 19:03:54,102 [INFO] Writing to '/data_streaming/raw/stream_batch_1762196634_2cc150a8.csv'.
+2025-11-03 19:03:54,765 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762196634_2cc150a8.csv
+2025-11-03 19:03:59,421 [INFO] Writing to '/data_streaming/raw/stream_batch_1762196639_adcef58f.csv'.
+2025-11-03 19:03:59,463 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762196639_adcef58f.csv
+2025-11-03 19:04:04,672 [INFO] Writing to '/data_streaming/raw/stream_batch_1762196644_c459aa66.csv'.
+2025-11-03 19:04:05,263 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762196644_c459aa66.csv
+2025-11-03 19:04:09,958 [INFO] Writing to '/data_streaming/raw/stream_batch_1762196649_907473dd.csv'.
+2025-11-03 19:04:10,007 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762196649_907473dd.csv
+2025-11-03 19:04:15,106 [INFO] Writing to '/data_streaming/raw/stream_batch_1762196655_fbc4db73.csv'.
+2025-11-03 19:04:15,145 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762196655_fbc4db73.csv
+2025-11-03 19:04:20,266 [INFO] Writing to '/data_streaming/raw/stream_batch_1762196660_1beabebc.csv'.
+2025-11-03 19:04:20,318 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762196660_1beabebc.csv
+2025-11-03 19:04:25,399 [INFO] Writing to '/data_streaming/raw/stream_batch_1762196665_c7da93e3.csv'.
+2025-11-03 19:04:25,521 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762196665_c7da93e3.csv
+2025-11-03 19:04:30,650 [INFO] Writing to '/data_streaming/raw/stream_batch_1762196670_ac789a96.csv'.
+2025-11-03 19:04:30,723 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762196670_ac789a96.csv
+2025-11-03 19:04:35,792 [INFO] Writing to '/data_streaming/raw/stream_batch_1762196675_139ac400.csv'.
+2025-11-03 19:04:36,236 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762196675_139ac400.csv
+2025-11-03 19:04:40,980 [INFO] Writing to '/data_streaming/raw/stream_batch_1762196680_8bb34ab0.csv'.
+2025-11-03 19:04:41,224 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762196680_8bb34ab0.csv
+2025-11-03 19:04:46,520 [INFO] Writing to '/data_streaming/raw/stream_batch_1762196686_6bb80321.csv'.
+2025-11-03 19:04:47,002 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762196686_6bb80321.csv
+2025-11-03 19:04:51,819 [INFO] Writing to '/data_streaming/raw/stream_batch_1762196691_41a7d6ea.csv'.
+2025-11-03 19:04:52,336 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762196691_41a7d6ea.csv
+2025-11-03 19:16:09,959 [INFO] Démarrage de l'ingestion Kafka → HDFS...
+2025-11-03 19:16:09,967 [INFO] Instantiated <InsecureClient(url='http://namenode:9870')>.
+2025-11-03 19:16:09,971 [INFO] <BrokerConnection node_id=bootstrap-0 host=kafka:9092 <connecting> [IPv4 ('172.18.0.11', 9092)]>: connecting to kafka:9092 [('172.18.0.11', 9092) IPv4]
+2025-11-03 19:16:09,972 [INFO] Probing node bootstrap-0 broker version
+2025-11-03 19:16:09,974 [INFO] <BrokerConnection node_id=bootstrap-0 host=kafka:9092 <connecting> [IPv4 ('172.18.0.11', 9092)]>: Connection complete.
+2025-11-03 19:16:10,080 [INFO] Broker version identified as 2.5.0
+2025-11-03 19:16:10,081 [INFO] Set configuration api_version=(2, 5, 0) to skip auto check_version requests on startup
+2025-11-03 19:16:10,083 [INFO] Updating subscribed topics to: ('data_stream',)
+2025-11-03 19:16:10,084 [INFO] Connecté à Kafka !
+2025-11-03 19:16:10,092 [INFO] Group coordinator for hdfs_loader is BrokerMetadata(nodeId='coordinator-1', host='kafka', port=9092, rack=None)
+2025-11-03 19:16:10,093 [INFO] Discovered coordinator coordinator-1 for group hdfs_loader
+2025-11-03 19:16:10,095 [INFO] Starting new heartbeat thread
+2025-11-03 19:16:10,096 [INFO] Revoking previously assigned partitions set() for group hdfs_loader
+2025-11-03 19:16:10,098 [INFO] <BrokerConnection node_id=coordinator-1 host=kafka:9092 <connecting> [IPv4 ('172.18.0.11', 9092)]>: connecting to kafka:9092 [('172.18.0.11', 9092) IPv4]
+2025-11-03 19:16:10,100 [INFO] <BrokerConnection node_id=coordinator-1 host=kafka:9092 <connecting> [IPv4 ('172.18.0.11', 9092)]>: Connection complete.
+2025-11-03 19:16:10,101 [INFO] <BrokerConnection node_id=bootstrap-0 host=kafka:9092 <connected> [IPv4 ('172.18.0.11', 9092)]>: Closing connection. 
+2025-11-03 19:16:10,202 [INFO] (Re-)joining group hdfs_loader
+2025-11-03 19:16:13,238 [INFO] Elected group leader -- performing partition assignments using range
+2025-11-03 19:16:13,245 [INFO] <BrokerConnection node_id=1 host=kafka:9092 <connecting> [IPv4 ('172.18.0.11', 9092)]>: connecting to kafka:9092 [('172.18.0.11', 9092) IPv4]
+2025-11-03 19:16:13,247 [INFO] <BrokerConnection node_id=1 host=kafka:9092 <connecting> [IPv4 ('172.18.0.11', 9092)]>: Connection complete.
+2025-11-03 19:16:13,276 [INFO] Successfully joined group hdfs_loader with generation 24
+2025-11-03 19:16:13,277 [INFO] Updated partition assignment: [TopicPartition(topic='data_stream', partition=0)]
+2025-11-03 19:16:13,279 [INFO] Setting newly assigned partitions {TopicPartition(topic='data_stream', partition=0)} for group hdfs_loader
+2025-11-03 19:16:13,338 [INFO] Writing to '/data_streaming/raw/stream_batch_1762197373_7cb8c00f.csv'.
+2025-11-03 19:16:13,918 [ERROR] Exception in child.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/hdfs/util.py", line 76, in consumer
+    self._consumer(data)
+  File "/usr/local/lib/python3.11/site-packages/hdfs/client.py", line 515, in consumer
+    raise _to_error(res)
+hdfs.util.HdfsError: Cannot create file/data_streaming/raw/stream_batch_1762197373_7cb8c00f.csv. Name node is in safe mode.
+The reported blocks 1346 has reached the threshold 0.9990 of total blocks 1346. The minimum number of live datanodes is not required. In safe mode extension. Safe mode will be turned off automatically in 0 seconds. NamenodeHostName:namenode
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.newSafemodeException(FSNamesystem.java:1476)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.checkNameNodeSafeMode(FSNamesystem.java:1463)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.startFileInt(FSNamesystem.java:2487)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.startFile(FSNamesystem.java:2433)
+	at org.apache.hadoop.hdfs.server.namenode.NameNodeRpcServer.create(NameNodeRpcServer.java:791)
+	at org.apache.hadoop.hdfs.protocolPB.ClientNamenodeProtocolServerSideTranslatorPB.create(ClientNamenodeProtocolServerSideTranslatorPB.java:475)
+	at org.apache.hadoop.hdfs.protocol.proto.ClientNamenodeProtocolProtos$ClientNamenodeProtocol$2.callBlockingMethod(ClientNamenodeProtocolProtos.java)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Server$ProtoBufRpcInvoker.call(ProtobufRpcEngine.java:528)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:1070)
+	at org.apache.hadoop.ipc.Server$RpcCall.run(Server.java:999)
+	at org.apache.hadoop.ipc.Server$RpcCall.run(Server.java:927)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:422)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1730)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:2915)
+
+2025-11-03 19:16:13,920 [WARNING] HDFS en Safe Mode, attente de 5 secondes...
+2025-11-03 19:16:18,922 [INFO] Writing to '/data_streaming/raw/stream_batch_1762197373_7cb8c00f.csv'.
+2025-11-03 19:16:19,839 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762197373_7cb8c00f.csv
+2025-11-03 19:16:19,843 [INFO] Writing to '/data_streaming/raw/stream_batch_1762197379_5a673c2b.csv'.
+2025-11-03 19:16:19,916 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762197379_5a673c2b.csv
+2025-11-03 19:16:19,919 [INFO] Writing to '/data_streaming/raw/stream_batch_1762197379_e6ce98d9.csv'.
+2025-11-03 19:16:20,390 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762197379_e6ce98d9.csv
+2025-11-03 19:16:20,405 [INFO] Writing to '/data_streaming/raw/stream_batch_1762197380_ad794837.csv'.
+2025-11-03 19:16:20,967 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762197380_ad794837.csv
+2025-11-03 19:16:21,016 [INFO] Writing to '/data_streaming/raw/stream_batch_1762197381_705fe325.csv'.
+2025-11-03 19:16:21,190 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762197381_705fe325.csv
+2025-11-03 19:16:24,824 [INFO] Writing to '/data_streaming/raw/stream_batch_1762197384_73313c2a.csv'.
+2025-11-03 19:16:25,324 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762197384_73313c2a.csv
+2025-11-03 19:16:30,027 [INFO] Writing to '/data_streaming/raw/stream_batch_1762197390_363882cc.csv'.
+2025-11-03 19:16:30,142 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762197390_363882cc.csv
+2025-11-03 19:16:35,362 [INFO] Writing to '/data_streaming/raw/stream_batch_1762197395_3d16f76f.csv'.
+2025-11-03 19:16:35,957 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762197395_3d16f76f.csv
+2025-11-03 19:16:40,640 [INFO] Writing to '/data_streaming/raw/stream_batch_1762197400_1c7268b6.csv'.
+2025-11-03 19:16:40,843 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762197400_1c7268b6.csv
+2025-11-03 19:16:46,496 [INFO] Writing to '/data_streaming/raw/stream_batch_1762197406_1293ce80.csv'.
+2025-11-03 19:16:46,584 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762197406_1293ce80.csv
+2025-11-03 19:16:51,735 [INFO] Writing to '/data_streaming/raw/stream_batch_1762197411_547a4e59.csv'.
+2025-11-03 19:16:51,886 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762197411_547a4e59.csv
+2025-11-03 19:16:57,037 [INFO] Writing to '/data_streaming/raw/stream_batch_1762197417_5982e082.csv'.
+2025-11-03 19:16:57,245 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762197417_5982e082.csv
+2025-11-03 19:17:02,327 [INFO] Writing to '/data_streaming/raw/stream_batch_1762197422_ecc95b35.csv'.
+2025-11-03 19:17:02,872 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762197422_ecc95b35.csv
+2025-11-03 19:17:07,515 [INFO] Writing to '/data_streaming/raw/stream_batch_1762197427_7389c608.csv'.
+2025-11-03 19:17:07,636 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762197427_7389c608.csv
+2025-11-03 19:17:12,799 [INFO] Writing to '/data_streaming/raw/stream_batch_1762197432_5b06f19f.csv'.
+2025-11-03 19:17:13,529 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762197432_5b06f19f.csv
+2025-11-03 19:17:18,289 [INFO] Writing to '/data_streaming/raw/stream_batch_1762197438_5069ab25.csv'.
+2025-11-03 19:17:18,524 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762197438_5069ab25.csv
+2025-11-03 19:17:23,842 [INFO] Writing to '/data_streaming/raw/stream_batch_1762197443_354797aa.csv'.
+2025-11-03 19:17:23,972 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762197443_354797aa.csv
+2025-11-03 19:17:29,145 [INFO] Writing to '/data_streaming/raw/stream_batch_1762197449_4e63a364.csv'.
+2025-11-03 19:17:29,289 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762197449_4e63a364.csv
+2025-11-03 19:17:34,477 [INFO] Writing to '/data_streaming/raw/stream_batch_1762197454_ec0293d1.csv'.
+2025-11-03 19:17:34,900 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762197454_ec0293d1.csv
+2025-11-03 19:17:40,075 [INFO] Writing to '/data_streaming/raw/stream_batch_1762197460_51b6bc63.csv'.
+2025-11-03 19:17:40,195 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762197460_51b6bc63.csv
+2025-11-03 19:17:45,386 [INFO] Writing to '/data_streaming/raw/stream_batch_1762197465_17d7660a.csv'.
+2025-11-03 19:17:45,773 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762197465_17d7660a.csv
+2025-11-03 19:17:51,420 [INFO] Writing to '/data_streaming/raw/stream_batch_1762197471_f6cd0d8b.csv'.
+2025-11-03 19:17:51,984 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762197471_f6cd0d8b.csv
+2025-11-03 19:17:58,031 [INFO] Writing to '/data_streaming/raw/stream_batch_1762197478_db3f35af.csv'.
+2025-11-03 19:17:58,250 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762197478_db3f35af.csv
+2025-11-03 19:18:03,708 [INFO] Writing to '/data_streaming/raw/stream_batch_1762197483_7147c2b1.csv'.
+2025-11-03 19:18:03,915 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762197483_7147c2b1.csv
+2025-11-03 19:18:09,119 [INFO] Writing to '/data_streaming/raw/stream_batch_1762197489_9fb855e7.csv'.
+2025-11-03 19:18:09,903 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762197489_9fb855e7.csv
+2025-11-03 19:18:14,559 [INFO] Writing to '/data_streaming/raw/stream_batch_1762197494_0fd9b055.csv'.
+2025-11-03 19:18:14,859 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762197494_0fd9b055.csv
+2025-11-03 19:18:19,940 [INFO] Writing to '/data_streaming/raw/stream_batch_1762197499_100d8414.csv'.
+2025-11-03 19:18:19,996 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762197499_100d8414.csv
+2025-11-03 19:18:25,065 [INFO] Writing to '/data_streaming/raw/stream_batch_1762197505_56e91e0b.csv'.
+2025-11-03 19:18:25,131 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762197505_56e91e0b.csv
+2025-11-03 19:18:30,184 [INFO] Writing to '/data_streaming/raw/stream_batch_1762197510_2dcc1289.csv'.
+2025-11-03 19:18:30,659 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762197510_2dcc1289.csv
+2025-11-03 19:18:35,332 [INFO] Writing to '/data_streaming/raw/stream_batch_1762197515_2552b837.csv'.
+2025-11-03 19:18:35,780 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762197515_2552b837.csv
+2025-11-03 19:18:40,488 [INFO] Writing to '/data_streaming/raw/stream_batch_1762197520_cb3d5982.csv'.
+2025-11-03 19:18:40,939 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762197520_cb3d5982.csv
+2025-11-03 19:18:45,599 [INFO] Writing to '/data_streaming/raw/stream_batch_1762197525_476fe234.csv'.
+2025-11-03 19:18:45,673 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762197525_476fe234.csv
+2025-11-03 19:18:50,710 [INFO] Writing to '/data_streaming/raw/stream_batch_1762197530_8dde0688.csv'.
+2025-11-03 19:18:50,754 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762197530_8dde0688.csv
+2025-11-03 19:18:55,810 [INFO] Writing to '/data_streaming/raw/stream_batch_1762197535_0df8d371.csv'.
+2025-11-03 19:18:55,853 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762197535_0df8d371.csv
+2025-11-03 19:19:00,887 [INFO] Writing to '/data_streaming/raw/stream_batch_1762197540_b493264d.csv'.
+2025-11-03 19:19:01,348 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762197540_b493264d.csv
+2025-11-03 19:19:06,015 [INFO] Writing to '/data_streaming/raw/stream_batch_1762197546_a29f02d5.csv'.
+2025-11-03 19:19:06,785 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762197546_a29f02d5.csv
+2025-11-03 19:19:11,667 [INFO] Writing to '/data_streaming/raw/stream_batch_1762197551_01aae9ef.csv'.
+2025-11-03 19:19:11,730 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762197551_01aae9ef.csv
+2025-11-03 19:19:16,897 [INFO] Writing to '/data_streaming/raw/stream_batch_1762197556_c4639757.csv'.
+2025-11-03 19:19:17,080 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762197556_c4639757.csv
+2025-11-03 19:19:22,217 [INFO] Writing to '/data_streaming/raw/stream_batch_1762197562_ee1d2fca.csv'.
+2025-11-03 19:19:22,295 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762197562_ee1d2fca.csv
+2025-11-03 19:19:27,367 [INFO] Writing to '/data_streaming/raw/stream_batch_1762197567_929453a6.csv'.
+2025-11-03 19:19:27,817 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762197567_929453a6.csv
+2025-11-03 19:19:32,473 [INFO] Writing to '/data_streaming/raw/stream_batch_1762197572_fc429d85.csv'.
+2025-11-03 19:19:32,566 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762197572_fc429d85.csv
+2025-11-03 19:19:37,585 [INFO] Writing to '/data_streaming/raw/stream_batch_1762197577_5454ced4.csv'.
+2025-11-03 19:19:37,636 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762197577_5454ced4.csv
+2025-11-03 19:19:42,695 [INFO] Writing to '/data_streaming/raw/stream_batch_1762197582_5fa0cef0.csv'.
+2025-11-03 19:19:42,745 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762197582_5fa0cef0.csv
+2025-11-03 19:19:47,854 [INFO] Writing to '/data_streaming/raw/stream_batch_1762197587_8bd2c153.csv'.
+2025-11-03 19:19:48,434 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762197587_8bd2c153.csv
+2025-11-03 19:19:53,036 [INFO] Writing to '/data_streaming/raw/stream_batch_1762197593_5bbabfcc.csv'.
+2025-11-03 19:19:53,090 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762197593_5bbabfcc.csv
+2025-11-03 19:19:58,124 [INFO] Writing to '/data_streaming/raw/stream_batch_1762197598_8584a198.csv'.
+2025-11-03 19:19:58,230 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762197598_8584a198.csv
+2025-11-03 19:20:03,253 [INFO] Writing to '/data_streaming/raw/stream_batch_1762197603_c0e261cb.csv'.
+2025-11-03 19:20:03,309 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762197603_c0e261cb.csv
+2025-11-03 19:20:08,344 [INFO] Writing to '/data_streaming/raw/stream_batch_1762197608_177fc462.csv'.
+2025-11-03 19:20:08,447 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762197608_177fc462.csv
+2025-11-03 19:20:13,567 [INFO] Writing to '/data_streaming/raw/stream_batch_1762197613_a304871f.csv'.
+2025-11-03 19:20:14,046 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762197613_a304871f.csv
+2025-11-03 19:20:18,668 [INFO] Writing to '/data_streaming/raw/stream_batch_1762197618_2749626e.csv'.
+2025-11-03 19:20:19,218 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762197618_2749626e.csv
+2025-11-03 19:20:23,782 [INFO] Writing to '/data_streaming/raw/stream_batch_1762197623_a0ff04e4.csv'.
+2025-11-03 19:20:23,977 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762197623_a0ff04e4.csv
+2025-11-03 19:20:29,197 [INFO] Writing to '/data_streaming/raw/stream_batch_1762197629_c65a9b3d.csv'.
+2025-11-03 19:20:29,649 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762197629_c65a9b3d.csv
+2025-11-03 19:20:34,276 [INFO] Writing to '/data_streaming/raw/stream_batch_1762197634_6ec37007.csv'.
+2025-11-03 19:20:34,727 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762197634_6ec37007.csv
+2025-11-03 19:20:39,336 [INFO] Writing to '/data_streaming/raw/stream_batch_1762197639_7696fa8e.csv'.
+2025-11-03 19:20:39,405 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762197639_7696fa8e.csv
+2025-11-03 19:20:44,553 [INFO] Writing to '/data_streaming/raw/stream_batch_1762197644_81e2eb9d.csv'.
+2025-11-03 19:20:44,996 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762197644_81e2eb9d.csv
+2025-11-03 19:20:50,156 [INFO] Writing to '/data_streaming/raw/stream_batch_1762197650_c71e9654.csv'.
+2025-11-03 19:20:50,705 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762197650_c71e9654.csv
+2025-11-03 19:20:55,318 [INFO] Writing to '/data_streaming/raw/stream_batch_1762197655_d219bb6f.csv'.
+2025-11-03 19:20:55,391 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762197655_d219bb6f.csv
+2025-11-03 19:22:49,278 [INFO] Démarrage de l'ingestion Kafka → HDFS...
+2025-11-03 19:22:49,286 [INFO] Instantiated <InsecureClient(url='http://namenode:9870')>.
+2025-11-03 19:22:49,291 [INFO] <BrokerConnection node_id=bootstrap-0 host=kafka:9092 <connecting> [IPv4 ('172.18.0.10', 9092)]>: connecting to kafka:9092 [('172.18.0.10', 9092) IPv4]
+2025-11-03 19:22:49,292 [INFO] Probing node bootstrap-0 broker version
+2025-11-03 19:22:49,297 [ERROR] Connect attempt to <BrokerConnection node_id=bootstrap-0 host=kafka:9092 <connecting> [IPv4 ('172.18.0.10', 9092)]> returned error 111. Disconnecting.
+2025-11-03 19:22:49,297 [INFO] <BrokerConnection node_id=bootstrap-0 host=kafka:9092 <connecting> [IPv4 ('172.18.0.10', 9092)]>: Closing connection. KafkaConnectionError: 111 ECONNREFUSED
+2025-11-03 19:22:49,340 [INFO] <BrokerConnection node_id=bootstrap-0 host=kafka:9092 <connecting> [IPv4 ('172.18.0.10', 9092)]>: connecting to kafka:9092 [('172.18.0.10', 9092) IPv4]
+2025-11-03 19:22:49,342 [ERROR] Connect attempt to <BrokerConnection node_id=bootstrap-0 host=kafka:9092 <connecting> [IPv4 ('172.18.0.10', 9092)]> returned error 111. Disconnecting.
+2025-11-03 19:22:49,346 [INFO] <BrokerConnection node_id=bootstrap-0 host=kafka:9092 <connecting> [IPv4 ('172.18.0.10', 9092)]>: Closing connection. KafkaConnectionError: 111 ECONNREFUSED
+2025-11-03 19:22:49,347 [WARNING] Kafka pas encore prêt, retry dans 5 secondes... (NoBrokersAvailable)
+2025-11-03 19:22:54,350 [INFO] <BrokerConnection node_id=bootstrap-0 host=kafka:9092 <connecting> [IPv4 ('172.18.0.10', 9092)]>: connecting to kafka:9092 [('172.18.0.10', 9092) IPv4]
+2025-11-03 19:22:54,356 [INFO] Probing node bootstrap-0 broker version
+2025-11-03 19:22:54,372 [ERROR] Connect attempt to <BrokerConnection node_id=bootstrap-0 host=kafka:9092 <connecting> [IPv4 ('172.18.0.10', 9092)]> returned error 111. Disconnecting.
+2025-11-03 19:22:54,373 [INFO] <BrokerConnection node_id=bootstrap-0 host=kafka:9092 <connecting> [IPv4 ('172.18.0.10', 9092)]>: Closing connection. KafkaConnectionError: 111 ECONNREFUSED
+2025-11-03 19:22:54,401 [INFO] <BrokerConnection node_id=bootstrap-0 host=kafka:9092 <connecting> [IPv4 ('172.18.0.10', 9092)]>: connecting to kafka:9092 [('172.18.0.10', 9092) IPv4]
+2025-11-03 19:22:54,401 [ERROR] Connect attempt to <BrokerConnection node_id=bootstrap-0 host=kafka:9092 <connecting> [IPv4 ('172.18.0.10', 9092)]> returned error 111. Disconnecting.
+2025-11-03 19:22:54,402 [INFO] <BrokerConnection node_id=bootstrap-0 host=kafka:9092 <connecting> [IPv4 ('172.18.0.10', 9092)]>: Closing connection. KafkaConnectionError: 111 ECONNREFUSED
+2025-11-03 19:22:54,403 [WARNING] Kafka pas encore prêt, retry dans 5 secondes... (NoBrokersAvailable)
+2025-11-03 19:22:59,407 [INFO] <BrokerConnection node_id=bootstrap-0 host=kafka:9092 <connecting> [IPv4 ('172.18.0.10', 9092)]>: connecting to kafka:9092 [('172.18.0.10', 9092) IPv4]
+2025-11-03 19:22:59,422 [INFO] Probing node bootstrap-0 broker version
+2025-11-03 19:22:59,455 [ERROR] Connect attempt to <BrokerConnection node_id=bootstrap-0 host=kafka:9092 <connecting> [IPv4 ('172.18.0.10', 9092)]> returned error 111. Disconnecting.
+2025-11-03 19:22:59,470 [INFO] <BrokerConnection node_id=bootstrap-0 host=kafka:9092 <connecting> [IPv4 ('172.18.0.10', 9092)]>: Closing connection. KafkaConnectionError: 111 ECONNREFUSED
+2025-11-03 19:22:59,472 [INFO] <BrokerConnection node_id=bootstrap-0 host=kafka:9092 <connecting> [IPv4 ('172.18.0.10', 9092)]>: connecting to kafka:9092 [('172.18.0.10', 9092) IPv4]
+2025-11-03 19:22:59,473 [ERROR] Connect attempt to <BrokerConnection node_id=bootstrap-0 host=kafka:9092 <connecting> [IPv4 ('172.18.0.10', 9092)]> returned error 111. Disconnecting.
+2025-11-03 19:22:59,474 [INFO] <BrokerConnection node_id=bootstrap-0 host=kafka:9092 <connecting> [IPv4 ('172.18.0.10', 9092)]>: Closing connection. KafkaConnectionError: 111 ECONNREFUSED
+2025-11-03 19:22:59,487 [WARNING] Kafka pas encore prêt, retry dans 5 secondes... (NoBrokersAvailable)
+2025-11-03 19:23:04,503 [INFO] <BrokerConnection node_id=bootstrap-0 host=kafka:9092 <connecting> [IPv4 ('172.18.0.10', 9092)]>: connecting to kafka:9092 [('172.18.0.10', 9092) IPv4]
+2025-11-03 19:23:04,516 [INFO] Probing node bootstrap-0 broker version
+2025-11-03 19:23:04,517 [ERROR] Connect attempt to <BrokerConnection node_id=bootstrap-0 host=kafka:9092 <connecting> [IPv4 ('172.18.0.10', 9092)]> returned error 111. Disconnecting.
+2025-11-03 19:23:04,518 [INFO] <BrokerConnection node_id=bootstrap-0 host=kafka:9092 <connecting> [IPv4 ('172.18.0.10', 9092)]>: Closing connection. KafkaConnectionError: 111 ECONNREFUSED
+2025-11-03 19:23:04,557 [INFO] <BrokerConnection node_id=bootstrap-0 host=kafka:9092 <connecting> [IPv4 ('172.18.0.10', 9092)]>: connecting to kafka:9092 [('172.18.0.10', 9092) IPv4]
+2025-11-03 19:23:04,558 [ERROR] Connect attempt to <BrokerConnection node_id=bootstrap-0 host=kafka:9092 <connecting> [IPv4 ('172.18.0.10', 9092)]> returned error 111. Disconnecting.
+2025-11-03 19:23:04,558 [INFO] <BrokerConnection node_id=bootstrap-0 host=kafka:9092 <connecting> [IPv4 ('172.18.0.10', 9092)]>: Closing connection. KafkaConnectionError: 111 ECONNREFUSED
+2025-11-03 19:23:04,559 [WARNING] Kafka pas encore prêt, retry dans 5 secondes... (NoBrokersAvailable)
+2025-11-03 19:23:09,546 [INFO] <BrokerConnection node_id=bootstrap-0 host=kafka:9092 <connecting> [IPv4 ('172.18.0.10', 9092)]>: connecting to kafka:9092 [('172.18.0.10', 9092) IPv4]
+2025-11-03 19:23:09,547 [INFO] Probing node bootstrap-0 broker version
+2025-11-03 19:23:09,548 [ERROR] Connect attempt to <BrokerConnection node_id=bootstrap-0 host=kafka:9092 <connecting> [IPv4 ('172.18.0.10', 9092)]> returned error 111. Disconnecting.
+2025-11-03 19:23:09,549 [INFO] <BrokerConnection node_id=bootstrap-0 host=kafka:9092 <connecting> [IPv4 ('172.18.0.10', 9092)]>: Closing connection. KafkaConnectionError: 111 ECONNREFUSED
+2025-11-03 19:23:09,600 [INFO] <BrokerConnection node_id=bootstrap-0 host=kafka:9092 <connecting> [IPv4 ('172.18.0.10', 9092)]>: connecting to kafka:9092 [('172.18.0.10', 9092) IPv4]
+2025-11-03 19:23:09,602 [ERROR] Connect attempt to <BrokerConnection node_id=bootstrap-0 host=kafka:9092 <connecting> [IPv4 ('172.18.0.10', 9092)]> returned error 111. Disconnecting.
+2025-11-03 19:23:09,602 [INFO] <BrokerConnection node_id=bootstrap-0 host=kafka:9092 <connecting> [IPv4 ('172.18.0.10', 9092)]>: Closing connection. KafkaConnectionError: 111 ECONNREFUSED
+2025-11-03 19:23:09,603 [WARNING] Kafka pas encore prêt, retry dans 5 secondes... (NoBrokersAvailable)
+2025-11-03 19:23:14,610 [INFO] <BrokerConnection node_id=bootstrap-0 host=kafka:9092 <connecting> [IPv4 ('172.18.0.10', 9092)]>: connecting to kafka:9092 [('172.18.0.10', 9092) IPv4]
+2025-11-03 19:23:14,611 [INFO] Probing node bootstrap-0 broker version
+2025-11-03 19:23:14,613 [ERROR] Connect attempt to <BrokerConnection node_id=bootstrap-0 host=kafka:9092 <connecting> [IPv4 ('172.18.0.10', 9092)]> returned error 111. Disconnecting.
+2025-11-03 19:23:14,614 [INFO] <BrokerConnection node_id=bootstrap-0 host=kafka:9092 <connecting> [IPv4 ('172.18.0.10', 9092)]>: Closing connection. KafkaConnectionError: 111 ECONNREFUSED
+2025-11-03 19:23:14,656 [INFO] <BrokerConnection node_id=bootstrap-0 host=kafka:9092 <connecting> [IPv4 ('172.18.0.10', 9092)]>: connecting to kafka:9092 [('172.18.0.10', 9092) IPv4]
+2025-11-03 19:23:14,662 [ERROR] Connect attempt to <BrokerConnection node_id=bootstrap-0 host=kafka:9092 <connecting> [IPv4 ('172.18.0.10', 9092)]> returned error 111. Disconnecting.
+2025-11-03 19:23:14,663 [INFO] <BrokerConnection node_id=bootstrap-0 host=kafka:9092 <connecting> [IPv4 ('172.18.0.10', 9092)]>: Closing connection. KafkaConnectionError: 111 ECONNREFUSED
+2025-11-03 19:23:14,664 [WARNING] Kafka pas encore prêt, retry dans 5 secondes... (NoBrokersAvailable)
+2025-11-03 19:23:19,666 [INFO] <BrokerConnection node_id=bootstrap-0 host=kafka:9092 <connecting> [IPv4 ('172.18.0.10', 9092)]>: connecting to kafka:9092 [('172.18.0.10', 9092) IPv4]
+2025-11-03 19:23:19,667 [INFO] Probing node bootstrap-0 broker version
+2025-11-03 19:23:19,669 [ERROR] Connect attempt to <BrokerConnection node_id=bootstrap-0 host=kafka:9092 <connecting> [IPv4 ('172.18.0.10', 9092)]> returned error 111. Disconnecting.
+2025-11-03 19:23:19,670 [INFO] <BrokerConnection node_id=bootstrap-0 host=kafka:9092 <connecting> [IPv4 ('172.18.0.10', 9092)]>: Closing connection. KafkaConnectionError: 111 ECONNREFUSED
+2025-11-03 19:23:19,716 [INFO] <BrokerConnection node_id=bootstrap-0 host=kafka:9092 <connecting> [IPv4 ('172.18.0.10', 9092)]>: connecting to kafka:9092 [('172.18.0.10', 9092) IPv4]
+2025-11-03 19:23:19,724 [ERROR] Connect attempt to <BrokerConnection node_id=bootstrap-0 host=kafka:9092 <connecting> [IPv4 ('172.18.0.10', 9092)]> returned error 111. Disconnecting.
+2025-11-03 19:23:19,725 [INFO] <BrokerConnection node_id=bootstrap-0 host=kafka:9092 <connecting> [IPv4 ('172.18.0.10', 9092)]>: Closing connection. KafkaConnectionError: 111 ECONNREFUSED
+2025-11-03 19:23:19,726 [WARNING] Kafka pas encore prêt, retry dans 5 secondes... (NoBrokersAvailable)
+2025-11-03 19:23:24,729 [INFO] <BrokerConnection node_id=bootstrap-0 host=kafka:9092 <connecting> [IPv4 ('172.18.0.10', 9092)]>: connecting to kafka:9092 [('172.18.0.10', 9092) IPv4]
+2025-11-03 19:23:24,743 [INFO] Probing node bootstrap-0 broker version
+2025-11-03 19:23:24,776 [ERROR] Connect attempt to <BrokerConnection node_id=bootstrap-0 host=kafka:9092 <connecting> [IPv4 ('172.18.0.10', 9092)]> returned error 111. Disconnecting.
+2025-11-03 19:23:24,777 [INFO] <BrokerConnection node_id=bootstrap-0 host=kafka:9092 <connecting> [IPv4 ('172.18.0.10', 9092)]>: Closing connection. KafkaConnectionError: 111 ECONNREFUSED
+2025-11-03 19:23:24,778 [INFO] <BrokerConnection node_id=bootstrap-0 host=kafka:9092 <connecting> [IPv4 ('172.18.0.10', 9092)]>: connecting to kafka:9092 [('172.18.0.10', 9092) IPv4]
+2025-11-03 19:23:24,799 [ERROR] Connect attempt to <BrokerConnection node_id=bootstrap-0 host=kafka:9092 <connecting> [IPv4 ('172.18.0.10', 9092)]> returned error 111. Disconnecting.
+2025-11-03 19:23:24,802 [INFO] <BrokerConnection node_id=bootstrap-0 host=kafka:9092 <connecting> [IPv4 ('172.18.0.10', 9092)]>: Closing connection. KafkaConnectionError: 111 ECONNREFUSED
+2025-11-03 19:23:24,803 [WARNING] Kafka pas encore prêt, retry dans 5 secondes... (NoBrokersAvailable)
+2025-11-03 19:23:29,807 [INFO] <BrokerConnection node_id=bootstrap-0 host=kafka:9092 <connecting> [IPv4 ('172.18.0.10', 9092)]>: connecting to kafka:9092 [('172.18.0.10', 9092) IPv4]
+2025-11-03 19:23:29,808 [INFO] Probing node bootstrap-0 broker version
+2025-11-03 19:23:29,813 [ERROR] Connect attempt to <BrokerConnection node_id=bootstrap-0 host=kafka:9092 <connecting> [IPv4 ('172.18.0.10', 9092)]> returned error 111. Disconnecting.
+2025-11-03 19:23:29,813 [INFO] <BrokerConnection node_id=bootstrap-0 host=kafka:9092 <connecting> [IPv4 ('172.18.0.10', 9092)]>: Closing connection. KafkaConnectionError: 111 ECONNREFUSED
+2025-11-03 19:23:29,856 [INFO] <BrokerConnection node_id=bootstrap-0 host=kafka:9092 <connecting> [IPv4 ('172.18.0.10', 9092)]>: connecting to kafka:9092 [('172.18.0.10', 9092) IPv4]
+2025-11-03 19:23:29,867 [ERROR] Connect attempt to <BrokerConnection node_id=bootstrap-0 host=kafka:9092 <connecting> [IPv4 ('172.18.0.10', 9092)]> returned error 111. Disconnecting.
+2025-11-03 19:23:29,868 [INFO] <BrokerConnection node_id=bootstrap-0 host=kafka:9092 <connecting> [IPv4 ('172.18.0.10', 9092)]>: Closing connection. KafkaConnectionError: 111 ECONNREFUSED
+2025-11-03 19:23:29,869 [WARNING] Kafka pas encore prêt, retry dans 5 secondes... (NoBrokersAvailable)
+2025-11-03 19:23:34,874 [INFO] <BrokerConnection node_id=bootstrap-0 host=kafka:9092 <connecting> [IPv4 ('172.18.0.10', 9092)]>: connecting to kafka:9092 [('172.18.0.10', 9092) IPv4]
+2025-11-03 19:23:34,875 [INFO] Probing node bootstrap-0 broker version
+2025-11-03 19:23:34,876 [ERROR] Connect attempt to <BrokerConnection node_id=bootstrap-0 host=kafka:9092 <connecting> [IPv4 ('172.18.0.10', 9092)]> returned error 111. Disconnecting.
+2025-11-03 19:23:34,888 [INFO] <BrokerConnection node_id=bootstrap-0 host=kafka:9092 <connecting> [IPv4 ('172.18.0.10', 9092)]>: Closing connection. KafkaConnectionError: 111 ECONNREFUSED
+2025-11-03 19:23:34,923 [INFO] <BrokerConnection node_id=bootstrap-0 host=kafka:9092 <connecting> [IPv4 ('172.18.0.10', 9092)]>: connecting to kafka:9092 [('172.18.0.10', 9092) IPv4]
+2025-11-03 19:23:34,937 [ERROR] Connect attempt to <BrokerConnection node_id=bootstrap-0 host=kafka:9092 <connecting> [IPv4 ('172.18.0.10', 9092)]> returned error 111. Disconnecting.
+2025-11-03 19:23:34,938 [INFO] <BrokerConnection node_id=bootstrap-0 host=kafka:9092 <connecting> [IPv4 ('172.18.0.10', 9092)]>: Closing connection. KafkaConnectionError: 111 ECONNREFUSED
+2025-11-03 19:23:34,939 [WARNING] Kafka pas encore prêt, retry dans 5 secondes... (NoBrokersAvailable)
+2025-11-03 19:23:39,939 [INFO] <BrokerConnection node_id=bootstrap-0 host=kafka:9092 <connecting> [IPv4 ('172.18.0.10', 9092)]>: connecting to kafka:9092 [('172.18.0.10', 9092) IPv4]
+2025-11-03 19:23:39,953 [INFO] Probing node bootstrap-0 broker version
+2025-11-03 19:23:39,964 [INFO] <BrokerConnection node_id=bootstrap-0 host=kafka:9092 <connecting> [IPv4 ('172.18.0.10', 9092)]>: Connection complete.
+2025-11-03 19:23:40,135 [INFO] Broker version identified as 2.5.0
+2025-11-03 19:23:40,144 [INFO] Set configuration api_version=(2, 5, 0) to skip auto check_version requests on startup
+2025-11-03 19:23:40,185 [INFO] Updating subscribed topics to: ('data_stream',)
+2025-11-03 19:23:40,187 [INFO] Connecté à Kafka !
+2025-11-03 19:23:43,950 [INFO] Group coordinator for hdfs_loader is BrokerMetadata(nodeId='coordinator-1', host='kafka', port=9092, rack=None)
+2025-11-03 19:23:43,950 [INFO] Discovered coordinator coordinator-1 for group hdfs_loader
+2025-11-03 19:23:43,951 [INFO] Starting new heartbeat thread
+2025-11-03 19:23:43,952 [INFO] Revoking previously assigned partitions set() for group hdfs_loader
+2025-11-03 19:23:43,955 [INFO] <BrokerConnection node_id=coordinator-1 host=kafka:9092 <connecting> [IPv4 ('172.18.0.10', 9092)]>: connecting to kafka:9092 [('172.18.0.10', 9092) IPv4]
+2025-11-03 19:23:43,957 [INFO] <BrokerConnection node_id=coordinator-1 host=kafka:9092 <connecting> [IPv4 ('172.18.0.10', 9092)]>: Connection complete.
+2025-11-03 19:23:43,957 [INFO] <BrokerConnection node_id=bootstrap-0 host=kafka:9092 <connected> [IPv4 ('172.18.0.10', 9092)]>: Closing connection. 
+2025-11-03 19:23:44,059 [INFO] (Re-)joining group hdfs_loader
+2025-11-03 19:23:44,178 [INFO] (Re-)joining group hdfs_loader
+2025-11-03 19:23:44,283 [INFO] (Re-)joining group hdfs_loader
+2025-11-03 19:23:44,406 [INFO] (Re-)joining group hdfs_loader
+2025-11-03 19:23:54,482 [INFO] Elected group leader -- performing partition assignments using range
+2025-11-03 19:23:54,488 [INFO] <BrokerConnection node_id=1 host=kafka:9092 <connecting> [IPv4 ('172.18.0.10', 9092)]>: connecting to kafka:9092 [('172.18.0.10', 9092) IPv4]
+2025-11-03 19:23:54,489 [INFO] <BrokerConnection node_id=1 host=kafka:9092 <connecting> [IPv4 ('172.18.0.10', 9092)]>: Connection complete.
+2025-11-03 19:23:54,720 [INFO] Successfully joined group hdfs_loader with generation 25
+2025-11-03 19:23:54,720 [INFO] Updated partition assignment: [TopicPartition(topic='data_stream', partition=0)]
+2025-11-03 19:23:54,721 [INFO] Setting newly assigned partitions {TopicPartition(topic='data_stream', partition=0)} for group hdfs_loader
+2025-11-03 19:23:54,987 [INFO] Writing to '/data_streaming/raw/stream_batch_1762197834_d4e2269d.csv'.
+2025-11-03 19:24:01,811 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762197834_d4e2269d.csv
+2025-11-03 19:24:01,815 [INFO] Writing to '/data_streaming/raw/stream_batch_1762197841_93b0239f.csv'.
+2025-11-03 19:24:02,336 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762197841_93b0239f.csv
+2025-11-03 19:24:02,397 [INFO] Writing to '/data_streaming/raw/stream_batch_1762197842_9575f797.csv'.
+2025-11-03 19:24:02,693 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762197842_9575f797.csv
+2025-11-03 19:24:04,423 [INFO] Writing to '/data_streaming/raw/stream_batch_1762197844_e654e4f5.csv'.
+2025-11-03 19:24:04,810 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762197844_e654e4f5.csv
+2025-11-03 19:28:28,484 [INFO] Démarrage de l'ingestion Kafka → HDFS...
+2025-11-03 19:28:28,509 [INFO] Instantiated <InsecureClient(url='http://namenode:9870')>.
+2025-11-03 19:28:28,518 [INFO] <BrokerConnection node_id=bootstrap-0 host=kafka:9092 <connecting> [IPv4 ('172.18.0.5', 9092)]>: connecting to kafka:9092 [('172.18.0.5', 9092) IPv4]
+2025-11-03 19:28:28,520 [INFO] Probing node bootstrap-0 broker version
+2025-11-03 19:28:28,524 [INFO] <BrokerConnection node_id=bootstrap-0 host=kafka:9092 <connecting> [IPv4 ('172.18.0.5', 9092)]>: Connection complete.
+2025-11-03 19:28:28,634 [INFO] Broker version identified as 2.5.0
+2025-11-03 19:28:28,635 [INFO] Set configuration api_version=(2, 5, 0) to skip auto check_version requests on startup
+2025-11-03 19:28:28,640 [INFO] Updating subscribed topics to: ('data_stream',)
+2025-11-03 19:28:28,642 [INFO] Connecté à Kafka !
+2025-11-03 19:28:28,656 [INFO] Group coordinator for hdfs_loader is BrokerMetadata(nodeId='coordinator-1', host='kafka', port=9092, rack=None)
+2025-11-03 19:28:28,656 [INFO] Discovered coordinator coordinator-1 for group hdfs_loader
+2025-11-03 19:28:28,660 [INFO] Starting new heartbeat thread
+2025-11-03 19:28:28,662 [INFO] Revoking previously assigned partitions set() for group hdfs_loader
+2025-11-03 19:28:28,666 [INFO] <BrokerConnection node_id=coordinator-1 host=kafka:9092 <connecting> [IPv4 ('172.18.0.5', 9092)]>: connecting to kafka:9092 [('172.18.0.5', 9092) IPv4]
+2025-11-03 19:28:28,667 [INFO] <BrokerConnection node_id=coordinator-1 host=kafka:9092 <connecting> [IPv4 ('172.18.0.5', 9092)]>: Connection complete.
+2025-11-03 19:28:28,669 [INFO] <BrokerConnection node_id=bootstrap-0 host=kafka:9092 <connected> [IPv4 ('172.18.0.5', 9092)]>: Closing connection. 
+2025-11-03 19:28:28,774 [INFO] (Re-)joining group hdfs_loader
+2025-11-03 19:28:28,779 [INFO] <BrokerConnection node_id=bootstrap-0 host=kafka:9092 <connecting> [IPv4 ('172.18.0.5', 9092)]>: connecting to kafka:9092 [('172.18.0.5', 9092) IPv4]
+2025-11-03 19:28:28,785 [INFO] <BrokerConnection node_id=bootstrap-0 host=kafka:9092 <connecting> [IPv4 ('172.18.0.5', 9092)]>: Connection complete.
+2025-11-03 19:28:31,833 [INFO] Elected group leader -- performing partition assignments using range
+2025-11-03 19:28:31,837 [INFO] <BrokerConnection node_id=1 host=kafka:9092 <connecting> [IPv4 ('172.18.0.5', 9092)]>: connecting to kafka:9092 [('172.18.0.5', 9092) IPv4]
+2025-11-03 19:28:31,839 [INFO] <BrokerConnection node_id=1 host=kafka:9092 <connecting> [IPv4 ('172.18.0.5', 9092)]>: Connection complete.
+2025-11-03 19:28:31,842 [INFO] <BrokerConnection node_id=bootstrap-0 host=kafka:9092 <connected> [IPv4 ('172.18.0.5', 9092)]>: Closing connection. 
+2025-11-03 19:28:31,900 [INFO] Successfully joined group hdfs_loader with generation 27
+2025-11-03 19:28:31,947 [INFO] Updated partition assignment: [TopicPartition(topic='data_stream', partition=0)]
+2025-11-03 19:28:31,963 [INFO] Setting newly assigned partitions {TopicPartition(topic='data_stream', partition=0)} for group hdfs_loader
+2025-11-03 19:28:32,128 [INFO] Writing to '/data_streaming/raw/stream_batch_1762198112_a311ea8e.csv'.
+2025-11-03 19:28:34,123 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762198112_a311ea8e.csv
+2025-11-03 19:28:34,137 [INFO] Writing to '/data_streaming/raw/stream_batch_1762198114_5826daa2.csv'.
+2025-11-03 19:28:34,310 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762198114_5826daa2.csv
+2025-11-03 19:28:34,349 [INFO] Writing to '/data_streaming/raw/stream_batch_1762198114_48078f15.csv'.
+2025-11-03 19:28:34,677 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762198114_48078f15.csv
+2025-11-03 19:28:38,061 [INFO] Writing to '/data_streaming/raw/stream_batch_1762198118_63eba087.csv'.
+2025-11-03 19:28:38,541 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762198118_63eba087.csv
+2025-11-03 19:28:44,193 [INFO] Writing to '/data_streaming/raw/stream_batch_1762198124_9294555a.csv'.
+2025-11-03 19:28:44,290 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762198124_9294555a.csv
+2025-11-03 19:28:49,417 [INFO] Writing to '/data_streaming/raw/stream_batch_1762198129_608d45f1.csv'.
+2025-11-03 19:28:49,559 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762198129_608d45f1.csv
+2025-11-03 19:28:54,784 [INFO] Writing to '/data_streaming/raw/stream_batch_1762198134_d78a5df4.csv'.
+2025-11-03 19:28:55,037 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762198134_d78a5df4.csv
+2025-11-03 19:29:00,754 [INFO] Writing to '/data_streaming/raw/stream_batch_1762198140_d609ba82.csv'.
+2025-11-03 19:29:00,941 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762198140_d609ba82.csv
+2025-11-03 19:29:06,176 [INFO] Writing to '/data_streaming/raw/stream_batch_1762198146_332a916d.csv'.
+2025-11-03 19:29:06,951 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762198146_332a916d.csv
+2025-11-03 19:29:12,085 [INFO] Writing to '/data_streaming/raw/stream_batch_1762198152_88e9a686.csv'.
+2025-11-03 19:29:12,519 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762198152_88e9a686.csv
+2025-11-03 19:29:19,212 [INFO] Writing to '/data_streaming/raw/stream_batch_1762198159_9a339eb3.csv'.
+2025-11-03 19:29:19,455 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762198159_9a339eb3.csv
+2025-11-03 19:29:25,259 [INFO] Writing to '/data_streaming/raw/stream_batch_1762198165_9a59a200.csv'.
+2025-11-03 19:29:25,366 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762198165_9a59a200.csv
+2025-11-03 19:29:31,474 [INFO] Writing to '/data_streaming/raw/stream_batch_1762198171_c8deff1f.csv'.
+2025-11-03 19:29:32,186 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762198171_c8deff1f.csv
+2025-11-03 19:29:37,195 [INFO] Writing to '/data_streaming/raw/stream_batch_1762198177_ce56f5d9.csv'.
+2025-11-03 19:29:37,314 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762198177_ce56f5d9.csv
+2025-11-03 19:29:42,668 [INFO] Writing to '/data_streaming/raw/stream_batch_1762198182_d5535cd1.csv'.
+2025-11-03 19:29:42,984 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762198182_d5535cd1.csv
+2025-11-03 19:29:48,999 [INFO] Writing to '/data_streaming/raw/stream_batch_1762198188_55024437.csv'.
+2025-11-03 19:29:50,049 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762198188_55024437.csv
+2025-11-03 19:29:55,901 [INFO] Writing to '/data_streaming/raw/stream_batch_1762198195_f5bad926.csv'.
+2025-11-03 19:29:56,692 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762198195_f5bad926.csv
+2025-11-03 19:30:02,326 [INFO] Writing to '/data_streaming/raw/stream_batch_1762198202_2c1090f6.csv'.
+2025-11-03 19:30:02,497 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762198202_2c1090f6.csv
+2025-11-03 19:30:08,811 [INFO] Writing to '/data_streaming/raw/stream_batch_1762198208_1b8bafc4.csv'.
+2025-11-03 19:30:08,971 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762198208_1b8bafc4.csv
+2025-11-03 19:30:14,979 [INFO] Writing to '/data_streaming/raw/stream_batch_1762198214_1ee997af.csv'.
+2025-11-03 19:30:15,795 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762198214_1ee997af.csv
+2025-11-03 19:30:22,406 [INFO] Writing to '/data_streaming/raw/stream_batch_1762198222_71bab25d.csv'.
+2025-11-03 19:30:22,759 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762198222_71bab25d.csv
+2025-11-03 19:30:28,522 [INFO] Writing to '/data_streaming/raw/stream_batch_1762198228_d0bbc271.csv'.
+2025-11-03 19:30:28,914 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762198228_d0bbc271.csv
+2025-11-03 19:30:34,577 [INFO] Writing to '/data_streaming/raw/stream_batch_1762198234_16792cbd.csv'.
+2025-11-03 19:30:35,343 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762198234_16792cbd.csv
+2025-11-03 19:30:40,612 [INFO] Writing to '/data_streaming/raw/stream_batch_1762198240_3dad13fc.csv'.
+2025-11-03 19:30:40,850 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762198240_3dad13fc.csv
+2025-11-03 19:30:47,282 [INFO] Writing to '/data_streaming/raw/stream_batch_1762198247_e30b75b6.csv'.
+2025-11-03 19:30:48,158 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762198247_e30b75b6.csv
+2025-11-03 19:30:55,143 [INFO] Writing to '/data_streaming/raw/stream_batch_1762198255_51191fc1.csv'.
+2025-11-03 19:30:55,477 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762198255_51191fc1.csv
+2025-11-03 19:31:01,071 [INFO] Writing to '/data_streaming/raw/stream_batch_1762198261_8208a596.csv'.
+2025-11-03 19:31:01,295 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762198261_8208a596.csv
+2025-11-03 19:31:06,591 [INFO] Writing to '/data_streaming/raw/stream_batch_1762198266_8aa1e0e2.csv'.
+2025-11-03 19:31:06,777 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762198266_8aa1e0e2.csv
+2025-11-03 19:31:12,332 [INFO] Writing to '/data_streaming/raw/stream_batch_1762198272_7d1e51b4.csv'.
+2025-11-03 19:31:13,053 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762198272_7d1e51b4.csv
+2025-11-03 19:31:20,815 [INFO] Writing to '/data_streaming/raw/stream_batch_1762198280_b1bf09a2.csv'.
+2025-11-03 19:31:21,078 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762198280_b1bf09a2.csv
+2025-11-03 19:31:31,127 [INFO] Writing to '/data_streaming/raw/stream_batch_1762198291_31eb78de.csv'.
+2025-11-03 19:31:31,538 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762198291_31eb78de.csv
+2025-11-03 19:31:36,794 [INFO] Writing to '/data_streaming/raw/stream_batch_1762198296_87059896.csv'.
+2025-11-03 19:31:37,039 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762198296_87059896.csv
+2025-11-03 19:31:42,550 [INFO] Writing to '/data_streaming/raw/stream_batch_1762198302_783dc7f6.csv'.
+2025-11-03 19:31:42,797 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762198302_783dc7f6.csv
+2025-11-03 19:31:48,081 [INFO] Writing to '/data_streaming/raw/stream_batch_1762198308_166f8eec.csv'.
+2025-11-03 19:31:50,395 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762198308_166f8eec.csv
+2025-11-03 19:31:56,573 [INFO] Writing to '/data_streaming/raw/stream_batch_1762198316_ac824fd6.csv'.
+2025-11-03 19:31:57,032 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762198316_ac824fd6.csv
+2025-11-03 19:32:02,999 [INFO] Writing to '/data_streaming/raw/stream_batch_1762198322_c3fb7483.csv'.
+2025-11-03 19:32:03,259 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762198322_c3fb7483.csv
+2025-11-03 19:32:08,466 [INFO] Writing to '/data_streaming/raw/stream_batch_1762198328_eaf6417e.csv'.
+2025-11-03 19:32:08,647 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762198328_eaf6417e.csv
+2025-11-03 19:32:13,868 [INFO] Writing to '/data_streaming/raw/stream_batch_1762198333_86c06a9a.csv'.
+2025-11-03 19:32:14,130 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762198333_86c06a9a.csv
+2025-11-03 19:32:19,496 [INFO] Writing to '/data_streaming/raw/stream_batch_1762198339_e3bd6cf0.csv'.
+2025-11-03 19:32:20,140 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762198339_e3bd6cf0.csv
+2025-11-03 19:32:25,403 [INFO] Writing to '/data_streaming/raw/stream_batch_1762198345_713f5ace.csv'.
+2025-11-03 19:32:25,580 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762198345_713f5ace.csv
+2025-11-03 19:32:31,465 [INFO] Writing to '/data_streaming/raw/stream_batch_1762198351_ceed1d8f.csv'.
+2025-11-03 19:32:31,711 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762198351_ceed1d8f.csv
+2025-11-03 19:32:36,995 [INFO] Writing to '/data_streaming/raw/stream_batch_1762198356_d0c0df5a.csv'.
+2025-11-03 19:32:39,058 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762198356_d0c0df5a.csv
+2025-11-03 19:32:45,670 [INFO] Writing to '/data_streaming/raw/stream_batch_1762198365_673e43d5.csv'.
+2025-11-03 19:32:46,247 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762198365_673e43d5.csv
+2025-11-03 19:32:52,842 [INFO] Writing to '/data_streaming/raw/stream_batch_1762198372_71a1ee59.csv'.
+2025-11-03 19:32:53,168 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762198372_71a1ee59.csv
+2025-11-03 19:32:58,927 [INFO] Writing to '/data_streaming/raw/stream_batch_1762198378_439d598c.csv'.
+2025-11-03 19:32:59,761 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762198378_439d598c.csv
+2025-11-04 10:21:51,563 [INFO] Démarrage de l'ingestion Kafka → HDFS...
+2025-11-04 10:21:51,668 [INFO] Instantiated <InsecureClient(url='http://namenode:9870')>.
+2025-11-04 10:21:51,676 [INFO] <BrokerConnection node_id=bootstrap-0 host=kafka:9092 <connecting> [IPv4 ('172.18.0.8', 9092)]>: connecting to kafka:9092 [('172.18.0.8', 9092) IPv4]
+2025-11-04 10:21:51,703 [INFO] Probing node bootstrap-0 broker version
+2025-11-04 10:21:51,707 [INFO] <BrokerConnection node_id=bootstrap-0 host=kafka:9092 <connecting> [IPv4 ('172.18.0.8', 9092)]>: Connection complete.
+2025-11-04 10:21:51,870 [INFO] Broker version identified as 2.5.0
+2025-11-04 10:21:51,876 [INFO] Set configuration api_version=(2, 5, 0) to skip auto check_version requests on startup
+2025-11-04 10:21:51,880 [INFO] Updating subscribed topics to: ('data_stream',)
+2025-11-04 10:21:51,886 [INFO] Connecté à Kafka !
+2025-11-04 10:21:51,896 [INFO] Group coordinator for hdfs_loader is BrokerMetadata(nodeId='coordinator-1', host='kafka', port=9092, rack=None)
+2025-11-04 10:21:51,974 [INFO] Discovered coordinator coordinator-1 for group hdfs_loader
+2025-11-04 10:21:52,051 [INFO] Starting new heartbeat thread
+2025-11-04 10:21:52,165 [INFO] Revoking previously assigned partitions set() for group hdfs_loader
+2025-11-04 10:21:52,320 [INFO] <BrokerConnection node_id=coordinator-1 host=kafka:9092 <connecting> [IPv4 ('172.18.0.8', 9092)]>: connecting to kafka:9092 [('172.18.0.8', 9092) IPv4]
+2025-11-04 10:21:52,431 [INFO] <BrokerConnection node_id=coordinator-1 host=kafka:9092 <connecting> [IPv4 ('172.18.0.8', 9092)]>: Connection complete.
+2025-11-04 10:21:52,541 [INFO] <BrokerConnection node_id=bootstrap-0 host=kafka:9092 <connected> [IPv4 ('172.18.0.8', 9092)]>: Closing connection. 
+2025-11-04 10:21:52,776 [INFO] (Re-)joining group hdfs_loader
+2025-11-04 10:21:55,851 [INFO] Elected group leader -- performing partition assignments using range
+2025-11-04 10:21:55,866 [INFO] <BrokerConnection node_id=1 host=kafka:9092 <connecting> [IPv4 ('172.18.0.8', 9092)]>: connecting to kafka:9092 [('172.18.0.8', 9092) IPv4]
+2025-11-04 10:21:55,873 [INFO] <BrokerConnection node_id=1 host=kafka:9092 <connecting> [IPv4 ('172.18.0.8', 9092)]>: Connection complete.
+2025-11-04 10:21:55,961 [INFO] Successfully joined group hdfs_loader with generation 29
+2025-11-04 10:21:55,976 [INFO] Updated partition assignment: [TopicPartition(topic='data_stream', partition=0)]
+2025-11-04 10:21:55,978 [INFO] Setting newly assigned partitions {TopicPartition(topic='data_stream', partition=0)} for group hdfs_loader
+2025-11-04 10:21:56,162 [INFO] Writing to '/data_streaming/raw/stream_batch_1762251716_6983d2b3.csv'.
+2025-11-04 10:22:00,882 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762251716_6983d2b3.csv
+2025-11-04 10:22:00,892 [INFO] Writing to '/data_streaming/raw/stream_batch_1762251720_a4ad7ba0.csv'.
+2025-11-04 10:22:01,063 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762251720_a4ad7ba0.csv
+2025-11-04 10:22:01,079 [INFO] Writing to '/data_streaming/raw/stream_batch_1762251721_1a9f1af0.csv'.
+2025-11-04 10:22:01,318 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762251721_1a9f1af0.csv
+2025-11-04 10:22:01,329 [INFO] Writing to '/data_streaming/raw/stream_batch_1762251721_3829a9ac.csv'.
+2025-11-04 10:22:01,428 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762251721_3829a9ac.csv
+2025-11-04 10:22:04,747 [INFO] Writing to '/data_streaming/raw/stream_batch_1762251724_6d17dbfc.csv'.
+2025-11-04 10:22:05,658 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762251724_6d17dbfc.csv
+2025-11-04 10:22:11,199 [INFO] Writing to '/data_streaming/raw/stream_batch_1762251731_7277fb40.csv'.
+2025-11-04 10:22:11,304 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762251731_7277fb40.csv
+2025-11-04 10:22:17,658 [INFO] Writing to '/data_streaming/raw/stream_batch_1762251737_d9681ba5.csv'.
+2025-11-04 10:22:17,931 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762251737_d9681ba5.csv
+2025-11-04 10:22:23,475 [INFO] Writing to '/data_streaming/raw/stream_batch_1762251743_3e912b15.csv'.
+2025-11-04 10:22:24,121 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762251743_3e912b15.csv
+2025-11-04 10:22:31,967 [INFO] Writing to '/data_streaming/raw/stream_batch_1762251751_057ac5fe.csv'.
+2025-11-04 10:22:32,541 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762251751_057ac5fe.csv
+2025-11-04 10:22:37,981 [INFO] Writing to '/data_streaming/raw/stream_batch_1762251757_5a11ff36.csv'.
+2025-11-04 10:22:38,344 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762251757_5a11ff36.csv
+2025-11-04 10:22:43,653 [INFO] Writing to '/data_streaming/raw/stream_batch_1762251763_7d2fe769.csv'.
+2025-11-04 10:22:44,630 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762251763_7d2fe769.csv
+2025-11-04 10:22:50,377 [INFO] Writing to '/data_streaming/raw/stream_batch_1762251770_a0c0420c.csv'.
+2025-11-04 10:22:51,011 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762251770_a0c0420c.csv
+2025-11-04 10:22:56,542 [INFO] Writing to '/data_streaming/raw/stream_batch_1762251776_81dc79d3.csv'.
+2025-11-04 10:22:57,121 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762251776_81dc79d3.csv
+2025-11-04 10:23:01,867 [INFO] Writing to '/data_streaming/raw/stream_batch_1762251781_4aae18c2.csv'.
+2025-11-04 10:23:02,192 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762251781_4aae18c2.csv
+2025-11-04 10:23:07,457 [INFO] Writing to '/data_streaming/raw/stream_batch_1762251787_4309a925.csv'.
+2025-11-04 10:23:08,017 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762251787_4309a925.csv
+2025-11-04 10:23:12,763 [INFO] Writing to '/data_streaming/raw/stream_batch_1762251792_2dadd59f.csv'.
+2025-11-04 10:23:13,058 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762251792_2dadd59f.csv
+2025-11-04 10:23:18,373 [INFO] Writing to '/data_streaming/raw/stream_batch_1762251798_43f50b01.csv'.
+2025-11-04 10:23:18,548 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762251798_43f50b01.csv
+2025-11-04 10:23:23,891 [INFO] Writing to '/data_streaming/raw/stream_batch_1762251803_1722e812.csv'.
+2025-11-04 10:23:24,328 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762251803_1722e812.csv
+2025-11-04 10:23:30,029 [INFO] Writing to '/data_streaming/raw/stream_batch_1762251810_956576a3.csv'.
+2025-11-04 10:23:30,303 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762251810_956576a3.csv
+2025-11-04 10:23:35,380 [INFO] Writing to '/data_streaming/raw/stream_batch_1762251815_66b89a47.csv'.
+2025-11-04 10:23:35,572 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762251815_66b89a47.csv
+2025-11-04 10:23:40,815 [INFO] Writing to '/data_streaming/raw/stream_batch_1762251820_57303eeb.csv'.
+2025-11-04 10:23:41,040 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762251820_57303eeb.csv
+2025-11-04 10:23:46,086 [INFO] Writing to '/data_streaming/raw/stream_batch_1762251826_abe0922f.csv'.
+2025-11-04 10:23:46,265 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762251826_abe0922f.csv
+2025-11-04 10:23:51,819 [INFO] Writing to '/data_streaming/raw/stream_batch_1762251831_c0739e65.csv'.
+2025-11-04 10:23:52,945 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762251831_c0739e65.csv
+2025-11-04 10:24:00,861 [INFO] Writing to '/data_streaming/raw/stream_batch_1762251840_6e87b966.csv'.
+2025-11-04 10:24:01,881 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762251840_6e87b966.csv
+2025-11-04 10:24:12,190 [INFO] Writing to '/data_streaming/raw/stream_batch_1762251852_9f9dded5.csv'.
+2025-11-04 10:24:12,604 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762251852_9f9dded5.csv
+2025-11-04 10:24:17,696 [INFO] Writing to '/data_streaming/raw/stream_batch_1762251857_7f17ce2d.csv'.
+2025-11-04 10:24:17,835 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762251857_7f17ce2d.csv
+2025-11-04 10:24:22,977 [INFO] Writing to '/data_streaming/raw/stream_batch_1762251862_55e3aca1.csv'.
+2025-11-04 10:24:23,292 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762251862_55e3aca1.csv
+2025-11-04 10:24:28,502 [INFO] Writing to '/data_streaming/raw/stream_batch_1762251868_83239e77.csv'.
+2025-11-04 10:24:28,956 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762251868_83239e77.csv
+2025-11-04 10:24:34,083 [INFO] Writing to '/data_streaming/raw/stream_batch_1762251874_107c9cf5.csv'.
+2025-11-04 10:24:34,594 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762251874_107c9cf5.csv
+2025-11-04 10:24:39,351 [INFO] Writing to '/data_streaming/raw/stream_batch_1762251879_dbcc8a5e.csv'.
+2025-11-04 10:24:40,025 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762251879_dbcc8a5e.csv
+2025-11-04 10:24:48,190 [INFO] Writing to '/data_streaming/raw/stream_batch_1762251888_fbfea887.csv'.
+2025-11-04 10:24:48,297 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762251888_fbfea887.csv
+2025-11-04 10:24:53,330 [INFO] Writing to '/data_streaming/raw/stream_batch_1762251893_aa8d383d.csv'.
+2025-11-04 10:24:53,423 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762251893_aa8d383d.csv
+2025-11-04 10:24:58,466 [INFO] Writing to '/data_streaming/raw/stream_batch_1762251898_f50d082f.csv'.
+2025-11-04 10:24:58,596 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762251898_f50d082f.csv
+2025-11-04 10:25:03,681 [INFO] Writing to '/data_streaming/raw/stream_batch_1762251903_fb5389cc.csv'.
+2025-11-04 10:25:03,856 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762251903_fb5389cc.csv
+2025-11-04 10:25:09,008 [INFO] Writing to '/data_streaming/raw/stream_batch_1762251909_548b8fca.csv'.
+2025-11-04 10:25:09,306 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762251909_548b8fca.csv
+2025-11-04 10:25:14,620 [INFO] Writing to '/data_streaming/raw/stream_batch_1762251914_5b918a4c.csv'.
+2025-11-04 10:25:16,734 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762251914_5b918a4c.csv
+2025-11-04 10:25:24,346 [INFO] Writing to '/data_streaming/raw/stream_batch_1762251924_6ae49ba9.csv'.
+2025-11-04 10:25:24,698 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762251924_6ae49ba9.csv
+2025-11-04 10:25:30,224 [INFO] Writing to '/data_streaming/raw/stream_batch_1762251930_363f0a81.csv'.
+2025-11-04 10:25:30,520 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762251930_363f0a81.csv
+2025-11-04 10:25:37,675 [INFO] Writing to '/data_streaming/raw/stream_batch_1762251937_6112c97d.csv'.
+2025-11-04 10:25:38,178 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762251937_6112c97d.csv
+2025-11-04 10:25:46,082 [INFO] Writing to '/data_streaming/raw/stream_batch_1762251946_0127d162.csv'.
+2025-11-04 10:25:46,898 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762251946_0127d162.csv
+2025-11-04 10:25:51,772 [INFO] Writing to '/data_streaming/raw/stream_batch_1762251951_58e8fbf9.csv'.
+2025-11-04 10:25:51,918 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762251951_58e8fbf9.csv
+2025-11-04 10:25:57,017 [INFO] Writing to '/data_streaming/raw/stream_batch_1762251957_fadd6d2d.csv'.
+2025-11-04 10:25:57,599 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762251957_fadd6d2d.csv
+2025-11-04 10:26:02,278 [INFO] Writing to '/data_streaming/raw/stream_batch_1762251962_0d367f31.csv'.
+2025-11-04 10:26:02,478 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762251962_0d367f31.csv
+2025-11-04 10:26:07,967 [INFO] Writing to '/data_streaming/raw/stream_batch_1762251967_3636fa34.csv'.
+2025-11-04 10:26:08,594 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762251967_3636fa34.csv
+2025-11-04 10:26:13,542 [INFO] Writing to '/data_streaming/raw/stream_batch_1762251973_a81a7098.csv'.
+2025-11-04 10:26:13,679 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762251973_a81a7098.csv
+2025-11-04 10:26:18,773 [INFO] Writing to '/data_streaming/raw/stream_batch_1762251978_76a776ce.csv'.
+2025-11-04 10:26:18,962 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762251978_76a776ce.csv
+2025-11-04 10:26:24,170 [INFO] Writing to '/data_streaming/raw/stream_batch_1762251984_dc94c5f9.csv'.
+2025-11-04 10:26:24,450 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762251984_dc94c5f9.csv
+2025-11-04 10:26:29,391 [INFO] Writing to '/data_streaming/raw/stream_batch_1762251989_17560e4f.csv'.
+2025-11-04 10:26:29,604 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762251989_17560e4f.csv
+2025-11-04 10:26:34,711 [INFO] Writing to '/data_streaming/raw/stream_batch_1762251994_44d44e0a.csv'.
+2025-11-04 10:26:35,574 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762251994_44d44e0a.csv
+2025-11-04 10:26:41,942 [INFO] Writing to '/data_streaming/raw/stream_batch_1762252001_913df441.csv'.
+2025-11-04 10:26:42,510 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762252001_913df441.csv
+2025-11-04 10:26:47,087 [INFO] Writing to '/data_streaming/raw/stream_batch_1762252007_ba0a205e.csv'.
+2025-11-04 10:26:47,616 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762252007_ba0a205e.csv
+2025-11-04 10:26:52,258 [INFO] Writing to '/data_streaming/raw/stream_batch_1762252012_8101d19a.csv'.
+2025-11-04 10:26:53,539 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762252012_8101d19a.csv
+2025-11-04 10:26:59,198 [INFO] Writing to '/data_streaming/raw/stream_batch_1762252019_0ed10613.csv'.
+2025-11-04 10:26:59,370 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762252019_0ed10613.csv
+2025-11-04 10:27:04,281 [INFO] Writing to '/data_streaming/raw/stream_batch_1762252024_c86bed4b.csv'.
+2025-11-04 10:27:04,440 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762252024_c86bed4b.csv
+2025-11-04 13:28:22,450 [INFO] Démarrage de l'ingestion Kafka → HDFS...
+2025-11-04 13:28:22,482 [INFO] Instantiated <InsecureClient(url='http://namenode:9870')>.
+2025-11-04 13:28:22,558 [INFO] <BrokerConnection node_id=bootstrap-0 host=kafka:9092 <connecting> [IPv4 ('172.18.0.9', 9092)]>: connecting to kafka:9092 [('172.18.0.9', 9092) IPv4]
+2025-11-04 13:28:22,670 [INFO] Probing node bootstrap-0 broker version
+2025-11-04 13:28:22,718 [INFO] <BrokerConnection node_id=bootstrap-0 host=kafka:9092 <connecting> [IPv4 ('172.18.0.9', 9092)]>: Connection complete.
+2025-11-04 13:28:22,880 [INFO] Broker version identified as 2.5.0
+2025-11-04 13:28:22,887 [INFO] Set configuration api_version=(2, 5, 0) to skip auto check_version requests on startup
+2025-11-04 13:28:22,901 [INFO] Updating subscribed topics to: ('data_stream',)
+2025-11-04 13:28:22,916 [INFO] Connecté à Kafka !
+2025-11-04 13:28:22,981 [INFO] Group coordinator for hdfs_loader is BrokerMetadata(nodeId='coordinator-1', host='kafka', port=9092, rack=None)
+2025-11-04 13:28:22,997 [INFO] Discovered coordinator coordinator-1 for group hdfs_loader
+2025-11-04 13:28:23,012 [INFO] Starting new heartbeat thread
+2025-11-04 13:28:23,029 [INFO] Revoking previously assigned partitions set() for group hdfs_loader
+2025-11-04 13:28:23,032 [INFO] <BrokerConnection node_id=coordinator-1 host=kafka:9092 <connecting> [IPv4 ('172.18.0.9', 9092)]>: connecting to kafka:9092 [('172.18.0.9', 9092) IPv4]
+2025-11-04 13:28:23,033 [INFO] <BrokerConnection node_id=coordinator-1 host=kafka:9092 <connecting> [IPv4 ('172.18.0.9', 9092)]>: Connection complete.
+2025-11-04 13:28:23,050 [INFO] <BrokerConnection node_id=bootstrap-0 host=kafka:9092 <connected> [IPv4 ('172.18.0.9', 9092)]>: Closing connection. 
+2025-11-04 13:28:23,179 [INFO] (Re-)joining group hdfs_loader
+2025-11-04 13:28:26,744 [INFO] Elected group leader -- performing partition assignments using range
+2025-11-04 13:28:26,775 [INFO] <BrokerConnection node_id=1 host=kafka:9092 <connecting> [IPv4 ('172.18.0.9', 9092)]>: connecting to kafka:9092 [('172.18.0.9', 9092) IPv4]
+2025-11-04 13:28:26,792 [INFO] <BrokerConnection node_id=1 host=kafka:9092 <connecting> [IPv4 ('172.18.0.9', 9092)]>: Connection complete.
+2025-11-04 13:28:28,275 [INFO] Successfully joined group hdfs_loader with generation 30
+2025-11-04 13:28:28,417 [INFO] Updated partition assignment: [TopicPartition(topic='data_stream', partition=0)]
+2025-11-04 13:28:28,433 [INFO] Setting newly assigned partitions {TopicPartition(topic='data_stream', partition=0)} for group hdfs_loader
+2025-11-04 13:28:29,212 [INFO] Writing to '/data_streaming/raw/stream_batch_1762262909_765a60c6.csv'.
+2025-11-04 13:28:30,393 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762262909_765a60c6.csv
+2025-11-04 13:28:30,418 [INFO] Writing to '/data_streaming/raw/stream_batch_1762262910_11748c5b.csv'.
+2025-11-04 13:28:30,702 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762262910_11748c5b.csv
+2025-11-04 13:28:34,373 [INFO] Writing to '/data_streaming/raw/stream_batch_1762262914_c00d804d.csv'.
+2025-11-04 13:28:34,517 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762262914_c00d804d.csv
+2025-11-04 13:28:40,805 [INFO] Writing to '/data_streaming/raw/stream_batch_1762262920_3216d266.csv'.
+2025-11-04 13:28:41,957 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762262920_3216d266.csv
+2025-11-04 13:28:47,218 [INFO] Writing to '/data_streaming/raw/stream_batch_1762262927_780e840b.csv'.
+2025-11-04 13:28:48,132 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762262927_780e840b.csv
+2025-11-04 13:28:54,203 [INFO] Writing to '/data_streaming/raw/stream_batch_1762262934_35caeb8e.csv'.
+2025-11-04 13:28:54,386 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762262934_35caeb8e.csv
+2025-11-04 13:29:00,149 [INFO] Writing to '/data_streaming/raw/stream_batch_1762262940_c244cea8.csv'.
+2025-11-04 13:29:01,074 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762262940_c244cea8.csv
+2025-11-04 13:29:15,640 [INFO] Writing to '/data_streaming/raw/stream_batch_1762262955_1cb56dbe.csv'.
+2025-11-04 13:29:16,075 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762262955_1cb56dbe.csv
+2025-11-04 13:29:22,413 [INFO] Writing to '/data_streaming/raw/stream_batch_1762262962_0a9911a1.csv'.
+2025-11-04 13:29:22,919 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762262962_0a9911a1.csv
+2025-11-04 13:29:28,650 [INFO] Writing to '/data_streaming/raw/stream_batch_1762262968_4e94c9fd.csv'.
+2025-11-04 13:29:28,954 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762262968_4e94c9fd.csv
+2025-11-04 13:29:35,797 [INFO] Writing to '/data_streaming/raw/stream_batch_1762262975_af94d9e2.csv'.
+2025-11-04 13:29:36,895 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762262975_af94d9e2.csv
+2025-11-04 13:29:47,981 [INFO] Writing to '/data_streaming/raw/stream_batch_1762262987_28d9d986.csv'.
+2025-11-04 13:29:48,468 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762262987_28d9d986.csv
+2025-11-04 13:29:55,194 [INFO] Writing to '/data_streaming/raw/stream_batch_1762262995_32c4c1b3.csv'.
+2025-11-04 13:29:56,041 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762262995_32c4c1b3.csv
+2025-11-04 13:30:01,158 [INFO] Writing to '/data_streaming/raw/stream_batch_1762263001_46d58e8e.csv'.
+2025-11-04 13:30:01,437 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762263001_46d58e8e.csv
+2025-11-04 13:30:07,082 [INFO] Writing to '/data_streaming/raw/stream_batch_1762263007_e4e16b31.csv'.
+2025-11-04 13:30:07,418 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762263007_e4e16b31.csv
+2025-11-04 13:30:13,591 [INFO] Writing to '/data_streaming/raw/stream_batch_1762263013_f53a45dd.csv'.
+2025-11-04 13:30:13,934 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762263013_f53a45dd.csv
+2025-11-04 13:30:20,181 [INFO] Writing to '/data_streaming/raw/stream_batch_1762263020_4e48c652.csv'.
+2025-11-04 13:30:21,326 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762263020_4e48c652.csv
+2025-11-04 13:30:26,893 [INFO] Writing to '/data_streaming/raw/stream_batch_1762263026_171fc179.csv'.
+2025-11-04 13:30:27,923 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762263026_171fc179.csv
+2025-11-04 13:30:33,092 [INFO] Writing to '/data_streaming/raw/stream_batch_1762263033_842231bd.csv'.
+2025-11-04 13:30:34,359 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762263033_842231bd.csv
+2025-11-04 13:30:40,960 [INFO] Writing to '/data_streaming/raw/stream_batch_1762263040_3b7afc05.csv'.
+2025-11-04 13:30:41,443 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762263040_3b7afc05.csv
+2025-11-04 13:30:47,136 [INFO] Writing to '/data_streaming/raw/stream_batch_1762263047_4dabf261.csv'.
+2025-11-04 13:30:47,874 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762263047_4dabf261.csv
+2025-11-04 13:30:52,731 [INFO] Writing to '/data_streaming/raw/stream_batch_1762263052_128e6855.csv'.
+2025-11-04 13:30:52,937 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762263052_128e6855.csv
+2025-11-04 13:30:59,178 [INFO] Writing to '/data_streaming/raw/stream_batch_1762263059_78a56e24.csv'.
+2025-11-04 13:30:59,852 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762263059_78a56e24.csv
+2025-11-04 13:31:05,471 [INFO] Writing to '/data_streaming/raw/stream_batch_1762263065_36efe5fa.csv'.
+2025-11-04 13:31:06,689 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762263065_36efe5fa.csv
+2025-11-04 13:31:16,377 [INFO] Writing to '/data_streaming/raw/stream_batch_1762263076_4821bd77.csv'.
+2025-11-04 13:31:16,898 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762263076_4821bd77.csv
+2025-11-04 13:31:23,818 [INFO] Writing to '/data_streaming/raw/stream_batch_1762263083_04ff5eaa.csv'.
+2025-11-04 13:31:24,861 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762263083_04ff5eaa.csv
+2025-11-04 13:31:44,355 [INFO] Writing to '/data_streaming/raw/stream_batch_1762263104_b9246145.csv'.
+2025-11-04 13:31:45,363 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762263104_b9246145.csv
+2025-11-04 13:32:11,697 [INFO] Writing to '/data_streaming/raw/stream_batch_1762263131_6ea465f4.csv'.
+2025-11-04 13:32:12,717 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762263131_6ea465f4.csv
+2025-11-04 13:32:21,949 [INFO] Writing to '/data_streaming/raw/stream_batch_1762263141_d94dd1c4.csv'.
+2025-11-04 13:32:22,236 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762263141_d94dd1c4.csv
+2025-11-04 13:32:31,502 [INFO] Writing to '/data_streaming/raw/stream_batch_1762263151_755f91e3.csv'.
+2025-11-04 13:32:31,998 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762263151_755f91e3.csv
+2025-11-04 13:32:42,662 [INFO] Writing to '/data_streaming/raw/stream_batch_1762263162_b4dab3eb.csv'.
+2025-11-04 13:32:43,997 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762263162_b4dab3eb.csv
+2025-11-04 13:33:03,408 [INFO] Writing to '/data_streaming/raw/stream_batch_1762263183_078b6d04.csv'.
+2025-11-04 13:33:04,216 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762263183_078b6d04.csv
+2025-11-04 13:33:12,154 [INFO] Writing to '/data_streaming/raw/stream_batch_1762263192_380f0d68.csv'.
+2025-11-04 13:33:12,714 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762263192_380f0d68.csv
+2025-11-04 13:33:21,874 [INFO] Writing to '/data_streaming/raw/stream_batch_1762263201_ef85fbd2.csv'.
+2025-11-04 13:33:22,888 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762263201_ef85fbd2.csv
+2025-11-04 13:33:29,891 [INFO] Writing to '/data_streaming/raw/stream_batch_1762263209_a2c9dd95.csv'.
+2025-11-04 13:33:30,187 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762263209_a2c9dd95.csv
+2025-11-04 13:33:40,236 [INFO] Writing to '/data_streaming/raw/stream_batch_1762263220_ec9288e8.csv'.
+2025-11-04 13:33:40,389 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762263220_ec9288e8.csv
+2025-11-04 13:33:45,596 [INFO] Writing to '/data_streaming/raw/stream_batch_1762263225_84176f6b.csv'.
+2025-11-04 13:33:45,831 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762263225_84176f6b.csv
+2025-11-04 13:33:51,044 [INFO] Writing to '/data_streaming/raw/stream_batch_1762263231_fcd03d74.csv'.
+2025-11-04 13:33:51,125 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762263231_fcd03d74.csv
+2025-11-04 13:33:56,237 [INFO] Writing to '/data_streaming/raw/stream_batch_1762263236_67cd1a78.csv'.
+2025-11-04 13:33:56,291 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762263236_67cd1a78.csv
+2025-11-04 13:34:01,392 [INFO] Writing to '/data_streaming/raw/stream_batch_1762263241_8d8abc1d.csv'.
+2025-11-04 13:34:01,482 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762263241_8d8abc1d.csv
+2025-11-04 13:34:06,656 [INFO] Writing to '/data_streaming/raw/stream_batch_1762263246_7aad6305.csv'.
+2025-11-04 13:34:07,187 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762263246_7aad6305.csv
+2025-11-04 13:34:12,581 [INFO] Writing to '/data_streaming/raw/stream_batch_1762263252_b371ae4e.csv'.
+2025-11-04 13:34:12,685 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762263252_b371ae4e.csv
+2025-11-04 13:34:21,070 [INFO] Writing to '/data_streaming/raw/stream_batch_1762263261_867949a8.csv'.
+2025-11-04 13:34:21,587 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762263261_867949a8.csv
+2025-11-04 13:34:26,768 [INFO] Writing to '/data_streaming/raw/stream_batch_1762263266_86e30cc8.csv'.
+2025-11-04 13:34:27,025 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762263266_86e30cc8.csv
+2025-11-04 13:34:33,111 [INFO] Writing to '/data_streaming/raw/stream_batch_1762263273_574d6777.csv'.
+2025-11-04 13:34:33,265 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762263273_574d6777.csv
+2025-11-04 13:34:40,298 [INFO] Writing to '/data_streaming/raw/stream_batch_1762263280_91f19ed4.csv'.
+2025-11-04 13:34:40,547 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762263280_91f19ed4.csv
+2025-11-04 13:34:46,595 [INFO] Writing to '/data_streaming/raw/stream_batch_1762263286_b5e16ed1.csv'.
+2025-11-04 13:34:46,775 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762263286_b5e16ed1.csv
+2025-11-04 13:34:53,373 [INFO] Writing to '/data_streaming/raw/stream_batch_1762263293_102d4abd.csv'.
+2025-11-04 13:34:53,871 [INFO] Batch écrit dans HDFS : /data_streaming/raw/stream_batch_1762263293_102d4abd.csv

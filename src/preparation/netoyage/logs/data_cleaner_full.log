@@ -452,3 +452,320 @@
 2025-11-03 18:16:52,637 [INFO] ✅ Données sauvegardées dans PostgreSQL table: stream_clean
 2025-11-03 18:16:55,408 [INFO] Received command c on object id p0
 2025-11-03 18:16:57,386 [INFO] ✅ Données sauvegardées dans PostgreSQL table: stream_clean
+2025-11-03 18:24:32,946 [INFO] Instantiated <InsecureClient(url='http://namenode:9870')>.
+2025-11-03 18:24:32,947 [INFO] === Nettoyage streaming lancé ===
+2025-11-03 18:24:32,976 [INFO] ✅ Table stream_clean créée si inexistante
+2025-11-03 18:24:32,977 [INFO] 🚀 Démarrage du streaming...
+2025-11-03 18:24:41,502 [INFO] Callback Server Starting
+2025-11-03 18:24:41,504 [INFO] Socket listening on ('127.0.0.1', 39485)
+2025-11-03 18:24:45,745 [INFO] Python Server ready to receive messages
+2025-11-03 18:24:45,746 [INFO] Received command c on object id p0
+2025-11-03 18:24:54,265 [INFO] ✅ Données sauvegardées dans PostgreSQL table: stream_clean
+2025-11-03 18:24:57,099 [INFO] Received command c on object id p0
+2025-11-03 18:25:06,149 [INFO] ✅ Données sauvegardées dans PostgreSQL table: stream_clean
+2025-11-03 19:01:06,317 [INFO] Instantiated <InsecureClient(url='http://namenode:9870')>.
+2025-11-03 19:01:06,318 [INFO] === Nettoyage streaming DataFlow360 lancé ===
+2025-11-03 19:01:06,359 [INFO] ✅ Table stream_clean prête
+2025-11-03 19:01:06,359 [INFO] 🚀 Démarrage du streaming Spark Cleaner...
+2025-11-03 19:01:18,562 [INFO] Callback Server Starting
+2025-11-03 19:01:18,580 [INFO] Socket listening on ('127.0.0.1', 43261)
+2025-11-03 19:01:29,881 [INFO] Python Server ready to receive messages
+2025-11-03 19:01:29,882 [INFO] Received command c on object id p0
+2025-11-03 19:01:43,033 [INFO] ✅ Données sauvegardées dans PostgreSQL table: stream_clean
+2025-11-03 19:01:45,391 [INFO] 📁 Fichier CSV sauvegardé localement : /app/data/clean/batch_118_clean.csv
+2025-11-03 19:01:48,794 [INFO] Received command c on object id p0
+2025-11-03 19:01:53,582 [INFO] ✅ Données sauvegardées dans PostgreSQL table: stream_clean
+2025-11-03 19:01:54,292 [INFO] 📁 Fichier CSV sauvegardé localement : /app/data/clean/batch_119_clean.csv
+2025-11-03 19:01:55,563 [INFO] Received command c on object id p0
+2025-11-03 19:01:57,955 [INFO] ✅ Données sauvegardées dans PostgreSQL table: stream_clean
+2025-11-03 19:01:58,420 [INFO] 📁 Fichier CSV sauvegardé localement : /app/data/clean/batch_120_clean.csv
+2025-11-03 19:02:00,613 [INFO] Received command c on object id p0
+2025-11-03 19:02:03,340 [INFO] ✅ Données sauvegardées dans PostgreSQL table: stream_clean
+2025-11-03 19:02:03,705 [INFO] 📁 Fichier CSV sauvegardé localement : /app/data/clean/batch_121_clean.csv
+2025-11-03 19:02:06,234 [INFO] Received command c on object id p0
+2025-11-03 19:02:08,834 [INFO] ✅ Données sauvegardées dans PostgreSQL table: stream_clean
+2025-11-03 19:02:09,904 [INFO] 📁 Fichier CSV sauvegardé localement : /app/data/clean/batch_122_clean.csv
+2025-11-03 19:02:11,613 [INFO] Received command c on object id p0
+2025-11-03 19:02:14,054 [INFO] ✅ Données sauvegardées dans PostgreSQL table: stream_clean
+2025-11-03 19:02:14,355 [INFO] 📁 Fichier CSV sauvegardé localement : /app/data/clean/batch_123_clean.csv
+2025-11-03 19:02:16,617 [INFO] Received command c on object id p0
+2025-11-03 19:02:18,886 [INFO] ✅ Données sauvegardées dans PostgreSQL table: stream_clean
+2025-11-03 19:02:19,312 [INFO] 📁 Fichier CSV sauvegardé localement : /app/data/clean/batch_124_clean.csv
+2025-11-03 19:02:22,676 [INFO] Received command c on object id p0
+2025-11-03 19:02:24,986 [INFO] ✅ Données sauvegardées dans PostgreSQL table: stream_clean
+2025-11-03 19:02:25,247 [INFO] 📁 Fichier CSV sauvegardé localement : /app/data/clean/batch_125_clean.csv
+2025-11-03 19:02:27,931 [INFO] Received command c on object id p0
+2025-11-03 19:02:29,296 [INFO] ✅ Données sauvegardées dans PostgreSQL table: stream_clean
+2025-11-03 19:02:29,660 [INFO] 📁 Fichier CSV sauvegardé localement : /app/data/clean/batch_126_clean.csv
+2025-11-03 19:02:33,578 [INFO] Received command c on object id p0
+2025-11-03 19:02:36,054 [INFO] ✅ Données sauvegardées dans PostgreSQL table: stream_clean
+2025-11-03 19:02:36,301 [INFO] 📁 Fichier CSV sauvegardé localement : /app/data/clean/batch_127_clean.csv
+2025-11-03 19:02:38,697 [INFO] Received command c on object id p0
+2025-11-03 19:02:40,643 [INFO] ✅ Données sauvegardées dans PostgreSQL table: stream_clean
+2025-11-03 19:02:41,153 [INFO] 📁 Fichier CSV sauvegardé localement : /app/data/clean/batch_128_clean.csv
+2025-11-03 19:02:44,744 [INFO] Received command c on object id p0
+2025-11-03 19:02:46,595 [INFO] ✅ Données sauvegardées dans PostgreSQL table: stream_clean
+2025-11-03 19:02:46,940 [INFO] 📁 Fichier CSV sauvegardé localement : /app/data/clean/batch_129_clean.csv
+2025-11-03 19:02:50,034 [INFO] Received command c on object id p0
+2025-11-03 19:02:51,288 [INFO] ✅ Données sauvegardées dans PostgreSQL table: stream_clean
+2025-11-03 19:02:51,528 [INFO] 📁 Fichier CSV sauvegardé localement : /app/data/clean/batch_130_clean.csv
+2025-11-03 19:02:55,804 [INFO] Received command c on object id p0
+2025-11-03 19:02:57,496 [INFO] ✅ Données sauvegardées dans PostgreSQL table: stream_clean
+2025-11-03 19:02:57,720 [INFO] 📁 Fichier CSV sauvegardé localement : /app/data/clean/batch_131_clean.csv
+2025-11-03 19:03:01,033 [INFO] Received command c on object id p0
+2025-11-03 19:03:02,511 [INFO] ✅ Données sauvegardées dans PostgreSQL table: stream_clean
+2025-11-03 19:03:02,818 [INFO] 📁 Fichier CSV sauvegardé localement : /app/data/clean/batch_132_clean.csv
+2025-11-03 19:03:06,271 [INFO] Received command c on object id p0
+2025-11-03 19:03:07,383 [INFO] ✅ Données sauvegardées dans PostgreSQL table: stream_clean
+2025-11-03 19:03:07,530 [INFO] 📁 Fichier CSV sauvegardé localement : /app/data/clean/batch_133_clean.csv
+2025-11-03 19:03:11,429 [INFO] Received command c on object id p0
+2025-11-03 19:03:13,869 [INFO] ✅ Données sauvegardées dans PostgreSQL table: stream_clean
+2025-11-03 19:03:14,079 [INFO] 📁 Fichier CSV sauvegardé localement : /app/data/clean/batch_134_clean.csv
+2025-11-03 19:03:16,796 [INFO] Received command c on object id p0
+2025-11-03 19:03:17,827 [INFO] ✅ Données sauvegardées dans PostgreSQL table: stream_clean
+2025-11-03 19:03:17,993 [INFO] 📁 Fichier CSV sauvegardé localement : /app/data/clean/batch_135_clean.csv
+2025-11-03 19:03:22,498 [INFO] Received command c on object id p0
+2025-11-03 19:03:23,862 [INFO] ✅ Données sauvegardées dans PostgreSQL table: stream_clean
+2025-11-03 19:03:24,415 [INFO] 📁 Fichier CSV sauvegardé localement : /app/data/clean/batch_136_clean.csv
+2025-11-03 19:03:27,679 [INFO] Received command c on object id p0
+2025-11-03 19:03:32,137 [INFO] ✅ Données sauvegardées dans PostgreSQL table: stream_clean
+2025-11-03 19:03:32,733 [INFO] 📁 Fichier CSV sauvegardé localement : /app/data/clean/batch_137_clean.csv
+2025-11-03 19:03:35,985 [INFO] Received command c on object id p0
+2025-11-03 19:03:37,839 [INFO] ✅ Données sauvegardées dans PostgreSQL table: stream_clean
+2025-11-03 19:03:38,030 [INFO] 📁 Fichier CSV sauvegardé localement : /app/data/clean/batch_138_clean.csv
+2025-11-03 19:03:39,603 [INFO] Received command c on object id p0
+2025-11-03 19:03:40,929 [INFO] ✅ Données sauvegardées dans PostgreSQL table: stream_clean
+2025-11-03 19:03:41,155 [INFO] 📁 Fichier CSV sauvegardé localement : /app/data/clean/batch_139_clean.csv
+2025-11-03 19:03:43,691 [INFO] Received command c on object id p0
+2025-11-03 19:03:46,474 [INFO] ✅ Données sauvegardées dans PostgreSQL table: stream_clean
+2025-11-03 19:03:46,880 [INFO] 📁 Fichier CSV sauvegardé localement : /app/data/clean/batch_140_clean.csv
+2025-11-03 19:03:49,522 [INFO] Received command c on object id p0
+2025-11-03 19:03:51,427 [INFO] ✅ Données sauvegardées dans PostgreSQL table: stream_clean
+2025-11-03 19:03:51,672 [INFO] 📁 Fichier CSV sauvegardé localement : /app/data/clean/batch_141_clean.csv
+2025-11-03 19:03:55,483 [INFO] Received command c on object id p0
+2025-11-03 19:12:11,579 [INFO] Instantiated <InsecureClient(url='http://namenode:9870')>.
+2025-11-03 19:12:11,581 [INFO] === Nettoyage streaming DataFlow360 lancé ===
+2025-11-03 19:12:11,655 [INFO] ✅ Table stream_clean prête
+2025-11-03 19:12:11,658 [INFO] 🚀 Démarrage du streaming Spark Cleaner...
+2025-11-03 19:12:17,295 [ERROR] ❌ Erreur streaming : java.net.UnknownHostException: namenode
+2025-11-03 19:12:17,296 [INFO] Closing down clientserver connection
+2025-11-03 19:16:46,364 [INFO] Instantiated <InsecureClient(url='http://namenode:9870')>.
+2025-11-03 19:16:46,365 [INFO] === Nettoyage streaming DataFlow360 lancé ===
+2025-11-03 19:16:46,403 [INFO] ✅ Table stream_clean prête
+2025-11-03 19:16:46,407 [INFO] 🚀 Démarrage du streaming Spark Cleaner...
+2025-11-03 19:16:57,059 [INFO] Callback Server Starting
+2025-11-03 19:16:57,098 [INFO] Socket listening on ('127.0.0.1', 41851)
+2025-11-03 19:17:04,863 [INFO] Python Server ready to receive messages
+2025-11-03 19:17:04,863 [INFO] Received command c on object id p0
+2025-11-03 19:17:19,783 [INFO] ✅ Données sauvegardées dans PostgreSQL table: stream_clean
+2025-11-03 19:17:23,122 [INFO] 📁 Fichier CSV sauvegardé localement : /app/data/clean/batch_142_clean.csv
+2025-11-03 19:17:26,641 [INFO] Received command c on object id p0
+2025-11-03 19:17:32,155 [INFO] ✅ Données sauvegardées dans PostgreSQL table: stream_clean
+2025-11-03 19:17:33,723 [INFO] 📁 Fichier CSV sauvegardé localement : /app/data/clean/batch_143_clean.csv
+2025-11-03 19:17:35,073 [INFO] Received command c on object id p0
+2025-11-03 19:17:37,325 [INFO] ✅ Données sauvegardées dans PostgreSQL table: stream_clean
+2025-11-03 19:17:38,120 [INFO] 📁 Fichier CSV sauvegardé localement : /app/data/clean/batch_144_clean.csv
+2025-11-03 19:17:40,288 [INFO] Received command c on object id p0
+2025-11-03 19:17:43,661 [INFO] ✅ Données sauvegardées dans PostgreSQL table: stream_clean
+2025-11-03 19:17:44,381 [INFO] 📁 Fichier CSV sauvegardé localement : /app/data/clean/batch_145_clean.csv
+2025-11-03 19:17:47,357 [INFO] Received command c on object id p0
+2025-11-03 19:17:53,441 [INFO] ✅ Données sauvegardées dans PostgreSQL table: stream_clean
+2025-11-03 19:17:53,925 [INFO] 📁 Fichier CSV sauvegardé localement : /app/data/clean/batch_146_clean.csv
+2025-11-03 19:17:54,922 [INFO] Received command c on object id p0
+2025-11-03 19:17:57,272 [INFO] ✅ Données sauvegardées dans PostgreSQL table: stream_clean
+2025-11-03 19:17:57,644 [INFO] 📁 Fichier CSV sauvegardé localement : /app/data/clean/batch_147_clean.csv
+2025-11-03 19:18:00,319 [INFO] Received command c on object id p0
+2025-11-03 19:18:03,450 [INFO] ✅ Données sauvegardées dans PostgreSQL table: stream_clean
+2025-11-03 19:18:04,263 [INFO] 📁 Fichier CSV sauvegardé localement : /app/data/clean/batch_148_clean.csv
+2025-11-03 19:18:06,064 [INFO] Received command c on object id p0
+2025-11-03 19:18:07,677 [INFO] ✅ Données sauvegardées dans PostgreSQL table: stream_clean
+2025-11-03 19:18:08,089 [INFO] 📁 Fichier CSV sauvegardé localement : /app/data/clean/batch_149_clean.csv
+2025-11-03 19:23:29,268 [INFO] Instantiated <InsecureClient(url='http://namenode:9870')>.
+2025-11-03 19:23:29,270 [INFO] === Nettoyage streaming DataFlow360 lancé ===
+2025-11-03 19:23:29,345 [INFO] ✅ Table stream_clean prête
+2025-11-03 19:23:29,346 [INFO] 🚀 Démarrage du streaming Spark Cleaner...
+2025-11-03 19:24:00,885 [INFO] Callback Server Starting
+2025-11-03 19:24:00,979 [INFO] Socket listening on ('127.0.0.1', 38523)
+2025-11-03 19:24:18,144 [INFO] Python Server ready to receive messages
+2025-11-03 19:24:18,145 [INFO] Received command c on object id p0
+2025-11-03 19:29:16,154 [INFO] Instantiated <InsecureClient(url='http://namenode:9870')>.
+2025-11-03 19:29:16,159 [INFO] === Nettoyage streaming DataFlow360 lancé ===
+2025-11-03 19:29:16,239 [INFO] ✅ Table stream_clean prête
+2025-11-03 19:29:16,250 [INFO] 🚀 Démarrage du streaming Spark Cleaner...
+2025-11-03 19:29:30,637 [INFO] Callback Server Starting
+2025-11-03 19:29:30,642 [INFO] Socket listening on ('127.0.0.1', 44565)
+2025-11-03 19:29:39,034 [INFO] Python Server ready to receive messages
+2025-11-03 19:29:39,039 [INFO] Received command c on object id p0
+2025-11-03 19:30:01,390 [INFO] ✅ Données sauvegardées dans PostgreSQL table: stream_clean
+2025-11-03 19:30:07,802 [INFO] 📁 Fichier CSV sauvegardé localement : /app/data/clean/batch_150_clean.csv
+2025-11-03 19:30:16,939 [INFO] Received command c on object id p0
+2025-11-03 19:30:25,564 [INFO] ✅ Données sauvegardées dans PostgreSQL table: stream_clean
+2025-11-03 19:30:31,717 [INFO] 📁 Fichier CSV sauvegardé localement : /app/data/clean/batch_151_clean.csv
+2025-11-03 19:30:37,173 [INFO] Received command c on object id p0
+2025-11-03 19:30:49,766 [INFO] ✅ Données sauvegardées dans PostgreSQL table: stream_clean
+2025-11-03 19:30:51,879 [INFO] 📁 Fichier CSV sauvegardé localement : /app/data/clean/batch_152_clean.csv
+2025-11-03 19:30:55,120 [INFO] Received command c on object id p0
+2025-11-03 19:31:01,938 [INFO] ✅ Données sauvegardées dans PostgreSQL table: stream_clean
+2025-11-03 19:31:02,690 [INFO] 📁 Fichier CSV sauvegardé localement : /app/data/clean/batch_153_clean.csv
+2025-11-03 19:31:03,926 [INFO] Received command c on object id p0
+2025-11-03 19:31:09,165 [INFO] ✅ Données sauvegardées dans PostgreSQL table: stream_clean
+2025-11-03 19:31:12,504 [INFO] 📁 Fichier CSV sauvegardé localement : /app/data/clean/batch_154_clean.csv
+2025-11-03 19:31:15,678 [INFO] Received command c on object id p0
+2025-11-03 19:31:21,013 [INFO] ✅ Données sauvegardées dans PostgreSQL table: stream_clean
+2025-11-03 19:31:23,704 [INFO] 📁 Fichier CSV sauvegardé localement : /app/data/clean/batch_155_clean.csv
+2025-11-03 19:31:27,171 [INFO] Received command c on object id p0
+2025-11-03 19:31:33,768 [INFO] ✅ Données sauvegardées dans PostgreSQL table: stream_clean
+2025-11-03 19:31:34,437 [INFO] 📁 Fichier CSV sauvegardé localement : /app/data/clean/batch_156_clean.csv
+2025-11-03 19:31:36,398 [INFO] Received command c on object id p0
+2025-11-03 19:31:39,879 [INFO] ✅ Données sauvegardées dans PostgreSQL table: stream_clean
+2025-11-03 19:31:41,345 [INFO] 📁 Fichier CSV sauvegardé localement : /app/data/clean/batch_157_clean.csv
+2025-11-03 19:31:43,922 [INFO] Received command c on object id p0
+2025-11-03 19:31:51,440 [INFO] ✅ Données sauvegardées dans PostgreSQL table: stream_clean
+2025-11-03 19:31:53,265 [INFO] 📁 Fichier CSV sauvegardé localement : /app/data/clean/batch_158_clean.csv
+2025-11-03 19:31:58,282 [INFO] Received command c on object id p0
+2025-11-03 19:32:02,476 [INFO] ✅ Données sauvegardées dans PostgreSQL table: stream_clean
+2025-11-03 19:32:03,156 [INFO] 📁 Fichier CSV sauvegardé localement : /app/data/clean/batch_159_clean.csv
+2025-11-03 19:32:04,718 [INFO] Received command c on object id p0
+2025-11-03 19:32:07,237 [INFO] ✅ Données sauvegardées dans PostgreSQL table: stream_clean
+2025-11-03 19:32:07,651 [INFO] 📁 Fichier CSV sauvegardé localement : /app/data/clean/batch_160_clean.csv
+2025-11-03 19:32:10,454 [INFO] Received command c on object id p0
+2025-11-03 19:32:14,149 [INFO] ✅ Données sauvegardées dans PostgreSQL table: stream_clean
+2025-11-03 19:32:14,852 [INFO] 📁 Fichier CSV sauvegardé localement : /app/data/clean/batch_161_clean.csv
+2025-11-03 19:32:17,141 [INFO] Received command c on object id p0
+2025-11-03 19:32:21,387 [INFO] ✅ Données sauvegardées dans PostgreSQL table: stream_clean
+2025-11-03 19:32:22,246 [INFO] 📁 Fichier CSV sauvegardé localement : /app/data/clean/batch_162_clean.csv
+2025-11-03 19:32:24,498 [INFO] Received command c on object id p0
+2025-11-03 19:32:30,000 [INFO] ✅ Données sauvegardées dans PostgreSQL table: stream_clean
+2025-11-03 19:32:30,572 [INFO] 📁 Fichier CSV sauvegardé localement : /app/data/clean/batch_163_clean.csv
+2025-11-03 19:32:32,112 [INFO] Received command c on object id p0
+2025-11-03 19:32:35,137 [INFO] ✅ Données sauvegardées dans PostgreSQL table: stream_clean
+2025-11-03 19:32:35,572 [INFO] 📁 Fichier CSV sauvegardé localement : /app/data/clean/batch_164_clean.csv
+2025-11-03 19:32:38,558 [INFO] Received command c on object id p0
+2025-11-03 19:32:44,934 [INFO] ✅ Données sauvegardées dans PostgreSQL table: stream_clean
+2025-11-03 19:32:46,661 [INFO] 📁 Fichier CSV sauvegardé localement : /app/data/clean/batch_165_clean.csv
+2025-11-03 19:32:48,877 [INFO] Received command c on object id p0
+2025-11-03 19:32:53,107 [INFO] ✅ Données sauvegardées dans PostgreSQL table: stream_clean
+2025-11-03 19:32:53,938 [INFO] 📁 Fichier CSV sauvegardé localement : /app/data/clean/batch_166_clean.csv
+2025-11-03 19:32:57,567 [INFO] Received command c on object id p0
+2025-11-03 19:33:05,595 [INFO] ✅ Données sauvegardées dans PostgreSQL table: stream_clean
+2025-11-03 19:33:06,642 [INFO] 📁 Fichier CSV sauvegardé localement : /app/data/clean/batch_167_clean.csv
+2025-11-03 19:33:08,977 [INFO] Received command c on object id p0
+2025-11-03 19:33:11,511 [INFO] ✅ Données sauvegardées dans PostgreSQL table: stream_clean
+2025-11-03 19:33:11,821 [INFO] 📁 Fichier CSV sauvegardé localement : /app/data/clean/batch_168_clean.csv
+2025-11-04 10:23:00,415 [INFO] Instantiated <InsecureClient(url='http://namenode:9870')>.
+2025-11-04 10:23:00,427 [INFO] === Nettoyage streaming DataFlow360 lancé ===
+2025-11-04 10:23:00,808 [INFO] ✅ Table stream_clean prête
+2025-11-04 10:23:00,814 [INFO] 🚀 Démarrage du streaming Spark Cleaner...
+2025-11-04 10:23:27,636 [INFO] Callback Server Starting
+2025-11-04 10:23:27,643 [INFO] Socket listening on ('127.0.0.1', 42855)
+2025-11-04 10:23:46,819 [INFO] Python Server ready to receive messages
+2025-11-04 10:23:46,832 [INFO] Received command c on object id p0
+2025-11-04 10:25:40,968 [INFO] Error while receiving.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/py4j/clientserver.py", line 516, in send_command
+    raise Py4JNetworkError("Answer from Java side is empty")
+py4j.protocol.Py4JNetworkError: Answer from Java side is empty
+2025-11-04 10:25:40,970 [INFO] Error while receiving.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/py4j/clientserver.py", line 516, in send_command
+    raise Py4JNetworkError("Answer from Java side is empty")
+py4j.protocol.Py4JNetworkError: Answer from Java side is empty
+2025-11-04 10:25:41,157 [INFO] Closing down clientserver connection
+2025-11-04 10:25:41,283 [ERROR] Exception while sending command.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/py4j/clientserver.py", line 516, in send_command
+    raise Py4JNetworkError("Answer from Java side is empty")
+py4j.protocol.Py4JNetworkError: Answer from Java side is empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/py4j/java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+  File "/usr/local/lib/python3.9/dist-packages/py4j/clientserver.py", line 539, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while sending or receiving
+2025-11-04 10:25:41,252 [INFO] Closing down clientserver connection
+2025-11-04 10:25:41,429 [INFO] Closing down clientserver connection
+2025-11-04 10:25:41,450 [ERROR] Exception while sending command.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/py4j/clientserver.py", line 516, in send_command
+    raise Py4JNetworkError("Answer from Java side is empty")
+py4j.protocol.Py4JNetworkError: Answer from Java side is empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/py4j/java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+  File "/usr/local/lib/python3.9/dist-packages/py4j/clientserver.py", line 539, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while sending or receiving
+2025-11-04 10:25:41,516 [ERROR] There was an exception while executing the Python Proxy on the Python Side.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/py4j/clientserver.py", line 617, in _call_proxy
+    return_value = getattr(self.pool[obj_id], method)(*params)
+  File "/usr/local/lib/python3.9/dist-packages/pyspark/sql/utils.py", line 120, in call
+    raise e
+  File "/usr/local/lib/python3.9/dist-packages/pyspark/sql/utils.py", line 117, in call
+    self.func(DataFrame(jdf, wrapped_session_jdf), batch_id)
+  File "/app/cleaning.py", line 408, in foreach_batch_function
+    save_to_postgres(batch_df_clean)
+  File "/app/cleaning.py", line 371, in save_to_postgres
+    df.write.jdbc(url=url, table=POSTGRES["table"], mode=mode, properties=properties)
+  File "/usr/local/lib/python3.9/dist-packages/pyspark/sql/readwriter.py", line 1984, in jdbc
+    self.mode(mode)._jwrite.jdbc(url, table, jprop)
+  File "/usr/local/lib/python3.9/dist-packages/py4j/java_gateway.py", line 1322, in __call__
+    return_value = get_return_value(
+  File "/usr/local/lib/python3.9/dist-packages/pyspark/errors/exceptions/captured.py", line 179, in deco
+    return f(*a, **kw)
+  File "/usr/local/lib/python3.9/dist-packages/py4j/protocol.py", line 334, in get_return_value
+    raise Py4JError(
+py4j.protocol.Py4JError: An error occurred while calling o431.jdbc
+2025-11-04 10:25:41,500 [ERROR] ❌ Erreur streaming : An error occurred while calling o233.awaitTermination
+2025-11-04 10:25:41,717 [INFO] Closing down clientserver connection
+2025-11-04 10:26:50,975 [INFO] Instantiated <InsecureClient(url='http://namenode:9870')>.
+2025-11-04 10:26:50,983 [INFO] === Nettoyage streaming DataFlow360 lancé ===
+2025-11-04 10:26:51,046 [INFO] ✅ Table stream_clean prête
+2025-11-04 10:26:51,050 [INFO] 🚀 Démarrage du streaming Spark Cleaner...
+2025-11-04 10:27:13,130 [INFO] Callback Server Starting
+2025-11-04 10:27:13,145 [INFO] Socket listening on ('127.0.0.1', 43733)
+2025-11-04 10:27:26,848 [INFO] Python Server ready to receive messages
+2025-11-04 10:27:26,912 [INFO] Received command c on object id p0
+2025-11-04 13:28:37,296 [INFO] Instantiated <InsecureClient(url='http://namenode:9870')>.
+2025-11-04 13:28:37,299 [INFO] === Nettoyage streaming DataFlow360 lancé ===
+2025-11-04 13:28:37,445 [INFO] ✅ Table stream_clean prête
+2025-11-04 13:28:37,449 [INFO] 🚀 Démarrage du streaming Spark Cleaner...
+2025-11-04 13:29:14,681 [INFO] Callback Server Starting
+2025-11-04 13:29:14,683 [INFO] Socket listening on ('127.0.0.1', 46473)
+2025-11-04 13:29:38,239 [INFO] Python Server ready to receive messages
+2025-11-04 13:29:38,272 [INFO] Received command c on object id p0
+2025-11-04 13:30:18,024 [INFO] ✅ Données sauvegardées dans PostgreSQL table: stream_clean
+2025-11-04 13:30:26,649 [INFO] 📁 Fichier CSV sauvegardé localement : /app/data/clean/batch_169_clean.csv
+2025-11-04 13:30:41,101 [INFO] Received command c on object id p0
+2025-11-04 13:30:50,464 [INFO] ✅ Données sauvegardées dans PostgreSQL table: stream_clean
+2025-11-04 13:30:54,979 [INFO] 📁 Fichier CSV sauvegardé localement : /app/data/clean/batch_170_clean.csv
+2025-11-04 13:30:58,957 [INFO] Received command c on object id p0
+2025-11-04 13:31:11,168 [INFO] ✅ Données sauvegardées dans PostgreSQL table: stream_clean
+2025-11-04 13:31:12,857 [INFO] 📁 Fichier CSV sauvegardé localement : /app/data/clean/batch_171_clean.csv
+2025-11-04 13:31:18,956 [INFO] Received command c on object id p0
+2025-11-04 13:31:29,438 [INFO] ✅ Données sauvegardées dans PostgreSQL table: stream_clean
+2025-11-04 13:31:35,258 [INFO] 📁 Fichier CSV sauvegardé localement : /app/data/clean/batch_172_clean.csv
+2025-11-04 13:31:41,830 [INFO] Received command c on object id p0
+2025-11-04 13:31:53,166 [INFO] ✅ Données sauvegardées dans PostgreSQL table: stream_clean
+2025-11-04 13:32:02,435 [INFO] 📁 Fichier CSV sauvegardé localement : /app/data/clean/batch_173_clean.csv
+2025-11-04 13:32:10,476 [INFO] Received command c on object id p0
+2025-11-04 13:32:20,702 [INFO] ✅ Données sauvegardées dans PostgreSQL table: stream_clean
+2025-11-04 13:32:22,113 [INFO] 📁 Fichier CSV sauvegardé localement : /app/data/clean/batch_174_clean.csv
+2025-11-04 13:32:24,739 [INFO] Received command c on object id p0
+2025-11-04 13:32:36,539 [INFO] ✅ Données sauvegardées dans PostgreSQL table: stream_clean
+2025-11-04 13:32:42,577 [INFO] 📁 Fichier CSV sauvegardé localement : /app/data/clean/batch_175_clean.csv
+2025-11-04 13:32:46,715 [INFO] Received command c on object id p0
+2025-11-04 13:32:54,838 [INFO] ✅ Données sauvegardées dans PostgreSQL table: stream_clean
+2025-11-04 13:32:58,853 [INFO] 📁 Fichier CSV sauvegardé localement : /app/data/clean/batch_176_clean.csv
+2025-11-04 13:33:05,752 [INFO] Received command c on object id p0
+2025-11-04 13:33:13,677 [INFO] ✅ Données sauvegardées dans PostgreSQL table: stream_clean
+2025-11-04 13:33:16,518 [INFO] 📁 Fichier CSV sauvegardé localement : /app/data/clean/batch_177_clean.csv
+2025-11-04 13:33:19,050 [INFO] Received command c on object id p0
+2025-11-04 13:33:24,499 [INFO] ✅ Données sauvegardées dans PostgreSQL table: stream_clean
+2025-11-04 13:33:25,656 [INFO] 📁 Fichier CSV sauvegardé localement : /app/data/clean/batch_178_clean.csv

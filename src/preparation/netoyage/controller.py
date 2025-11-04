@@ -9,7 +9,7 @@ import papermill as pm
 with open("config.yaml", "r") as f:
     config = yaml.safe_load(f)
 
-LOCAL_CLEAN_PATH = "/app/data_clean"         # dossier monté depuis Docker
+LOCAL_CLEAN_PATH = "/app/data/clean"       # dossier monté depuis Docker
 NOTEBOOK_TEMPLATE = "/app/notebooks/eda_notebook.ipynb"
 EDA_OUTPUT_FOLDER = "/app/eda_reports"
 LOG_FILE = "/app/logs/controller.log"
@@ -48,8 +48,10 @@ def run_eda_for_file(csv_path):
     except Exception as e:
         logging.error(f"❌ Erreur EDA: {e}")
 
-# ---------------- Boucle principale ----------------
+# ---------------- Boucle principale améliorée ----------------
 processed_files = set()
+WAIT_TIME = 5        # temps d'attente entre vérifications
+MAX_WAIT = 300       # timeout en secondes si le fichier n'apparaît pas
 
 if __name__ == "__main__":
     logging.info("=== Controller EDA DataFlow360 démarré ===")
@@ -59,8 +61,21 @@ if __name__ == "__main__":
             new_files = [f for f in files if f not in processed_files]
 
             for f in new_files:
-                run_eda_for_file(os.path.join(LOCAL_CLEAN_PATH, f))
-                processed_files.add(f)
+                csv_path = os.path.join(LOCAL_CLEAN_PATH, f)
+
+                # ---- Attente que le fichier soit prêt ----
+                elapsed = 0
+                while not os.path.exists(csv_path):
+                    if elapsed > MAX_WAIT:
+                        logging.error(f"⏱ Timeout : {csv_path} introuvable après {MAX_WAIT}s")
+                        break
+                    logging.info(f"⏳ {csv_path} non encore disponible, attente {WAIT_TIME}s...")
+                    time.sleep(WAIT_TIME)
+                    elapsed += WAIT_TIME
+                else:
+                    # ---- Lancement EDA ----
+                    run_eda_for_file(csv_path)
+                    processed_files.add(f)
 
             time.sleep(30)
         except Exception as e:
